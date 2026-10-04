@@ -1,0 +1,2432 @@
+{
+  "errors": [],
+  "object_count": 126,
+  "category_counts": {
+    "BLDG": 70,
+    "GRASS": 37,
+    "Ground": 1,
+    "LANDMARK": 4,
+    "PLAZA": 5,
+    "ROAD": 1,
+    "WATER": 8
+  },
+  "total_vertices": 57158,
+  "total_faces": 85585,
+  "bbox_min": [
+    -271.875,
+    -326.25,
+    -0.30000001192092896
+  ],
+  "bbox_max": [
+    271.875,
+    326.25,
+    12.0
+  ],
+  "dimensions_m": [
+    543.75,
+    652.5,
+    12.300000011920929
+  ],
+  "center_m": [
+    0.0,
+    0.0,
+    5.8499999940395355
+  ],
+  "objects": {
+    "BLDG_001": {
+      "vertices": 16,
+      "faces": 20,
+      "bbox_min": [
+        -131.625,
+        216.75,
+        0.0
+      ],
+      "bbox_max": [
+        -88.125,
+        238.5,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 9146.25,
+      "material_count": 1
+    },
+    "BLDG_002": {
+      "vertices": 80,
+      "faces": 116,
+      "bbox_min": [
+        -94.875,
+        171.75,
+        0.0
+      ],
+      "bbox_max": [
+        -72.375,
+        188.25,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 3484.6799105904065,
+      "material_count": 1
+    },
+    "BLDG_003": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -91.875,
+        138.75,
+        0.0
+      ],
+      "bbox_max": [
+        -61.875,
+        147.75,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 3240.0,
+      "material_count": 1
+    },
+    "BLDG_004": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -88.5,
+        110.625,
+        0.0
+      ],
+      "bbox_max": [
+        -56.25,
+        120.375,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 3773.25,
+      "material_count": 1
+    },
+    "BLDG_005": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -83.625,
+        85.125,
+        0.0
+      ],
+      "bbox_max": [
+        -43.125,
+        94.875,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4738.5,
+      "material_count": 1
+    },
+    "BLDG_006": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -72.09400177001953,
+        155.20700073242188,
+        0.0
+      ],
+      "bbox_max": [
+        -53.15599822998047,
+        170.29299926757812,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 2079.1166516002268,
+      "material_count": 1
+    },
+    "BLDG_007": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -60.637001037597656,
+        122.60800170898438,
+        0.0
+      ],
+      "bbox_max": [
+        -40.612998962402344,
+        148.89199829101562,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 3766.461383172311,
+      "material_count": 1
+    },
+    "BLDG_008": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -49.834999084472656,
+        98.61399841308594,
+        0.0
+      ],
+      "bbox_max": [
+        -31.915000915527344,
+        120.38600158691406,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 2868.786344446242,
+      "material_count": 1
+    },
+    "BLDG_009": {
+      "vertices": 16,
+      "faces": 20,
+      "bbox_min": [
+        -58.875,
+        13.5,
+        0.0
+      ],
+      "bbox_max": [
+        -13.875,
+        48.75,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 11859.75,
+      "material_count": 1
+    },
+    "BLDG_010": {
+      "vertices": 12,
+      "faces": 14,
+      "bbox_min": [
+        -86.625,
+        -78.75,
+        0.0
+      ],
+      "bbox_max": [
+        -37.125,
+        -25.5,
+        4.5
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 7841.8125,
+      "material_count": 1
+    },
+    "BLDG_011": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -104.625,
+        -83.25,
+        0.0
+      ],
+      "bbox_max": [
+        -88.875,
+        -51.0,
+        4.5
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 2285.71875,
+      "material_count": 1
+    },
+    "BLDG_012": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -240.46600341796875,
+        -161.54299926757812,
+        0.0
+      ],
+      "bbox_max": [
+        -192.28399658203125,
+        -136.95700073242188,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 5952.915922148153,
+      "material_count": 1
+    },
+    "BLDG_013": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -238.125,
+        3.75,
+        0.0
+      ],
+      "bbox_max": [
+        -211.875,
+        18.0,
+        4.5
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 1683.28125,
+      "material_count": 1
+    },
+    "BLDG_014": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -162.69700622558594,
+        -107.47000122070312,
+        0.0
+      ],
+      "bbox_max": [
+        -138.05299377441406,
+        -90.52999877929688,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 2835.2926791273057,
+      "material_count": 1
+    },
+    "BLDG_015": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -202.875,
+        3.0,
+        0.0
+      ],
+      "bbox_max": [
+        -127.875,
+        18.0,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 13500.0,
+      "material_count": 1
+    },
+    "BLDG_016": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -136.875,
+        36.0,
+        0.0
+      ],
+      "bbox_max": [
+        -103.875,
+        51.0,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 5940.0,
+      "material_count": 1
+    },
+    "BLDG_017": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -217.125,
+        36.0,
+        0.0
+      ],
+      "bbox_max": [
+        -144.375,
+        51.0,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 13095.0,
+      "material_count": 1
+    },
+    "BLDG_018": {
+      "vertices": 20,
+      "faces": 26,
+      "bbox_min": [
+        -218.625,
+        56.25,
+        0.0
+      ],
+      "bbox_max": [
+        -162.375,
+        86.25,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 7816.5,
+      "material_count": 1
+    },
+    "BLDG_019": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -241.125,
+        143.25,
+        0.0
+      ],
+      "bbox_max": [
+        -219.375,
+        178.5,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 9200.25,
+      "material_count": 1
+    },
+    "BLDG_020": {
+      "vertices": 68,
+      "faces": 98,
+      "bbox_min": [
+        -214.86599731445312,
+        132.1009979248047,
+        0.0
+      ],
+      "bbox_max": [
+        -166.59100341796875,
+        188.9810028076172,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 9014.844459333457,
+      "material_count": 1
+    },
+    "BLDG_021": {
+      "vertices": 24,
+      "faces": 32,
+      "bbox_min": [
+        -232.125,
+        210.0,
+        0.0
+      ],
+      "bbox_max": [
+        -186.375,
+        243.0,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 7411.5,
+      "material_count": 1
+    },
+    "BLDG_022": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -13.569000244140625,
+        -28.46299934387207,
+        0.0
+      ],
+      "bbox_max": [
+        14.319000244140625,
+        -1.5369999408721924,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 5670.242936021299,
+      "material_count": 1
+    },
+    "BLDG_023": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -12.17199993133545,
+        -56.69499969482422,
+        0.0
+      ],
+      "bbox_max": [
+        21.922000885009766,
+        -30.30500030517578,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 6480.055300548243,
+      "material_count": 1
+    },
+    "BLDG_024": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -62.5260009765625,
+        -146.61300659179688,
+        0.0
+      ],
+      "bbox_max": [
+        -35.7239990234375,
+        -130.88699340820312,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 2524.5050527201965,
+      "material_count": 1
+    },
+    "BLDG_025": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -46.0989990234375,
+        -165.6490020751953,
+        0.0
+      ],
+      "bbox_max": [
+        -22.150999069213867,
+        -150.85000610351562,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 2227.5402069003903,
+      "material_count": 1
+    },
+    "BLDG_026": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -26.20599937438965,
+        -177.01600646972656,
+        0.0
+      ],
+      "bbox_max": [
+        -1.5440000295639038,
+        -161.98399353027344,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 2302.015734601933,
+      "material_count": 1
+    },
+    "BLDG_027": {
+      "vertices": 16,
+      "faces": 20,
+      "bbox_min": [
+        -116.88800048828125,
+        -179.281005859375,
+        0.0
+      ],
+      "bbox_max": [
+        -69.46900177001953,
+        -154.5850067138672,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 5371.352987030055,
+      "material_count": 1
+    },
+    "BLDG_028": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -86.91899871826172,
+        -190.7480010986328,
+        0.0
+      ],
+      "bbox_max": [
+        -60.83100128173828,
+        -175.2519989013672,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 2450.4938696091995,
+      "material_count": 1
+    },
+    "BLDG_029": {
+      "vertices": 16,
+      "faces": 20,
+      "bbox_min": [
+        -110.18000030517578,
+        -217.6009979248047,
+        0.0
+      ],
+      "bbox_max": [
+        -56.60300064086914,
+        -193.97900390625,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 6411.485894656973,
+      "material_count": 1
+    },
+    "BLDG_030": {
+      "vertices": 16,
+      "faces": 20,
+      "bbox_min": [
+        -155.08200073242188,
+        -266.1499938964844,
+        0.0
+      ],
+      "bbox_max": [
+        -59.13399887084961,
+        -225.27000427246094,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 13133.123898993479,
+      "material_count": 1
+    },
+    "BLDG_031": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -182.8939971923828,
+        -197.58299255371094,
+        0.0
+      ],
+      "bbox_max": [
+        -146.3560028076172,
+        -177.41700744628906,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4124.372221687809,
+      "material_count": 1
+    },
+    "BLDG_032": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -147.61199951171875,
+        -209.3300018310547,
+        0.0
+      ],
+      "bbox_max": [
+        -129.13800048828125,
+        -195.6699981689453,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 1782.1815603375435,
+      "material_count": 1
+    },
+    "BLDG_033": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -181.3939971923828,
+        -223.83299255371094,
+        0.0
+      ],
+      "bbox_max": [
+        -144.8560028076172,
+        -203.66700744628906,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4124.372221687809,
+      "material_count": 1
+    },
+    "BLDG_034": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -235.60400390625,
+        -218.71099853515625,
+        0.0
+      ],
+      "bbox_max": [
+        -194.14599609375,
+        -189.28900146484375,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 8437.749388659373,
+      "material_count": 1
+    },
+    "BLDG_035": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -241.552001953125,
+        -247.50999450683594,
+        0.0
+      ],
+      "bbox_max": [
+        -201.69700622558594,
+        -224.99000549316406,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 5164.110632878728,
+      "material_count": 1
+    },
+    "BLDG_036": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -221.11199951171875,
+        -256.5799865722656,
+        0.0
+      ],
+      "bbox_max": [
+        -202.63800048828125,
+        -242.9199981689453,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 1782.179868992418,
+      "material_count": 1
+    },
+    "BLDG_037": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -231.79299926757812,
+        -274.7139892578125,
+        0.0
+      ],
+      "bbox_max": [
+        -191.95599365234375,
+        -250.28599548339844,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 6075.20907374192,
+      "material_count": 1
+    },
+    "BLDG_038": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        35.17100143432617,
+        -140.59300231933594,
+        0.0
+      ],
+      "bbox_max": [
+        61.57899856567383,
+        -108.40699768066406,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 6243.737605944509,
+      "material_count": 1
+    },
+    "BLDG_039": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        41.1879997253418,
+        -166.3260040283203,
+        0.0
+      ],
+      "bbox_max": [
+        66.06199645996094,
+        -148.6739959716797,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 3037.4842920096125,
+      "material_count": 1
+    },
+    "BLDG_040": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        50.875999450683594,
+        -198.072998046875,
+        0.0
+      ],
+      "bbox_max": [
+        77.3740005493164,
+        -175.427001953125,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4455.212981186807,
+      "material_count": 1
+    },
+    "BLDG_041": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        26.559999465942383,
+        -256.0920104980469,
+        0.0
+      ],
+      "bbox_max": [
+        61.189998626708984,
+        -235.9080047607422,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4158.0375831628335,
+      "material_count": 1
+    },
+    "BLDG_042": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        70.30899810791016,
+        -280.5570068359375,
+        0.0
+      ],
+      "bbox_max": [
+        89.44100189208984,
+        -260.9429931640625,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 2834.8091337382793,
+      "material_count": 1
+    },
+    "BLDG_043": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        25.177000045776367,
+        -298.6809997558594,
+        0.0
+      ],
+      "bbox_max": [
+        46.073001861572266,
+        -263.8190002441406,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4454.923085729359,
+      "material_count": 1
+    },
+    "BLDG_044": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        125.28600311279297,
+        -217.875,
+        0.0
+      ],
+      "bbox_max": [
+        163.46400451660156,
+        -194.625,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 5507.985370930284,
+      "material_count": 1
+    },
+    "BLDG_045": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        132.7030029296875,
+        -238.95700073242188,
+        0.0
+      ],
+      "bbox_max": [
+        168.0469970703125,
+        -218.54299926757812,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4252.555679798126,
+      "material_count": 1
+    },
+    "BLDG_046": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        178.3520050048828,
+        -206.96600341796875,
+        0.0
+      ],
+      "bbox_max": [
+        209.3979949951172,
+        -186.03399658203125,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4360.557175353169,
+      "material_count": 1
+    },
+    "BLDG_047": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        230.27000427246094,
+        -198.49400329589844,
+        0.0
+      ],
+      "bbox_max": [
+        257.9809875488281,
+        -178.00599670410156,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4009.74477954302,
+      "material_count": 1
+    },
+    "BLDG_048": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        228.99600219726562,
+        -225.83200073242188,
+        0.0
+      ],
+      "bbox_max": [
+        260.7539978027344,
+        -204.66799926757812,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4475.026541735977,
+      "material_count": 1
+    },
+    "BLDG_049": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -13.119999885559082,
+        -128.5489959716797,
+        0.0
+      ],
+      "bbox_max": [
+        19.8700008392334,
+        -111.45099639892578,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 2902.2467545304244,
+      "material_count": 1
+    },
+    "BLDG_050": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -10.869999885559082,
+        -153.2989959716797,
+        0.0
+      ],
+      "bbox_max": [
+        22.1200008392334,
+        -136.2010040283203,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 2902.242648481799,
+      "material_count": 1
+    },
+    "BLDG_051": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        7.236000061035156,
+        -185.00900268554688,
+        0.0
+      ],
+      "bbox_max": [
+        25.013999938964844,
+        -173.49099731445312,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 1336.5246426296071,
+      "material_count": 1
+    },
+    "BLDG_052": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -34.43899917602539,
+        -200.14700317382812,
+        0.0
+      ],
+      "bbox_max": [
+        0.6890000104904175,
+        -182.35299682617188,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 3104.9072471175314,
+      "material_count": 1
+    },
+    "BLDG_053": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        11.02299976348877,
+        -204.74099731445312,
+        0.0
+      ],
+      "bbox_max": [
+        30.226999282836914,
+        -192.75900268554688,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 1458.008502765675,
+      "material_count": 1
+    },
+    "BLDG_054": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -41.22600173950195,
+        -217.1649932861328,
+        0.0
+      ],
+      "bbox_max": [
+        -7.52400016784668,
+        -199.8350067138672,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 2969.964464479708,
+      "material_count": 1
+    },
+    "BLDG_055": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        54.09199905395508,
+        -4.929999828338623,
+        0.0
+      ],
+      "bbox_max": [
+        95.15899658203125,
+        15.430000305175781,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4008.9210094753616,
+      "material_count": 1
+    },
+    "BLDG_056": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        60.09199905395508,
+        -27.43000030517578,
+        0.0
+      ],
+      "bbox_max": [
+        101.15899658203125,
+        -7.070000171661377,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4008.921215285922,
+      "material_count": 1
+    },
+    "BLDG_057": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        66.84200286865234,
+        -50.68000030517578,
+        0.0
+      ],
+      "bbox_max": [
+        107.90899658203125,
+        -30.31999969482422,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4008.9210725866724,
+      "material_count": 1
+    },
+    "BLDG_058": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        82.59200286865234,
+        61.06999969482422,
+        0.0
+      ],
+      "bbox_max": [
+        123.65899658203125,
+        81.43099975585938,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4009.1673391963122,
+      "material_count": 1
+    },
+    "BLDG_059": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        90.09200286865234,
+        38.56999969482422,
+        0.0
+      ],
+      "bbox_max": [
+        131.15899658203125,
+        58.93000030517578,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4008.9212863622233,
+      "material_count": 1
+    },
+    "BLDG_060": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        96.84200286865234,
+        15.319999694824219,
+        0.0
+      ],
+      "bbox_max": [
+        137.90899658203125,
+        35.68000030517578,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4008.9212863622233,
+      "material_count": 1
+    },
+    "BLDG_061": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        103.59200286865234,
+        -7.929999828338623,
+        0.0
+      ],
+      "bbox_max": [
+        144.65899658203125,
+        12.430000305175781,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4008.920765287052,
+      "material_count": 1
+    },
+    "BLDG_062": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        110.34200286865234,
+        -31.18000030517578,
+        0.0
+      ],
+      "bbox_max": [
+        151.40899658203125,
+        -10.819999694824219,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4008.9212863622233,
+      "material_count": 1
+    },
+    "BLDG_063": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        127.59200286865234,
+        76.81999969482422,
+        0.0
+      ],
+      "bbox_max": [
+        168.65899658203125,
+        97.18099975585938,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4009.167766747414,
+      "material_count": 1
+    },
+    "BLDG_064": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        135.0919952392578,
+        54.31999969482422,
+        0.0
+      ],
+      "bbox_max": [
+        176.15899658203125,
+        74.68099975585938,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4009.1686988000292,
+      "material_count": 1
+    },
+    "BLDG_065": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        143.3419952392578,
+        31.81999969482422,
+        0.0
+      ],
+      "bbox_max": [
+        184.40899658203125,
+        52.18000030517578,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4008.922432144638,
+      "material_count": 1
+    },
+    "BLDG_066": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        150.0919952392578,
+        8.569999694824219,
+        0.0
+      ],
+      "bbox_max": [
+        191.15899658203125,
+        28.93000030517578,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4008.922432144638,
+      "material_count": 1
+    },
+    "BLDG_067": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        157.5919952392578,
+        -13.180000305175781,
+        0.0
+      ],
+      "bbox_max": [
+        198.65899658203125,
+        7.179999828338623,
+        12.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 4008.9219158932137,
+      "material_count": 1
+    },
+    "BLDG_068": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        41.625,
+        31.5,
+        0.0
+      ],
+      "bbox_max": [
+        80.625,
+        61.5,
+        4.5
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 3280.5,
+      "material_count": 1
+    },
+    "BLDG_069": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -244.875,
+        261.0,
+        0.0
+      ],
+      "bbox_max": [
+        -232.875,
+        271.5,
+        4.5
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 567.0,
+      "material_count": 1
+    },
+    "BLDG_070": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -113.625,
+        291.75,
+        0.0
+      ],
+      "bbox_max": [
+        -103.125,
+        302.25,
+        4.5
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 496.125,
+      "material_count": 1
+    },
+    "GRASS_001": {
+      "vertices": 208,
+      "faces": 308,
+      "bbox_min": [
+        -106.53900146484375,
+        -114.302001953125,
+        0.0
+      ],
+      "bbox_max": [
+        37.875,
+        -67.46600341796875,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 25.683126179106893,
+      "material_count": 1
+    },
+    "GRASS_002": {
+      "vertices": 388,
+      "faces": 582,
+      "bbox_min": [
+        -14.625,
+        -54.22200012207031,
+        0.0
+      ],
+      "bbox_max": [
+        35.65700149536133,
+        10.130000114440918,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 6.525514790246901,
+      "material_count": 1
+    },
+    "GRASS_003": {
+      "vertices": 1086,
+      "faces": 1633,
+      "bbox_min": [
+        -250.91799926757812,
+        13.467000007629395,
+        0.0
+      ],
+      "bbox_max": [
+        18.138999938964844,
+        321.0,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 66.2834191273332,
+      "material_count": 1
+    },
+    "GRASS_004": {
+      "vertices": 578,
+      "faces": 863,
+      "bbox_min": [
+        -251.61500549316406,
+        -162.5679931640625,
+        0.0
+      ],
+      "bbox_max": [
+        -112.125,
+        59.25,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 25.59764576315993,
+      "material_count": 1
+    },
+    "GRASS_005": {
+      "vertices": 270,
+      "faces": 401,
+      "bbox_min": [
+        206.625,
+        -4.5,
+        0.0
+      ],
+      "bbox_max": [
+        227.625,
+        22.5,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 1.0602064164820817,
+      "material_count": 1
+    },
+    "GRASS_006": {
+      "vertices": 2438,
+      "faces": 3681,
+      "bbox_min": [
+        35.70399856567383,
+        3.9230000972747803,
+        0.0
+      ],
+      "bbox_max": [
+        212.03500366210938,
+        101.13099670410156,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 66.28909959172913,
+      "material_count": 1
+    },
+    "GRASS_007": {
+      "vertices": 746,
+      "faces": 1115,
+      "bbox_min": [
+        20.625,
+        22.604000091552734,
+        0.0
+      ],
+      "bbox_max": [
+        176.54400634765625,
+        112.5,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 9.569400337383133,
+      "material_count": 1
+    },
+    "GRASS_008": {
+      "vertices": 220,
+      "faces": 326,
+      "bbox_min": [
+        34.452999114990234,
+        -30.15399932861328,
+        0.0
+      ],
+      "bbox_max": [
+        51.066001892089844,
+        15.0,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 1.3305897070389605,
+      "material_count": 1
+    },
+    "GRASS_009": {
+      "vertices": 62,
+      "faces": 89,
+      "bbox_min": [
+        50.26499938964844,
+        -56.25,
+        0.0
+      ],
+      "bbox_max": [
+        61.805999755859375,
+        -31.264999389648438,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 0.6133598688982653,
+      "material_count": 1
+    },
+    "GRASS_010": {
+      "vertices": 850,
+      "faces": 1279,
+      "bbox_min": [
+        61.04899978637695,
+        -51.75,
+        0.0
+      ],
+      "bbox_max": [
+        155.33099365234375,
+        -2.7750000953674316,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 11.851034051704648,
+      "material_count": 1
+    },
+    "GRASS_011": {
+      "vertices": 1004,
+      "faces": 1522,
+      "bbox_min": [
+        -46.875,
+        -217.7220001220703,
+        0.0
+      ],
+      "bbox_max": [
+        77.11799621582031,
+        -135.0,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 51.25456517167848,
+      "material_count": 1
+    },
+    "GRASS_012": {
+      "vertices": 194,
+      "faces": 287,
+      "bbox_min": [
+        34.125,
+        -141.75,
+        0.0
+      ],
+      "bbox_max": [
+        57.18299865722656,
+        -104.1729965209961,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 1.170866340080706,
+      "material_count": 1
+    },
+    "GRASS_013": {
+      "vertices": 544,
+      "faces": 812,
+      "bbox_min": [
+        -102.375,
+        -145.5,
+        0.0
+      ],
+      "bbox_max": [
+        43.08700180053711,
+        -92.25,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 6.415549099562451,
+      "material_count": 1
+    },
+    "GRASS_014": {
+      "vertices": 1036,
+      "faces": 1550,
+      "bbox_min": [
+        -259.125,
+        -323.25,
+        0.0
+      ],
+      "bbox_max": [
+        -109.875,
+        -144.81900024414062,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 28.041001163539015,
+      "material_count": 1
+    },
+    "GRASS_015": {
+      "vertices": 664,
+      "faces": 1004,
+      "bbox_min": [
+        116.625,
+        -244.01499938964844,
+        0.0
+      ],
+      "bbox_max": [
+        266.625,
+        -179.28799438476562,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 44.30201722327619,
+      "material_count": 1
+    },
+    "GRASS_016": {
+      "vertices": 10,
+      "faces": 11,
+      "bbox_min": [
+        127.08300018310547,
+        -262.5,
+        0.0
+      ],
+      "bbox_max": [
+        192.64199829101562,
+        -243.01699829101562,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 1.2171727629604447,
+      "material_count": 1
+    },
+    "GRASS_017": {
+      "vertices": 696,
+      "faces": 1048,
+      "bbox_min": [
+        21.874000549316406,
+        -294.8590087890625,
+        0.0
+      ],
+      "bbox_max": [
+        108.66600036621094,
+        -219.75,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 30.904971690425377,
+      "material_count": 1
+    },
+    "GRASS_018": {
+      "vertices": 300,
+      "faces": 446,
+      "bbox_min": [
+        30.44499969482422,
+        -303.0,
+        0.0
+      ],
+      "bbox_max": [
+        59.178001403808594,
+        -262.5,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 1.0020559374047586,
+      "material_count": 1
+    },
+    "GRASS_020": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        106.35099792480469,
+        -279.70599365234375,
+        0.0
+      ],
+      "bbox_max": [
+        112.125,
+        -275.864990234375,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 0.08461563636618319,
+      "material_count": 1
+    },
+    "GRASS_021": {
+      "vertices": 308,
+      "faces": 462,
+      "bbox_min": [
+        -245.25,
+        198.08999633789062,
+        0.0
+      ],
+      "bbox_max": [
+        -157.125,
+        257.25,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 48.034202159460776,
+      "material_count": 1
+    },
+    "GRASS_022": {
+      "vertices": 498,
+      "faces": 751,
+      "bbox_min": [
+        -243.75,
+        -135.33399963378906,
+        0.0
+      ],
+      "bbox_max": [
+        -114.75,
+        -13.845000267028809,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 62.6637187253489,
+      "material_count": 1
+    },
+    "GRASS_023": {
+      "vertices": 1098,
+      "faces": 1659,
+      "bbox_min": [
+        -245.25,
+        -289.16900634765625,
+        0.0
+      ],
+      "bbox_max": [
+        -156.13900756835938,
+        -184.23500061035156,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 50.04914820011004,
+      "material_count": 1
+    },
+    "GRASS_024": {
+      "vertices": 1288,
+      "faces": 1940,
+      "bbox_min": [
+        -184.2310028076172,
+        -267.0,
+        0.0
+      ],
+      "bbox_max": [
+        -58.125,
+        -181.66000366210938,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 41.068794678085666,
+      "material_count": 1
+    },
+    "GRASS_025": {
+      "vertices": 578,
+      "faces": 867,
+      "bbox_min": [
+        -185.95700073242188,
+        -198.75,
+        0.0
+      ],
+      "bbox_max": [
+        -124.02799987792969,
+        -165.66099548339844,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 6.270789847774065,
+      "material_count": 1
+    },
+    "GRASS_026": {
+      "vertices": 808,
+      "faces": 1212,
+      "bbox_min": [
+        -115.44499969482422,
+        -235.96299743652344,
+        0.0
+      ],
+      "bbox_max": [
+        -39.42900085449219,
+        -177.85800170898438,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 16.613548132734326,
+      "material_count": 1
+    },
+    "GRASS_027": {
+      "vertices": 504,
+      "faces": 756,
+      "bbox_min": [
+        -123.9749984741211,
+        -180.96400451660156,
+        0.0
+      ],
+      "bbox_max": [
+        -68.625,
+        -153.70199584960938,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 5.174348323732742,
+      "material_count": 1
+    },
+    "GRASS_028": {
+      "vertices": 488,
+      "faces": 732,
+      "bbox_min": [
+        -95.59200286865234,
+        -161.16799926757812,
+        0.0
+      ],
+      "bbox_max": [
+        -34.875,
+        -129.75,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 6.686021764505739,
+      "material_count": 1
+    },
+    "GRASS_029": {
+      "vertices": 620,
+      "faces": 930,
+      "bbox_min": [
+        -36.94300079345703,
+        -148.5,
+        0.0
+      ],
+      "bbox_max": [
+        34.755001068115234,
+        -108.24299621582031,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 12.812313782756119,
+      "material_count": 1
+    },
+    "GRASS_030": {
+      "vertices": 820,
+      "faces": 1234,
+      "bbox_min": [
+        -77.24700164794922,
+        -61.5,
+        0.0
+      ],
+      "bbox_max": [
+        32.0629997253418,
+        56.57500076293945,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 51.10718062497665,
+      "material_count": 1
+    },
+    "GRASS_031": {
+      "vertices": 2882,
+      "faces": 4363,
+      "bbox_min": [
+        -244.5,
+        29.625,
+        0.0
+      ],
+      "bbox_max": [
+        -9.223999977111816,
+        256.875,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 208.3589112682038,
+      "material_count": 1
+    },
+    "GRASS_032": {
+      "vertices": 362,
+      "faces": 539,
+      "bbox_min": [
+        -113.83999633789062,
+        69.88500213623047,
+        0.0
+      ],
+      "bbox_max": [
+        -74.93099975585938,
+        125.3239974975586,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 6.5043651674217875,
+      "material_count": 1
+    },
+    "GRASS_033": {
+      "vertices": 176,
+      "faces": 268,
+      "bbox_min": [
+        -240.75,
+        -26.179000854492188,
+        0.0
+      ],
+      "bbox_max": [
+        -74.21199798583984,
+        23.625,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 35.88374077060891,
+      "material_count": 1
+    },
+    "GRASS_034": {
+      "vertices": 1052,
+      "faces": 1590,
+      "bbox_min": [
+        -245.25,
+        34.875,
+        0.0
+      ],
+      "bbox_max": [
+        -143.25,
+        202.61900329589844,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 75.51035453905601,
+      "material_count": 1
+    },
+    "GRASS_035": {
+      "vertices": 578,
+      "faces": 867,
+      "bbox_min": [
+        -111.75,
+        -90.0260009765625,
+        0.0
+      ],
+      "bbox_max": [
+        -24.72800064086914,
+        -11.899999618530273,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 23.42388496339725,
+      "material_count": 1
+    },
+    "GRASS_037": {
+      "vertices": 760,
+      "faces": 1140,
+      "bbox_min": [
+        156.375,
+        -14.25,
+        0.0
+      ],
+      "bbox_max": [
+        217.24000549316406,
+        18.231000900268555,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 5.413674137448866,
+      "material_count": 1
+    },
+    "GRASS_038": {
+      "vertices": 1232,
+      "faces": 1860,
+      "bbox_min": [
+        44.86899948120117,
+        -28.5,
+        0.0
+      ],
+      "bbox_max": [
+        152.625,
+        45.055999755859375,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 36.72570613721878,
+      "material_count": 1
+    },
+    "GRASS_039": {
+      "vertices": 794,
+      "faces": 1199,
+      "bbox_min": [
+        -88.125,
+        -229.88900756835938,
+        0.0
+      ],
+      "bbox_max": [
+        1.875,
+        -160.6820068359375,
+        0.012000000104308128
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 24.428638161147106,
+      "material_count": 1
+    },
+    "Ground": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -271.875,
+        -326.25,
+        -0.30000001192092896
+      ],
+      "bbox_max": [
+        271.875,
+        326.25,
+        0.0
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 106439.06672950834,
+      "material_count": 1
+    },
+    "LANDMARK_001": {
+      "vertices": 80,
+      "faces": 116,
+      "bbox_min": [
+        -231.375,
+        -125.25,
+        0.0
+      ],
+      "bbox_max": [
+        -177.375,
+        -20.25,
+        0.02500000037252903
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 110.87349361572498,
+      "material_count": 1
+    },
+    "LANDMARK_002": {
+      "vertices": 80,
+      "faces": 116,
+      "bbox_min": [
+        -225.375,
+        -117.75,
+        0.0
+      ],
+      "bbox_max": [
+        -183.375,
+        -27.75,
+        0.03500000014901161
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 103.48022407879469,
+      "material_count": 1
+    },
+    "LANDMARK_003": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -172.125,
+        -81.75,
+        0.0
+      ],
+      "bbox_max": [
+        -122.625,
+        -21.0,
+        0.02500000037252903
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 75.17812612024136,
+      "material_count": 1
+    },
+    "LANDMARK_004": {
+      "vertices": 80,
+      "faces": 116,
+      "bbox_min": [
+        -167.625,
+        117.75,
+        0.0
+      ],
+      "bbox_max": [
+        -139.125,
+        134.25,
+        0.017999999225139618
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 6.620840230159033,
+      "material_count": 1
+    },
+    "PLAZA_001_0": {
+      "vertices": 160,
+      "faces": 240,
+      "bbox_min": [
+        -175.125,
+        112.5,
+        0.0
+      ],
+      "bbox_max": [
+        -131.625,
+        151.5,
+        0.02500000037252903
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 23.97793630170939,
+      "material_count": 1
+    },
+    "PLAZA_002_0": {
+      "vertices": 12,
+      "faces": 14,
+      "bbox_min": [
+        -173.625,
+        80.25,
+        0.0
+      ],
+      "bbox_max": [
+        -132.375,
+        109.5,
+        0.02500000037252903
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 23.17500034533441,
+      "material_count": 1
+    },
+    "PLAZA_003_0": {
+      "vertices": 80,
+      "faces": 116,
+      "bbox_min": [
+        -173.625,
+        275.25,
+        0.0
+      ],
+      "bbox_max": [
+        -131.625,
+        312.75,
+        0.02500000037252903
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 30.79761335322921,
+      "material_count": 1
+    },
+    "PLAZA_004_0": {
+      "vertices": 70,
+      "faces": 101,
+      "bbox_min": [
+        -102.86299896240234,
+        -38.25,
+        0.0
+      ],
+      "bbox_max": [
+        -69.375,
+        -13.590999603271484,
+        0.02500000037252903
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 8.49448825996123,
+      "material_count": 1
+    },
+    "PLAZA_004_1": {
+      "vertices": 68,
+      "faces": 98,
+      "bbox_min": [
+        -106.875,
+        -31.44300079345703,
+        0.0
+      ],
+      "bbox_max": [
+        -77.71600341796875,
+        -5.177999973297119,
+        0.02500000037252903
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 7.31108899978142,
+      "material_count": 1
+    },
+    "ROAD_001": {
+      "vertices": 29296,
+      "faces": 44028,
+      "bbox_min": [
+        -252.02000427246094,
+        -300.0199890136719,
+        0.0
+      ],
+      "bbox_max": [
+        256.5190124511719,
+        291.0159912109375,
+        0.04500000178813934
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 1652.947575009781,
+      "material_count": 1
+    },
+    "WATER_001": {
+      "vertices": 8,
+      "faces": 8,
+      "bbox_min": [
+        -103.125,
+        22.5,
+        0.0
+      ],
+      "bbox_max": [
+        23.625,
+        325.5,
+        0.017999999225139618
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 65.69099717214704,
+      "material_count": 1
+    },
+    "WATER_002": {
+      "vertices": 64,
+      "faces": 92,
+      "bbox_min": [
+        -265.875,
+        -195.0,
+        0.0
+      ],
+      "bbox_max": [
+        -109.875,
+        180.0,
+        0.017999999225139618
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 158.92901022758804,
+      "material_count": 1
+    },
+    "WATER_003": {
+      "vertices": 50,
+      "faces": 71,
+      "bbox_min": [
+        -104.625,
+        -138.66700744628906,
+        0.0
+      ],
+      "bbox_max": [
+        42.375,
+        -68.25,
+        0.017999999225139618
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 61.040153956179935,
+      "material_count": 1
+    },
+    "WATER_004": {
+      "vertices": 10,
+      "faces": 11,
+      "bbox_min": [
+        -112.125,
+        -15.0,
+        0.0
+      ],
+      "bbox_max": [
+        -83.625,
+        20.25,
+        0.017999999225139618
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 14.423061879118904,
+      "material_count": 1
+    },
+    "WATER_005": {
+      "vertices": 68,
+      "faces": 98,
+      "bbox_min": [
+        13.875,
+        -184.77999877929688,
+        0.0
+      ],
+      "bbox_max": [
+        108.72200012207031,
+        5.25,
+        0.017999999225139618
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 59.2352854995534,
+      "material_count": 1
+    },
+    "WATER_006": {
+      "vertices": 68,
+      "faces": 98,
+      "bbox_min": [
+        96.572998046875,
+        -195.0,
+        0.0
+      ],
+      "bbox_max": [
+        112.875,
+        -187.29800415039062,
+        0.017999999225139618
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 0.8718013611488451,
+      "material_count": 1
+    },
+    "WATER_007": {
+      "vertices": 20,
+      "faces": 26,
+      "bbox_min": [
+        122.625,
+        -261.0,
+        0.0
+      ],
+      "bbox_max": [
+        264.375,
+        -213.75,
+        0.017999999225139618
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 32.622748595662415,
+      "material_count": 1
+    },
+    "WATER_008": {
+      "vertices": 16,
+      "faces": 20,
+      "bbox_min": [
+        80.625,
+        -277.5,
+        0.0
+      ],
+      "bbox_max": [
+        112.125,
+        -222.75,
+        0.017999999225139618
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 11.223562016850337,
+      "material_count": 1
+    }
+  },
+  "pass": true
+}

@@ -1,0 +1,23 @@
+{
+  "primary_map": "tools/campus_builder/input/campus_1.jpg",
+  "reference_map": "tools/campus_builder/input/campus_2.jpg",
+  "meters_per_pixel": 0.75,
+  "scale_status": "provisional",
+  "scale_reason": "Neither map contains a readable scale bar or measured length. 0.75 m/px is a modeling choice, not a survey measurement.",
+  "height_reference_meters_per_pixel": 0.75,
+  "default_building_height_m": 12.0,
+  "low_building_height_m": 4.5,
+  "ground_thickness_m": 0.3,
+  "road_top_m": 0.045,
+  "road_thickness_m": 0.045,
+  "grass_top_m": 0.012,
+  "plaza_top_m": 0.025,
+  "water_top_m": 0.018,
+  "minimum_building_clearance_px": 1.0,
+  "render_resolution": [
+    1200,
+    1200
+  ],
+  "render_samples": 24,
+  "bbox_tolerance_m": 0.01
+}

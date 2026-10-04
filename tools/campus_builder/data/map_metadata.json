@@ -1,0 +1,61 @@
+{
+  "input_path": "/home/michael/workspace/unity/tools/campus_builder/input/campus_1.jpg",
+  "reference_path": "/home/michael/workspace/unity/tools/campus_builder/input/campus_2.jpg",
+  "input_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+  "reference_sha256": "1e8712538e6505570ad20984cda6bc00a6c2c4aae2be5a2e4f24ed784c49f64b",
+  "image_size_px": [
+    900,
+    1037
+  ],
+  "map_type": "Stylized color campus planning diagram",
+  "method": "Visual polygon/centreline digitization + Shapely union/difference + constrained triangulation",
+  "meters_per_pixel": 0.75,
+  "scale_status": "provisional",
+  "scale_reason": "Neither map contains a readable scale bar or measured length. 0.75 m/px is a modeling choice, not a survey measurement.",
+  "origin_pixel": [
+    482.5,
+    525.0
+  ],
+  "y_flip": true,
+  "map_facts": [
+    "Relative layout and visible footprints",
+    "Canals, bridges, athletics field, plazas",
+    "Numbered building labels cross-checked against campus_2"
+  ],
+  "assumptions": [
+    "Scale is provisional, not surveyed",
+    "Building height is a modeling default, not measured real-world height.",
+    "Stylized planning map may differ from current built campus",
+    "Widths and boundaries are approximate manual traces",
+    "Grass represents generalized parcel landscaping",
+    "Ground is a rectangular supporting slab; external city streets are not modeled",
+    "No guessed walls; parcel boundaries are not confirmed physical walls"
+  ],
+  "planar_validation": {
+    "valid_polygons": true,
+    "building_road_overlap_m2": 0.0,
+    "unbridged_road_water_overlap_m2": 0.0,
+    "road_surface_component_areas_m2": [
+      36486.394184303375
+    ],
+    "road_routes": 38,
+    "road_width_range_m": [
+      3.75,
+      7.5
+    ],
+    "trimmed_road_building_clearance_area_m2": 4.9995862809737446e-05,
+    "triangulation_area_coverage": true,
+    "road_max_centerline_adjustment_px": 46.61544808322666,
+    "coplanar_surface_overlaps": [],
+    "pass": true
+  },
+  "automatic_repairs": [
+    "Merged overlapping same-label wings: 74 traces -> 70 disjoint building solids",
+    "Unioned road intersections; trimmed approximate road corridors against building clearance and unbridged water",
+    "Re-routed annotated corridors locally around full-width clearance obstacles",
+    "Normalized vertices on a 0.001 m grid with 0.002 m boundary simplification for stable Blender float32 meshes",
+    "Closed point-touching road rings by a 0.02 m expansion to prevent four-face non-manifold extrusion edges",
+    "Subtracted the central pool from its plaza to eliminate overlapping coplanar faces seen as a black patch in renders",
+    "Fixed overhead camera roll explicitly so north is at the top, matching the source map"
+  ]
+}
