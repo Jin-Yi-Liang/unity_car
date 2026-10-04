@@ -16,7 +16,7 @@
   ],
   "render_samples": 24,
   "bbox_tolerance_m": 0.01,
-  "model_version": "0.2",
+  "model_version": "0.3",
   "max_auto_road_adjustment_px": 3.0,
   "max_auto_road_adjustment_width_fraction": 0.5,
   "road_allowance_px": 0.01,
@@ -25,5 +25,6 @@
   "track_top_m": 0.025,
   "court_top_m": 0.025,
   "navigation_junction_tolerance_m": 0.02,
-  "legacy_scale_comparison_meters_per_pixel": 0.75
+  "legacy_scale_comparison_meters_per_pixel": 0.75,
+  "building_roof_subdivisions": 3
 }

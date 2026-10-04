@@ -1,0 +1,975 @@
+{
+  "model_version": "0.3",
+  "source_image": "input/campus_1.jpg",
+  "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+  "changes": [
+    {
+      "route_id": "ROUTE_002",
+      "before_centerline_px": [
+        [
+          151,
+          180
+        ],
+        [
+          151,
+          265
+        ],
+        [
+          151,
+          396
+        ],
+        [
+          151,
+          526
+        ],
+        [
+          152,
+          546
+        ],
+        [
+          152,
+          701
+        ],
+        [
+          156,
+          734
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          154,
+          153
+        ],
+        [
+          156,
+          181
+        ],
+        [
+          156,
+          264
+        ],
+        [
+          156,
+          396
+        ],
+        [
+          156,
+          489
+        ],
+        [
+          156,
+          540
+        ],
+        [
+          156,
+          701
+        ],
+        [
+          156,
+          734
+        ]
+      ],
+      "before_width_px": 9,
+      "after_width_px": 6,
+      "reason": "West bank road follows the narrow corridor east of the canal; add the visible north-approach junction.",
+      "method": "Manual review against source image; approximate retrace, not automatic detour"
+    },
+    {
+      "route_id": "ROUTE_003",
+      "before_centerline_px": [
+        [
+          350,
+          142
+        ],
+        [
+          382,
+          225
+        ],
+        [
+          420,
+          310
+        ],
+        [
+          454,
+          400
+        ],
+        [
+          481,
+          466
+        ],
+        [
+          490,
+          513
+        ],
+        [
+          514,
+          507
+        ],
+        [
+          526,
+          498
+        ],
+        [
+          537,
+          502
+        ],
+        [
+          564,
+          587
+        ],
+        [
+          751,
+          524
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          350,
+          142
+        ],
+        [
+          382,
+          225
+        ],
+        [
+          420,
+          310
+        ],
+        [
+          454,
+          400
+        ],
+        [
+          481,
+          466
+        ],
+        [
+          490,
+          513
+        ],
+        [
+          514,
+          507
+        ],
+        [
+          526,
+          498
+        ],
+        [
+          537,
+          502
+        ]
+      ],
+      "before_width_px": 10,
+      "after_width_px": 8,
+      "reason": "Remove the diagonal tail cutting northeast dormitory blocks; northeast internal streets have their own routes.",
+      "method": "Manual review against source image; approximate retrace, not automatic detour"
+    },
+    {
+      "route_id": "ROUTE_006",
+      "before_centerline_px": [
+        [
+          278,
+          246
+        ],
+        [
+          260,
+          255
+        ],
+        [
+          251,
+          277
+        ],
+        [
+          241,
+          307
+        ],
+        [
+          229,
+          343
+        ],
+        [
+          226,
+          380
+        ],
+        [
+          240,
+          412
+        ],
+        [
+          277,
+          450
+        ],
+        [
+          346,
+          453
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          278,
+          246
+        ],
+        [
+          264,
+          258
+        ],
+        [
+          267,
+          277
+        ],
+        [
+          264,
+          307
+        ],
+        [
+          241,
+          329
+        ],
+        [
+          225,
+          355
+        ],
+        [
+          222,
+          380
+        ],
+        [
+          225,
+          400
+        ],
+        [
+          246,
+          422
+        ],
+        [
+          279,
+          439
+        ],
+        [
+          279,
+          446
+        ]
+      ],
+      "before_width_px": 8,
+      "after_width_px": 6,
+      "reason": "Trace the inner library/plaza path; remove the south tail through the engineering/management footprint.",
+      "method": "Manual review against source image; approximate retrace, not automatic detour"
+    },
+    {
+      "route_id": "ROUTE_011",
+      "before_centerline_px": [
+        [
+          157,
+          451
+        ],
+        [
+          185,
+          451
+        ],
+        [
+          225,
+          451
+        ],
+        [
+          270,
+          453
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          156,
+          451
+        ],
+        [
+          185,
+          451
+        ]
+      ],
+      "before_width_px": 5,
+      "after_width_px": 5,
+      "reason": "Keep the visible west access spur; remove the continuation crossing the engineering wing.",
+      "method": "Manual review against source image; approximate retrace, not automatic detour"
+    },
+    {
+      "route_id": "ROUTE_014",
+      "before_centerline_px": [
+        [
+          375,
+          489
+        ],
+        [
+          388,
+          537
+        ],
+        [
+          430,
+          551
+        ],
+        [
+          450,
+          584
+        ],
+        [
+          454,
+          611
+        ],
+        [
+          393,
+          633
+        ],
+        [
+          335,
+          650
+        ],
+        [
+          275,
+          670
+        ],
+        [
+          236,
+          687
+        ],
+        [
+          156,
+          710
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          375,
+          489
+        ],
+        [
+          388,
+          537
+        ],
+        [
+          430,
+          551
+        ],
+        [
+          450,
+          584
+        ],
+        [
+          454,
+          611
+        ],
+        [
+          393,
+          633
+        ],
+        [
+          335,
+          650
+        ],
+        [
+          305,
+          665
+        ],
+        [
+          271,
+          678
+        ],
+        [
+          236,
+          690
+        ],
+        [
+          156,
+          710
+        ]
+      ],
+      "before_width_px": 8,
+      "after_width_px": 8,
+      "reason": "Follow the visible road south of the logistics building instead of its footprint.",
+      "method": "Manual review against source image; approximate retrace, not automatic detour"
+    },
+    {
+      "route_id": "ROUTE_018",
+      "before_centerline_px": [
+        [
+          490,
+          513
+        ],
+        [
+          515,
+          567
+        ],
+        [
+          533,
+          611
+        ],
+        [
+          454,
+          611
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          490,
+          513
+        ],
+        [
+          504,
+          544
+        ],
+        [
+          509,
+          564
+        ],
+        [
+          520,
+          600
+        ],
+        [
+          533,
+          611
+        ],
+        [
+          454,
+          611
+        ]
+      ],
+      "before_width_px": 8,
+      "after_width_px": 5,
+      "reason": "Use the narrow strip between dining/dormitory blocks and the branch canal; original trace ran through water.",
+      "method": "Manual review against source image; approximate retrace, not automatic detour"
+    },
+    {
+      "route_id": "ROUTE_019",
+      "before_centerline_px": [
+        [
+          335,
+          650
+        ],
+        [
+          340,
+          695
+        ],
+        [
+          341,
+          725
+        ],
+        [
+          363,
+          733
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          335,
+          650
+        ],
+        [
+          340,
+          695
+        ],
+        [
+          341,
+          725
+        ]
+      ],
+      "before_width_px": 10,
+      "after_width_px": 10,
+      "reason": "Stop at the visible south landing; remove the spur entering the training-centre block.",
+      "method": "Manual review against source image; approximate retrace, not automatic detour"
+    },
+    {
+      "route_id": "ROUTE_004",
+      "before_centerline_px": [
+        [
+          159,
+          181
+        ],
+        [
+          244,
+          181
+        ],
+        [
+          278,
+          185
+        ],
+        [
+          347,
+          179
+        ],
+        [
+          363,
+          188
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          156,
+          181
+        ],
+        [
+          244,
+          181
+        ],
+        [
+          278,
+          185
+        ],
+        [
+          347,
+          179
+        ],
+        [
+          363,
+          188
+        ]
+      ],
+      "reason": "Join the west access endpoint to the explicitly retraced spine.",
+      "method": "Manual junction alignment"
+    },
+    {
+      "route_id": "ROUTE_005",
+      "before_centerline_px": [
+        [
+          158,
+          264
+        ],
+        [
+          213,
+          264
+        ],
+        [
+          248,
+          252
+        ],
+        [
+          278,
+          246
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          156,
+          264
+        ],
+        [
+          213,
+          264
+        ],
+        [
+          248,
+          252
+        ],
+        [
+          278,
+          246
+        ]
+      ],
+      "reason": "Join the west access endpoint to the explicitly retraced spine.",
+      "method": "Manual junction alignment"
+    },
+    {
+      "route_id": "ROUTE_010",
+      "before_centerline_px": [
+        [
+          157,
+          396
+        ],
+        [
+          194,
+          392
+        ],
+        [
+          225,
+          410
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          156,
+          396
+        ],
+        [
+          194,
+          392
+        ],
+        [
+          225,
+          410
+        ]
+      ],
+      "reason": "Join the west access endpoint to the explicitly retraced spine.",
+      "method": "Manual junction alignment"
+    },
+    {
+      "route_id": "ROUTE_012",
+      "before_centerline_px": [
+        [
+          151,
+          489
+        ],
+        [
+          229,
+          489
+        ],
+        [
+          314,
+          490
+        ],
+        [
+          375,
+          489
+        ],
+        [
+          389,
+          468
+        ],
+        [
+          403,
+          456
+        ],
+        [
+          432,
+          445
+        ],
+        [
+          459,
+          450
+        ],
+        [
+          481,
+          466
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          156,
+          489
+        ],
+        [
+          229,
+          489
+        ],
+        [
+          314,
+          490
+        ],
+        [
+          375,
+          489
+        ],
+        [
+          389,
+          468
+        ],
+        [
+          403,
+          456
+        ],
+        [
+          432,
+          445
+        ],
+        [
+          459,
+          450
+        ],
+        [
+          481,
+          466
+        ]
+      ],
+      "reason": "Join the west access endpoint to the explicitly retraced spine.",
+      "method": "Manual junction alignment"
+    },
+    {
+      "route_id": "ROUTE_013",
+      "before_centerline_px": [
+        [
+          158,
+          540
+        ],
+        [
+          220,
+          540
+        ],
+        [
+          320,
+          540
+        ],
+        [
+          335,
+          555
+        ],
+        [
+          342,
+          575
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          156,
+          540
+        ],
+        [
+          220,
+          540
+        ],
+        [
+          320,
+          540
+        ],
+        [
+          335,
+          555
+        ],
+        [
+          342,
+          575
+        ]
+      ],
+      "reason": "Join the west access endpoint to the explicitly retraced spine.",
+      "method": "Manual junction alignment"
+    },
+    {
+      "route_id": "ROUTE_017",
+      "before_centerline_px": [
+        [
+          158,
+          489
+        ],
+        [
+          158,
+          540
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          156,
+          489
+        ],
+        [
+          158,
+          540
+        ]
+      ],
+      "reason": "Join the west access endpoint to the explicitly retraced spine.",
+      "method": "Manual junction alignment"
+    },
+    {
+      "route_id": "ROUTE_017",
+      "before_centerline_px": [
+        [
+          156,
+          489
+        ],
+        [
+          158,
+          540
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          156,
+          489
+        ],
+        [
+          156,
+          540
+        ]
+      ],
+      "reason": "Join the west access endpoint to the explicitly retraced spine.",
+      "method": "Manual junction alignment"
+    },
+    {
+      "route_id": "ROUTE_002",
+      "before_centerline_px": [
+        [
+          154,
+          153
+        ],
+        [
+          156,
+          181
+        ],
+        [
+          156,
+          264
+        ],
+        [
+          156,
+          396
+        ],
+        [
+          156,
+          489
+        ],
+        [
+          156,
+          540
+        ],
+        [
+          156,
+          701
+        ],
+        [
+          156,
+          734
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          154,
+          153
+        ],
+        [
+          151,
+          158
+        ],
+        [
+          151,
+          185
+        ],
+        [
+          156,
+          200
+        ],
+        [
+          156,
+          264
+        ],
+        [
+          156,
+          396
+        ],
+        [
+          156,
+          489
+        ],
+        [
+          156,
+          540
+        ],
+        [
+          156,
+          701
+        ],
+        [
+          156,
+          734
+        ]
+      ],
+      "reason": "Source-image review: pass west/south of guardhouse or east of dining corner; retain narrow visible corridor.",
+      "method": "Manual trace refinement"
+    },
+    {
+      "route_id": "ROUTE_004",
+      "before_centerline_px": [
+        [
+          156,
+          181
+        ],
+        [
+          244,
+          181
+        ],
+        [
+          278,
+          185
+        ],
+        [
+          347,
+          179
+        ],
+        [
+          363,
+          188
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          151,
+          185
+        ],
+        [
+          244,
+          181
+        ],
+        [
+          278,
+          185
+        ],
+        [
+          347,
+          179
+        ],
+        [
+          363,
+          188
+        ]
+      ],
+      "reason": "Source-image review: pass west/south of guardhouse or east of dining corner; retain narrow visible corridor.",
+      "method": "Manual trace refinement"
+    },
+    {
+      "route_id": "ROUTE_018",
+      "before_centerline_px": [
+        [
+          490,
+          513
+        ],
+        [
+          504,
+          544
+        ],
+        [
+          509,
+          564
+        ],
+        [
+          520,
+          600
+        ],
+        [
+          533,
+          611
+        ],
+        [
+          454,
+          611
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          490,
+          513
+        ],
+        [
+          499,
+          523
+        ],
+        [
+          507,
+          550
+        ],
+        [
+          509,
+          564
+        ],
+        [
+          520,
+          600
+        ],
+        [
+          533,
+          611
+        ],
+        [
+          454,
+          611
+        ]
+      ],
+      "reason": "Source-image review: pass west/south of guardhouse or east of dining corner; retain narrow visible corridor.",
+      "method": "Manual trace refinement"
+    }
+  ],
+  "limitations": "Manual approximate corrections are distinct from bounded automatic repair. Remaining conflicting routes stay flagged."
+}

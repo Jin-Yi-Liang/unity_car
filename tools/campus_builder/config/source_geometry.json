@@ -377,7 +377,7 @@
     {
       "id": "BLDG_009",
       "map_label": "9",
-      "name": "West garden building",
+      "name": "West dining hall (Xi Shi Yuan)",
       "polygon_px": [
         [
           416,
@@ -2321,27 +2321,39 @@
       "name": "West campus spine",
       "centerline_px": [
         [
-          151,
-          180
+          154,
+          153
         ],
         [
           151,
-          265
+          158
         ],
         [
           151,
+          185
+        ],
+        [
+          156,
+          200
+        ],
+        [
+          156,
+          264
+        ],
+        [
+          156,
           396
         ],
         [
-          151,
-          526
+          156,
+          489
         ],
         [
-          152,
-          546
+          156,
+          540
         ],
         [
-          152,
+          156,
           701
         ],
         [
@@ -2349,12 +2361,14 @@
           734
         ]
       ],
-      "width_px": 9,
+      "width_px": 6,
       "confidence": "approximate visual centreline",
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified",
+      "trace_revision": "0.3",
+      "trace_provenance": "West bank road follows the narrow corridor east of the canal; add the visible north-approach junction."
     },
     {
       "id": "ROUTE_003",
@@ -2395,30 +2409,24 @@
         [
           537,
           502
-        ],
-        [
-          564,
-          587
-        ],
-        [
-          751,
-          524
         ]
       ],
-      "width_px": 10,
+      "width_px": 8,
       "confidence": "approximate visual centreline",
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified",
+      "trace_revision": "0.3",
+      "trace_provenance": "Remove the diagonal tail cutting northeast dormitory blocks; northeast internal streets have their own routes."
     },
     {
       "id": "ROUTE_004",
       "name": "North link",
       "centerline_px": [
         [
-          159,
-          181
+          151,
+          185
         ],
         [
           244,
@@ -2449,7 +2457,7 @@
       "name": "West teaching access",
       "centerline_px": [
         [
-          158,
+          156,
           264
         ],
         [
@@ -2481,44 +2489,54 @@
           246
         ],
         [
-          260,
-          255
+          264,
+          258
         ],
         [
-          251,
+          267,
           277
         ],
         [
-          241,
+          264,
           307
         ],
         [
-          229,
-          343
+          241,
+          329
         ],
         [
-          226,
+          225,
+          355
+        ],
+        [
+          222,
           380
         ],
         [
-          240,
-          412
+          225,
+          400
         ],
         [
-          277,
-          450
+          246,
+          422
         ],
         [
-          346,
-          453
+          279,
+          439
+        ],
+        [
+          279,
+          446
         ]
       ],
-      "width_px": 8,
+      "width_px": 6,
       "confidence": "approximate visual centreline",
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified",
+      "trace_revision": "0.3",
+      "trace_provenance": "Trace the inner library/plaza path; remove the south tail through the engineering/management footprint."
     },
     {
       "id": "ROUTE_007",
@@ -2633,7 +2651,7 @@
       "name": "South library link",
       "centerline_px": [
         [
-          157,
+          156,
           396
         ],
         [
@@ -2657,20 +2675,12 @@
       "name": "West cross link",
       "centerline_px": [
         [
-          157,
+          156,
           451
         ],
         [
           185,
           451
-        ],
-        [
-          225,
-          451
-        ],
-        [
-          270,
-          453
         ]
       ],
       "width_px": 5,
@@ -2678,14 +2688,16 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified",
+      "trace_revision": "0.3",
+      "trace_provenance": "Keep the visible west access spur; remove the continuation crossing the engineering wing."
     },
     {
       "id": "ROUTE_012",
       "name": "Central cross link",
       "centerline_px": [
         [
-          151,
+          156,
           489
         ],
         [
@@ -2733,7 +2745,7 @@
       "name": "Sports north access",
       "centerline_px": [
         [
-          158,
+          156,
           540
         ],
         [
@@ -2793,12 +2805,16 @@
           650
         ],
         [
-          275,
-          670
+          305,
+          665
+        ],
+        [
+          271,
+          678
         ],
         [
           236,
-          687
+          690
         ],
         [
           156,
@@ -2810,7 +2826,9 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified",
+      "trace_revision": "0.3",
+      "trace_provenance": "Follow the visible road south of the logistics building instead of its footprint."
     },
     {
       "id": "ROUTE_015",
@@ -2869,11 +2887,11 @@
       "name": "West clinic access",
       "centerline_px": [
         [
-          158,
+          156,
           489
         ],
         [
-          158,
+          156,
           540
         ]
       ],
@@ -2893,8 +2911,20 @@
           513
         ],
         [
-          515,
-          567
+          499,
+          523
+        ],
+        [
+          507,
+          550
+        ],
+        [
+          509,
+          564
+        ],
+        [
+          520,
+          600
         ],
         [
           533,
@@ -2905,12 +2935,14 @@
           611
         ]
       ],
-      "width_px": 8,
+      "width_px": 5,
       "confidence": "approximate visual centreline",
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified",
+      "trace_revision": "0.3",
+      "trace_provenance": "Use the narrow strip between dining/dormitory blocks and the branch canal; original trace ran through water."
     },
     {
       "id": "ROUTE_019",
@@ -2927,10 +2959,6 @@
         [
           341,
           725
-        ],
-        [
-          363,
-          733
         ]
       ],
       "width_px": 10,
@@ -2938,7 +2966,9 @@
       "road_type": "bridge",
       "driveable": true,
       "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified",
+      "trace_revision": "0.3",
+      "trace_provenance": "Stop at the visible south landing; remove the spur entering the training-centre block."
     },
     {
       "id": "ROUTE_020",
@@ -4892,5 +4922,5 @@
     845,
     960
   ],
-  "model_version": "0.2"
+  "model_version": "0.3"
 }

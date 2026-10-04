@@ -1,0 +1,2235 @@
+{
+  "schema_version": 1,
+  "model_version": "0.3",
+  "sources": [
+    {
+      "id": "ADMIN_OFFICIAL",
+      "url": "https://lsmf.sspu.edu.cn/imce2021/2021/0518/c2465a59480/page.htm",
+      "path": "input/evidence/buildings/official_admin_13.html",
+      "fact": "Official notice lists comprehensive building room 1302; supports at least 13 floors, not total height.",
+      "retrieved_date": "2026-10-04"
+    },
+    {
+      "id": "LIBRARY_OFFICIAL",
+      "url": "https://library.sspu.edu.cn/2010/0909/c2558a97955/page.htm",
+      "path": "input/evidence/buildings/official_library_floors.html",
+      "fact": "Library at building 18 includes room 411; at least four floors, not a measured height.",
+      "retrieved_date": "2026-10-04"
+    },
+    {
+      "id": "CAMPUS_TOUR",
+      "url": "https://www.sohu.com/a/337150809_715092",
+      "path": "input/evidence/buildings/campus_tour.html",
+      "fact": "Campus youth publication identifies buildings 1,2,3-8,9,19. Old publication; current facade conditions not certified.",
+      "retrieved_date": "2026-10-04"
+    },
+    {
+      "id": "CAMPUS_VIEWS",
+      "url": "https://www.sohu.com/a/337895059_99938677",
+      "path": "input/evidence/buildings/campus_views.html",
+      "fact": "Campus youth arts publication provides gym photograph; photographs are references only.",
+      "retrieved_date": "2026-10-04"
+    },
+    {
+      "id": "NEW_BUILDINGS",
+      "url": "https://www.sspu.edu.cn/2023/0330/c3024a86746/page.htm",
+      "path": "input/evidence/buildings/official_new_buildings.html",
+      "fact": "Official 2023 report describes new 13/10/9-floor buildings; old map does not identify their footprints reliably. NOT applied to old map buildings.",
+      "retrieved_date": "2026-10-04"
+    },
+    {
+      "id": "SMALL_HIGHRISE",
+      "url": "https://xqjsb.sspu.edu.cn/2024/0819/c406a155926/page.htm",
+      "path": "input/evidence/buildings/official_small_highrise.html",
+      "fact": "Official source identifies building 11 as small highrise; exact floor count not stated.",
+      "retrieved_date": "2026-10-04"
+    },
+    {
+      "id": "MAP",
+      "url": "https://www.sspu.edu.cn/2972/list.htm",
+      "path": "input/evidence/official_campus_map.png",
+      "fact": "Planning map footprints and labels; no elevation or floor data.",
+      "retrieved_date": "2026-10-04"
+    }
+  ],
+  "default_profile": {
+    "kind": "unverified",
+    "floor_count": null,
+    "floor_height_m": null,
+    "roof_shape": "flat",
+    "roof_rise_m": 0,
+    "source_ids": [
+      "MAP"
+    ],
+    "photos": [],
+    "floor_status": "unknown",
+    "height_status": "modeling default, NOT measured",
+    "appearance_status": "generic approximation, NOT verified facade",
+    "notes": "No reliable building-specific elevation evidence yet.",
+    "wall_rgb": [
+      0.7,
+      0.72,
+      0.69
+    ],
+    "glass_rgb": [
+      0.19,
+      0.26,
+      0.3
+    ],
+    "window_pitch_m": 3.2,
+    "window_width_ratio": 0.55,
+    "window_height_ratio": 0.52,
+    "roof_rgb": [
+      0.37,
+      0.39,
+      0.4
+    ]
+  },
+  "profiles": {
+    "1": {
+      "kind": "administration",
+      "floor_count": 13,
+      "floor_height_m": 3.4,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "ADMIN_OFFICIAL",
+        "CAMPUS_TOUR"
+      ],
+      "photos": [
+        "administration.jpg"
+      ],
+      "floor_status": "documented minimum 13; modeled as 13",
+      "height_status": "estimated from floor count and assumed storey height; NOT measured",
+      "appearance_status": "simplified photo-informed reconstruction",
+      "notes": "Tall pale administration slab; roof crown dimensions not surveyed. 13 floors is a lower bound, not a certified total.",
+      "wall_rgb": [
+        0.82,
+        0.84,
+        0.82
+      ],
+      "glass_rgb": [
+        0.16,
+        0.28,
+        0.34
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.58,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.35,
+        0.38,
+        0.39
+      ],
+      "end_wall_max_span_m": 24
+    },
+    "2": {
+      "kind": "exhibition",
+      "floor_count": 4,
+      "floor_height_m": 3.8,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "CAMPUS_TOUR"
+      ],
+      "photos": [
+        "exhibition.jpg"
+      ],
+      "floor_status": "photo interpretation, medium confidence",
+      "height_status": "estimated from floor count and assumed storey height; NOT measured",
+      "appearance_status": "simplified photo-informed reconstruction",
+      "notes": "Curved dark curtain wall and metal mullions. Floor interpretation is approximate.",
+      "wall_rgb": [
+        0.47,
+        0.49,
+        0.48
+      ],
+      "glass_rgb": [
+        0.055,
+        0.12,
+        0.16
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.58,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.35,
+        0.38,
+        0.39
+      ]
+    },
+    "3": {
+      "kind": "teaching",
+      "floor_count": 5,
+      "floor_height_m": 3.6,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "CAMPUS_TOUR"
+      ],
+      "photos": [
+        "teaching.jpg",
+        "teaching_front.jpg"
+      ],
+      "floor_status": "photo interpretation, medium confidence",
+      "height_status": "estimated from floor count and assumed storey height; NOT measured",
+      "appearance_status": "simplified photo-informed reconstruction",
+      "notes": "Five apparent facade levels in labeled teaching reference; story heights assumed.",
+      "wall_rgb": [
+        0.76,
+        0.77,
+        0.73
+      ],
+      "glass_rgb": [
+        0.16,
+        0.28,
+        0.34
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.78,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.35,
+        0.38,
+        0.39
+      ]
+    },
+    "4": {
+      "kind": "teaching",
+      "floor_count": 5,
+      "floor_height_m": 3.6,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "CAMPUS_TOUR"
+      ],
+      "photos": [
+        "teaching.jpg"
+      ],
+      "floor_status": "same-group approximation, low confidence",
+      "height_status": "estimated from floor count and assumed storey height; NOT measured",
+      "appearance_status": "simplified photo-informed reconstruction",
+      "notes": "Teaching photograph identifies this building, but exact floor count is partially obscured; five floors remains an explicit assumption.",
+      "wall_rgb": [
+        0.76,
+        0.77,
+        0.73
+      ],
+      "glass_rgb": [
+        0.16,
+        0.28,
+        0.34
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.78,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.35,
+        0.38,
+        0.39
+      ]
+    },
+    "5": {
+      "kind": "teaching",
+      "floor_count": 5,
+      "floor_height_m": 3.6,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "CAMPUS_TOUR"
+      ],
+      "photos": [
+        "teaching.jpg"
+      ],
+      "floor_status": "same-group approximation, low confidence",
+      "height_status": "estimated from floor count and assumed storey height; NOT measured",
+      "appearance_status": "simplified photo-informed reconstruction",
+      "notes": "Teaching photograph identifies this building, but exact floor count is partially obscured; five floors remains an explicit assumption.",
+      "wall_rgb": [
+        0.76,
+        0.77,
+        0.73
+      ],
+      "glass_rgb": [
+        0.16,
+        0.28,
+        0.34
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.78,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.35,
+        0.38,
+        0.39
+      ]
+    },
+    "6": {
+      "kind": "teaching_hall",
+      "floor_count": 3,
+      "floor_height_m": 3.8,
+      "roof_shape": "gable",
+      "roof_rise_m": 2.4,
+      "source_ids": [
+        "CAMPUS_TOUR"
+      ],
+      "photos": [
+        "teaching.jpg"
+      ],
+      "floor_status": "photo interpretation, low confidence",
+      "height_status": "estimated from floor count and assumed storey height; NOT measured",
+      "appearance_status": "simplified photo-informed reconstruction",
+      "notes": "Labeled rear blocks have pitched light roofs and taller glazing; modeled three levels, not verified count.",
+      "wall_rgb": [
+        0.76,
+        0.77,
+        0.73
+      ],
+      "glass_rgb": [
+        0.16,
+        0.28,
+        0.34
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.58,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.35,
+        0.38,
+        0.39
+      ]
+    },
+    "7": {
+      "kind": "teaching_hall",
+      "floor_count": 3,
+      "floor_height_m": 3.8,
+      "roof_shape": "gable",
+      "roof_rise_m": 2.4,
+      "source_ids": [
+        "CAMPUS_TOUR"
+      ],
+      "photos": [
+        "teaching.jpg"
+      ],
+      "floor_status": "photo interpretation, low confidence",
+      "height_status": "estimated from floor count and assumed storey height; NOT measured",
+      "appearance_status": "simplified photo-informed reconstruction",
+      "notes": "Labeled rear blocks have pitched light roofs and taller glazing; modeled three levels, not verified count.",
+      "wall_rgb": [
+        0.76,
+        0.77,
+        0.73
+      ],
+      "glass_rgb": [
+        0.16,
+        0.28,
+        0.34
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.58,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.35,
+        0.38,
+        0.39
+      ]
+    },
+    "8": {
+      "kind": "teaching_hall",
+      "floor_count": 3,
+      "floor_height_m": 3.8,
+      "roof_shape": "gable",
+      "roof_rise_m": 2.4,
+      "source_ids": [
+        "CAMPUS_TOUR"
+      ],
+      "photos": [
+        "teaching.jpg"
+      ],
+      "floor_status": "photo interpretation, low confidence",
+      "height_status": "estimated from floor count and assumed storey height; NOT measured",
+      "appearance_status": "simplified photo-informed reconstruction",
+      "notes": "Labeled rear blocks have pitched light roofs and taller glazing; modeled three levels, not verified count.",
+      "wall_rgb": [
+        0.76,
+        0.77,
+        0.73
+      ],
+      "glass_rgb": [
+        0.16,
+        0.28,
+        0.34
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.58,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.35,
+        0.38,
+        0.39
+      ]
+    },
+    "9": {
+      "kind": "dining",
+      "floor_count": 2,
+      "floor_height_m": 4.2,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "CAMPUS_TOUR"
+      ],
+      "photos": [],
+      "floor_status": "documented minimum 2",
+      "height_status": "estimated from floor count and assumed storey height; NOT measured",
+      "appearance_status": "generic approximation, NOT verified facade",
+      "notes": "Xi Shi Yuan is a dining hall, not a garden building; exact roof profile remains unverified.",
+      "wall_rgb": [
+        0.79,
+        0.77,
+        0.68
+      ],
+      "glass_rgb": [
+        0.16,
+        0.28,
+        0.34
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.58,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.35,
+        0.38,
+        0.39
+      ]
+    },
+    "10": {
+      "kind": "gym",
+      "floor_count": 3,
+      "floor_height_m": 3.6,
+      "roof_shape": "swept",
+      "roof_rise_m": 3.0,
+      "source_ids": [
+        "CAMPUS_VIEWS"
+      ],
+      "photos": [
+        "gym.jpg"
+      ],
+      "floor_status": "equivalent facade levels, low confidence",
+      "height_status": "estimated from floor count and assumed storey height; NOT measured",
+      "appearance_status": "simplified photo-informed reconstruction",
+      "notes": "Large-span gym volume with upswept roof edges; equivalent three levels are for facade layout, not three usable floors.",
+      "wall_rgb": [
+        0.74,
+        0.75,
+        0.68
+      ],
+      "glass_rgb": [
+        0.21,
+        0.28,
+        0.28
+      ],
+      "window_pitch_m": 5.0,
+      "window_width_ratio": 0.58,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.35,
+        0.38,
+        0.39
+      ]
+    },
+    "18": {
+      "kind": "library",
+      "floor_count": 4,
+      "floor_height_m": 4.0,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "LIBRARY_OFFICIAL",
+        "CAMPUS_VIEWS"
+      ],
+      "photos": [
+        "library_front.jpg"
+      ],
+      "floor_status": "documented minimum 4",
+      "height_status": "estimated from floor count and assumed storey height; NOT measured",
+      "appearance_status": "simplified photo-informed reconstruction",
+      "notes": "At least four floors confirmed by official room addresses. Curved planning-map footprint retained; facade not verified.",
+      "wall_rgb": [
+        0.82,
+        0.82,
+        0.77
+      ],
+      "glass_rgb": [
+        0.16,
+        0.28,
+        0.34
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.58,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.35,
+        0.38,
+        0.39
+      ]
+    },
+    "19": {
+      "kind": "exchange",
+      "floor_count": 4,
+      "floor_height_m": 3.6,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "CAMPUS_TOUR"
+      ],
+      "photos": [
+        "exchange.jpg"
+      ],
+      "floor_status": "illustration interpretation, low confidence",
+      "height_status": "estimated from floor count and assumed storey height; NOT measured",
+      "appearance_status": "simplified photo-informed reconstruction",
+      "notes": "Four rows shown in stylized campus illustration, not a surveyed photograph.",
+      "wall_rgb": [
+        0.8,
+        0.82,
+        0.78
+      ],
+      "glass_rgb": [
+        0.16,
+        0.28,
+        0.34
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.58,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.35,
+        0.38,
+        0.39
+      ]
+    },
+    "11": {
+      "kind": "residential",
+      "floor_count": 9,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP",
+        "SMALL_HIGHRISE"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions. Official source calls building 11 a small high-rise; nine modeled floors are an assumption.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "21": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "31": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "32": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "37": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "39": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "40": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "41": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "42": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "12": {
+      "kind": "service",
+      "floor_count": 2,
+      "floor_height_m": 3.5,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.73,
+        0.75,
+        0.7
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "13": {
+      "kind": "service",
+      "floor_count": 2,
+      "floor_height_m": 3.5,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.73,
+        0.75,
+        0.7
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "14": {
+      "kind": "academic",
+      "floor_count": 4,
+      "floor_height_m": 3.6,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.77,
+        0.77,
+        0.71
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "15": {
+      "kind": "academic",
+      "floor_count": 4,
+      "floor_height_m": 3.6,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.77,
+        0.77,
+        0.71
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "16": {
+      "kind": "academic",
+      "floor_count": 4,
+      "floor_height_m": 3.6,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.77,
+        0.77,
+        0.71
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "17": {
+      "kind": "academic",
+      "floor_count": 4,
+      "floor_height_m": 3.6,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.77,
+        0.77,
+        0.71
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "20": {
+      "kind": "dining",
+      "floor_count": 2,
+      "floor_height_m": 4.2,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.79,
+        0.75
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "22": {
+      "kind": "academic",
+      "floor_count": 4,
+      "floor_height_m": 3.6,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.77,
+        0.77,
+        0.71
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "23": {
+      "kind": "laboratory",
+      "floor_count": 3,
+      "floor_height_m": 4.2,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.68,
+        0.73,
+        0.74
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "24": {
+      "kind": "academic",
+      "floor_count": 4,
+      "floor_height_m": 3.6,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.77,
+        0.77,
+        0.71
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "25": {
+      "kind": "academic",
+      "floor_count": 4,
+      "floor_height_m": 3.6,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.77,
+        0.77,
+        0.71
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "26": {
+      "kind": "laboratory",
+      "floor_count": 3,
+      "floor_height_m": 4.2,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.68,
+        0.73,
+        0.74
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "27": {
+      "kind": "laboratory",
+      "floor_count": 3,
+      "floor_height_m": 4.2,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.68,
+        0.73,
+        0.74
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "28": {
+      "kind": "academic",
+      "floor_count": 4,
+      "floor_height_m": 3.6,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.77,
+        0.77,
+        0.71
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "29": {
+      "kind": "laboratory",
+      "floor_count": 3,
+      "floor_height_m": 4.2,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.68,
+        0.73,
+        0.74
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "30": {
+      "kind": "academic",
+      "floor_count": 4,
+      "floor_height_m": 3.6,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.77,
+        0.77,
+        0.71
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "38": {
+      "kind": "academic",
+      "floor_count": 4,
+      "floor_height_m": 3.6,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.77,
+        0.77,
+        0.71
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "unnumbered": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "res_1_1": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "res_1_2": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "res_1_3": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "res_2_1": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "res_2_2": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "res_2_3": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "res_2_4": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "res_2_5": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "res_3_1": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "res_3_2": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "res_3_3": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "res_3_4": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "res_3_5": {
+      "kind": "residential",
+      "floor_count": 6,
+      "floor_height_m": 3.1,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.72,
+        0.62
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "dining": {
+      "kind": "dining",
+      "floor_count": 2,
+      "floor_height_m": 4.2,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.78,
+        0.79,
+        0.75
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "guard": {
+      "kind": "guardhouse",
+      "floor_count": 1,
+      "floor_height_m": 4.5,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.77,
+        0.77,
+        0.71
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    },
+    "service": {
+      "kind": "service",
+      "floor_count": 2,
+      "floor_height_m": 3.5,
+      "roof_shape": "flat",
+      "roof_rise_m": 0,
+      "source_ids": [
+        "MAP"
+      ],
+      "photos": [],
+      "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+      "height_status": "estimated floor count times assumed storey height; NOT measured",
+      "appearance_status": "simplified typology approximation; facade not photo verified",
+      "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+      "wall_rgb": [
+        0.73,
+        0.75,
+        0.7
+      ],
+      "glass_rgb": [
+        0.19,
+        0.26,
+        0.3
+      ],
+      "window_pitch_m": 3.2,
+      "window_width_ratio": 0.55,
+      "window_height_ratio": 0.52,
+      "roof_rgb": [
+        0.37,
+        0.39,
+        0.4
+      ]
+    }
+  },
+  "features": {
+    "BLDG_001": {
+      "profile_key": "1",
+      "map_label": "1"
+    },
+    "BLDG_002": {
+      "profile_key": "2",
+      "map_label": "2"
+    },
+    "BLDG_003": {
+      "profile_key": "3",
+      "map_label": "3"
+    },
+    "BLDG_004": {
+      "profile_key": "4",
+      "map_label": "4"
+    },
+    "BLDG_005": {
+      "profile_key": "5",
+      "map_label": "5"
+    },
+    "BLDG_006": {
+      "profile_key": "6",
+      "map_label": "6"
+    },
+    "BLDG_007": {
+      "profile_key": "7",
+      "map_label": "7"
+    },
+    "BLDG_008": {
+      "profile_key": "8",
+      "map_label": "8"
+    },
+    "BLDG_009": {
+      "profile_key": "9",
+      "map_label": "9"
+    },
+    "BLDG_010": {
+      "profile_key": "10",
+      "map_label": "10"
+    },
+    "BLDG_011": {
+      "profile_key": "10",
+      "map_label": "10",
+      "eave_height_m": 7.2,
+      "roof_rise_m": 1.8,
+      "floor_count": 2,
+      "override_provenance": "Gym photo shows lower annex; mapping to this footprint and dimensions are approximate."
+    },
+    "BLDG_012": {
+      "profile_key": "11",
+      "map_label": "11"
+    },
+    "BLDG_013": {
+      "profile_key": "default",
+      "map_label": "12"
+    },
+    "BLDG_014": {
+      "profile_key": "default",
+      "map_label": "13"
+    },
+    "BLDG_015": {
+      "profile_key": "default",
+      "map_label": "14"
+    },
+    "BLDG_016": {
+      "profile_key": "default",
+      "map_label": "15"
+    },
+    "BLDG_017": {
+      "profile_key": "default",
+      "map_label": "16"
+    },
+    "BLDG_018": {
+      "profile_key": "default",
+      "map_label": "17"
+    },
+    "BLDG_019": {
+      "profile_key": "18",
+      "map_label": "18"
+    },
+    "BLDG_020": {
+      "profile_key": "18",
+      "map_label": "18"
+    },
+    "BLDG_021": {
+      "profile_key": "19",
+      "map_label": "19"
+    },
+    "BLDG_022": {
+      "profile_key": "19",
+      "map_label": "19"
+    },
+    "BLDG_023": {
+      "profile_key": "default",
+      "map_label": "20"
+    },
+    "BLDG_024": {
+      "profile_key": "21",
+      "map_label": "21"
+    },
+    "BLDG_025": {
+      "profile_key": "default",
+      "map_label": "22"
+    },
+    "BLDG_026": {
+      "profile_key": "default",
+      "map_label": "22"
+    },
+    "BLDG_027": {
+      "profile_key": "default",
+      "map_label": "22"
+    },
+    "BLDG_028": {
+      "profile_key": "default",
+      "map_label": "23"
+    },
+    "BLDG_029": {
+      "profile_key": "default",
+      "map_label": "23"
+    },
+    "BLDG_030": {
+      "profile_key": "default",
+      "map_label": "23"
+    },
+    "BLDG_031": {
+      "profile_key": "default",
+      "map_label": "24"
+    },
+    "BLDG_032": {
+      "profile_key": "default",
+      "map_label": "24"
+    },
+    "BLDG_033": {
+      "profile_key": "default",
+      "map_label": "25"
+    },
+    "BLDG_034": {
+      "profile_key": "default",
+      "map_label": "25"
+    },
+    "BLDG_035": {
+      "profile_key": "default",
+      "map_label": "26"
+    },
+    "BLDG_036": {
+      "profile_key": "default",
+      "map_label": "26"
+    },
+    "BLDG_037": {
+      "profile_key": "default",
+      "map_label": "26"
+    },
+    "BLDG_038": {
+      "profile_key": "default",
+      "map_label": "27"
+    },
+    "BLDG_039": {
+      "profile_key": "default",
+      "map_label": "28"
+    },
+    "BLDG_040": {
+      "profile_key": "default",
+      "map_label": "28"
+    },
+    "BLDG_041": {
+      "profile_key": "default",
+      "map_label": "29"
+    },
+    "BLDG_042": {
+      "profile_key": "default",
+      "map_label": "30"
+    },
+    "BLDG_043": {
+      "profile_key": "31",
+      "map_label": "31"
+    },
+    "BLDG_044": {
+      "profile_key": "32",
+      "map_label": "32"
+    },
+    "BLDG_045": {
+      "profile_key": "37",
+      "map_label": "37"
+    },
+    "BLDG_046": {
+      "profile_key": "default",
+      "map_label": "38"
+    },
+    "BLDG_047": {
+      "profile_key": "default",
+      "map_label": "38"
+    },
+    "BLDG_048": {
+      "profile_key": "39",
+      "map_label": "39"
+    },
+    "BLDG_049": {
+      "profile_key": "39",
+      "map_label": "39"
+    },
+    "BLDG_050": {
+      "profile_key": "40",
+      "map_label": "40"
+    },
+    "BLDG_051": {
+      "profile_key": "41",
+      "map_label": "41"
+    },
+    "BLDG_052": {
+      "profile_key": "42",
+      "map_label": "42"
+    },
+    "BLDG_053": {
+      "profile_key": "default",
+      "map_label": "unnumbered"
+    },
+    "BLDG_054": {
+      "profile_key": "default",
+      "map_label": "unnumbered"
+    },
+    "BLDG_055": {
+      "profile_key": "default",
+      "map_label": "unnumbered"
+    },
+    "BLDG_056": {
+      "profile_key": "default",
+      "map_label": "unnumbered"
+    },
+    "BLDG_057": {
+      "profile_key": "default",
+      "map_label": "unnumbered"
+    },
+    "BLDG_058": {
+      "profile_key": "default",
+      "map_label": "unnumbered"
+    },
+    "BLDG_059": {
+      "profile_key": "default",
+      "map_label": "res_1_1"
+    },
+    "BLDG_060": {
+      "profile_key": "default",
+      "map_label": "res_1_2"
+    },
+    "BLDG_061": {
+      "profile_key": "default",
+      "map_label": "res_1_3"
+    },
+    "BLDG_062": {
+      "profile_key": "default",
+      "map_label": "res_2_1"
+    },
+    "BLDG_063": {
+      "profile_key": "default",
+      "map_label": "res_2_2"
+    },
+    "BLDG_064": {
+      "profile_key": "default",
+      "map_label": "res_2_3"
+    },
+    "BLDG_065": {
+      "profile_key": "default",
+      "map_label": "res_2_4"
+    },
+    "BLDG_066": {
+      "profile_key": "default",
+      "map_label": "res_2_5"
+    },
+    "BLDG_067": {
+      "profile_key": "default",
+      "map_label": "res_3_1"
+    },
+    "BLDG_068": {
+      "profile_key": "default",
+      "map_label": "res_3_2"
+    },
+    "BLDG_069": {
+      "profile_key": "default",
+      "map_label": "res_3_3"
+    },
+    "BLDG_070": {
+      "profile_key": "default",
+      "map_label": "res_3_4"
+    },
+    "BLDG_071": {
+      "profile_key": "default",
+      "map_label": "res_3_5"
+    },
+    "BLDG_072": {
+      "profile_key": "default",
+      "map_label": "dining"
+    },
+    "BLDG_073": {
+      "profile_key": "default",
+      "map_label": "guard"
+    },
+    "BLDG_074": {
+      "profile_key": "default",
+      "map_label": "service"
+    }
+  },
+  "height_policy": "Use measured_height_m only with measurement provenance. Otherwise estimate from documented/observed floors and explicit assumed storey height; unknown buildings retain modeled defaults."
+}

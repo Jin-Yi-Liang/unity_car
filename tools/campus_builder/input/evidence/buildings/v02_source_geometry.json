@@ -1,0 +1,4896 @@
+{
+  "schema_version": 2,
+  "source_image_size": [
+    900,
+    1037
+  ],
+  "description": "Visual digitization of a stylized planning map; approximate footprints, not cadastral boundaries.",
+  "buildings": [
+    {
+      "id": "BLDG_001",
+      "map_label": "1",
+      "name": "Administration",
+      "polygon_px": [
+        [
+          313,
+          207
+        ],
+        [
+          350,
+          207
+        ],
+        [
+          350,
+          214
+        ],
+        [
+          365,
+          214
+        ],
+        [
+          365,
+          236
+        ],
+        [
+          319,
+          236
+        ],
+        [
+          319,
+          221
+        ],
+        [
+          307,
+          221
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_002",
+      "map_label": "2",
+      "name": "Innovation exhibition hall",
+      "polygon_px": [
+        [
+          386.0,
+          285.0
+        ],
+        [
+          385.815,
+          286.721
+        ],
+        [
+          385.266,
+          288.399
+        ],
+        [
+          384.365,
+          289.994
+        ],
+        [
+          383.135,
+          291.466
+        ],
+        [
+          381.607,
+          292.778
+        ],
+        [
+          379.817,
+          293.899
+        ],
+        [
+          377.81,
+          294.801
+        ],
+        [
+          375.635,
+          295.462
+        ],
+        [
+          373.347,
+          295.865
+        ],
+        [
+          371.0,
+          296.0
+        ],
+        [
+          368.653,
+          295.865
+        ],
+        [
+          366.365,
+          295.462
+        ],
+        [
+          364.19,
+          294.801
+        ],
+        [
+          362.183,
+          293.899
+        ],
+        [
+          360.393,
+          292.778
+        ],
+        [
+          358.865,
+          291.466
+        ],
+        [
+          357.635,
+          289.994
+        ],
+        [
+          356.734,
+          288.399
+        ],
+        [
+          356.185,
+          286.721
+        ],
+        [
+          356.0,
+          285.0
+        ],
+        [
+          356.185,
+          283.279
+        ],
+        [
+          356.734,
+          281.601
+        ],
+        [
+          357.635,
+          280.006
+        ],
+        [
+          358.865,
+          278.534
+        ],
+        [
+          360.393,
+          277.222
+        ],
+        [
+          362.183,
+          276.101
+        ],
+        [
+          364.19,
+          275.199
+        ],
+        [
+          366.365,
+          274.538
+        ],
+        [
+          368.653,
+          274.135
+        ],
+        [
+          371.0,
+          274.0
+        ],
+        [
+          373.347,
+          274.135
+        ],
+        [
+          375.635,
+          274.538
+        ],
+        [
+          377.81,
+          275.199
+        ],
+        [
+          379.817,
+          276.101
+        ],
+        [
+          381.607,
+          277.222
+        ],
+        [
+          383.135,
+          278.534
+        ],
+        [
+          384.365,
+          280.006
+        ],
+        [
+          385.266,
+          281.601
+        ],
+        [
+          385.815,
+          283.279
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_003",
+      "map_label": "3",
+      "name": "Teaching building 3",
+      "polygon_px": [
+        [
+          360.0,
+          328.0
+        ],
+        [
+          400.0,
+          328.0
+        ],
+        [
+          400.0,
+          340.0
+        ],
+        [
+          360.0,
+          340.0
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_004",
+      "map_label": "4",
+      "name": "Teaching building 4",
+      "polygon_px": [
+        [
+          364.5,
+          364.5
+        ],
+        [
+          407.5,
+          364.5
+        ],
+        [
+          407.5,
+          377.5
+        ],
+        [
+          364.5,
+          377.5
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_005",
+      "map_label": "5",
+      "name": "Teaching building 5",
+      "polygon_px": [
+        [
+          371.0,
+          398.5
+        ],
+        [
+          425.0,
+          398.5
+        ],
+        [
+          425.0,
+          411.5
+        ],
+        [
+          371.0,
+          411.5
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_006",
+      "map_label": "6",
+      "name": "Teaching building 6",
+      "polygon_px": [
+        [
+          386.375,
+          304.742
+        ],
+        [
+          407.299,
+          297.943
+        ],
+        [
+          411.625,
+          311.258
+        ],
+        [
+          390.701,
+          318.057
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_007",
+      "map_label": "7",
+      "name": "Teaching building 7",
+      "polygon_px": [
+        [
+          401.651,
+          332.04
+        ],
+        [
+          418.77,
+          326.477
+        ],
+        [
+          428.349,
+          355.96
+        ],
+        [
+          411.23,
+          361.523
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_008",
+      "map_label": "8",
+      "name": "Teaching building 8",
+      "polygon_px": [
+        [
+          416.053,
+          369.738
+        ],
+        [
+          432.221,
+          364.485
+        ],
+        [
+          439.947,
+          388.262
+        ],
+        [
+          423.779,
+          393.515
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_009",
+      "map_label": "9",
+      "name": "West garden building",
+      "polygon_px": [
+        [
+          416,
+          469
+        ],
+        [
+          447,
+          460
+        ],
+        [
+          456,
+          480
+        ],
+        [
+          464,
+          482
+        ],
+        [
+          455,
+          497
+        ],
+        [
+          427,
+          507
+        ],
+        [
+          404,
+          499
+        ],
+        [
+          408,
+          487
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_010",
+      "map_label": "10",
+      "name": "Gymnasium",
+      "polygon_px": [
+        [
+          368,
+          567
+        ],
+        [
+          395,
+          559
+        ],
+        [
+          433,
+          588
+        ],
+        [
+          415,
+          615
+        ],
+        [
+          374,
+          630
+        ],
+        [
+          367,
+          607
+        ]
+      ],
+      "height_class": "low",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_011",
+      "map_label": "10",
+      "name": "Gymnasium annex",
+      "polygon_px": [
+        [
+          343,
+          593
+        ],
+        [
+          364,
+          593
+        ],
+        [
+          364,
+          636
+        ],
+        [
+          343,
+          636
+        ]
+      ],
+      "height_class": "low",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_012",
+      "map_label": "11",
+      "name": "Student dormitory 11",
+      "polygon_px": [
+        [
+          161.879,
+          727.077
+        ],
+        [
+          221.795,
+          707.609
+        ],
+        [
+          226.121,
+          720.923
+        ],
+        [
+          166.205,
+          740.391
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_013",
+      "map_label": "12",
+      "name": "Clinic",
+      "polygon_px": [
+        [
+          165,
+          501
+        ],
+        [
+          200,
+          501
+        ],
+        [
+          200,
+          520
+        ],
+        [
+          165,
+          520
+        ]
+      ],
+      "height_class": "low",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_014",
+      "map_label": "13",
+      "name": "Logistics service",
+      "polygon_px": [
+        [
+          265.571,
+          654.978
+        ],
+        [
+          294.103,
+          645.707
+        ],
+        [
+          298.429,
+          659.022
+        ],
+        [
+          269.897,
+          668.293
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_015",
+      "map_label": "14",
+      "name": "Teaching north block",
+      "polygon_px": [
+        [
+          212,
+          501
+        ],
+        [
+          312,
+          501
+        ],
+        [
+          312,
+          521
+        ],
+        [
+          212,
+          521
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_016",
+      "map_label": "15",
+      "name": "Economics management",
+      "polygon_px": [
+        [
+          300,
+          457
+        ],
+        [
+          344,
+          457
+        ],
+        [
+          344,
+          477
+        ],
+        [
+          300,
+          477
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_017",
+      "map_label": "16",
+      "name": "Engineering north block",
+      "polygon_px": [
+        [
+          193,
+          457
+        ],
+        [
+          290,
+          457
+        ],
+        [
+          290,
+          477
+        ],
+        [
+          193,
+          477
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_018",
+      "map_label": "17",
+      "name": "Engineering innovation centre",
+      "polygon_px": [
+        [
+          191,
+          410
+        ],
+        [
+          220,
+          410
+        ],
+        [
+          220,
+          420
+        ],
+        [
+          242,
+          432
+        ],
+        [
+          266,
+          440
+        ],
+        [
+          261,
+          450
+        ],
+        [
+          236,
+          448
+        ],
+        [
+          220,
+          435
+        ],
+        [
+          211,
+          425
+        ],
+        [
+          191,
+          425
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_019",
+      "map_label": "18",
+      "name": "Library west block",
+      "polygon_px": [
+        [
+          161,
+          287
+        ],
+        [
+          190,
+          287
+        ],
+        [
+          190,
+          334
+        ],
+        [
+          161,
+          334
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_020",
+      "map_label": "18",
+      "name": "Library curved wing",
+      "polygon_px": [
+        [
+          196.012,
+          348.621
+        ],
+        [
+          196.397,
+          342.085
+        ],
+        [
+          197.323,
+          335.603
+        ],
+        [
+          198.782,
+          329.221
+        ],
+        [
+          200.764,
+          322.98
+        ],
+        [
+          203.257,
+          316.926
+        ],
+        [
+          206.242,
+          311.099
+        ],
+        [
+          209.699,
+          305.538
+        ],
+        [
+          213.605,
+          300.284
+        ],
+        [
+          217.933,
+          295.37
+        ],
+        [
+          222.653,
+          290.832
+        ],
+        [
+          227.732,
+          286.701
+        ],
+        [
+          233.136,
+          283.004
+        ],
+        [
+          238.828,
+          279.768
+        ],
+        [
+          244.768,
+          277.014
+        ],
+        [
+          250.916,
+          274.761
+        ],
+        [
+          257.229,
+          273.025
+        ],
+        [
+          260.378,
+          286.666
+        ],
+        [
+          255.184,
+          288.094
+        ],
+        [
+          250.126,
+          289.948
+        ],
+        [
+          245.238,
+          292.214
+        ],
+        [
+          240.555,
+          294.877
+        ],
+        [
+          236.109,
+          297.919
+        ],
+        [
+          231.93,
+          301.318
+        ],
+        [
+          228.046,
+          305.052
+        ],
+        [
+          224.486,
+          309.094
+        ],
+        [
+          221.272,
+          313.418
+        ],
+        [
+          218.427,
+          317.992
+        ],
+        [
+          215.971,
+          322.787
+        ],
+        [
+          213.92,
+          327.769
+        ],
+        [
+          212.289,
+          332.903
+        ],
+        [
+          211.088,
+          338.155
+        ],
+        [
+          210.327,
+          343.488
+        ],
+        [
+          210.01,
+          348.866
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_021",
+      "map_label": "19",
+      "name": "Academic exchange centre",
+      "polygon_px": [
+        [
+          173,
+          201
+        ],
+        [
+          185,
+          207
+        ],
+        [
+          181,
+          219
+        ],
+        [
+          181,
+          238
+        ],
+        [
+          225,
+          238
+        ],
+        [
+          225,
+          218
+        ],
+        [
+          234,
+          218
+        ],
+        [
+          234,
+          245
+        ],
+        [
+          174,
+          245
+        ],
+        [
+          174,
+          217
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_022",
+      "map_label": "19",
+      "name": "Academic exchange east wing",
+      "polygon_px": [
+        [
+          215,
+          207
+        ],
+        [
+          234,
+          207
+        ],
+        [
+          234,
+          219
+        ],
+        [
+          215,
+          219
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_023",
+      "map_label": "20",
+      "name": "Canteen 20",
+      "polygon_px": [
+        [
+          464.408,
+          536.32
+        ],
+        [
+          492.94,
+          527.05
+        ],
+        [
+          501.592,
+          553.68
+        ],
+        [
+          473.06,
+          562.95
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_024",
+      "map_label": "21",
+      "name": "Student dormitory 21",
+      "polygon_px": [
+        [
+          466.271,
+          577.768
+        ],
+        [
+          504.313,
+          565.407
+        ],
+        [
+          511.729,
+          588.232
+        ],
+        [
+          473.687,
+          600.593
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_025",
+      "map_label": "22",
+      "name": "Resources environment school",
+      "polygon_px": [
+        [
+          399.132,
+          710.022
+        ],
+        [
+          431.468,
+          699.516
+        ],
+        [
+          434.868,
+          709.978
+        ],
+        [
+          402.532,
+          720.484
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_026",
+      "map_label": "22",
+      "name": "Resources environment school",
+      "polygon_px": [
+        [
+          421.035,
+          735.404
+        ],
+        [
+          449.566,
+          726.134
+        ],
+        [
+          452.965,
+          736.596
+        ],
+        [
+          424.434,
+          745.866
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_027",
+      "map_label": "22",
+      "name": "Resources environment school",
+      "polygon_px": [
+        [
+          447.559,
+          750.559
+        ],
+        [
+          477.042,
+          740.979
+        ],
+        [
+          480.441,
+          751.441
+        ],
+        [
+          450.958,
+          761.021
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_028",
+      "map_label": "23",
+      "name": "Engineering training centre",
+      "polygon_px": [
+        [
+          326.649,
+          752.629
+        ],
+        [
+          365.643,
+          739.959
+        ],
+        [
+          369.351,
+          751.371
+        ],
+        [
+          330.357,
+          764.041
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_029",
+      "map_label": "23",
+      "name": "Engineering training centre",
+      "polygon_px": [
+        [
+          348.125,
+          743.474
+        ],
+        [
+          386.167,
+          731.113
+        ],
+        [
+          389.875,
+          742.526
+        ],
+        [
+          351.833,
+          754.887
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_030",
+      "map_label": "23",
+      "name": "Engineering training centre",
+      "polygon_px": [
+        [
+          366.608,
+          768.868
+        ],
+        [
+          397.993,
+          758.67
+        ],
+        [
+          401.392,
+          769.132
+        ],
+        [
+          370.007,
+          779.33
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_031",
+      "map_label": "24",
+      "name": "Applied arts north",
+      "polygon_px": [
+        [
+          335.593,
+          802.771
+        ],
+        [
+          378.39,
+          788.865
+        ],
+        [
+          382.407,
+          801.229
+        ],
+        [
+          339.61,
+          815.135
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_032",
+      "map_label": "24",
+      "name": "Applied arts north",
+      "polygon_px": [
+        [
+          364.97,
+          795.998
+        ],
+        [
+          403.013,
+          783.638
+        ],
+        [
+          407.03,
+          796.002
+        ],
+        [
+          368.987,
+          808.362
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_033",
+      "map_label": "25",
+      "name": "Applied arts south",
+      "polygon_px": [
+        [
+          275.724,
+          865.601
+        ],
+        [
+          335.641,
+          846.133
+        ],
+        [
+          340.276,
+          860.399
+        ],
+        [
+          280.359,
+          879.867
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_034",
+      "map_label": "25",
+      "name": "Applied arts south",
+      "polygon_px": [
+        [
+          334.346,
+          846.374
+        ],
+        [
+          399.018,
+          825.36
+        ],
+        [
+          403.654,
+          839.626
+        ],
+        [
+          338.982,
+          860.64
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_035",
+      "map_label": "26",
+      "name": "Energy materials school",
+      "polygon_px": [
+        [
+          238.642,
+          776.08
+        ],
+        [
+          283.341,
+          761.556
+        ],
+        [
+          287.358,
+          773.92
+        ],
+        [
+          242.659,
+          788.444
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_036",
+      "map_label": "26",
+      "name": "Energy materials school",
+      "polygon_px": [
+        [
+          240.642,
+          811.08
+        ],
+        [
+          285.341,
+          796.556
+        ],
+        [
+          289.358,
+          808.92
+        ],
+        [
+          244.659,
+          823.444
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_037",
+      "map_label": "26",
+      "name": "Energy materials school",
+      "polygon_px": [
+        [
+          285.684,
+          792.693
+        ],
+        [
+          306.608,
+          785.894
+        ],
+        [
+          310.316,
+          797.307
+        ],
+        [
+          289.392,
+          804.106
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_038",
+      "map_label": "27",
+      "name": "Materials transfer engineering",
+      "polygon_px": [
+        [
+          168.361,
+          792.837
+        ],
+        [
+          215.914,
+          777.386
+        ],
+        [
+          223.639,
+          801.163
+        ],
+        [
+          176.086,
+          816.614
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_039",
+      "map_label": "28",
+      "name": "Computer information school",
+      "polygon_px": [
+        [
+          160.43,
+          840.747
+        ],
+        [
+          208.934,
+          824.987
+        ],
+        [
+          213.57,
+          839.253
+        ],
+        [
+          165.066,
+          855.013
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_040",
+      "map_label": "28",
+      "name": "Computer information school",
+      "polygon_px": [
+        [
+          187.684,
+          855.693
+        ],
+        [
+          208.608,
+          848.894
+        ],
+        [
+          212.316,
+          860.307
+        ],
+        [
+          191.392,
+          867.106
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_041",
+      "map_label": "29",
+      "name": "Intelligent manufacturing school",
+      "polygon_px": [
+        [
+          173.442,
+          874.166
+        ],
+        [
+          220.995,
+          858.715
+        ],
+        [
+          226.558,
+          875.834
+        ],
+        [
+          179.005,
+          891.285
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_042",
+      "map_label": "30",
+      "name": "Student activity centre",
+      "polygon_px": [
+        [
+          529.395,
+          677.268
+        ],
+        [
+          553.171,
+          669.543
+        ],
+        [
+          564.605,
+          704.732
+        ],
+        [
+          540.829,
+          712.457
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_043",
+      "map_label": "31",
+      "name": "Student dormitory 31",
+      "polygon_px": [
+        [
+          537.417,
+          732.502
+        ],
+        [
+          565.948,
+          723.232
+        ],
+        [
+          570.583,
+          737.498
+        ],
+        [
+          542.052,
+          746.768
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_044",
+      "map_label": "32",
+      "name": "Student dormitory 32",
+      "polygon_px": [
+        [
+          550.335,
+          768.174
+        ],
+        [
+          578.867,
+          758.903
+        ],
+        [
+          585.665,
+          779.826
+        ],
+        [
+          557.133,
+          789.097
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_045",
+      "map_label": "37",
+      "name": "Student dormitory 37",
+      "polygon_px": [
+        [
+          517.914,
+          853.141
+        ],
+        [
+          559.76,
+          839.544
+        ],
+        [
+          564.086,
+          852.859
+        ],
+        [
+          522.24,
+          866.456
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_046",
+      "map_label": "38",
+      "name": "South garden building",
+      "polygon_px": [
+        [
+          516.069,
+          881.394
+        ],
+        [
+          530.335,
+          876.759
+        ],
+        [
+          543.931,
+          918.606
+        ],
+        [
+          529.665,
+          923.241
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_047",
+      "map_label": "38",
+      "name": "South garden building",
+      "polygon_px": [
+        [
+          576.245,
+          879.104
+        ],
+        [
+          595.266,
+          872.924
+        ],
+        [
+          601.755,
+          892.896
+        ],
+        [
+          582.734,
+          899.076
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_048",
+      "map_label": "39",
+      "name": "Student dormitory 39",
+      "polygon_px": [
+        [
+          649.548,
+          799.332
+        ],
+        [
+          695.199,
+          784.5
+        ],
+        [
+          700.452,
+          800.668
+        ],
+        [
+          654.801,
+          815.5
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_049",
+      "map_label": "39",
+      "name": "Student dormitory 39",
+      "polygon_px": [
+        [
+          659.438,
+          830.295
+        ],
+        [
+          702.236,
+          816.39
+        ],
+        [
+          706.562,
+          829.705
+        ],
+        [
+          663.764,
+          843.61
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_050",
+      "map_label": "40",
+      "name": "Student dormitory 40",
+      "polygon_px": [
+        [
+          720.303,
+          784.787
+        ],
+        [
+          756.443,
+          773.045
+        ],
+        [
+          761.697,
+          789.213
+        ],
+        [
+          725.557,
+          800.955
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_051",
+      "map_label": "41",
+      "name": "Faculty dormitory 41",
+      "polygon_px": [
+        [
+          789.526,
+          772.539
+        ],
+        [
+          820.911,
+          762.342
+        ],
+        [
+          826.474,
+          779.461
+        ],
+        [
+          795.089,
+          789.658
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_052",
+      "map_label": "42",
+      "name": "Faculty dormitory 42",
+      "polygon_px": [
+        [
+          787.828,
+          809.942
+        ],
+        [
+          824.919,
+          797.89
+        ],
+        [
+          830.172,
+          814.058
+        ],
+        [
+          793.081,
+          826.11
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_053",
+      "map_label": "unnumbered",
+      "name": "Visible residential wing",
+      "polygon_px": [
+        [
+          465.007,
+          686.889
+        ],
+        [
+          505.903,
+          673.601
+        ],
+        [
+          508.993,
+          683.111
+        ],
+        [
+          468.097,
+          696.399
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_054",
+      "map_label": "unnumbered",
+      "name": "Visible residential wing",
+      "polygon_px": [
+        [
+          468.007,
+          719.889
+        ],
+        [
+          508.903,
+          706.601
+        ],
+        [
+          511.993,
+          716.111
+        ],
+        [
+          471.097,
+          729.399
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_055",
+      "map_label": "unnumbered",
+      "name": "Visible residential wing",
+      "polygon_px": [
+        [
+          436.581,
+          782.352
+        ],
+        [
+          480.329,
+          768.137
+        ],
+        [
+          483.419,
+          777.648
+        ],
+        [
+          439.671,
+          791.863
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_056",
+      "map_label": "unnumbered",
+      "name": "Visible residential wing",
+      "polygon_px": [
+        [
+          427.532,
+          805.043
+        ],
+        [
+          469.378,
+          791.446
+        ],
+        [
+          472.468,
+          800.957
+        ],
+        [
+          430.622,
+          814.554
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_057",
+      "map_label": "unnumbered",
+      "name": "Visible residential wing",
+      "polygon_px": [
+        [
+          492.148,
+          763.119
+        ],
+        [
+          513.071,
+          756.321
+        ],
+        [
+          515.852,
+          764.881
+        ],
+        [
+          494.929,
+          771.679
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_058",
+      "map_label": "unnumbered",
+      "name": "Visible residential wing",
+      "polygon_px": [
+        [
+          497.197,
+          789.428
+        ],
+        [
+          520.022,
+          782.012
+        ],
+        [
+          522.803,
+          790.572
+        ],
+        [
+          499.978,
+          797.988
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_059",
+      "map_label": "res_1_1",
+      "name": "Northeast residential wing",
+      "polygon_px": [
+        [
+          554.622,
+          521.113
+        ],
+        [
+          605.979,
+          504.426
+        ],
+        [
+          609.378,
+          514.887
+        ],
+        [
+          558.021,
+          531.574
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_060",
+      "map_label": "res_1_2",
+      "name": "Northeast residential wing",
+      "polygon_px": [
+        [
+          562.622,
+          551.113
+        ],
+        [
+          613.979,
+          534.426
+        ],
+        [
+          617.378,
+          544.887
+        ],
+        [
+          566.021,
+          561.574
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_061",
+      "map_label": "res_1_3",
+      "name": "Northeast residential wing",
+      "polygon_px": [
+        [
+          571.622,
+          582.113
+        ],
+        [
+          622.979,
+          565.426
+        ],
+        [
+          626.378,
+          575.887
+        ],
+        [
+          575.021,
+          592.574
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_062",
+      "map_label": "res_2_1",
+      "name": "Northeast residential wing",
+      "polygon_px": [
+        [
+          592.622,
+          433.113
+        ],
+        [
+          643.979,
+          416.426
+        ],
+        [
+          647.378,
+          426.887
+        ],
+        [
+          596.021,
+          443.574
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_063",
+      "map_label": "res_2_2",
+      "name": "Northeast residential wing",
+      "polygon_px": [
+        [
+          602.622,
+          463.113
+        ],
+        [
+          653.979,
+          446.426
+        ],
+        [
+          657.378,
+          456.887
+        ],
+        [
+          606.021,
+          473.574
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_064",
+      "map_label": "res_2_3",
+      "name": "Northeast residential wing",
+      "polygon_px": [
+        [
+          611.622,
+          494.113
+        ],
+        [
+          662.979,
+          477.426
+        ],
+        [
+          666.378,
+          487.887
+        ],
+        [
+          615.021,
+          504.574
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_065",
+      "map_label": "res_2_4",
+      "name": "Northeast residential wing",
+      "polygon_px": [
+        [
+          620.622,
+          525.113
+        ],
+        [
+          671.979,
+          508.426
+        ],
+        [
+          675.378,
+          518.887
+        ],
+        [
+          624.021,
+          535.574
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_066",
+      "map_label": "res_2_5",
+      "name": "Northeast residential wing",
+      "polygon_px": [
+        [
+          629.622,
+          556.113
+        ],
+        [
+          680.979,
+          539.426
+        ],
+        [
+          684.378,
+          549.887
+        ],
+        [
+          633.021,
+          566.574
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_067",
+      "map_label": "res_3_1",
+      "name": "Northeast residential wing",
+      "polygon_px": [
+        [
+          652.622,
+          412.113
+        ],
+        [
+          703.979,
+          395.426
+        ],
+        [
+          707.378,
+          405.887
+        ],
+        [
+          656.021,
+          422.574
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_068",
+      "map_label": "res_3_2",
+      "name": "Northeast residential wing",
+      "polygon_px": [
+        [
+          662.622,
+          442.113
+        ],
+        [
+          713.979,
+          425.426
+        ],
+        [
+          717.378,
+          435.887
+        ],
+        [
+          666.021,
+          452.574
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_069",
+      "map_label": "res_3_3",
+      "name": "Northeast residential wing",
+      "polygon_px": [
+        [
+          673.622,
+          472.113
+        ],
+        [
+          724.979,
+          455.426
+        ],
+        [
+          728.378,
+          465.887
+        ],
+        [
+          677.021,
+          482.574
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_070",
+      "map_label": "res_3_4",
+      "name": "Northeast residential wing",
+      "polygon_px": [
+        [
+          682.622,
+          503.113
+        ],
+        [
+          733.979,
+          486.426
+        ],
+        [
+          737.378,
+          496.887
+        ],
+        [
+          686.021,
+          513.574
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_071",
+      "map_label": "res_3_5",
+      "name": "Northeast residential wing",
+      "polygon_px": [
+        [
+          692.622,
+          532.113
+        ],
+        [
+          743.979,
+          515.426
+        ],
+        [
+          747.378,
+          525.887
+        ],
+        [
+          696.021,
+          542.574
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_072",
+      "map_label": "dining",
+      "name": "Northeast dining hall",
+      "polygon_px": [
+        [
+          538,
+          454
+        ],
+        [
+          580,
+          443
+        ],
+        [
+          590,
+          470
+        ],
+        [
+          548,
+          483
+        ]
+      ],
+      "height_class": "low",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_073",
+      "map_label": "guard",
+      "name": "North guardhouse",
+      "polygon_px": [
+        [
+          156,
+          163
+        ],
+        [
+          172,
+          163
+        ],
+        [
+          172,
+          177
+        ],
+        [
+          156,
+          177
+        ]
+      ],
+      "height_class": "low",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_074",
+      "map_label": "service",
+      "name": "Northeast service building",
+      "polygon_px": [
+        [
+          331,
+          122
+        ],
+        [
+          345,
+          122
+        ],
+        [
+          345,
+          136
+        ],
+        [
+          331,
+          136
+        ]
+      ],
+      "height_class": "low",
+      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    }
+  ],
+  "roads": [
+    {
+      "id": "ROUTE_001",
+      "name": "North approach",
+      "centerline_px": [
+        [
+          154,
+          153
+        ],
+        [
+          244,
+          153
+        ],
+        [
+          262,
+          164
+        ],
+        [
+          278,
+          185
+        ],
+        [
+          278,
+          246
+        ]
+      ],
+      "width_px": 10,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_002",
+      "name": "West campus spine",
+      "centerline_px": [
+        [
+          151,
+          180
+        ],
+        [
+          151,
+          265
+        ],
+        [
+          151,
+          396
+        ],
+        [
+          151,
+          526
+        ],
+        [
+          152,
+          546
+        ],
+        [
+          152,
+          701
+        ],
+        [
+          156,
+          734
+        ]
+      ],
+      "width_px": 9,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_003",
+      "name": "East campus spine",
+      "centerline_px": [
+        [
+          350,
+          142
+        ],
+        [
+          382,
+          225
+        ],
+        [
+          420,
+          310
+        ],
+        [
+          454,
+          400
+        ],
+        [
+          481,
+          466
+        ],
+        [
+          490,
+          513
+        ],
+        [
+          514,
+          507
+        ],
+        [
+          526,
+          498
+        ],
+        [
+          537,
+          502
+        ],
+        [
+          564,
+          587
+        ],
+        [
+          751,
+          524
+        ]
+      ],
+      "width_px": 10,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_004",
+      "name": "North link",
+      "centerline_px": [
+        [
+          159,
+          181
+        ],
+        [
+          244,
+          181
+        ],
+        [
+          278,
+          185
+        ],
+        [
+          347,
+          179
+        ],
+        [
+          363,
+          188
+        ]
+      ],
+      "width_px": 7,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_005",
+      "name": "West teaching access",
+      "centerline_px": [
+        [
+          158,
+          264
+        ],
+        [
+          213,
+          264
+        ],
+        [
+          248,
+          252
+        ],
+        [
+          278,
+          246
+        ]
+      ],
+      "width_px": 8,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_006",
+      "name": "Central west loop",
+      "centerline_px": [
+        [
+          278,
+          246
+        ],
+        [
+          260,
+          255
+        ],
+        [
+          251,
+          277
+        ],
+        [
+          241,
+          307
+        ],
+        [
+          229,
+          343
+        ],
+        [
+          226,
+          380
+        ],
+        [
+          240,
+          412
+        ],
+        [
+          277,
+          450
+        ],
+        [
+          346,
+          453
+        ]
+      ],
+      "width_px": 8,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_007",
+      "name": "Central east loop",
+      "centerline_px": [
+        [
+          278,
+          246
+        ],
+        [
+          307,
+          252
+        ],
+        [
+          329,
+          278
+        ],
+        [
+          344,
+          322
+        ],
+        [
+          341,
+          354
+        ],
+        [
+          326,
+          385
+        ],
+        [
+          337,
+          421
+        ],
+        [
+          365,
+          454
+        ]
+      ],
+      "width_px": 8,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_008",
+      "name": "East teaching lane",
+      "centerline_px": [
+        [
+          344,
+          322
+        ],
+        [
+          346,
+          352
+        ],
+        [
+          351,
+          389
+        ],
+        [
+          365,
+          425
+        ],
+        [
+          405,
+          421
+        ],
+        [
+          447,
+          411
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_009",
+      "name": "Teaching loop south",
+      "centerline_px": [
+        [
+          337,
+          421
+        ],
+        [
+          367,
+          435
+        ],
+        [
+          405,
+          421
+        ],
+        [
+          434,
+          412
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_010",
+      "name": "South library link",
+      "centerline_px": [
+        [
+          157,
+          396
+        ],
+        [
+          194,
+          392
+        ],
+        [
+          225,
+          410
+        ]
+      ],
+      "width_px": 7,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_011",
+      "name": "West cross link",
+      "centerline_px": [
+        [
+          157,
+          451
+        ],
+        [
+          185,
+          451
+        ],
+        [
+          225,
+          451
+        ],
+        [
+          270,
+          453
+        ]
+      ],
+      "width_px": 5,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_012",
+      "name": "Central cross link",
+      "centerline_px": [
+        [
+          151,
+          489
+        ],
+        [
+          229,
+          489
+        ],
+        [
+          314,
+          490
+        ],
+        [
+          375,
+          489
+        ],
+        [
+          389,
+          468
+        ],
+        [
+          403,
+          456
+        ],
+        [
+          432,
+          445
+        ],
+        [
+          459,
+          450
+        ],
+        [
+          481,
+          466
+        ]
+      ],
+      "width_px": 9,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_013",
+      "name": "Sports north access",
+      "centerline_px": [
+        [
+          158,
+          540
+        ],
+        [
+          220,
+          540
+        ],
+        [
+          320,
+          540
+        ],
+        [
+          335,
+          555
+        ],
+        [
+          342,
+          575
+        ]
+      ],
+      "width_px": 7,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_014",
+      "name": "Gym perimeter",
+      "centerline_px": [
+        [
+          375,
+          489
+        ],
+        [
+          388,
+          537
+        ],
+        [
+          430,
+          551
+        ],
+        [
+          450,
+          584
+        ],
+        [
+          454,
+          611
+        ],
+        [
+          393,
+          633
+        ],
+        [
+          335,
+          650
+        ],
+        [
+          275,
+          670
+        ],
+        [
+          236,
+          687
+        ],
+        [
+          156,
+          710
+        ]
+      ],
+      "width_px": 8,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_015",
+      "name": "Sports east access",
+      "centerline_px": [
+        [
+          328,
+          541
+        ],
+        [
+          331,
+          577
+        ],
+        [
+          331,
+          625
+        ],
+        [
+          335,
+          663
+        ]
+      ],
+      "width_px": 7,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_016",
+      "name": "Gym north entrance",
+      "centerline_px": [
+        [
+          388,
+          537
+        ],
+        [
+          350,
+          559
+        ],
+        [
+          342,
+          575
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_017",
+      "name": "West clinic access",
+      "centerline_px": [
+        [
+          158,
+          489
+        ],
+        [
+          158,
+          540
+        ]
+      ],
+      "width_px": 7,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_018",
+      "name": "Canteen access",
+      "centerline_px": [
+        [
+          490,
+          513
+        ],
+        [
+          515,
+          567
+        ],
+        [
+          533,
+          611
+        ],
+        [
+          454,
+          611
+        ]
+      ],
+      "width_px": 8,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_019",
+      "name": "Main canal bridge",
+      "centerline_px": [
+        [
+          335,
+          650
+        ],
+        [
+          340,
+          695
+        ],
+        [
+          341,
+          725
+        ],
+        [
+          363,
+          733
+        ]
+      ],
+      "width_px": 10,
+      "confidence": "approximate visual centreline",
+      "road_type": "bridge",
+      "driveable": true,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_020",
+      "name": "South west spine",
+      "centerline_px": [
+        [
+          156,
+          793
+        ],
+        [
+          151,
+          820
+        ],
+        [
+          151,
+          850
+        ],
+        [
+          159,
+          883
+        ],
+        [
+          173,
+          916
+        ]
+      ],
+      "width_px": 9,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_021",
+      "name": "South canal-side road",
+      "centerline_px": [
+        [
+          156,
+          793
+        ],
+        [
+          238,
+          764
+        ],
+        [
+          312,
+          741
+        ],
+        [
+          341,
+          725
+        ],
+        [
+          413,
+          701
+        ],
+        [
+          487,
+          675
+        ],
+        [
+          541,
+          660
+        ]
+      ],
+      "width_px": 8,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_022",
+      "name": "South central spine",
+      "centerline_px": [
+        [
+          312,
+          741
+        ],
+        [
+          324,
+          770
+        ],
+        [
+          335,
+          806
+        ],
+        [
+          349,
+          846
+        ],
+        [
+          375,
+          858
+        ]
+      ],
+      "width_px": 8,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_023",
+      "name": "South east spine",
+      "centerline_px": [
+        [
+          541,
+          660
+        ],
+        [
+          556,
+          706
+        ],
+        [
+          571,
+          752
+        ],
+        [
+          580,
+          783
+        ]
+      ],
+      "width_px": 8,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_024",
+      "name": "South perimeter",
+      "centerline_px": [
+        [
+          173,
+          916
+        ],
+        [
+          246,
+          900
+        ],
+        [
+          311,
+          878
+        ],
+        [
+          375,
+          858
+        ],
+        [
+          438,
+          836
+        ],
+        [
+          490,
+          819
+        ],
+        [
+          566,
+          795
+        ],
+        [
+          580,
+          783
+        ]
+      ],
+      "width_px": 9,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_025",
+      "name": "South cross lane",
+      "centerline_px": [
+        [
+          238,
+          764
+        ],
+        [
+          231,
+          785
+        ],
+        [
+          242,
+          825
+        ],
+        [
+          270,
+          870
+        ],
+        [
+          311,
+          878
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_026",
+      "name": "South academic link",
+      "centerline_px": [
+        [
+          231,
+          785
+        ],
+        [
+          300,
+          764
+        ],
+        [
+          324,
+          770
+        ],
+        [
+          371,
+          752
+        ],
+        [
+          427,
+          733
+        ],
+        [
+          481,
+          716
+        ],
+        [
+          556,
+          706
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_027",
+      "name": "South residential lane",
+      "centerline_px": [
+        [
+          363,
+          733
+        ],
+        [
+          371,
+          752
+        ],
+        [
+          391,
+          783
+        ],
+        [
+          412,
+          819
+        ],
+        [
+          438,
+          836
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_028",
+      "name": "South residential east link",
+      "centerline_px": [
+        [
+          413,
+          701
+        ],
+        [
+          427,
+          733
+        ],
+        [
+          447,
+          777
+        ],
+        [
+          470,
+          814
+        ],
+        [
+          490,
+          819
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_029",
+      "name": "Northeast gate",
+      "centerline_px": [
+        [
+          514,
+          507
+        ],
+        [
+          537,
+          500
+        ],
+        [
+          555,
+          498
+        ],
+        [
+          615,
+          479
+        ],
+        [
+          676,
+          458
+        ],
+        [
+          740,
+          438
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_030",
+      "name": "Northeast west perimeter",
+      "centerline_px": [
+        [
+          537,
+          502
+        ],
+        [
+          527,
+          462
+        ],
+        [
+          528,
+          451
+        ],
+        [
+          585,
+          431
+        ],
+        [
+          656,
+          405
+        ],
+        [
+          710,
+          387
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_031",
+      "name": "Northeast east perimeter",
+      "centerline_px": [
+        [
+          710,
+          387
+        ],
+        [
+          739,
+          398
+        ],
+        [
+          751,
+          438
+        ],
+        [
+          764,
+          480
+        ],
+        [
+          776,
+          518
+        ],
+        [
+          751,
+          524
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_032",
+      "name": "Northeast cross street",
+      "centerline_px": [
+        [
+          552,
+          565
+        ],
+        [
+          605,
+          556
+        ],
+        [
+          643,
+          539
+        ],
+        [
+          704,
+          519
+        ],
+        [
+          766,
+          498
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_033",
+      "name": "Northeast longitudinal street",
+      "centerline_px": [
+        [
+          650,
+          415
+        ],
+        [
+          670,
+          464
+        ],
+        [
+          688,
+          513
+        ],
+        [
+          704,
+          551
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_035",
+      "name": "Northeast south lane",
+      "centerline_px": [
+        [
+          567,
+          595
+        ],
+        [
+          625,
+          577
+        ],
+        [
+          683,
+          559
+        ],
+        [
+          748,
+          538
+        ],
+        [
+          778,
+          526
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_036",
+      "name": "Branch canal bridge",
+      "centerline_px": [
+        [
+          580,
+          783
+        ],
+        [
+          597,
+          780
+        ],
+        [
+          638,
+          767
+        ]
+      ],
+      "width_px": 10,
+      "confidence": "approximate visual centreline",
+      "road_type": "bridge",
+      "driveable": true,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_037",
+      "name": "Southeast dormitory access",
+      "centerline_px": [
+        [
+          638,
+          767
+        ],
+        [
+          650,
+          778
+        ],
+        [
+          653,
+          797
+        ],
+        [
+          684,
+          816
+        ],
+        [
+          716,
+          806
+        ],
+        [
+          747,
+          808
+        ],
+        [
+          779,
+          797
+        ],
+        [
+          822,
+          794
+        ]
+      ],
+      "width_px": 5,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_038",
+      "name": "South garden access",
+      "centerline_px": [
+        [
+          597,
+          780
+        ],
+        [
+          580,
+          813
+        ],
+        [
+          552,
+          827
+        ],
+        [
+          508,
+          842
+        ],
+        [
+          517,
+          879
+        ],
+        [
+          548,
+          922
+        ],
+        [
+          604,
+          907
+        ],
+        [
+          634,
+          887
+        ],
+        [
+          625,
+          860
+        ],
+        [
+          601,
+          812
+        ],
+        [
+          580,
+          813
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_039",
+      "name": "South garden entry",
+      "centerline_px": [
+        [
+          552,
+          827
+        ],
+        [
+          562,
+          844
+        ],
+        [
+          567,
+          862
+        ]
+      ],
+      "width_px": 5,
+      "confidence": "approximate visual centreline",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    }
+  ],
+  "bridge_masks_px": [
+    [
+      [
+        326,
+        643
+      ],
+      [
+        340,
+        640
+      ],
+      [
+        352,
+        731
+      ],
+      [
+        335,
+        734
+      ]
+    ],
+    [
+      [
+        479,
+        495
+      ],
+      [
+        530,
+        480
+      ],
+      [
+        544,
+        527
+      ],
+      [
+        498,
+        543
+      ]
+    ],
+    [
+      [
+        572,
+        777
+      ],
+      [
+        635,
+        757
+      ],
+      [
+        646,
+        777
+      ],
+      [
+        588,
+        800
+      ]
+    ]
+  ],
+  "water": [
+    {
+      "id": "WATER_001",
+      "name": "Main canal",
+      "polygon_px": [
+        [
+          128,
+          748
+        ],
+        [
+          530,
+          616
+        ],
+        [
+          539,
+          643
+        ],
+        [
+          129,
+          785
+        ]
+      ]
+    },
+    {
+      "id": "WATER_002",
+      "name": "West canal",
+      "polygon_px": [
+        [
+          128,
+          285
+        ],
+        [
+          146,
+          298
+        ],
+        [
+          147,
+          749
+        ],
+        [
+          128,
+          755
+        ]
+      ]
+    },
+    {
+      "id": "WATER_003",
+      "name": "North east canal",
+      "polygon_px": [
+        [
+          345,
+          95
+        ],
+        [
+          359,
+          91
+        ],
+        [
+          514,
+          490
+        ],
+        [
+          499,
+          495
+        ]
+      ]
+    },
+    {
+      "id": "WATER_004",
+      "name": "Branch canal",
+      "polygon_px": [
+        [
+          501,
+          526
+        ],
+        [
+          522,
+          518
+        ],
+        [
+          633,
+          778
+        ],
+        [
+          613,
+          785
+        ]
+      ]
+    },
+    {
+      "id": "WATER_005",
+      "name": "Library pond",
+      "polygon_px": [
+        [
+          333,
+          498
+        ],
+        [
+          371,
+          498
+        ],
+        [
+          367,
+          524
+        ],
+        [
+          352,
+          541
+        ],
+        [
+          333,
+          545
+        ]
+      ]
+    },
+    {
+      "id": "WATER_006",
+      "name": "South garden pond",
+      "polygon_px": [
+        [
+          596,
+          822
+        ],
+        [
+          608,
+          832
+        ],
+        [
+          613,
+          864
+        ],
+        [
+          632,
+          881
+        ],
+        [
+          615,
+          895
+        ],
+        [
+          603,
+          882
+        ],
+        [
+          600,
+          854
+        ],
+        [
+          590,
+          842
+        ]
+      ]
+    },
+    {
+      "id": "WATER_007",
+      "name": "Southeast stream",
+      "polygon_px": [
+        [
+          646,
+          851
+        ],
+        [
+          698,
+          841
+        ],
+        [
+          753,
+          828
+        ],
+        [
+          782,
+          827
+        ],
+        [
+          822,
+          810
+        ],
+        [
+          835,
+          812
+        ],
+        [
+          823,
+          828
+        ],
+        [
+          772,
+          844
+        ],
+        [
+          720,
+          852
+        ],
+        [
+          656,
+          873
+        ]
+      ]
+    }
+  ],
+  "plazas": [
+    {
+      "id": "PLAZA_001",
+      "name": "Central civic plaza",
+      "polygon_px": [
+        [
+          307.0,
+          349.0
+        ],
+        [
+          306.643,
+          353.067
+        ],
+        [
+          305.581,
+          357.034
+        ],
+        [
+          303.839,
+          360.804
+        ],
+        [
+          301.461,
+          364.282
+        ],
+        [
+          298.506,
+          367.385
+        ],
+        [
+          295.046,
+          370.034
+        ],
+        [
+          291.166,
+          372.166
+        ],
+        [
+          286.961,
+          373.727
+        ],
+        [
+          282.537,
+          374.68
+        ],
+        [
+          278.0,
+          375.0
+        ],
+        [
+          273.463,
+          374.68
+        ],
+        [
+          269.039,
+          373.727
+        ],
+        [
+          264.834,
+          372.166
+        ],
+        [
+          260.954,
+          370.034
+        ],
+        [
+          257.494,
+          367.385
+        ],
+        [
+          254.539,
+          364.282
+        ],
+        [
+          252.161,
+          360.804
+        ],
+        [
+          250.419,
+          357.034
+        ],
+        [
+          249.357,
+          353.067
+        ],
+        [
+          249.0,
+          349.0
+        ],
+        [
+          249.357,
+          344.933
+        ],
+        [
+          250.419,
+          340.966
+        ],
+        [
+          252.161,
+          337.196
+        ],
+        [
+          254.539,
+          333.718
+        ],
+        [
+          257.494,
+          330.615
+        ],
+        [
+          260.954,
+          327.966
+        ],
+        [
+          264.834,
+          325.834
+        ],
+        [
+          269.039,
+          324.273
+        ],
+        [
+          273.463,
+          323.32
+        ],
+        [
+          278.0,
+          323.0
+        ],
+        [
+          282.537,
+          323.32
+        ],
+        [
+          286.961,
+          324.273
+        ],
+        [
+          291.166,
+          325.834
+        ],
+        [
+          295.046,
+          327.966
+        ],
+        [
+          298.506,
+          330.615
+        ],
+        [
+          301.461,
+          333.718
+        ],
+        [
+          303.839,
+          337.196
+        ],
+        [
+          305.581,
+          340.966
+        ],
+        [
+          306.643,
+          344.933
+        ]
+      ]
+    },
+    {
+      "id": "PLAZA_002",
+      "name": "Central south plaza",
+      "polygon_px": [
+        [
+          254,
+          379
+        ],
+        [
+          302,
+          379
+        ],
+        [
+          306,
+          399
+        ],
+        [
+          290,
+          414
+        ],
+        [
+          273,
+          418
+        ],
+        [
+          251,
+          399
+        ]
+      ]
+    },
+    {
+      "id": "PLAZA_003",
+      "name": "North amphitheatre",
+      "polygon_px": [
+        [
+          307.0,
+          133.0
+        ],
+        [
+          306.655,
+          136.911
+        ],
+        [
+          305.63,
+          140.725
+        ],
+        [
+          303.948,
+          144.35
+        ],
+        [
+          301.652,
+          147.695
+        ],
+        [
+          298.799,
+          150.678
+        ],
+        [
+          295.458,
+          153.225
+        ],
+        [
+          291.712,
+          155.275
+        ],
+        [
+          287.652,
+          156.776
+        ],
+        [
+          283.38,
+          157.692
+        ],
+        [
+          279.0,
+          158.0
+        ],
+        [
+          274.62,
+          157.692
+        ],
+        [
+          270.348,
+          156.776
+        ],
+        [
+          266.288,
+          155.275
+        ],
+        [
+          262.542,
+          153.225
+        ],
+        [
+          259.201,
+          150.678
+        ],
+        [
+          256.348,
+          147.695
+        ],
+        [
+          254.052,
+          144.35
+        ],
+        [
+          252.37,
+          140.725
+        ],
+        [
+          251.345,
+          136.911
+        ],
+        [
+          251.0,
+          133.0
+        ],
+        [
+          251.345,
+          129.089
+        ],
+        [
+          252.37,
+          125.275
+        ],
+        [
+          254.052,
+          121.65
+        ],
+        [
+          256.348,
+          118.305
+        ],
+        [
+          259.201,
+          115.322
+        ],
+        [
+          262.542,
+          112.775
+        ],
+        [
+          266.288,
+          110.725
+        ],
+        [
+          270.348,
+          109.224
+        ],
+        [
+          274.62,
+          108.308
+        ],
+        [
+          279.0,
+          108.0
+        ],
+        [
+          283.38,
+          108.308
+        ],
+        [
+          287.652,
+          109.224
+        ],
+        [
+          291.712,
+          110.725
+        ],
+        [
+          295.458,
+          112.775
+        ],
+        [
+          298.799,
+          115.322
+        ],
+        [
+          301.652,
+          118.305
+        ],
+        [
+          303.948,
+          121.65
+        ],
+        [
+          305.63,
+          125.275
+        ],
+        [
+          306.655,
+          129.089
+        ]
+      ]
+    },
+    {
+      "id": "PLAZA_004",
+      "name": "Gym entrance plaza",
+      "polygon_px": [
+        [
+          340,
+          548
+        ],
+        [
+          354,
+          531
+        ],
+        [
+          374,
+          534
+        ],
+        [
+          390,
+          550
+        ],
+        [
+          361,
+          576
+        ],
+        [
+          341,
+          576
+        ]
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "LANDMARK_001",
+      "name": "Athletics track outer surface",
+      "kind": "track",
+      "polygon_px": [
+        [
+          246.0,
+          622.0
+        ],
+        [
+          245.557,
+          632.95
+        ],
+        [
+          244.238,
+          643.631
+        ],
+        [
+          242.076,
+          653.779
+        ],
+        [
+          239.125,
+          663.145
+        ],
+        [
+          235.456,
+          671.497
+        ],
+        [
+          231.16,
+          678.631
+        ],
+        [
+          226.344,
+          684.37
+        ],
+        [
+          221.125,
+          688.574
+        ],
+        [
+          215.632,
+          691.138
+        ],
+        [
+          210.0,
+          692.0
+        ],
+        [
+          204.368,
+          691.138
+        ],
+        [
+          198.875,
+          688.574
+        ],
+        [
+          193.656,
+          684.37
+        ],
+        [
+          188.84,
+          678.631
+        ],
+        [
+          184.544,
+          671.497
+        ],
+        [
+          180.875,
+          663.145
+        ],
+        [
+          177.924,
+          653.779
+        ],
+        [
+          175.762,
+          643.631
+        ],
+        [
+          174.443,
+          632.95
+        ],
+        [
+          174.0,
+          622.0
+        ],
+        [
+          174.443,
+          611.05
+        ],
+        [
+          175.762,
+          600.369
+        ],
+        [
+          177.924,
+          590.221
+        ],
+        [
+          180.875,
+          580.855
+        ],
+        [
+          184.544,
+          572.503
+        ],
+        [
+          188.84,
+          565.369
+        ],
+        [
+          193.656,
+          559.63
+        ],
+        [
+          198.875,
+          555.426
+        ],
+        [
+          204.368,
+          552.862
+        ],
+        [
+          210.0,
+          552.0
+        ],
+        [
+          215.632,
+          552.862
+        ],
+        [
+          221.125,
+          555.426
+        ],
+        [
+          226.344,
+          559.63
+        ],
+        [
+          231.16,
+          565.369
+        ],
+        [
+          235.456,
+          572.503
+        ],
+        [
+          239.125,
+          580.855
+        ],
+        [
+          242.076,
+          590.221
+        ],
+        [
+          244.238,
+          600.369
+        ],
+        [
+          245.557,
+          611.05
+        ]
+      ]
+    },
+    {
+      "id": "LANDMARK_002",
+      "name": "Athletics infield",
+      "kind": "field",
+      "polygon_px": [
+        [
+          238.0,
+          622.0
+        ],
+        [
+          237.655,
+          631.386
+        ],
+        [
+          236.63,
+          640.541
+        ],
+        [
+          234.948,
+          649.239
+        ],
+        [
+          232.652,
+          657.267
+        ],
+        [
+          229.799,
+          664.426
+        ],
+        [
+          226.458,
+          670.541
+        ],
+        [
+          222.712,
+          675.46
+        ],
+        [
+          218.652,
+          679.063
+        ],
+        [
+          214.38,
+          681.261
+        ],
+        [
+          210.0,
+          682.0
+        ],
+        [
+          205.62,
+          681.261
+        ],
+        [
+          201.348,
+          679.063
+        ],
+        [
+          197.288,
+          675.46
+        ],
+        [
+          193.542,
+          670.541
+        ],
+        [
+          190.201,
+          664.426
+        ],
+        [
+          187.348,
+          657.267
+        ],
+        [
+          185.052,
+          649.239
+        ],
+        [
+          183.37,
+          640.541
+        ],
+        [
+          182.345,
+          631.386
+        ],
+        [
+          182.0,
+          622.0
+        ],
+        [
+          182.345,
+          612.614
+        ],
+        [
+          183.37,
+          603.459
+        ],
+        [
+          185.052,
+          594.761
+        ],
+        [
+          187.348,
+          586.733
+        ],
+        [
+          190.201,
+          579.574
+        ],
+        [
+          193.542,
+          573.459
+        ],
+        [
+          197.288,
+          568.54
+        ],
+        [
+          201.348,
+          564.937
+        ],
+        [
+          205.62,
+          562.739
+        ],
+        [
+          210.0,
+          562.0
+        ],
+        [
+          214.38,
+          562.739
+        ],
+        [
+          218.652,
+          564.937
+        ],
+        [
+          222.712,
+          568.54
+        ],
+        [
+          226.458,
+          573.459
+        ],
+        [
+          229.799,
+          579.574
+        ],
+        [
+          232.652,
+          586.733
+        ],
+        [
+          234.948,
+          594.761
+        ],
+        [
+          236.63,
+          603.459
+        ],
+        [
+          237.655,
+          612.614
+        ]
+      ]
+    },
+    {
+      "id": "LANDMARK_003",
+      "name": "Sports courts",
+      "kind": "court",
+      "polygon_px": [
+        [
+          253,
+          553
+        ],
+        [
+          319,
+          553
+        ],
+        [
+          319,
+          634
+        ],
+        [
+          253,
+          634
+        ]
+      ]
+    },
+    {
+      "id": "LANDMARK_004",
+      "name": "Central pool",
+      "kind": "water",
+      "polygon_px": [
+        [
+          297.0,
+          357.0
+        ],
+        [
+          296.766,
+          358.721
+        ],
+        [
+          296.07,
+          360.399
+        ],
+        [
+          294.929,
+          361.994
+        ],
+        [
+          293.371,
+          363.466
+        ],
+        [
+          291.435,
+          364.778
+        ],
+        [
+          289.168,
+          365.899
+        ],
+        [
+          286.626,
+          366.801
+        ],
+        [
+          283.871,
+          367.462
+        ],
+        [
+          280.972,
+          367.865
+        ],
+        [
+          278.0,
+          368.0
+        ],
+        [
+          275.028,
+          367.865
+        ],
+        [
+          272.129,
+          367.462
+        ],
+        [
+          269.374,
+          366.801
+        ],
+        [
+          266.832,
+          365.899
+        ],
+        [
+          264.565,
+          364.778
+        ],
+        [
+          262.629,
+          363.466
+        ],
+        [
+          261.071,
+          361.994
+        ],
+        [
+          259.93,
+          360.399
+        ],
+        [
+          259.234,
+          358.721
+        ],
+        [
+          259.0,
+          357.0
+        ],
+        [
+          259.234,
+          355.279
+        ],
+        [
+          259.93,
+          353.601
+        ],
+        [
+          261.071,
+          352.006
+        ],
+        [
+          262.629,
+          350.534
+        ],
+        [
+          264.565,
+          349.222
+        ],
+        [
+          266.832,
+          348.101
+        ],
+        [
+          269.374,
+          347.199
+        ],
+        [
+          272.129,
+          346.538
+        ],
+        [
+          275.028,
+          346.135
+        ],
+        [
+          278.0,
+          346.0
+        ],
+        [
+          280.972,
+          346.135
+        ],
+        [
+          283.871,
+          346.538
+        ],
+        [
+          286.626,
+          347.199
+        ],
+        [
+          289.168,
+          348.101
+        ],
+        [
+          291.435,
+          349.222
+        ],
+        [
+          293.371,
+          350.534
+        ],
+        [
+          294.929,
+          352.006
+        ],
+        [
+          296.07,
+          353.601
+        ],
+        [
+          296.766,
+          355.279
+        ]
+      ]
+    }
+  ],
+  "grass_parcels_px": [
+    [
+      [
+        148,
+        142
+      ],
+      [
+        345,
+        97
+      ],
+      [
+        500,
+        498
+      ],
+      [
+        518,
+        513
+      ],
+      [
+        533,
+        618
+      ],
+      [
+        147,
+        750
+      ]
+    ],
+    [
+      [
+        510,
+        452
+      ],
+      [
+        712,
+        375
+      ],
+      [
+        786,
+        523
+      ],
+      [
+        561,
+        600
+      ]
+    ],
+    [
+      [
+        147,
+        784
+      ],
+      [
+        537,
+        648
+      ],
+      [
+        587,
+        786
+      ],
+      [
+        249,
+        900
+      ],
+      [
+        137,
+        956
+      ]
+    ],
+    [
+      [
+        511,
+        846
+      ],
+      [
+        583,
+        818
+      ],
+      [
+        632,
+        895
+      ],
+      [
+        543,
+        929
+      ]
+    ],
+    [
+      [
+        638,
+        790
+      ],
+      [
+        816,
+        764
+      ],
+      [
+        837,
+        783
+      ],
+      [
+        838,
+        819
+      ],
+      [
+        654,
+        875
+      ]
+    ]
+  ],
+  "walls": [],
+  "ground_bounds_px": [
+    120,
+    90,
+    845,
+    960
+  ],
+  "model_version": "0.2"
+}

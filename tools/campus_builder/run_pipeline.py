@@ -65,7 +65,7 @@ def build_once(blender,index):
     validation=json.loads((ROOT/'output/validation/blender_validation.json').read_text())
     cfg=json.loads((ROOT/'config/campus_config.json').read_text())
     renders=[image_check(ROOT/f'output/previews/{name}.png',cfg['render_resolution'])
-             for name in ['top','perspective_01','perspective_02','reimported_fbx']]
+             for name in ['top','perspective_01','perspective_02','reimported_fbx','building_administration','building_teaching','building_gym','building_library']]
     # Independent FBX render should also retain material/layout appearance.
     a=Image.open(ROOT/'output/previews/perspective_01.png').convert('RGB')
     b=Image.open(ROOT/'output/previews/reimported_fbx.png').convert('RGB')
@@ -80,11 +80,12 @@ def build_once(blender,index):
              source_scene=validation['original_scene'], comparison=validation['comparison'],
              render_validation=renders,fbx_render_appearance=appearance,artifacts=files,
              inputs_unchanged=inputs_unchanged,log=str(log))
-    run['data_hashes']={name:hashlib.sha256((ROOT/'data'/name).read_bytes()).hexdigest() for name in ['campus_map.json','scale_calibration.json','navigation_graph.json','road_validation.json']}
+    run['data_hashes']={name:hashlib.sha256((ROOT/'data'/name).read_bytes()).hexdigest() for name in ['campus_map.json','scale_calibration.json','navigation_graph.json','road_validation.json','building_reconstruction.json']}
     run['stages']=dict(GEOMETRY=validation['original_scene']['pass'] and metadata['planar_validation']['pass'],
                        SCALE=calibration['pass_'],ROADS=metadata['road_validation']['pass_'],
                        NAVIGATION=navigation['pass_'],FBX=validation['comparison']['pass_'] and validation['absolute_metric_validation']['reimport']['pass_'],
-                       RENDER=all(v['pass'] for v in renders) and appearance['pass_'])
+                       RENDER=all(v['pass'] for v in renders) and appearance['pass_'],
+                       BUILDINGS=all(v['pass_'] for side in ['source','reimport'] for v in validation['absolute_metric_validation'][side]['building_architecture_validation']))
     metadata['navigation_validation']=navigation
     if not passed:raise ValueError(f'Artifact/render validation failed: {run}')
     return run,metadata,validation
@@ -93,7 +94,7 @@ def build_once(blender,index):
 def report(runs,metadata,validation,idem,regression=None):
     final=runs[-1]
     complete=idem['pass'] and all(final['stages'].values())
-    report=dict(result='PASS' if complete else 'PARTIAL',model_version='0.2',
+    report=dict(result='PASS' if complete else 'PARTIAL',model_version=metadata['model_version'],
         generated_at=datetime.now(ZoneInfo('Asia/Shanghai')).isoformat(),map_metadata=metadata,
         blender_validation=validation,render_validation=final['render_validation'],
         fbx_render_appearance=final['fbx_render_appearance'],artifacts=final['artifacts'],
@@ -112,6 +113,10 @@ def report(runs,metadata,validation,idem,regression=None):
     commit=subprocess.run(['git','rev-parse','HEAD'],cwd=ROOT,check=True,capture_output=True,text=True).stdout.strip()
     report['versions']=dict(git_commit=commit,python=platform.python_version(),shapely=shapely.__version__,pillow=PIL.__version__,blender=validation['blender_version'])
     report['regression_tests']=regression
+    report['building_reconstruction']=metadata['building_reconstruction']
+    report['manual_trace_changes']=json.loads((ROOT/'config/source_geometry_changes.json').read_text())
+    before=json.loads((ROOT/'input/evidence/buildings/v02_source_scene.json').read_text())
+    report['v02_mesh_comparison']=dict(before_vertices=before['total_vertices'],after_vertices=validation['original_scene']['total_vertices'],before_faces=before['total_faces'],after_faces=validation['original_scene']['total_faces'])
     report['source_manifest']=json.loads((ROOT/'input/evidence/source_manifest.json').read_text())
     baseline=json.loads((ROOT/'config/v01_baseline.json').read_text())
     report['mesh_complexity_comparison']=dict(v01_vertices=baseline['total_vertices'],v02_vertices=validation['original_scene']['total_vertices'],
@@ -163,7 +168,7 @@ def report(runs,metadata,validation,idem,regression=None):
             'Only tool-owned data/output artifacts are cleared; source images and configuration are preserved.',
             'Detailed object checks, camera positions, hashes and repeated-run evidence are in validation_report.json and output/idempotency_runs.json.','']
     calibration=metadata['calibration'];graph=metadata['navigation_validation'];road=metadata['road_validation']
-    lines+=['## V0.2 stage acceptance','', '| Stage | Result |','|---|---|']
+    lines+=['## Stage acceptance','', '| Stage | Result |','|---|---|']
     lines += [f"| {key} | {'PASS' if passed else 'FAIL / FLAG'} |" for key,passed in report['stages'].items()]
     lines+=['','Overall result reasons:']+['- '+r for r in report['reasons']]
     lines+=['','## Metric calibration','',
@@ -172,7 +177,7 @@ def report(runs,metadata,validation,idem,regression=None):
         f"Weighted RMSE: {calibration['rmse_m']:.4f} m / {calibration['rmse_percent']:.4f}%; max relative residual: {calibration['max_relative_error_percent']:.4f}%",
         f"Scale change versus V0.1 arbitrary {baseline['meters_per_pixel']} m/px: {(metadata['meters_per_pixel']/baseline['meters_per_pixel']-1)*100:+.4f}%",
         f"Ground area: {metadata['ground_area_m2']:.3f} m²; generalized campus parcel area: {metadata['campus_parcel_area_m2']:.3f} m². Both remain conditional on unverified facility assumptions.",
-        'Building defaults stay 12.0 m / 4.5 m; all surface levels/thicknesses are independent of XY calibration.',
+        'Building floor counts, storey heights, roof forms and provenance are in building_profiles.json; Z remains independent of XY calibration.',
         'Full anchor table, provenance and competing model residuals: [scale_calibration_report.md](scale_calibration_report.md).',
         '', '## FBX absolute metres','',
         f"Source Ground width/length: {validation['absolute_metric_validation']['source']['measured_ground_width_m']:.6f} / {validation['absolute_metric_validation']['source']['measured_ground_length_m']:.6f} m",
@@ -198,6 +203,19 @@ def report(runs,metadata,validation,idem,regression=None):
         f"Regression tests: {regression}; tests cover outliers/conflicting evidence, evidence gate, XY/Z independence, bounded repair, shared junctions and Dijkstra on known valid routes.",
         'JSON data hashes and source Mesh summaries are identical across two independent clean builds.',
         '', '## Additional evidence needed','',calibration['required_extra_evidence']['request'],'']
+    buildings=metadata['building_reconstruction']
+    lines+=['## V0.3 building reconstruction','',
+        f"Buildings: {buildings['building_count']}; photo-referenced: {buildings['photo_referenced_buildings']}; measured heights: {buildings['measured_height_count']}.",
+        'Building heights are differentiated using official minimum floor references, visible photo levels, or explicit typology assumptions. No building height is claimed to be surveyed.',
+        'Flat, gabled and swept roofs remain closed solids. Small authored facade tiles are packed in blend, embedded in FBX and included in GLB.',
+        'Source and FBX checks include finite UV coordinates, loaded image textures and preserved height/roof provenance.',
+        'See [building_reconstruction_report.md](building_reconstruction_report.md) for every building and its source.',
+        'Additional close-up renders: building_administration.png, building_teaching.png, building_gym.png, building_library.png.',
+        '', '### Other repairs','',
+        'Source-image manual road edits are recorded separately in config/source_geometry_changes.json; they are not reported as automatic shifts.',
+        'Bridge decks use the explicit bridge masks, including the water gap drawn beneath a bridge symbol.',
+        'Zero-area polygon self-touches after bridge cuts are repaired only when area stays within a strict tolerance.',
+        'V0.2 to current mesh counts: '+json.dumps(report['v02_mesh_comparison']),'']
     (ROOT/'output/validation/validation_report.md').write_text('\n'.join(lines))
 
 

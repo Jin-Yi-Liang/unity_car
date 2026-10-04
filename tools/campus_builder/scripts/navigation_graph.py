@@ -134,7 +134,7 @@ def generate():
         driveable_component_count=len(drive_components),dijkstra_tests=tests,
         connectivity_scope='Undirected structural checks only. Unknown road access/direction is not promoted to a legal driving route.',
         flagged_source_routes=[r['id'] for r in routes if not r['correction_pass']])
-    result=dict(schema_version=2,model_version='0.2',coordinate_system='local_metric',nodes=nodes,edges=edges,validation=validation)
+    result=dict(schema_version=2,model_version=cfg.get('model_version','0.3'),coordinate_system='local_metric',nodes=nodes,edges=edges,validation=validation)
     (ROOT/'data/navigation_graph.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
     (ROOT/'output/validation/navigation_validation.json').write_text(json.dumps(validation,indent=2)+'\n')
     return validation

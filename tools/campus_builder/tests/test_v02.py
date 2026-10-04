@@ -98,6 +98,8 @@ class PipelineDataTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             root=Path(folder)
             for name in ['config','data','output/previews']: (root/name).mkdir(parents=True)
+            (root/'input').symlink_to(ROOT/'input',target_is_directory=True)
+            (root/'config/building_profiles.json').write_bytes((ROOT/'config/building_profiles.json').read_bytes())
             for name in ['campus_config.json','source_geometry.json','scale_anchors.json']:
                 value=json.loads((ROOT/'config'/name).read_text())
                 if name=='scale_anchors.json':

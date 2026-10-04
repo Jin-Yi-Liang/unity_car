@@ -1,6 +1,6 @@
-# Campus Model V0.2 — Metric Calibration + Simulation Geometry
+# Campus Model V0.3 — 建筑近似重建与几何修正
 
-在 V0.1 的 CLI 建模、Mesh 验证、FBX 干净往返、渲染和双次重建基础上增加尺度校准、固定米制 Z、受限道路修正、独立桥面和基础导航图。没有使用 Unity/团结引擎，也没有修改 C++ 服务端。
+在 V0.2 的尺度校准、固定米制 Z、受限道路修正、独立桥面和基础导航图基础上，增加按楼栋配置的楼层/高度、平顶/坡顶/弧形屋顶、可导出的立面贴图和建筑近景验证。没有使用 Unity/团结引擎，也没有修改 C++ 服务端。
 
 ```bash
 # 从仓库根目录执行完整验收
@@ -37,7 +37,7 @@ tools/campus_builder/.venv/bin/python tools/campus_builder/run_pipeline.py --ver
 
 - `config/source_geometry.json`（schema 2）是建筑边界、道路描线、水体、桥梁掩膜等几何来源。发现错位应改此文件，然后重建；不要人工编辑生成的 campus_map。
 - `config/scale_anchors.json` 保存全部人工选取端点、长度、来源、类型、置信度、权重、相关组和证据文件。实测数值只应加入此文件，不在 Python 内硬编码。
-- `config/campus_config.json` 保存建筑高度及各层高程/厚度，单位始终为 modeled metres。已删除 height_reference_meters_per_pixel；XY 改变不会缩放 12 m / 4.5 m 建筑高度或 0.3 m Ground 厚度。
+- `config/campus_config.json` 保存建筑高度及各层高程/厚度，单位始终为 modeled metres。已删除 height_reference_meters_per_pixel；XY 改变不会缩放建筑高度或 0.3 m Ground 厚度。建筑的逐栋高度、立面和屋顶参数由 `config/building_profiles.json` 管理；12 m / 4.5 m 仅作为后备默认值。
 - `config/v01_baseline.json` 与 `input/evidence/v01_source_geometry.json` 仅用于审计旧版尺度、复杂度和描线，没有把旧版大幅自动绕行当成新事实。
 
 像素坐标经 `data/scale_calibration.json` 的完整 3 × 3 矩阵转换为 local metric XY，原点接近 Ground 中心。默认 X 向图右、Y 向图上，图片 Y 翻转；Z 向上。Blender Metric，1 BU = 1 modeled metre。建筑高度来源继续明确标记 `modeling default, not measured`。
@@ -60,7 +60,7 @@ tools/campus_builder/.venv/bin/python tools/campus_builder/run_pipeline.py --ver
 
 为了能检查其他资产，PARTIAL 构建会输出道路审阅 Mesh：裁去建筑及非桥梁水体的重叠区域。这会产生缺口，报告记录裁剪面积；不把裁剪声称为描线修复，也不允许据此让 ROADS 或 NAVIGATION 通过。最终可用于小车仿真的道路网络必须先修正 source_geometry 中报告列出的 ROUTE。
 
-`Campus/Bridges` 下独立 `BRIDGE_*`，与道路顶面同高、位于水面上方；custom properties 为 surface_type=bridge、driveable=true、collidable=true。桥梁掩膜只在实际道路与水体相交处生成桥面。
+`Campus/Bridges` 下独立 `BRIDGE_*`，与道路顶面同高、位于水面上方；custom properties 为 surface_type=bridge、driveable=true、collidable=true。桥梁掩膜与道路相交处生成桥面，包含原图桥梁符号造成的水体断口，避免遗漏北侧桥梁。
 
 ## 导航基础文件
 
@@ -79,7 +79,7 @@ tools/campus_builder/.venv/bin/python tools/campus_builder/run_pipeline.py --ver
 7. bbox 自动取景，CPU Cycles 生成 top、两个 perspective 和 reimported_fbx；检查相机范围、1200 × 1200 分辨率、图像均值/方差/非背景比例以及同视角 FBX 色彩差。
 8. 完整 clean rebuild 再执行一轮；比较校准、地图、导航、道路数据哈希和所有源 Mesh 验证摘要。序列化文件可含不同元数据，不以 blend/FBX 二进制相同为幂等标准。
 
-报告分别列 GEOMETRY、SCALE、ROADS、NAVIGATION、FBX、RENDER、IDEMPOTENCY。全部通过才 RESULT: PASS。即使 Mesh/FBX/渲染成功，尺度证据不足或道路冲突仍 RESULT: PARTIAL。
+报告分别列 GEOMETRY、SCALE、ROADS、NAVIGATION、FBX、RENDER、BUILDINGS、IDEMPOTENCY。BUILDINGS 表示建筑参数、贴图、UV 与导出一致性通过，不表示实测复刻。全部通过才 RESULT: PASS。即使 Mesh/FBX/渲染成功，尺度证据不足或道路冲突仍 RESULT: PARTIAL。
 
 ## 主要产物
 
@@ -121,3 +121,41 @@ output/logs/run_02.log
 道路冲突需根据地图修正报告列出的 ROUTE 描线或对应障碍边界，不能恢复 V0.1 的 46.6 px 自动绕行。
 
 Unity/团结阶段需实际验证导入、配置 Collider/图层/水体排除和允许车辆行驶的路面。Ground 延伸在水体下方，不可把全 Ground 当道路；路顶面高于 Ground 4.5 cm，碰撞连接需考虑小台阶。本轮未开发服务器路径规划、NavMesh、小车运动、TCP、DWA/APF 或精细室内资产。
+
+## V0.3 建筑资料与编辑方式
+
+本轮按公开基本资料和用户接受的近似精度重建，**并非逐楼实测复刻**。来源网页、参考照片及 URL/日期/SHA256 清单保存在 `input/evidence/buildings/`。图书馆官方房间记录、行政楼官方办公室记录只提供楼层下限；照片提供外观参考；典型层高、未确认楼层、窗距和屋顶起伏都属于建模假设。2023 年新楼资料无法可靠匹配旧规划图的全部轮廓，没有直接套用到不确定楼号。
+
+- 行政楼按 13 层、3.4 m 近似层高建模，约 44.2 m；13 层来自官方房间编号下限，44.2 m 不是测量值。
+- 3–5 号教学楼按 5 层、约 18 m；6–8 号采用较低体量和坡顶。
+- 图书馆约 16 m，体育馆约 13.8 m（含约 3 m 弧形屋顶起伏），展厅约 15.2 m。
+- 普通宿舍暂按 6 层、约 18.6 m；11 号“小高层”暂按 9 层、约 27.9 m。楼层数均明确标注为类型估计。
+- 实验/训练用房、食堂、服务用房分别使用较低的体量与不同的窗格/颜色。
+
+`building_profiles.json` 的 `profiles` 按地图楼号选择样式；`features` 用稳定的原始 BLDG ID 保存特殊翼楼覆盖。生成时保留 `source_trace_ids`，避免合并轮廓后重新编号导致高度应用到另一栋楼。可修改 `floor_count`、`floor_height_m`、`roof_shape`、`roof_rise_m`、颜色和窗距；同时更新事实/假设的 provenance。
+
+立面为小尺寸自行绘制的重复贴图，并未直接投影有透视和遮挡的校园照片。贴图打包进 `.blend`、内嵌在 FBX、包含在 GLB。FBX 独立重新导入时检查贴图实际加载、UV 有限、建筑高度/屋顶/来源属性保留。所有屋顶仍是封闭实体，继续经过 manifold、法线和顶点往返检查。
+
+新增文件：
+
+```text
+config/building_profiles.json
+config/source_geometry_changes.json
+data/building_reconstruction.json
+output/textures/facade_*.png
+output/previews/building_administration.png
+output/previews/building_teaching.png
+output/previews/building_gym.png
+output/previews/building_library.png
+output/validation/building_reconstruction_report.md
+```
+
+源道路的人工修正逐项记录在 `source_geometry_changes.json`，包括修改前后坐标及原因。它们和运行时最多 3 px 的自动修正严格区分；仍冲突的道路继续 FLAG，不能直接作为已验证的车辆导航网络。
+
+本机打开项目：
+
+```text
+/home/michael/workspace/unity/tools/campus_builder/output/campus.blend
+```
+
+文件保存了全景视角并默认使用材质预览。想检查某栋楼，在 Buildings collection 选中对象，按小键盘 `.` 聚焦；对象自定义属性中能看到地图楼号、近似层数、屋顶类型和高度依据。需要轻量浏览时可切换 Solid shading；贴图效果在 Material Preview 或 Rendered shading 下查看。

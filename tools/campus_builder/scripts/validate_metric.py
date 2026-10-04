@@ -45,6 +45,17 @@ def validate_metric(data, calibration, config):
     for b in data['buildings']:
         obj=bpy.data.objects[b['id']];z=[(obj.matrix_world@v.co).z for v in obj.data.vertices]
         measured=max(z)-min(z);heights.append(dict(id=b['id'],expected_m=b['height_m'],actual_m=measured,pass_=abs(measured-b['height_m'])<config['bbox_tolerance_m']))
+    architecture=[]
+    for b in data['buildings']:
+        if 'architecture' not in b:continue
+        obj=bpy.data.objects[b['id']];a=b['architecture']
+        uv=obj.data.uv_layers.active
+        uv_ok=uv is not None and all(math.isfinite(x) for loop in uv.data for x in loop.uv)
+        provenance=obj.get('height_provenance')==a['height_status'] and obj.get('roof_shape')==a['roof_shape']
+        textures=[n.image for m in obj.data.materials if m and m.use_nodes for n in m.node_tree.nodes if n.type=='TEX_IMAGE' and n.image]
+        # Blender loads image pixels lazily; force decoding before testing data.
+        textures_ok=bool(textures) and all(len(image.pixels)>0 and image.has_data for image in textures)
+        architecture.append(dict(id=b['id'],uv_finite=uv_ok,provenance_preserved=provenance,textures_loaded=textures_ok,pass_=uv_ok and provenance and textures_ok))
     bridge_checks=[]
     for b in data['bridges']:
         obj=bpy.data.objects[b['id']]
@@ -52,11 +63,11 @@ def validate_metric(data, calibration, config):
         properties=all(obj.get(k)==v for k,v in [('surface_type','bridge'),('driveable',True),('collidable',True)])
         bridge_checks.append(dict(id=b['id'],top_m=max(z),water_top_m=config['water_top_m'],semantic_properties_preserved=properties,
             pass_=max(z)>config['water_top_m'] and abs(max(z)-config['road_top_m'])<config['bbox_tolerance_m'] and properties))
-    return dict(pass_=corner_error<=config['bbox_tolerance_m'] and all(a['pass_'] for a in anchors+rulers+heights+bridge_checks),
+    return dict(pass_=corner_error<=config['bbox_tolerance_m'] and all(a['pass_'] for a in anchors+rulers+heights+bridge_checks+architecture),
         expected_ground_width_m=mapping.distance(pixels[0],pixels[1]),
         measured_ground_width_m=(corners[1]-corners[0]).length,
         expected_ground_length_m=mapping.distance(pixels[0],pixels[2]),
         measured_ground_length_m=(corners[2]-corners[0]).length,
         ground_corner_error_m=corner_error,anchors=anchors,scale_references=rulers,
-        building_height_validation=heights,bridge_validation=bridge_checks,xy_z_decoupled=True,
+        building_height_validation=heights,building_architecture_validation=architecture,bridge_validation=bridge_checks,xy_z_decoupled=True,
         scope='Absolute Blender metre consistency of calibrated mapping, not proof of the real-world anchor assumptions.')

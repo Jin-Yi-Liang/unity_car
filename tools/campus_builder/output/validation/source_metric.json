@@ -1,0 +1,1009 @@
+{
+  "pass_": true,
+  "expected_ground_width_m": 919.8185720085839,
+  "measured_ground_width_m": 919.8179847121929,
+  "expected_ground_length_m": 1103.782286410301,
+  "measured_ground_length_m": 1103.7819644295698,
+  "ground_corner_error_m": 0.00030056328740832837,
+  "anchors": [
+    {
+      "id": "TRACK_OUTER_LONG",
+      "measured_world_length_m": 177.62005732919073,
+      "calibrated_expected_length_m": 177.62013804303695,
+      "reference_length_m": 176.91,
+      "mapped_geometry_error_m": 8.071384621644029e-05,
+      "reference_relative_error_percent": 0.40136641749517477,
+      "pass_": true,
+      "measurement_method": "Affine registration to actual Ground Mesh corner vertices"
+    },
+    {
+      "id": "TRACK_OUTER_WIDTH",
+      "measured_world_length_m": 91.34744369028616,
+      "calibrated_expected_length_m": 91.34749956499041,
+      "reference_length_m": 92.52,
+      "mapped_geometry_error_m": 5.5874704258940255e-05,
+      "reference_relative_error_percent": -1.2673544203565035,
+      "pass_": true,
+      "measurement_method": "Affine registration to actual Ground Mesh corner vertices"
+    },
+    {
+      "id": "PITCH_LONG",
+      "measured_world_length_m": 105.30334251728432,
+      "calibrated_expected_length_m": 105.30336755408621,
+      "reference_length_m": 105,
+      "mapped_geometry_error_m": 2.503680188681301e-05,
+      "reference_relative_error_percent": 0.2888976355088779,
+      "pass_": true,
+      "measurement_method": "Affine registration to actual Ground Mesh corner vertices"
+    },
+    {
+      "id": "PITCH_WIDTH",
+      "measured_world_length_m": 67.24185301488204,
+      "calibrated_expected_length_m": 67.24190940200685,
+      "reference_length_m": 68,
+      "mapped_geometry_error_m": 5.63871248147052e-05,
+      "reference_relative_error_percent": -1.1149220369381818,
+      "pass_": true,
+      "measurement_method": "Affine registration to actual Ground Mesh corner vertices"
+    }
+  ],
+  "scale_references": [
+    {
+      "name": "ScaleReference_1m",
+      "expected_m": 1,
+      "actual_m": 1.0,
+      "pass_": true
+    },
+    {
+      "name": "ScaleReference_10m",
+      "expected_m": 10,
+      "actual_m": 10.0,
+      "pass_": true
+    },
+    {
+      "name": "ScaleReference_50m",
+      "expected_m": 50,
+      "actual_m": 50.0,
+      "pass_": true
+    }
+  ],
+  "building_height_validation": [
+    {
+      "id": "BLDG_001",
+      "expected_m": 44.199999999999996,
+      "actual_m": 44.20000076293945,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_002",
+      "expected_m": 15.2,
+      "actual_m": 15.199999809265137,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_003",
+      "expected_m": 18.0,
+      "actual_m": 18.0,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_004",
+      "expected_m": 18.0,
+      "actual_m": 18.0,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_005",
+      "expected_m": 18.0,
+      "actual_m": 18.0,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_006",
+      "expected_m": 13.799999999999999,
+      "actual_m": 13.800000190734863,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_007",
+      "expected_m": 13.799999999999999,
+      "actual_m": 13.800000190734863,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_008",
+      "expected_m": 13.799999999999999,
+      "actual_m": 13.800000190734863,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_009",
+      "expected_m": 8.4,
+      "actual_m": 8.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_010",
+      "expected_m": 13.8,
+      "actual_m": 13.800000190734863,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_011",
+      "expected_m": 9.0,
+      "actual_m": 9.0,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_012",
+      "expected_m": 27.900000000000002,
+      "actual_m": 27.899999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_013",
+      "expected_m": 7.0,
+      "actual_m": 7.0,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_014",
+      "expected_m": 7.0,
+      "actual_m": 7.0,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_015",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_016",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_017",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_018",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_019",
+      "expected_m": 16.0,
+      "actual_m": 16.0,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_020",
+      "expected_m": 16.0,
+      "actual_m": 16.0,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_021",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_022",
+      "expected_m": 8.4,
+      "actual_m": 8.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_023",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_024",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_025",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_026",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_027",
+      "expected_m": 12.600000000000001,
+      "actual_m": 12.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_028",
+      "expected_m": 12.600000000000001,
+      "actual_m": 12.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_029",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_030",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_031",
+      "expected_m": 12.600000000000001,
+      "actual_m": 12.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_032",
+      "expected_m": 12.600000000000001,
+      "actual_m": 12.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_033",
+      "expected_m": 12.600000000000001,
+      "actual_m": 12.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_034",
+      "expected_m": 12.600000000000001,
+      "actual_m": 12.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_035",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_036",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_037",
+      "expected_m": 12.600000000000001,
+      "actual_m": 12.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_038",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_039",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_040",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_041",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_042",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_043",
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_044",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_045",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_046",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_047",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_048",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_049",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_050",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_051",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_052",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_053",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_054",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_055",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_056",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_057",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_058",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_059",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_060",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_061",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_062",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_063",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_064",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_065",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_066",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_067",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_068",
+      "expected_m": 8.4,
+      "actual_m": 8.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_069",
+      "expected_m": 4.5,
+      "actual_m": 4.5,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_070",
+      "expected_m": 7.0,
+      "actual_m": 7.0,
+      "pass_": true
+    }
+  ],
+  "building_architecture_validation": [
+    {
+      "id": "BLDG_001",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_002",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_003",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_004",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_005",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_006",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_007",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_008",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_009",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_010",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_011",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_012",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_013",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_014",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_015",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_016",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_017",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_018",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_019",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_020",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_021",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_022",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_023",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_024",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_025",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_026",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_027",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_028",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_029",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_030",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_031",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_032",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_033",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_034",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_035",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_036",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_037",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_038",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_039",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_040",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_041",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_042",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_043",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_044",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_045",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_046",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_047",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_048",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_049",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_050",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_051",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_052",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_053",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_054",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_055",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_056",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_057",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_058",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_059",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_060",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_061",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_062",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_063",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_064",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_065",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_066",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_067",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_068",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_069",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_070",
+      "uv_finite": true,
+      "provenance_preserved": true,
+      "textures_loaded": true,
+      "pass_": true
+    }
+  ],
+  "bridge_validation": [
+    {
+      "id": "BRIDGE_001",
+      "top_m": 0.04500000178813934,
+      "water_top_m": 0.018,
+      "semantic_properties_preserved": true,
+      "pass_": true
+    },
+    {
+      "id": "BRIDGE_002",
+      "top_m": 0.04500000178813934,
+      "water_top_m": 0.018,
+      "semantic_properties_preserved": true,
+      "pass_": true
+    },
+    {
+      "id": "BRIDGE_003",
+      "top_m": 0.04500000178813934,
+      "water_top_m": 0.018,
+      "semantic_properties_preserved": true,
+      "pass_": true
+    }
+  ],
+  "xy_z_decoupled": true,
+  "scope": "Absolute Blender metre consistency of calibrated mapping, not proof of the real-world anchor assumptions."
+}

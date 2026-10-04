@@ -1,0 +1,53 @@
+{
+  "sources": [
+    {
+      "id": "ADMIN_OFFICIAL",
+      "url": "https://lsmf.sspu.edu.cn/imce2021/2021/0518/c2465a59480/page.htm",
+      "path": "input/evidence/buildings/official_admin_13.html",
+      "fact": "Official notice lists comprehensive building room 1302; supports at least 13 floors, not total height.",
+      "retrieved_date": "2026-10-04"
+    },
+    {
+      "id": "LIBRARY_OFFICIAL",
+      "url": "https://library.sspu.edu.cn/2010/0909/c2558a97955/page.htm",
+      "path": "input/evidence/buildings/official_library_floors.html",
+      "fact": "Library at building 18 includes room 411; at least four floors, not a measured height.",
+      "retrieved_date": "2026-10-04"
+    },
+    {
+      "id": "CAMPUS_TOUR",
+      "url": "https://www.sohu.com/a/337150809_715092",
+      "path": "input/evidence/buildings/campus_tour.html",
+      "fact": "Campus youth publication identifies buildings 1,2,3-8,9,19. Old publication; current facade conditions not certified.",
+      "retrieved_date": "2026-10-04"
+    },
+    {
+      "id": "CAMPUS_VIEWS",
+      "url": "https://www.sohu.com/a/337895059_99938677",
+      "path": "input/evidence/buildings/campus_views.html",
+      "fact": "Campus youth arts publication provides gym photograph; photographs are references only.",
+      "retrieved_date": "2026-10-04"
+    },
+    {
+      "id": "NEW_BUILDINGS",
+      "url": "https://www.sspu.edu.cn/2023/0330/c3024a86746/page.htm",
+      "path": "input/evidence/buildings/official_new_buildings.html",
+      "fact": "Official 2023 report describes new 13/10/9-floor buildings; old map does not identify their footprints reliably. NOT applied to old map buildings.",
+      "retrieved_date": "2026-10-04"
+    },
+    {
+      "id": "SMALL_HIGHRISE",
+      "url": "https://xqjsb.sspu.edu.cn/2024/0819/c406a155926/page.htm",
+      "path": "input/evidence/buildings/official_small_highrise.html",
+      "fact": "Official source identifies building 11 as small highrise; exact floor count not stated.",
+      "retrieved_date": "2026-10-04"
+    },
+    {
+      "id": "MAP",
+      "url": "https://www.sspu.edu.cn/2972/list.htm",
+      "path": "input/evidence/official_campus_map.png",
+      "fact": "Planning map footprints and labels; no elevation or floor data.",
+      "retrieved_date": "2026-10-04"
+    }
+  ]
+}

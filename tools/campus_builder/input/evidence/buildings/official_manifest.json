@@ -1,0 +1,42 @@
+[
+  {
+    "id": "official_admin_floors",
+    "url": "https://www.sspu.edu.cn/2025/0103/c2965a159177/page.htm",
+    "path": "input/evidence/buildings/official_admin_floors.html",
+    "retrieved_date": "2026-10-04",
+    "sha256": "9693d4a78b357641bcdeadf0a81c4aefd53f90a0acc1db885d93fb3f42097437",
+    "bytes": 181907
+  },
+  {
+    "id": "official_admin_13",
+    "url": "https://lsmf.sspu.edu.cn/imce2021/2021/0518/c2465a59480/page.htm",
+    "path": "input/evidence/buildings/official_admin_13.html",
+    "retrieved_date": "2026-10-04",
+    "sha256": "e447f8330f6f90e3cbac5f1dd4ad885e41ffe2c0d540bdfdcd096ec70b14e14e",
+    "bytes": 14650
+  },
+  {
+    "id": "official_library_floors",
+    "url": "https://library.sspu.edu.cn/2010/0909/c2558a97955/page.htm",
+    "path": "input/evidence/buildings/official_library_floors.html",
+    "retrieved_date": "2026-10-04",
+    "sha256": "818ee1e4a5a7bbf7d8dec84c98083269efe7feac7fa8fb0d326303fd91102e6c",
+    "bytes": 22471
+  },
+  {
+    "id": "official_new_buildings",
+    "url": "https://www.sspu.edu.cn/2023/0330/c3024a86746/page.htm",
+    "path": "input/evidence/buildings/official_new_buildings.html",
+    "retrieved_date": "2026-10-04",
+    "sha256": "d470a4c58a10a1898eafa5d433d7aa2e1fc58e1db9a0079d67055341718c9737",
+    "bytes": 158432
+  },
+  {
+    "id": "official_small_highrise",
+    "url": "https://xqjsb.sspu.edu.cn/2024/0819/c406a155926/page.htm",
+    "path": "input/evidence/buildings/official_small_highrise.html",
+    "retrieved_date": "2026-10-04",
+    "sha256": "7de9bd6f6c88701202984bebd7ae08829708aee0254100ab6229c1ad5596d025",
+    "bytes": 9060
+  }
+]

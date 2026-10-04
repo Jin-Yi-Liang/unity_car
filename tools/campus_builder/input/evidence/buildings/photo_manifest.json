@@ -1,0 +1,65 @@
+[
+  {
+    "name": "administration",
+    "url": "https://5b0988e595225.cdn.sohucs.com/images/20190829/3bf0a69a302548ab850cfaabeb6988d4.jpeg",
+    "bytes": 170730,
+    "sha256": "e26ee5bc3b6c90d92ba0174c2bb18b3e5472bcfe7c695e49efb5f825bb3449a9",
+    "retrieved_date": "2026-10-04"
+  },
+  {
+    "name": "teaching",
+    "url": "https://5b0988e595225.cdn.sohucs.com/images/20190829/d1279c5ff87c48beb488cb1f4bf5628c.jpeg",
+    "bytes": 158613,
+    "sha256": "d007ab1dd645731fc640a8fe06cee09efaf29ff4924f2532cfd429e922d68833",
+    "retrieved_date": "2026-10-04"
+  },
+  {
+    "name": "library",
+    "url": "https://5b0988e595225.cdn.sohucs.com/images/20190901/5edfa3dce9de4534ac424d58eca3c733.jpeg",
+    "bytes": 117598,
+    "sha256": "3d0ec875610c760caa89cfb7643903a3e67d3cc661f4bcae3c6a3e0e47959b91",
+    "retrieved_date": "2026-10-04"
+  },
+  {
+    "name": "gym",
+    "url": "https://5b0988e595225.cdn.sohucs.com/images/20190901/b37dcace278c461ba0bd12fde50e1ef2.jpeg",
+    "bytes": 95947,
+    "sha256": "a311b7ba2b407ce186d6b830b2c89af823931903a69675f14125a78d914ad362",
+    "retrieved_date": "2026-10-04"
+  },
+  {
+    "name": "library_exterior",
+    "url": "https://5b0988e595225.cdn.sohucs.com/images/20190901/cfb03c724d0049b5b4eb734255ddc58e.jpeg",
+    "bytes": 104410,
+    "sha256": "0af0a2d3c7cf4cfe058d7fad29dac412dfe44b5cb99746ecf47c0b75a59bfd9e",
+    "retrieved_date": "2026-10-04"
+  },
+  {
+    "name": "teaching_front",
+    "url": "https://5b0988e595225.cdn.sohucs.com/images/20190829/9c84a8eea60f40ad827e74de1434c501.jpeg",
+    "bytes": 143183,
+    "sha256": "29b18d7b5cb0c8035c0c012105bf7ffb1e01ed609f72042dea8f12b5b89d458a",
+    "retrieved_date": "2026-10-04"
+  },
+  {
+    "name": "exhibition",
+    "url": "https://5b0988e595225.cdn.sohucs.com/images/20190829/bddedc3f24674c5d8cf2a95211981078.jpeg",
+    "bytes": 180760,
+    "sha256": "51758624052171f8a90beb174cc58f3ccdc438af4eaa369129f829e3fb91c19d",
+    "retrieved_date": "2026-10-04"
+  },
+  {
+    "name": "exchange",
+    "url": "https://5b0988e595225.cdn.sohucs.com/images/20190829/7e45346a20e845519edd004f6dcb2481.jpeg",
+    "bytes": 57732,
+    "sha256": "cf0d45e272c08ff23e16cf341de25b390579afee76b8163beb98b87320a9773b",
+    "retrieved_date": "2026-10-04"
+  },
+  {
+    "name": "library_front",
+    "url": "https://5b0988e595225.cdn.sohucs.com/images/20190901/774ab0f68b314987b0c2e9baa9c8128a.jpeg",
+    "bytes": 83795,
+    "sha256": "0ed5bbc24449c3afc306c2ae11a530e9d45bb2d2f96f23b8e31b3d95a60f716b",
+    "retrieved_date": "2026-10-04"
+  }
+]

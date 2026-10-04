@@ -11,6 +11,7 @@ from shapely.geometry import LineString, Polygon, box
 from shapely.ops import unary_union
 from road_geometry import repair_routes
 from metric_mapping import MetricMapping
+from building_profiles import load_profiles,resolve,generate_textures,report_buildings
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = ROOT.parents[1]
@@ -33,6 +34,11 @@ def encode_mesh(poly):
     # Boolean subtraction can leave almost coincident vertices around icon traces.
     # Blender stores float32 vertices: microscopic features far from the origin
     # can collapse even when GEOS double-precision geometry is valid.
+    if not poly.is_valid:
+        repaired=poly.buffer(0)
+        if repaired.geom_type!='Polygon' or abs(repaired.area-poly.area)>max(1e-7,poly.area*1e-9):
+            raise ValueError('Invalid polygon requires a material geometry change')
+        poly=repaired
     poly = set_precision(poly, 0.001).simplify(0.002, preserve_topology=True)
     ring_coords=[tuple(p[:2]) for ring in [poly.exterior,*poly.interiors] for p in list(ring.coords)[:-1]]
     if len(set(ring_coords))!=len(ring_coords):
@@ -67,6 +73,8 @@ def encode_mesh(poly):
 def analyze():
     cfg = json.loads((ROOT / 'config/campus_config.json').read_text())
     source = json.loads((ROOT / 'config/source_geometry.json').read_text())
+    profiles=load_profiles(ROOT)
+    generate_textures(ROOT,profiles)
     primary = REPO / cfg['primary_map']
     reference = REPO / cfg['reference_map']
     image = Image.open(primary).convert('RGB')
@@ -84,7 +92,7 @@ def analyze():
     def xy(point):
         return mapping.point(point)
 
-    data = dict(schema_version=2, model_version='0.2',calibration_version='0.2',metadata=dict(coordinate_system='local_metric',
+    data = dict(schema_version=2, model_version=cfg['model_version'],calibration_version='0.2',metadata=dict(coordinate_system='local_metric',
                 axes='X=image right, Y=image up, Z=height; north arrow points +Y',
                 meters_per_pixel=calibration['meters_per_pixel'], pixel_to_metric_matrix=mapping.matrix,
                 origin_pixel=[cx, cy],ground_bounds_px=source['ground_bounds_px'], scale_status=calibration['status'], xy_z_decoupled=True),
@@ -100,7 +108,7 @@ def analyze():
     normalized = []
     for members in groups.values():
         for piece in parts(unary_union([Polygon(b['polygon_px']) for b in members])):
-            normalized.append(dict(members[0], id=f'BLDG_{len(normalized)+1:03}',
+            normalized.append(dict(members[0], id=f'BLDG_{len(normalized)+1:03}',source_trace_ids=[b['id'] for b in members if Polygon(b['polygon_px']).intersection(piece).area>0],
                                    polygon_px=list(piece.exterior.coords)[:-1]))
     source['buildings'] = normalized
     for building in source['buildings']:
@@ -111,10 +119,14 @@ def analyze():
             if poly.intersection(previous_poly).area > 0.05:
                 raise ValueError(f"Overlapping footprints: {building['id']} / {previous['id']}")
         bpolys.append(poly)
-        height = cfg['low_building_height_m'] if building['height_class'] == 'low' else cfg['default_building_height_m']
+        architecture=resolve(building,cfg,profiles)
+        height=architecture['total_height_m']
+        rect=list(metric(poly).minimum_rotated_rectangle.exterior.coords)
+        edges=[(math.dist(a,b),b[0]-a[0],b[1]-a[1]) for a,b in zip(rect,rect[1:])]
+        length,dx,dy=min(edges)
         data['buildings'].append(dict(id=building['id'], name=building['name'],
             map_label=building['map_label'], confidence=building['confidence'],
-            height_m=height, height_provenance='modeling default, not measured',
+            height_m=height, height_provenance=architecture['height_status'],architecture=architecture,roof_axis_xy=[dx/length,dy/length],
             **encode_mesh(metric(poly))))
 
     wpolys = [Polygon(p['polygon_px']) for p in source['water']]
@@ -137,7 +149,9 @@ def analyze():
     road_poly = raw_roads.difference(all_buildings.buffer(cfg['minimum_building_clearance_px']))
     removed_for_buildings = raw_roads.area - road_poly.area
     road_poly = road_poly.difference(all_water.difference(bridges))
-    bridge_surface=road_poly.intersection(bridges).intersection(all_water)
+    # The source map interrupts its water polygons beneath bridge symbols.
+    # Keep the entire annotated bridge deck, including those water gaps.
+    bridge_surface=road_poly.intersection(bridges)
     land_road_surface=road_poly.difference(bridge_surface)
     for i, poly in enumerate(parts(land_road_surface)):
         data['roads'].append(dict(id=f'ROAD_{i+1:03}', name='Merged connected road surface',
@@ -210,7 +224,7 @@ def analyze():
         reference_sha256=hashlib.sha256(reference.read_bytes()).hexdigest(),
         image_size_px=list(image.size), map_type='Stylized color campus planning diagram',
         method='Visual polygon/centreline digitization + Shapely union/difference + constrained triangulation',
-        model_version='0.2',meters_per_pixel=s,scale_status=calibration['status'], scale_reason=calibration['reason'],
+        model_version=cfg['model_version'],meters_per_pixel=s,scale_status=calibration['status'], scale_reason=calibration['reason'],
         calibration=calibration,xy_z_decoupled=True,
         z_parameters_m={k:v for k,v in cfg.items() if k.endswith('_m') and k not in ['bbox_tolerance_m','navigation_junction_tolerance_m']},
         campus_ground_dimensions_m=[(xmax-xmin)*calibration['meters_per_pixel_x'],(ymax-ymin)*calibration['meters_per_pixel_y']],
@@ -231,6 +245,7 @@ def analyze():
     metadata['automatic_repairs'].append('Subtracted the central pool from its plaza to eliminate overlapping coplanar faces seen as a black patch in renders')
     metadata['automatic_repairs'].append('Fixed overhead camera roll explicitly so north is at the top, matching the source map')
     write_json(ROOT/'data/campus_map.json', data)
+    metadata['building_reconstruction']=report_buildings(ROOT,data,profiles)
     write_json(ROOT/'data/map_metadata.json', metadata)
     # Draw translucent regions, with solid contours and stable IDs, on a copy only.
     overlay = Image.new('RGBA', image.size)

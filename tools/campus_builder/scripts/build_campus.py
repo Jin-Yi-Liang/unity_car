@@ -5,12 +5,14 @@ from pathlib import Path
 
 import bpy
 import bmesh
+from mathutils import Vector
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 from validate_scene import snapshot, public_snapshot, compare
 from render_validation import setup, render
 from validate_metric import validate_metric
+from building_geometry import facade_material,finish_building
 
 
 def write(path,value):
@@ -76,7 +78,12 @@ def main():
         'Water':(0.055,0.34,0.57),'Wall':(0.46,0.45,0.41),
         'Plaza':(0.63,0.32,0.20),'Track':(0.63,0.29,0.15),'Court':(0.31,0.52,0.35)}.items()}
     solid(data['ground'],collections['Ground'],mats['Ground'],data['ground']['bottom_m'],0)
-    for b in data['buildings']:solid(b,collections['Buildings'],mats['Building'],0,b['height_m'])
+    for b in data['buildings']:
+        a=b['architecture']
+        obj=solid(b,collections['Buildings'],facade_material(b,ROOT,material),0,a['eave_height_m'])
+        roof=bpy.data.materials.get('Roof_'+b['map_label']) or material('Roof_'+b['map_label'],a['roof_rgb'])
+        end=facade_material(b,ROOT,material,'_end') if a['kind']=='administration' else None
+        finish_building(obj,b,cfg,roof,end)
     for category,coll,mat in [('roads','Roads','Road'),('bridges','Bridges','Road'),('grass','Vegetation','Grass'),('water','Water','Water'),('plazas','Plazas','Plaza'),('walls','Walls','Wall')]:
         for feature in data[category]:solid(feature,collections[coll],mats[mat],feature['bottom_m'],feature['top_m'])
     for feature in data['landmarks']:
@@ -86,7 +93,21 @@ def main():
     write(ROOT/'output/validation/source_scene.json',public_snapshot(original))
     if not original['pass_']:raise ValueError(f"Source scene failed: {original['errors'][:12]}")
     source_metric=validate_metric(data,calibration,cfg)
+    write(ROOT/'output/validation/source_metric.json',source_metric)
     if not source_metric['pass_']:raise ValueError('Source absolute metric validation failed')
+    center=(Vector(original['bbox_min'])+Vector(original['bbox_max']))/2
+    size=(Vector(original['bbox_max'])-Vector(original['bbox_min'])).length
+    for screen in bpy.data.screens:
+        for area in screen.areas:
+            if area.type=='VIEW_3D':
+                space=area.spaces.active
+                space.region_3d.view_location=center
+                space.region_3d.view_distance=size*.75
+                space.region_3d.view_rotation=Vector((-.8,1,-1.4)).to_track_quat('-Z','Y')
+                space.region_3d.view_perspective='ORTHO'
+                space.shading.type='MATERIAL'
+                space.clip_end=size*10
+    bpy.ops.file.pack_all()
     bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/'output/campus.blend'))
     # Inspect the live operator schema before using required Unity axis settings.
     operator=bpy.ops.export_scene.fbx.get_rna_type().properties
@@ -99,7 +120,7 @@ def main():
         object_types={'MESH'},axis_forward='-Z',axis_up='Y',global_scale=1.0,
         apply_unit_scale=True,apply_scale_options='FBX_SCALE_UNITS',
         bake_space_transform=True,use_mesh_modifiers=True,mesh_smooth_type='FACE',
-        add_leaf_bones=False,bake_anim=False,use_custom_props=True,path_mode='AUTO')
+        add_leaf_bones=False,bake_anim=False,use_custom_props=True,path_mode='COPY',embed_textures=True)
     bpy.ops.export_scene.gltf(filepath=str(ROOT/'output/campus.glb'),export_format='GLB',
                               use_selection=True,export_yup=True)
     export=dict(pass_=True,axis_forward='-Z',axis_up='Y',apply_unit_scale=True,
@@ -110,11 +131,23 @@ def main():
     cameras=[]
     for name,direction in [('top',(0,0,1)),('perspective_01',(0.8,-1.0,1.4)),('perspective_02',(-0.9,1.0,1.2))]:
         cameras.append(render(ROOT/f'output/previews/{name}.png',original,direction,cfg))
+    # Isolated close-ups expose roof and facade errors hidden by campus-wide views.
+    for name,labels in [('building_administration',{'1'}),('building_teaching',{'3','4','5','6','7','8'}),('building_gym',{'10'}),('building_library',{'18'})]:
+        selected=[o for o in scene.objects if o.type=='MESH' and o.get('map_label') in labels]
+        points=[o.matrix_world@v.co for o in selected for v in o.data.vertices]
+        bounds=dict(bbox_min=[min(p[i] for p in points) for i in range(3)],bbox_max=[max(p[i] for p in points) for i in range(3)])
+        visibility={o:o.hide_render for o in scene.objects if o.type=='MESH'}
+        for o in visibility:o.hide_render=o not in selected
+        cameras.append(render(ROOT/f'output/previews/{name}.png',bounds,(.8,-1,.65),cfg))
+        for o,hidden in visibility.items():o.hide_render=hidden
     # Fresh factory scene guarantees that the imported FBX stands alone.
     bpy.ops.wm.read_factory_settings(use_empty=True)
     scene=bpy.context.scene;scene.unit_settings.system='METRIC';scene.unit_settings.scale_length=1.0
     bpy.ops.import_scene.fbx(filepath=str(ROOT/'output/campus.fbx'),use_custom_props=True)
     imported=snapshot(require_applied=False)
+    texture_images=[n.image for m in bpy.data.materials if m.use_nodes for n in m.node_tree.nodes if n.type=='TEX_IMAGE' and n.image]
+    if not texture_images or any(len(image.pixels)==0 or not image.has_data for image in texture_images):raise ValueError('FBX facade textures failed to load')
+    export['embedded_facade_textures_reimported']=len(texture_images)
     if any(o.name.startswith('ScaleReference_') for o in scene.objects):raise ValueError('Debug scale objects leaked into FBX')
     comparison=compare(original,imported,cfg['bbox_tolerance_m'])
     write(ROOT/'output/validation/reimport_scene.json',public_snapshot(imported))
