@@ -1,0 +1,28 @@
+[
+  {
+    "id": "WORLD_ATHLETICS",
+    "url": "https://worldathletics.org/download/download?filename=77c027b0-46b8-405d-9ffd-889fa28e3f6e.pdf&urlslug=IAAF%2BTrack%2Band%2BField%2BFacilities%2BManual%2B2008%2BEdition%2B-%2BChapters%2B1-3",
+    "title": "Track and Field Facilities Manual, Figure 1.2.3a",
+    "retrieved_date": "2026-10-04",
+    "retrieval_method": "Official publisher content retrieved through web search index; direct PDF fetch unavailable",
+    "dimension_facts": {
+      "inner_radius_m": 36.5,
+      "straight_m": 84.39,
+      "8_lane_outer_width_m": 92.52,
+      "8_lane_outer_length_m": 176.91
+    },
+    "applicability": "Standard facility dimensions only; no proof that this campus has this exact configuration"
+  },
+  {
+    "id": "FIFA",
+    "url": "https://inside.fifa.com/innovation/stadium-guidelines/technical-guidelines/stadiums-guidelines/pitch-dimensions-and-surrounding-areas",
+    "title": "5.3 Pitch dimensions and surrounding areas",
+    "retrieved_date": "2026-10-04",
+    "retrieval_method": "Official publisher content retrieved through web search index",
+    "dimension_facts": {
+      "recommended_pitch_length_m": 105,
+      "recommended_pitch_width_m": 68
+    },
+    "applicability": "Recommended dimensions, not compulsory size of a university pitch"
+  }
+]

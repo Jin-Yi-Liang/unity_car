@@ -11,6 +11,7 @@ def snapshot(require_applied=True):
     all_points=[]
     category_counts={}
     for obj in sorted(bpy.context.scene.objects, key=lambda o:o.name):
+        if obj.get('validation_only'):continue
         if obj.type!='MESH':
             continue
         coords=[tuple(obj.matrix_world@v.co) for v in obj.data.vertices]

@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 1,
   "source_image_size": [
     900,
     1037
@@ -2310,11 +2310,7 @@
         ]
       ],
       "width_px": 10,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_002",
@@ -2350,11 +2346,7 @@
         ]
       ],
       "width_px": 9,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_003",
@@ -2406,11 +2398,7 @@
         ]
       ],
       "width_px": 10,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_004",
@@ -2438,11 +2426,7 @@
         ]
       ],
       "width_px": 7,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_005",
@@ -2466,11 +2450,7 @@
         ]
       ],
       "width_px": 8,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_006",
@@ -2514,11 +2494,7 @@
         ]
       ],
       "width_px": 8,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_007",
@@ -2558,11 +2534,7 @@
         ]
       ],
       "width_px": 8,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_008",
@@ -2594,11 +2566,7 @@
         ]
       ],
       "width_px": 6,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_009",
@@ -2622,11 +2590,7 @@
         ]
       ],
       "width_px": 6,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_010",
@@ -2646,11 +2610,7 @@
         ]
       ],
       "width_px": 7,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_011",
@@ -2674,11 +2634,7 @@
         ]
       ],
       "width_px": 5,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_012",
@@ -2722,11 +2678,7 @@
         ]
       ],
       "width_px": 9,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_013",
@@ -2754,11 +2706,7 @@
         ]
       ],
       "width_px": 7,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_014",
@@ -2806,11 +2754,7 @@
         ]
       ],
       "width_px": 8,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_015",
@@ -2834,11 +2778,7 @@
         ]
       ],
       "width_px": 7,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_016",
@@ -2858,11 +2798,7 @@
         ]
       ],
       "width_px": 6,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_017",
@@ -2878,11 +2814,7 @@
         ]
       ],
       "width_px": 7,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_018",
@@ -2906,11 +2838,7 @@
         ]
       ],
       "width_px": 8,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_019",
@@ -2934,11 +2862,7 @@
         ]
       ],
       "width_px": 10,
-      "confidence": "approximate visual centreline",
-      "road_type": "bridge",
-      "driveable": true,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_020",
@@ -2966,11 +2890,7 @@
         ]
       ],
       "width_px": 9,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_021",
@@ -3006,11 +2926,7 @@
         ]
       ],
       "width_px": 8,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_022",
@@ -3038,11 +2954,7 @@
         ]
       ],
       "width_px": 8,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_023",
@@ -3066,11 +2978,7 @@
         ]
       ],
       "width_px": 8,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_024",
@@ -3110,11 +3018,7 @@
         ]
       ],
       "width_px": 9,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_025",
@@ -3142,11 +3046,7 @@
         ]
       ],
       "width_px": 6,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_026",
@@ -3182,11 +3082,7 @@
         ]
       ],
       "width_px": 6,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_027",
@@ -3214,11 +3110,7 @@
         ]
       ],
       "width_px": 6,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_028",
@@ -3246,11 +3138,7 @@
         ]
       ],
       "width_px": 6,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_029",
@@ -3282,11 +3170,7 @@
         ]
       ],
       "width_px": 6,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_030",
@@ -3318,11 +3202,7 @@
         ]
       ],
       "width_px": 6,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_031",
@@ -3354,11 +3234,7 @@
         ]
       ],
       "width_px": 6,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_032",
@@ -3386,11 +3262,7 @@
         ]
       ],
       "width_px": 6,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_033",
@@ -3414,11 +3286,7 @@
         ]
       ],
       "width_px": 6,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_035",
@@ -3446,11 +3314,7 @@
         ]
       ],
       "width_px": 6,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_036",
@@ -3470,11 +3334,7 @@
         ]
       ],
       "width_px": 10,
-      "confidence": "approximate visual centreline",
-      "road_type": "bridge",
-      "driveable": true,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_037",
@@ -3514,11 +3374,7 @@
         ]
       ],
       "width_px": 5,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_038",
@@ -3570,11 +3426,7 @@
         ]
       ],
       "width_px": 6,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     },
     {
       "id": "ROUTE_039",
@@ -3594,11 +3446,7 @@
         ]
       ],
       "width_px": 5,
-      "confidence": "approximate visual centreline",
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+      "confidence": "approximate visual centreline"
     }
   ],
   "bridge_masks_px": [
@@ -4891,6 +4739,5 @@
     90,
     845,
     960
-  ],
-  "model_version": "0.2"
+  ]
 }

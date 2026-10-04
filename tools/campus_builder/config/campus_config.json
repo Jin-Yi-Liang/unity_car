@@ -1,10 +1,6 @@
 {
   "primary_map": "tools/campus_builder/input/campus_1.jpg",
   "reference_map": "tools/campus_builder/input/campus_2.jpg",
-  "meters_per_pixel": 0.75,
-  "scale_status": "provisional",
-  "scale_reason": "Neither map contains a readable scale bar or measured length. 0.75 m/px is a modeling choice, not a survey measurement.",
-  "height_reference_meters_per_pixel": 0.75,
   "default_building_height_m": 12.0,
   "low_building_height_m": 4.5,
   "ground_thickness_m": 0.3,
@@ -19,5 +15,15 @@
     1200
   ],
   "render_samples": 24,
-  "bbox_tolerance_m": 0.01
+  "bbox_tolerance_m": 0.01,
+  "model_version": "0.2",
+  "max_auto_road_adjustment_px": 3.0,
+  "max_auto_road_adjustment_width_fraction": 0.5,
+  "road_allowance_px": 0.01,
+  "bridge_thickness_m": 0.035,
+  "field_top_m": 0.035,
+  "track_top_m": 0.025,
+  "court_top_m": 0.025,
+  "navigation_junction_tolerance_m": 0.02,
+  "legacy_scale_comparison_meters_per_pixel": 0.75
 }

@@ -1,0 +1,288 @@
+{
+  "schema_version": 2,
+  "model_version": "0.2",
+  "calibration_version": "0.2",
+  "status": "conditional",
+  "pass_": false,
+  "residual_pass": true,
+  "evidence_pass": false,
+  "reason": "INSUFFICIENT SCALE EVIDENCE",
+  "model": "uniform_scale",
+  "meters_per_pixel": 1.268715271735978,
+  "meters_per_pixel_x": 1.268715271735978,
+  "meters_per_pixel_y": 1.268715271735978,
+  "pixel_to_metric_matrix": [
+    [
+      1.268715271735978,
+      0,
+      -612.1551186126094
+    ],
+    [
+      0,
+      -1.268715271735978,
+      666.0755176613884
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "origin_pixel": [
+    482.5,
+    525.0
+  ],
+  "metric_reference_origin": [
+    0,
+    0
+  ],
+  "anchor_count": 4,
+  "independent_source_count": 2,
+  "independent_spatial_group_count": 1,
+  "verified_source_count": 0,
+  "confidence": "LOW",
+  "anchors": [
+    {
+      "id": "TRACK_OUTER_LONG",
+      "pixel_a": [
+        210,
+        552
+      ],
+      "pixel_b": [
+        210,
+        692
+      ],
+      "real_distance_m": 176.91,
+      "source": "https://worldathletics.org/download/download?filename=77c027b0-46b8-405d-9ffd-889fa28e3f6e.pdf&urlslug=IAAF%2BTrack%2Band%2BField%2BFacilities%2BManual%2B2008%2BEdition%2B-%2BChapters%2B1-3",
+      "source_id": "WORLD_ATHLETICS",
+      "source_type": "standard-dimension assumption",
+      "confidence": "low",
+      "weight": 0.5,
+      "correlation_group": "WORLD_ATHLETICS",
+      "spatial_group": "western_sports_complex",
+      "retrieved_date": "2026-10-04",
+      "evidence_file": "input/evidence/standards_source_summary.json",
+      "notes": "Conditional fit only. Facility boundaries are manually selected on campus_1. Campus compliance with the cited standard is unverified; not an actual measured length.",
+      "evidence_sha256": "5bb5c26ac55ed6afa820d645ffe2c0ed21796c43ce6d289d4a4c668fd1e908eb",
+      "pixel_delta": [
+        0,
+        140
+      ],
+      "pixel_distance": 140.0,
+      "candidate_scale": 1.263642857142857,
+      "estimated_distance_m": 177.62013804303695,
+      "absolute_error_m": 0.7101380430369488,
+      "signed_error_m": 0.7101380430369488,
+      "relative_error_percent": 0.4014120417370125,
+      "normalized_weight": 0.0375,
+      "effective_fit_weight": 0.0375,
+      "outlier": false,
+      "metric_a": [
+        -345.724911548054,
+        -34.255312336871384
+      ],
+      "metric_b": [
+        -345.724911548054,
+        -211.87545037990833
+      ]
+    },
+    {
+      "id": "TRACK_OUTER_WIDTH",
+      "pixel_a": [
+        174,
+        622
+      ],
+      "pixel_b": [
+        246,
+        622
+      ],
+      "real_distance_m": 92.52,
+      "source": "https://worldathletics.org/download/download?filename=77c027b0-46b8-405d-9ffd-889fa28e3f6e.pdf&urlslug=IAAF%2BTrack%2Band%2BField%2BFacilities%2BManual%2B2008%2BEdition%2B-%2BChapters%2B1-3",
+      "source_id": "WORLD_ATHLETICS",
+      "source_type": "standard-dimension assumption",
+      "confidence": "low",
+      "weight": 0.5,
+      "correlation_group": "WORLD_ATHLETICS",
+      "spatial_group": "western_sports_complex",
+      "retrieved_date": "2026-10-04",
+      "evidence_file": "input/evidence/standards_source_summary.json",
+      "notes": "Conditional fit only. Facility boundaries are manually selected on campus_1. Campus compliance with the cited standard is unverified; not an actual measured length.",
+      "evidence_sha256": "5bb5c26ac55ed6afa820d645ffe2c0ed21796c43ce6d289d4a4c668fd1e908eb",
+      "pixel_delta": [
+        72,
+        0
+      ],
+      "pixel_distance": 72.0,
+      "candidate_scale": 1.285,
+      "estimated_distance_m": 91.34749956499041,
+      "absolute_error_m": 1.1725004350095816,
+      "signed_error_m": -1.1725004350095816,
+      "relative_error_percent": -1.2672940283285579,
+      "normalized_weight": 0.0375,
+      "effective_fit_weight": 0.0375,
+      "outlier": false,
+      "metric_a": [
+        -391.3986613305492,
+        -123.06538135838991
+      ],
+      "metric_b": [
+        -300.0511617655588,
+        -123.06538135838991
+      ]
+    },
+    {
+      "id": "PITCH_LONG",
+      "pixel_a": [
+        210,
+        582
+      ],
+      "pixel_b": [
+        210,
+        665
+      ],
+      "real_distance_m": 105,
+      "source": "https://inside.fifa.com/innovation/stadium-guidelines/technical-guidelines/stadiums-guidelines/pitch-dimensions-and-surrounding-areas",
+      "source_id": "FIFA",
+      "source_type": "standard-dimension assumption",
+      "confidence": "low",
+      "weight": 0.5,
+      "correlation_group": "FIFA",
+      "spatial_group": "western_sports_complex",
+      "retrieved_date": "2026-10-04",
+      "evidence_file": "input/evidence/standards_source_summary.json",
+      "notes": "Conditional fit only. Facility boundaries are manually selected on campus_1. Campus compliance with the cited standard is unverified; not an actual measured length.",
+      "evidence_sha256": "5bb5c26ac55ed6afa820d645ffe2c0ed21796c43ce6d289d4a4c668fd1e908eb",
+      "pixel_delta": [
+        0,
+        83
+      ],
+      "pixel_distance": 83.0,
+      "candidate_scale": 1.2650602409638554,
+      "estimated_distance_m": 105.30336755408621,
+      "absolute_error_m": 0.30336755408620775,
+      "signed_error_m": 0.30336755408620775,
+      "relative_error_percent": 0.2889214800821026,
+      "normalized_weight": 0.0375,
+      "effective_fit_weight": 0.0375,
+      "outlier": false,
+      "metric_a": [
+        -345.724911548054,
+        -72.31677048895074
+      ],
+      "metric_b": [
+        -345.724911548054,
+        -177.62013804303695
+      ]
+    },
+    {
+      "id": "PITCH_WIDTH",
+      "pixel_a": [
+        184,
+        622
+      ],
+      "pixel_b": [
+        237,
+        622
+      ],
+      "real_distance_m": 68,
+      "source": "https://inside.fifa.com/innovation/stadium-guidelines/technical-guidelines/stadiums-guidelines/pitch-dimensions-and-surrounding-areas",
+      "source_id": "FIFA",
+      "source_type": "standard-dimension assumption",
+      "confidence": "low",
+      "weight": 0.5,
+      "correlation_group": "FIFA",
+      "spatial_group": "western_sports_complex",
+      "retrieved_date": "2026-10-04",
+      "evidence_file": "input/evidence/standards_source_summary.json",
+      "notes": "Conditional fit only. Facility boundaries are manually selected on campus_1. Campus compliance with the cited standard is unverified; not an actual measured length.",
+      "evidence_sha256": "5bb5c26ac55ed6afa820d645ffe2c0ed21796c43ce6d289d4a4c668fd1e908eb",
+      "pixel_delta": [
+        53,
+        0
+      ],
+      "pixel_distance": 53.0,
+      "candidate_scale": 1.2830188679245282,
+      "estimated_distance_m": 67.24190940200685,
+      "absolute_error_m": 0.7580905979931458,
+      "signed_error_m": -0.7580905979931458,
+      "relative_error_percent": -1.1148391146958025,
+      "normalized_weight": 0.0375,
+      "effective_fit_weight": 0.0375,
+      "outlier": false,
+      "metric_a": [
+        -378.71150861318944,
+        -123.06538135838991
+      ],
+      "metric_b": [
+        -311.4695992111826,
+        -123.06538135838991
+      ]
+    }
+  ],
+  "rmse_m": 0.7977760553413249,
+  "rmse_percent": 0.8794185088450853,
+  "max_relative_error_percent": 1.2672940283285579,
+  "relative_errors_percent": [
+    0.4014120417370125,
+    -1.2672940283285579,
+    0.2889214800821026,
+    -1.1148391146958025
+  ],
+  "candidates": [
+    {
+      "model": "uniform_scale",
+      "meters_per_pixel": 1.268715271735978,
+      "rmse_m": 0.7977760553413227,
+      "rmse_percent": 0.8794185088450946,
+      "max_relative_error_percent": 1.2672940283285579,
+      "relative_errors_percent": [
+        0.40141204173699646,
+        -1.2672940283285579,
+        0.2889214800820755,
+        -1.1148391146958445
+      ]
+    },
+    {
+      "model": "anisotropic_scale",
+      "meters_per_pixel_x": 1.2843037657950707,
+      "meters_per_pixel_y": 1.2640114764619277,
+      "rmse_m": 0.06593740934617685,
+      "rmse_percent": 0.071917864970866,
+      "max_relative_error_percent": 0.1001464516746274,
+      "relative_errors_percent": [
+        0.029171163116762856,
+        -0.05418165018904348,
+        -0.08290233681905301,
+        0.1001464516746274
+      ]
+    }
+  ],
+  "selection_reason": "Simpler model first: uniform residuals do not justify extra degrees of freedom.",
+  "robust_statistics": {
+    "candidate_scale_median": 1.2740395544441918,
+    "candidate_scale_MAD": 0.009688005390835586,
+    "outlier_ids": [],
+    "high_confidence_conflicts": []
+  },
+  "acceptance": {
+    "good_rmse_percent": 5,
+    "warning_rmse_percent": 10,
+    "majority_error_percent": 8,
+    "max_reliable_error_percent": 10,
+    "minimum_anchor_count": 3,
+    "minimum_verified_source_count": 1
+  },
+  "required_extra_evidence": {
+    "anchor_id": "TRACK_OUTER_LONG",
+    "pixel_a": [
+      210,
+      552
+    ],
+    "pixel_b": [
+      210,
+      692
+    ],
+    "request": "Provide the measured north-to-south length in metres between the outer track boundary at these endpoints, or two independently measured long campus baselines for HIGH confidence."
+  },
+  "uncertainty_note": "Residuals quantify fit conditional on the reference dimensions. They do not bound actual campus-scale error when facility standard compliance is unknown."
+}

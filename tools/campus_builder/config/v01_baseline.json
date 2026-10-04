@@ -1,0 +1,38 @@
+{
+  "errors": [],
+  "object_count": 126,
+  "category_counts": {
+    "BLDG": 70,
+    "GRASS": 37,
+    "Ground": 1,
+    "LANDMARK": 4,
+    "PLAZA": 5,
+    "ROAD": 1,
+    "WATER": 8
+  },
+  "total_vertices": 57158,
+  "total_faces": 85585,
+  "bbox_min": [
+    -271.875,
+    -326.25,
+    -0.30000001192092896
+  ],
+  "bbox_max": [
+    271.875,
+    326.25,
+    12.0
+  ],
+  "dimensions_m": [
+    543.75,
+    652.5,
+    12.300000011920929
+  ],
+  "center_m": [
+    0.0,
+    0.0,
+    5.8499999940395355
+  ],
+  "pass": true,
+  "meters_per_pixel": 0.75,
+  "source_geometry_sha256": "f8bb7f82ceae2e7a55b866d10fb7e214eb831716d5cd1cb8713f709b9b219ab1"
+}

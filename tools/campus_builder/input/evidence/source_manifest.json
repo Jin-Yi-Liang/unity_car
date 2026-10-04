@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "path": "official_campus_page.html",
+      "url": "https://www.sspu.edu.cn/2972/list.htm",
+      "retrieved_date": "2026-10-04",
+      "sha256": "b253f3b303eb392b9ba61a398c44d0724050d4224507c5250b0980e764514f84",
+      "purpose": "Identity/layout cross-check only; no scale bar"
+    },
+    {
+      "path": "official_campus_map.png",
+      "url": "https://www.sspu.edu.cn/_upload/article/images/d1/76/6d6451584147bf7325785954f2a0/af909e87-060a-4af5-862f-5be262510d10.png",
+      "retrieved_date": "2026-10-04",
+      "sha256": "a484c4653c8d662417c25024cc9da3c58c68c4a76d376c975a7ac993ca863c5d",
+      "purpose": "Identity/layout cross-check only; no scale bar"
+    }
+  ],
+  "standards_summary": "standards_source_summary.json",
+  "network_limitations": "OSM main API and Overpass attempts timed out or returned HTTP 406. No raw OSM coordinates obtained or used."
+}

@@ -1,0 +1,58 @@
+{
+  "pass_": false,
+  "errors": [
+    {
+      "node_id": "NODE_0045",
+      "reason": "Source trace node outside the corresponding rendered road/bridge surface"
+    },
+    {
+      "node_id": "NODE_0053",
+      "reason": "Source trace node outside the corresponding rendered road/bridge surface"
+    },
+    {
+      "node_id": "NODE_0068",
+      "reason": "Source trace node outside the corresponding rendered road/bridge surface"
+    }
+  ],
+  "missing_junctions": [],
+  "node_count": 80,
+  "edge_count": 93,
+  "connected_component_count": 6,
+  "component_sizes": [
+    2,
+    59,
+    13,
+    2,
+    2,
+    2
+  ],
+  "driveable_node_count": 0,
+  "driveable_edge_count": 0,
+  "driveable_component_count": 0,
+  "dijkstra_tests": [],
+  "connectivity_scope": "Undirected structural checks only. Unknown road access/direction is not promoted to a legal driving route.",
+  "flagged_source_routes": [
+    "ROUTE_002",
+    "ROUTE_003",
+    "ROUTE_006",
+    "ROUTE_011",
+    "ROUTE_014",
+    "ROUTE_018",
+    "ROUTE_019",
+    "ROUTE_021",
+    "ROUTE_022",
+    "ROUTE_023",
+    "ROUTE_024",
+    "ROUTE_025",
+    "ROUTE_026",
+    "ROUTE_027",
+    "ROUTE_028",
+    "ROUTE_032",
+    "ROUTE_033",
+    "ROUTE_035",
+    "ROUTE_036",
+    "ROUTE_037",
+    "ROUTE_038",
+    "ROUTE_039"
+  ]
+}

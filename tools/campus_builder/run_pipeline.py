@@ -6,7 +6,9 @@ import json
 import shutil
 import subprocess
 import sys
+import platform
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 from PIL import Image, ImageChops, ImageStat
@@ -14,6 +16,10 @@ from PIL import Image, ImageChops, ImageStat
 ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT/'scripts'))
 from analyze_map import analyze, write_json
+from calibrate_scale import calibrate
+from navigation_graph import generate as generate_navigation
+import PIL
+import shapely
 
 
 def image_check(path,resolution):
@@ -46,7 +52,9 @@ def clean_generated():
 
 def build_once(blender,index):
     clean_generated()
+    calibration=calibrate()
     metadata=analyze()
+    navigation=generate_navigation()
     log=ROOT/f'output/logs/run_{index:02}.log'
     with log.open('w') as stream:
         process=subprocess.run([blender,'--background','--factory-startup','--python-exit-code','1',
@@ -72,14 +80,21 @@ def build_once(blender,index):
              source_scene=validation['original_scene'], comparison=validation['comparison'],
              render_validation=renders,fbx_render_appearance=appearance,artifacts=files,
              inputs_unchanged=inputs_unchanged,log=str(log))
+    run['data_hashes']={name:hashlib.sha256((ROOT/'data'/name).read_bytes()).hexdigest() for name in ['campus_map.json','scale_calibration.json','navigation_graph.json','road_validation.json']}
+    run['stages']=dict(GEOMETRY=validation['original_scene']['pass'] and metadata['planar_validation']['pass'],
+                       SCALE=calibration['pass_'],ROADS=metadata['road_validation']['pass_'],
+                       NAVIGATION=navigation['pass_'],FBX=validation['comparison']['pass_'] and validation['absolute_metric_validation']['reimport']['pass_'],
+                       RENDER=all(v['pass'] for v in renders) and appearance['pass_'])
+    metadata['navigation_validation']=navigation
     if not passed:raise ValueError(f'Artifact/render validation failed: {run}')
     return run,metadata,validation
 
 
-def report(runs,metadata,validation,idem):
+def report(runs,metadata,validation,idem,regression=None):
     final=runs[-1]
-    report=dict(result='PASS' if idem['pass'] else 'PARTIAL',
-        generated_at=datetime.now().astimezone().isoformat(),map_metadata=metadata,
+    complete=idem['pass'] and all(final['stages'].values())
+    report=dict(result='PASS' if complete else 'PARTIAL',model_version='0.2',
+        generated_at=datetime.now(ZoneInfo('Asia/Shanghai')).isoformat(),map_metadata=metadata,
         blender_validation=validation,render_validation=final['render_validation'],
         fbx_render_appearance=final['fbx_render_appearance'],artifacts=final['artifacts'],
         inputs_unchanged=final['inputs_unchanged'],idempotency=idem,
@@ -89,6 +104,20 @@ def report(runs,metadata,validation,idem):
             'Collider components, layers, water exclusion and walkable masks must be configured in the engine.',
             'No collision components, vehicle logic, navigation bake, interiors or fine facade details are generated.',
             'Road slab tops are 0.045 m above ground at the current scale; engine collision design should account for these small transitions.'])
+    report['stages']=dict(final['stages'],IDEMPOTENCY=idem['pass'])
+    report['reasons']=[]
+    if not final['stages']['SCALE']:report['reasons'].append(metadata['calibration']['reason'])
+    if not final['stages']['ROADS']:report['reasons'].append('SOURCE ROAD TRACE CONFLICTS: '+', '.join(metadata['road_validation']['flagged_route_ids']))
+    if not final['stages']['NAVIGATION']:report['reasons'].append('Navigation graph retains flagged source-trace nodes/edges; not approved for vehicle routing')
+    commit=subprocess.run(['git','rev-parse','HEAD'],cwd=ROOT,check=True,capture_output=True,text=True).stdout.strip()
+    report['versions']=dict(git_commit=commit,python=platform.python_version(),shapely=shapely.__version__,pillow=PIL.__version__,blender=validation['blender_version'])
+    report['regression_tests']=regression
+    report['source_manifest']=json.loads((ROOT/'input/evidence/source_manifest.json').read_text())
+    baseline=json.loads((ROOT/'config/v01_baseline.json').read_text())
+    report['mesh_complexity_comparison']=dict(v01_vertices=baseline['total_vertices'],v02_vertices=validation['original_scene']['total_vertices'],
+        v01_faces=baseline['total_faces'],v02_faces=validation['original_scene']['total_faces'],
+        vertex_ratio=validation['original_scene']['total_vertices']/baseline['total_vertices'],
+        face_ratio=validation['original_scene']['total_faces']/baseline['total_faces'])
     write_json(ROOT/'output/validation/validation_report.json',report)
     scene=validation['original_scene']; counts=scene['category_counts']
     lines=['# Campus build validation report','',f"RESULT: {report['result']}",'',
@@ -97,7 +126,7 @@ def report(runs,metadata,validation,idem):
         f"Method: {metadata['method']}",'',
         f"Scale: **{metadata['meters_per_pixel']} m/px, {metadata['scale_status']}**. {metadata['scale_reason']}",
         '1 Blender unit = 1 modeled metre. X = image right, Y = image up, Z = height. Image Y is flipped; north = +Y.',
-        f"Origin pixel: {metadata['origin_pixel']}. All dimensions, including default heights, scale through campus_config.json.",'',
+        f"Origin pixel: {metadata['origin_pixel']}. XY reads the calibration matrix; Z parameters are independent modeled metres.",'',
         f"Campus Ground bbox (m): {scene['bbox_min']} to {scene['bbox_max']}",
         f"Campus dimensions (m): {scene['dimensions_m']}",
         f"Buildings: {counts['BLDG']}; road surface Mesh components: {counts['ROAD']}; annotated road routes: {metadata['planar_validation']['road_routes']}",
@@ -133,6 +162,42 @@ def report(runs,metadata,validation,idem):
     lines+=['','## Reproduce','', '```bash','python3 tools/campus_builder/run_pipeline.py --verify-idempotency','```','',
             'Only tool-owned data/output artifacts are cleared; source images and configuration are preserved.',
             'Detailed object checks, camera positions, hashes and repeated-run evidence are in validation_report.json and output/idempotency_runs.json.','']
+    calibration=metadata['calibration'];graph=metadata['navigation_validation'];road=metadata['road_validation']
+    lines+=['## V0.2 stage acceptance','', '| Stage | Result |','|---|---|']
+    lines += [f"| {key} | {'PASS' if passed else 'FAIL / FLAG'} |" for key,passed in report['stages'].items()]
+    lines+=['','Overall result reasons:']+['- '+r for r in report['reasons']]
+    lines+=['','## Metric calibration','',
+        f"Model: {calibration['model']}; scale X/Y: {calibration['meters_per_pixel_x']:.9f} / {calibration['meters_per_pixel_y']:.9f} m/px; confidence: {calibration['confidence']}",
+        f"Anchor count: {calibration['anchor_count']}; independent source documents: {calibration['independent_source_count']}; independent physical groups: {calibration['independent_spatial_group_count']}; actual verified campus sources: {calibration['verified_source_count']}",
+        f"Weighted RMSE: {calibration['rmse_m']:.4f} m / {calibration['rmse_percent']:.4f}%; max relative residual: {calibration['max_relative_error_percent']:.4f}%",
+        f"Scale change versus V0.1 arbitrary {baseline['meters_per_pixel']} m/px: {(metadata['meters_per_pixel']/baseline['meters_per_pixel']-1)*100:+.4f}%",
+        f"Ground area: {metadata['ground_area_m2']:.3f} m²; generalized campus parcel area: {metadata['campus_parcel_area_m2']:.3f} m². Both remain conditional on unverified facility assumptions.",
+        'Building defaults stay 12.0 m / 4.5 m; all surface levels/thicknesses are independent of XY calibration.',
+        'Full anchor table, provenance and competing model residuals: [scale_calibration_report.md](scale_calibration_report.md).',
+        '', '## FBX absolute metres','',
+        f"Source Ground width/length: {validation['absolute_metric_validation']['source']['measured_ground_width_m']:.6f} / {validation['absolute_metric_validation']['source']['measured_ground_length_m']:.6f} m",
+        f"Reimport Ground width/length: {validation['absolute_metric_validation']['reimport']['measured_ground_width_m']:.6f} / {validation['absolute_metric_validation']['reimport']['measured_ground_length_m']:.6f} m",
+        'Anchor endpoints are registered against actual Ground Mesh corners; measured world lengths must match calibrated expected lengths within 0.01 m.',
+        '1 m / 10 m / 50 m references are measured as real Blender meshes; validation-only collection is explicitly excluded from FBX/GLB.',
+        f"Bridge objects: {counts.get('BRIDGE',0)}; bridge properties surface_type/driveable/collidable checked again after import.",
+        '', '## Road correction gate','',
+        f"Maximum accepted automatic adjustment: {road['max_automatic_adjustment_px']:.4f} px. Each route is bounded by min(3 px, half width).",
+        'Flagged traces are NOT silently re-planned. Review meshes clip overlapping areas for inspection only; this is not a successful trace repair.',
+        '| Route | Status | Allowed px | Accepted shift px | Collision length px |','|---|---|---|---|---|']
+    for r in road['routes']:lines.append(f"| {r['route_id']} | {r['status']} | {r['allowed_adjustment_px']:.2f} | {r['automatic_adjustment_px']:.3f} | {r['remaining_collision_length_px']:.3f} |")
+    lines+=['','## Navigation graph','',
+        f"Nodes: {graph['node_count']}; edges: {graph['edge_count']}; connected components: {graph['connected_component_count']}.",
+        f"Verified driveable nodes/edges/components: {graph['driveable_node_count']} / {graph['driveable_edge_count']} / {graph['driveable_component_count']}.",
+        f"Validation: {'PASS' if graph['pass_'] else 'FLAG'}; detailed errors are in navigation_validation.json and navigation_graph.json.",
+        f"Dijkstra checks executed: {len(graph['dijkstra_tests'])}. Zero means no approved driveable connected pair is available; it is not a connectivity PASS.",
+        graph['connectivity_scope'],
+        'Nodes are created at endpoints, centreline intersections and bridge boundaries. Curvature vertices remain edge polyline geometry.',
+        'Unknown vehicle permissions/directions remain null. Invalid trace edges are marked validation_pass=false.',
+        '', '## Complexity and reproducibility','',json.dumps(report['mesh_complexity_comparison']),
+        json.dumps(report['versions']),
+        f"Regression tests: {regression}; tests cover outliers/conflicting evidence, evidence gate, XY/Z independence, bounded repair, shared junctions and Dijkstra on known valid routes.",
+        'JSON data hashes and source Mesh summaries are identical across two independent clean builds.',
+        '', '## Additional evidence needed','',calibration['required_extra_evidence']['request'],'']
     (ROOT/'output/validation/validation_report.md').write_text('\n'.join(lines))
 
 
@@ -143,6 +208,12 @@ def main():
     args=parser.parse_args()
     if not args.blender:raise RuntimeError('Blender executable not found')
     (ROOT/'data').mkdir(exist_ok=True);(ROOT/'output').mkdir(exist_ok=True)
+    (ROOT/'output/logs').mkdir(exist_ok=True)
+    tests=subprocess.run([sys.executable,'-m','unittest','discover','-s',str(ROOT/'tests'),'-v'],capture_output=True,text=True)
+    test_log=ROOT/'output/logs/test_v02.log'
+    test_log.write_text(tests.stdout+tests.stderr)
+    if tests.returncode:raise RuntimeError(f'Regression tests failed; see {test_log}')
+    regression=dict(pass_=True,log=str(test_log),command='python3 -m unittest discover -s tools/campus_builder/tests -v')
     runs=[]
     for index in range(1,3 if args.verify_idempotency else 2):
         print(f'Clean build {index}: map -> Blender -> FBX -> clean import -> render -> image checks',flush=True)
@@ -151,11 +222,13 @@ def main():
         write_json(ROOT/'output/idempotency_runs.json',runs)
         print(f"Build {index} PASS: {run['source_scene']['object_count']} meshes",flush=True)
     idem=dict(runs=len(runs))
-    idem['pass']=len(runs)>=2 and len({r['map_sha256'] for r in runs})==1 and all(r['source_scene']==runs[0]['source_scene'] for r in runs)
+    idem['pass']=len(runs)>=2 and all(r['data_hashes']==runs[0]['data_hashes'] and r['source_scene']==runs[0]['source_scene'] for r in runs)
     idem['criteria']='Each run clears generated data/assets/previews; metric map SHA256 and all source mesh summaries must match; each FBX round-trip and render must pass independently.'
-    report(runs,metadata,validation,idem)
-    print('RESULT: '+('PASS' if idem['pass'] else 'PARTIAL (run --verify-idempotency for repeated clean-build acceptance)'),flush=True)
+    report(runs,metadata,validation,idem,regression)
+    complete=idem['pass'] and all(runs[-1]['stages'].values())
+    print('RESULT: '+('PASS' if complete else 'PARTIAL (see separate SCALE / ROADS / NAVIGATION gates in validation_report.md)'),flush=True)
     if args.verify_idempotency and not idem['pass']:raise RuntimeError('Idempotency verification failed')
+    if not complete:sys.exit(2)
 
 
 if __name__=='__main__':main()

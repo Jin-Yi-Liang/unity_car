@@ -1,0 +1,120 @@
+{
+  "schema_version": 2,
+  "calibration_version": "0.2",
+  "anchors": [
+    {
+      "id": "TRACK_OUTER_LONG",
+      "pixel_a": [
+        210,
+        552
+      ],
+      "pixel_b": [
+        210,
+        692
+      ],
+      "real_distance_m": 176.91,
+      "source": "https://worldathletics.org/download/download?filename=77c027b0-46b8-405d-9ffd-889fa28e3f6e.pdf&urlslug=IAAF%2BTrack%2Band%2BField%2BFacilities%2BManual%2B2008%2BEdition%2B-%2BChapters%2B1-3",
+      "source_id": "WORLD_ATHLETICS",
+      "source_type": "standard-dimension assumption",
+      "confidence": "low",
+      "weight": 0.5,
+      "correlation_group": "WORLD_ATHLETICS",
+      "spatial_group": "western_sports_complex",
+      "retrieved_date": "2026-10-04",
+      "evidence_file": "input/evidence/standards_source_summary.json",
+      "notes": "Conditional fit only. Facility boundaries are manually selected on campus_1. Campus compliance with the cited standard is unverified; not an actual measured length."
+    },
+    {
+      "id": "TRACK_OUTER_WIDTH",
+      "pixel_a": [
+        174,
+        622
+      ],
+      "pixel_b": [
+        246,
+        622
+      ],
+      "real_distance_m": 92.52,
+      "source": "https://worldathletics.org/download/download?filename=77c027b0-46b8-405d-9ffd-889fa28e3f6e.pdf&urlslug=IAAF%2BTrack%2Band%2BField%2BFacilities%2BManual%2B2008%2BEdition%2B-%2BChapters%2B1-3",
+      "source_id": "WORLD_ATHLETICS",
+      "source_type": "standard-dimension assumption",
+      "confidence": "low",
+      "weight": 0.5,
+      "correlation_group": "WORLD_ATHLETICS",
+      "spatial_group": "western_sports_complex",
+      "retrieved_date": "2026-10-04",
+      "evidence_file": "input/evidence/standards_source_summary.json",
+      "notes": "Conditional fit only. Facility boundaries are manually selected on campus_1. Campus compliance with the cited standard is unverified; not an actual measured length."
+    },
+    {
+      "id": "PITCH_LONG",
+      "pixel_a": [
+        210,
+        582
+      ],
+      "pixel_b": [
+        210,
+        665
+      ],
+      "real_distance_m": 105,
+      "source": "https://inside.fifa.com/innovation/stadium-guidelines/technical-guidelines/stadiums-guidelines/pitch-dimensions-and-surrounding-areas",
+      "source_id": "FIFA",
+      "source_type": "standard-dimension assumption",
+      "confidence": "low",
+      "weight": 0.5,
+      "correlation_group": "FIFA",
+      "spatial_group": "western_sports_complex",
+      "retrieved_date": "2026-10-04",
+      "evidence_file": "input/evidence/standards_source_summary.json",
+      "notes": "Conditional fit only. Facility boundaries are manually selected on campus_1. Campus compliance with the cited standard is unverified; not an actual measured length."
+    },
+    {
+      "id": "PITCH_WIDTH",
+      "pixel_a": [
+        184,
+        622
+      ],
+      "pixel_b": [
+        237,
+        622
+      ],
+      "real_distance_m": 68,
+      "source": "https://inside.fifa.com/innovation/stadium-guidelines/technical-guidelines/stadiums-guidelines/pitch-dimensions-and-surrounding-areas",
+      "source_id": "FIFA",
+      "source_type": "standard-dimension assumption",
+      "confidence": "low",
+      "weight": 0.5,
+      "correlation_group": "FIFA",
+      "spatial_group": "western_sports_complex",
+      "retrieved_date": "2026-10-04",
+      "evidence_file": "input/evidence/standards_source_summary.json",
+      "notes": "Conditional fit only. Facility boundaries are manually selected on campus_1. Campus compliance with the cited standard is unverified; not an actual measured length."
+    }
+  ],
+  "control_points": [],
+  "acceptance": {
+    "good_rmse_percent": 5,
+    "warning_rmse_percent": 10,
+    "majority_error_percent": 8,
+    "max_reliable_error_percent": 10,
+    "minimum_anchor_count": 3,
+    "minimum_verified_source_count": 1
+  },
+  "model_selection": {
+    "anisotropic_min_anchor_count": 4,
+    "minimum_anisotropic_rmse_improvement_percent_points": 3,
+    "minimum_anisotropic_scale_difference_percent": 5
+  },
+  "required_extra_evidence": {
+    "anchor_id": "TRACK_OUTER_LONG",
+    "pixel_a": [
+      210,
+      552
+    ],
+    "pixel_b": [
+      210,
+      692
+    ],
+    "request": "Provide the measured north-to-south length in metres between the outer track boundary at these endpoints, or two independently measured long campus baselines for HIGH confidence."
+  }
+}
