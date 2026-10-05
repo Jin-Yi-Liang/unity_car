@@ -1,0 +1,55 @@
+{
+  "pass_": true,
+  "source": {
+    "pass_": true,
+    "sites": [
+      {
+        "site_id": "LIBRARY",
+        "pass_": true,
+        "errors": []
+      },
+      {
+        "site_id": "TEACHING_3",
+        "pass_": true,
+        "errors": []
+      },
+      {
+        "site_id": "CANTEEN_20",
+        "pass_": true,
+        "errors": []
+      },
+      {
+        "site_id": "DORM_11",
+        "pass_": true,
+        "errors": []
+      }
+    ],
+    "scope": "Absolute marker positions, bay dimensions and assumptions survive export; real door locations and traffic access are not certified."
+  },
+  "reimport": {
+    "pass_": true,
+    "sites": [
+      {
+        "site_id": "LIBRARY",
+        "pass_": true,
+        "errors": []
+      },
+      {
+        "site_id": "TEACHING_3",
+        "pass_": true,
+        "errors": []
+      },
+      {
+        "site_id": "CANTEEN_20",
+        "pass_": true,
+        "errors": []
+      },
+      {
+        "site_id": "DORM_11",
+        "pass_": true,
+        "errors": []
+      }
+    ],
+    "scope": "Absolute marker positions, bay dimensions and assumptions survive export; real door locations and traffic access are not certified."
+  }
+}

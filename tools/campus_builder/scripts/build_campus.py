@@ -15,6 +15,7 @@ from validate_metric import validate_metric
 from building_geometry import facade_material,finish_building
 from metric_mapping import MetricMapping
 import build_robot
+import build_delivery_sites
 
 
 def write(path,value):
@@ -79,11 +80,12 @@ def main():
     data=json.loads((ROOT/'data/campus_map.json').read_text())
     calibration=json.loads((ROOT/'data/scale_calibration.json').read_text())
     robot_data=json.loads((ROOT/'data/delivery_robot.json').read_text())
+    delivery_data=json.loads((ROOT/'data/delivery_sites.json').read_text())
     bpy.ops.wm.read_factory_settings(use_empty=True)
     scene=bpy.context.scene
     scene.unit_settings.system='METRIC';scene.unit_settings.scale_length=1.0
     campus=collection('Campus',scene.collection)
-    collections={n:collection(n,campus) for n in ['Ground','Roads','Bridges','Buildings','Vegetation','Water','Walls','Landmarks','Plazas']}
+    collections={n:collection(n,campus) for n in ['Ground','Roads','Bridges','Buildings','Vegetation','Water','Walls','Landmarks','Plazas','AccessPaths','DeliverySites']}
     mats={key:material(key,color) for key,color in {
         'Building':(0.72,0.58,0.39),'Road':(0.16,0.18,0.20),
         'Grass':(0.25,0.44,0.19),'Ground':(0.68,0.66,0.58),
@@ -101,6 +103,9 @@ def main():
     for feature in data['landmarks']:
         mat={'track':'Track','field':'Grass','court':'Court','water':'Water'}[feature['kind']]
         solid(feature,collections['Landmarks'],mats[mat],feature['bottom_m'],feature['top_m'])
+    build_delivery_sites.build(delivery_data,collections,solid,material)
+    delivery_source=build_delivery_sites.validate(delivery_data)
+    if not delivery_source['pass_']:raise ValueError(f'Candidate delivery source geometry failed: {delivery_source}')
     robot_root,robot_collection=build_robot.build(robot_data,material)
     robot_source=build_robot.validate(robot_data)
     if not robot_source['pass_']:raise ValueError(f'Robot validation failed: {robot_source}')
@@ -184,12 +189,21 @@ def main():
         bounds=dict(bbox_min=[min(p[0] for p in points),min(p[1] for p in points),0],
                     bbox_max=[max(p[0] for p in points),max(p[1] for p in points),32])
         cameras.append(render(ROOT/f'output/previews/{name}.png',bounds,(.1,-.35,1.5),cfg))
+    for site in delivery_data['sites']:
+        points=[site['entry_world_m'],site['approach_world_m'],site['dock_world_m']]
+        building=next(b for b in data['buildings']if b['id']==site['building_id'])
+        bounds=dict(bbox_min=[min(p[i]for p in points)-3 for i in [0,1]]+[0],
+                    bbox_max=[max(p[i]for p in points)+3 for i in [0,1]]+[min(building['height_m'],20)])
+        normal=site['outward_world_xy']
+        cameras.append(render(ROOT/f"output/previews/delivery_site_{site['id']}.png",bounds,(normal[0],normal[1],1.2),cfg))
     # Fresh factory scene guarantees that the imported FBX stands alone.
     bpy.ops.wm.read_factory_settings(use_empty=True)
     scene=bpy.context.scene;scene.unit_settings.system='METRIC';scene.unit_settings.scale_length=1.0
     bpy.ops.import_scene.fbx(filepath=str(ROOT/'output/campus.fbx'),use_custom_props=True)
     imported=snapshot(require_applied=False)
     robot_reimport=build_robot.validate(robot_data)
+    delivery_reimport=build_delivery_sites.validate(delivery_data)
+    if not delivery_reimport['pass_']:raise ValueError(f'Candidate delivery FBX failed: {delivery_reimport}')
     if not robot_reimport['pass_']:raise ValueError(f'Placed robot FBX failed: {robot_reimport}')
     texture_images=[n.image for m in bpy.data.materials if m.use_nodes for n in m.node_tree.nodes if n.type=='TEX_IMAGE' and n.image]
     if not texture_images or any(len(image.pixels)==0 or not image.has_data for image in texture_images):raise ValueError('FBX facade textures failed to load')
@@ -231,10 +245,12 @@ def main():
         standalone_blend=asset_blend,standalone_comparison=asset_compare,standalone_mesh=public_snapshot(asset_imported),
         design_provenance=robot_data['config']['dimension_provenance'],physics_runtime_tested=False)
     write(ROOT/'output/validation/delivery_robot_validation.json',robot_validation)
+    delivery_validation=dict(pass_=delivery_source['pass_'] and delivery_reimport['pass_'],source=delivery_source,reimport=delivery_reimport)
+    write(ROOT/'output/validation/delivery_scene_validation.json',delivery_validation)
     write(ROOT/'output/validation/blender_validation.json',dict(blender_version=bpy.app.version_string,
           original_scene=public_snapshot(original),fbx_export=export,
           fbx_reimport=public_snapshot(imported),comparison=comparison,camera_validation=cameras,
-          absolute_metric_validation=dict(source=source_metric,reimport=imported_metric),delivery_robot=robot_validation,
+          absolute_metric_validation=dict(source=source_metric,reimport=imported_metric),delivery_robot=robot_validation,delivery_sites=delivery_validation,
           pass_=original['pass_'] and imported['pass_'] and comparison['pass_'] and imported_metric['pass_'] and source_metric['pass_']))
     print('CAMPUS_BLENDER_VALIDATION_PASS', flush=True)
 

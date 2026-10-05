@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "model_version": "0.5",
+  "entry_standoff_m": 1.1,
+  "access_width_m": 1.8,
+  "dock_lateral_offset_m": 1.3,
+  "entry_anchor_tolerance_px": 0.1,
+  "portal_width_m": 1.6,
+  "portal_height_m": 2.3,
+  "portal_depth_m": 0.15,
+  "portal_offset_m": 0.3,
+  "bay_thickness_m": 0.002,
+  "sites": [
+    {
+      "confidence": "low",
+      "entrance_status": "candidate facade access, not a confirmed physical doorway",
+      "source": "input/campus_1.jpg",
+      "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+      "provenance": "Building position read from map; facade access, connector alignment and roadside handoff bay are explicit simulation modeling assumptions.",
+      "id": "LIBRARY",
+      "name": "Library 18",
+      "source_trace_id": "BLDG_019",
+      "map_label": "18",
+      "entry_pixel": [
+        161,
+        309
+      ],
+      "outward_pixel": [
+        -1,
+        0
+      ],
+      "route_id": "ROUTE_002"
+    },
+    {
+      "confidence": "low",
+      "entrance_status": "candidate facade access, not a confirmed physical doorway",
+      "source": "input/campus_1.jpg",
+      "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+      "provenance": "Building position read from map; facade access, connector alignment and roadside handoff bay are explicit simulation modeling assumptions.",
+      "id": "TEACHING_3",
+      "name": "Teaching building 3",
+      "source_trace_id": "BLDG_003",
+      "map_label": "3",
+      "entry_pixel": [
+        380,
+        340
+      ],
+      "outward_pixel": [
+        0,
+        1
+      ],
+      "route_id": "ROUTE_008"
+    },
+    {
+      "confidence": "low",
+      "entrance_status": "candidate facade access, not a confirmed physical doorway",
+      "source": "input/campus_1.jpg",
+      "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+      "provenance": "Building position read from map; facade access, connector alignment and roadside handoff bay are explicit simulation modeling assumptions.",
+      "id": "CANTEEN_20",
+      "name": "Canteen 20",
+      "source_trace_id": "BLDG_023",
+      "map_label": "20",
+      "entry_pixel": [
+        497.266,
+        540.365
+      ],
+      "outward_pixel": [
+        0.9510565163,
+        -0.3090169944
+      ],
+      "route_id": "ROUTE_018"
+    },
+    {
+      "confidence": "low",
+      "entrance_status": "candidate facade access, not a confirmed physical doorway",
+      "source": "input/campus_1.jpg",
+      "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+      "provenance": "Building position read from map; facade access, connector alignment and roadside handoff bay are explicit simulation modeling assumptions.",
+      "id": "DORM_11",
+      "name": "Dormitory 11",
+      "source_trace_id": "BLDG_012",
+      "map_label": "11",
+      "entry_pixel": [
+        191.837,
+        717.343
+      ],
+      "outward_pixel": [
+        -0.3090169944,
+        -0.9510565163
+      ],
+      "route_id": "ROUTE_014"
+    }
+  ]
+}

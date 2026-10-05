@@ -1,0 +1,1838 @@
+{
+  "schema_version": 1,
+  "model_version": "0.5",
+  "policy": {
+    "schema_version": 1,
+    "id": "CAMPUS_DELIVERY_DEMO",
+    "scope": "simulation assumption only; does not certify real-campus traffic permissions",
+    "real_world_access_confirmed": false,
+    "allowed_route_ids": [
+      "ROUTE_002",
+      "ROUTE_003",
+      "ROUTE_005",
+      "ROUTE_007",
+      "ROUTE_008",
+      "ROUTE_012",
+      "ROUTE_014",
+      "ROUTE_018"
+    ],
+    "assumed_bidirectional": true,
+    "confirmed_prohibitions_override_policy": true,
+    "maneuver_model": "Orientation-independent full-body swept disk; kinematics, turning radius and dynamics are unspecified. This checks clearance, not actual steering feasibility."
+  },
+  "nodes": [
+    {
+      "id": "SIMNODE_0001",
+      "x_m": -420.5791126,
+      "y_m": 431.3631924
+    },
+    {
+      "id": "SIMNODE_0002",
+      "x_m": -414.2355362,
+      "y_m": 331.1346859
+    },
+    {
+      "id": "SIMNODE_0003",
+      "x_m": -416.7729668,
+      "y_m": 471.9620811
+    },
+    {
+      "id": "SIMNODE_0004",
+      "x_m": -414.2355362,
+      "y_m": -234.7123253
+    },
+    {
+      "id": "SIMNODE_0005",
+      "x_m": -414.2355362,
+      "y_m": -265.1614918
+    },
+    {
+      "id": "SIMNODE_0006",
+      "x_m": -414.2355362,
+      "y_m": -19.0307291
+    },
+    {
+      "id": "SIMNODE_0007",
+      "x_m": -414.2355362,
+      "y_m": 45.6737498
+    },
+    {
+      "id": "SIMNODE_0008",
+      "x_m": -272.8045038,
+      "y_m": 45.0994578
+    },
+    {
+      "id": "SIMNODE_0009",
+      "x_m": -136.3868917,
+      "y_m": 45.6737498
+    },
+    {
+      "id": "SIMNODE_0010",
+      "x_m": -414.2355362,
+      "y_m": 93.8849301
+    },
+    {
+      "id": "SIMNODE_0011",
+      "x_m": -414.2355362,
+      "y_m": 163.6642701
+    },
+    {
+      "id": "SIMNODE_0012",
+      "x_m": -414.2355362,
+      "y_m": 274.0424987
+    },
+    {
+      "id": "SIMNODE_0013",
+      "x_m": -259.4522731,
+      "y_m": 353.9715608
+    },
+    {
+      "id": "SIMNODE_0014",
+      "x_m": -175.7170651,
+      "y_m": 257.5492002
+    },
+    {
+      "id": "SIMNODE_0015",
+      "x_m": -197.1790323,
+      "y_m": -163.6111738
+    },
+    {
+      "id": "SIMNODE_0016",
+      "x_m": -373.7089226,
+      "y_m": -224.5806719
+    },
+    {
+      "id": "SIMNODE_0017",
+      "x_m": -188.7848324,
+      "y_m": -159.4140739
+    },
+    {
+      "id": "SIMNODE_0018",
+      "x_m": -187.1355026,
+      "y_m": -158.589409
+    },
+    {
+      "id": "SIMNODE_0019",
+      "x_m": -184.598072,
+      "y_m": 131.9463883
+    },
+    {
+      "id": "SIMNODE_0020",
+      "x_m": -149.0740444,
+      "y_m": 90.0787843
+    },
+    {
+      "id": "SIMNODE_0021",
+      "x_m": -179.4175335,
+      "y_m": -156.3272456
+    },
+    {
+      "id": "SIMNODE_0022",
+      "x_m": -173.9262383,
+      "y_m": 230.6867971
+    },
+    {
+      "id": "SIMNODE_0023",
+      "x_m": -98.3254336,
+      "y_m": 131.9463883
+    },
+    {
+      "id": "SIMNODE_0024",
+      "x_m": -168.1047735,
+      "y_m": 485.9179491
+    },
+    {
+      "id": "SIMNODE_0025",
+      "x_m": -1.9030729,
+      "y_m": 74.854201
+    },
+    {
+      "id": "SIMNODE_0026",
+      "x_m": -119.8935932,
+      "y_m": -15.2245833
+    },
+    {
+      "id": "SIMNODE_0027",
+      "x_m": -36.1583852,
+      "y_m": -109.1095134
+    },
+    {
+      "id": "SIMNODE_0028",
+      "x_m": -45.0393922,
+      "y_m": 144.633541
+    },
+    {
+      "id": "SIMNODE_0029",
+      "x_m": 4.6314473,
+      "y_m": 40.7294845
+    },
+    {
+      "id": "SIMNODE_0030",
+      "x_m": 9.5153645,
+      "y_m": 15.2245833
+    },
+    {
+      "id": "SIMNODE_0031",
+      "x_m": 26.749039,
+      "y_m": -17.0889945
+    },
+    {
+      "id": "SIMNODE_0032",
+      "x_m": 27.631104,
+      "y_m": -20.0659638
+    },
+    {
+      "id": "SIMNODE_0033",
+      "x_m": 39.9645311,
+      "y_m": 22.8368749
+    },
+    {
+      "id": "SIMNODE_0034",
+      "x_m": 65.3463437,
+      "y_m": 30.5617744
+    },
+    {
+      "id": "SIMNODE_0035",
+      "x_m": 68.5091133,
+      "y_m": 29.4116764
+    },
+    {
+      "id": "SIMNODE_0036",
+      "x_m": 69.1449823,
+      "y_m": 29.1804512
+    },
+    {
+      "id": "SIMNODE_0037",
+      "x_m": -412.9355362,
+      "y_m": 274.0424987
+    },
+    {
+      "id": "SIMNODE_0038",
+      "x_m": -172.6291176,
+      "y_m": 230.7732718
+    },
+    {
+      "id": "SIMNODE_0039",
+      "x_m": 25.5026015,
+      "y_m": -17.4583093
+    },
+    {
+      "id": "SIMNODE_0040",
+      "x_m": -373.3936263,
+      "y_m": -225.8418571
+    }
+  ],
+  "edges": [
+    {
+      "id": "SIMEDGE_0001",
+      "from": "SIMNODE_0001",
+      "to": "SIMNODE_0002",
+      "length_m": 101.25792719572829,
+      "polyline_m": [
+        [
+          -420.5791125804767,
+          431.3631923902325
+        ],
+        [
+          -414.2355362217968,
+          412.3324633141928
+        ],
+        [
+          -414.2355362217968,
+          331.1346859230902
+        ]
+      ],
+      "base_edge_id": "EDGE_0001",
+      "route_ids": [
+        "ROUTE_002"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0002",
+      "from": "SIMNODE_0003",
+      "to": "SIMNODE_0001",
+      "length_m": 41.65313005000002,
+      "polyline_m": [
+        [
+          -416.7729667652688,
+          471.9620810857838
+        ],
+        [
+          -420.5791125804767,
+          465.61850472710387
+        ],
+        [
+          -420.5791125804767,
+          431.3631923948519
+        ]
+      ],
+      "base_edge_id": "EDGE_0005",
+      "route_ids": [
+        "ROUTE_002"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0003",
+      "from": "SIMNODE_0004",
+      "to": "SIMNODE_0005",
+      "length_m": 30.449166520000006,
+      "polyline_m": [
+        [
+          -414.2355362217968,
+          -234.71232527115592
+        ],
+        [
+          -414.2355362217968,
+          -265.1614917911559
+        ]
+      ],
+      "base_edge_id": "EDGE_0007",
+      "route_ids": [
+        "ROUTE_002"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0004",
+      "from": "SIMNODE_0006",
+      "to": "SIMNODE_0004",
+      "length_m": 215.68159619511619,
+      "polyline_m": [
+        [
+          -414.2355362217968,
+          -19.030729076039734
+        ],
+        [
+          -414.2355362217968,
+          -223.29388782553212
+        ],
+        [
+          -414.2355362217968,
+          -234.71232527115592
+        ]
+      ],
+      "base_edge_id": "EDGE_0008",
+      "route_ids": [
+        "ROUTE_002"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0005",
+      "from": "SIMNODE_0007",
+      "to": "SIMNODE_0006",
+      "length_m": 64.70447885853491,
+      "polyline_m": [
+        [
+          -414.2355362217968,
+          45.67374978249518
+        ],
+        [
+          -414.2355362217968,
+          -19.030729076039734
+        ]
+      ],
+      "base_edge_id": "EDGE_0010",
+      "route_ids": [
+        "ROUTE_002",
+        "ROUTE_017"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0006",
+      "from": "SIMNODE_0007",
+      "to": "SIMNODE_0008",
+      "length_m": 141.43441044349657,
+      "polyline_m": [
+        [
+          -414.2355362217968,
+          45.67374978249518
+        ],
+        [
+          -321.6193213850704,
+          45.67374978249518
+        ],
+        [
+          -272.80450384948074,
+          45.09945781148822
+        ]
+      ],
+      "base_edge_id": "EDGE_0011",
+      "route_ids": [
+        "ROUTE_012"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0007",
+      "from": "SIMNODE_0008",
+      "to": "SIMNODE_0009",
+      "length_m": 136.43209544638395,
+      "polyline_m": [
+        [
+          -272.80450384948074,
+          45.09945781148822
+        ],
+        [
+          -213.77852328751231,
+          44.40503451075915
+        ],
+        [
+          -136.38689171161764,
+          45.67374978249518
+        ]
+      ],
+      "base_edge_id": "EDGE_0011",
+      "route_ids": [
+        "ROUTE_012"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0008",
+      "from": "SIMNODE_0010",
+      "to": "SIMNODE_0007",
+      "length_m": 48.21118032596712,
+      "polyline_m": [
+        [
+          -414.2355362217968,
+          93.8849301084623
+        ],
+        [
+          -414.2355362217968,
+          45.67374978249518
+        ]
+      ],
+      "base_edge_id": "EDGE_0012",
+      "route_ids": [
+        "ROUTE_002"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0009",
+      "from": "SIMNODE_0011",
+      "to": "SIMNODE_0010",
+      "length_m": 69.7793399454788,
+      "polyline_m": [
+        [
+          -414.2355362217968,
+          163.6642700539411
+        ],
+        [
+          -414.2355362217968,
+          93.8849301084623
+        ]
+      ],
+      "base_edge_id": "EDGE_0014",
+      "route_ids": [
+        "ROUTE_002"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0010",
+      "from": "SIMNODE_0002",
+      "to": "SIMNODE_0012",
+      "length_m": 57.09218722811903,
+      "polyline_m": [
+        [
+          -414.2355362217968,
+          331.1346859230902
+        ],
+        [
+          -414.2355362217968,
+          274.0424986949712
+        ]
+      ],
+      "base_edge_id": "EDGE_0016",
+      "route_ids": [
+        "ROUTE_002"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0011",
+      "from": "SIMNODE_0012",
+      "to": "SIMNODE_0011",
+      "length_m": 110.37822864103009,
+      "polyline_m": [
+        [
+          -414.2355362217968,
+          274.0424986949712
+        ],
+        [
+          -414.2355362217968,
+          163.6642700539411
+        ]
+      ],
+      "base_edge_id": "EDGE_0016",
+      "route_ids": [
+        "ROUTE_002"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0012",
+      "from": "SIMNODE_0002",
+      "to": "SIMNODE_0013",
+      "length_m": 158.07445910983145,
+      "polyline_m": [
+        [
+          -414.2355362217968,
+          331.1346859230902
+        ],
+        [
+          -341.91876573284605,
+          331.1346859230902
+        ],
+        [
+          -297.51373122208685,
+          346.3592691839219
+        ],
+        [
+          -259.4522730700075,
+          353.9715608143378
+        ]
+      ],
+      "base_edge_id": "EDGE_0017",
+      "route_ids": [
+        "ROUTE_005"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0013",
+      "from": "SIMNODE_0013",
+      "to": "SIMNODE_0014",
+      "length_m": 139.76105991903992,
+      "polyline_m": [
+        [
+          -259.4522730700075,
+          353.9715608143378
+        ],
+        [
+          -222.65953018966417,
+          346.3592691839219
+        ],
+        [
+          -194.74779421147264,
+          313.3726721187865
+        ],
+        [
+          -175.71706513543296,
+          257.5492001624035
+        ]
+      ],
+      "base_edge_id": "EDGE_0025",
+      "route_ids": [
+        "ROUTE_007"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0014",
+      "from": "SIMNODE_0015",
+      "to": "SIMNODE_0016",
+      "length_m": 187.29645867062982,
+      "polyline_m": [
+        [
+          -197.1790322747796,
+          -163.61117381385873
+        ],
+        [
+          -225.1969607331361,
+          -177.62013804303695
+        ],
+        [
+          -268.33327997215935,
+          -194.11343657560462
+        ],
+        [
+          -312.73831448291855,
+          -209.3380198364364
+        ],
+        [
+          -373.70892259237905,
+          -224.58067186380148
+        ]
+      ],
+      "base_edge_id": "EDGE_0031",
+      "route_ids": [
+        "ROUTE_014"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0015",
+      "from": "SIMNODE_0016",
+      "to": "SIMNODE_0004",
+      "length_m": 41.77387715937018,
+      "polyline_m": [
+        [
+          -373.70892259237905,
+          -224.58067186380148
+        ],
+        [
+          -414.2355362205344,
+          -234.71232527084032
+        ]
+      ],
+      "base_edge_id": "EDGE_0031",
+      "route_ids": [
+        "ROUTE_014"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0016",
+      "from": "SIMNODE_0017",
+      "to": "SIMNODE_0015",
+      "length_m": 9.385000729999998,
+      "polyline_m": [
+        [
+          -188.78483243431353,
+          -159.4140738936257
+        ],
+        [
+          -197.1790322747796,
+          -163.61117381385873
+        ]
+      ],
+      "base_edge_id": "EDGE_0036",
+      "route_ids": [
+        "ROUTE_014"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0017",
+      "from": "SIMNODE_0018",
+      "to": "SIMNODE_0017",
+      "length_m": 1.8440068299999943,
+      "polyline_m": [
+        [
+          -187.13550258105676,
+          -158.58940896699733
+        ],
+        [
+          -188.78483243019832,
+          -159.41407389156808
+        ]
+      ],
+      "base_edge_id": "EDGE_0039",
+      "route_ids": [
+        "ROUTE_014"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0018",
+      "from": "SIMNODE_0019",
+      "to": "SIMNODE_0020",
+      "length_m": 54.90767523000001,
+      "polyline_m": [
+        [
+          -184.5980720375848,
+          131.94638826054165
+        ],
+        [
+          -149.0740444309543,
+          90.07878429558434
+        ]
+      ],
+      "base_edge_id": "EDGE_0041",
+      "route_ids": [
+        "ROUTE_007"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0019",
+      "from": "SIMNODE_0021",
+      "to": "SIMNODE_0018",
+      "length_m": 8.042663055030445,
+      "polyline_m": [
+        [
+          -179.41753354459848,
+          -156.32724562872508
+        ],
+        [
+          -187.13550258105676,
+          -158.58940896699733
+        ]
+      ],
+      "base_edge_id": "EDGE_0044",
+      "route_ids": [
+        "ROUTE_014"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0020",
+      "from": "SIMNODE_0014",
+      "to": "SIMNODE_0019",
+      "length_m": 132.2276986262098,
+      "polyline_m": [
+        [
+          -175.71706513543296,
+          257.5492001624035
+        ],
+        [
+          -179.52321095064087,
+          216.9503114668522
+        ],
+        [
+          -198.55394002668055,
+          177.6201380430369
+        ],
+        [
+          -184.5980720375848,
+          131.94638826054165
+        ]
+      ],
+      "base_edge_id": "EDGE_0045",
+      "route_ids": [
+        "ROUTE_007"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0021",
+      "from": "SIMNODE_0014",
+      "to": "SIMNODE_0022",
+      "length_m": 26.92203113439938,
+      "polyline_m": [
+        [
+          -175.71706513543296,
+          257.5492001624035
+        ],
+        [
+          -173.9262382630825,
+          230.68679707714628
+        ]
+      ],
+      "base_edge_id": "EDGE_0046",
+      "route_ids": [
+        "ROUTE_008"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0022",
+      "from": "SIMNODE_0022",
+      "to": "SIMNODE_0023",
+      "length_m": 158.60070657407215,
+      "polyline_m": [
+        [
+          -173.9262382630825,
+          230.68679707714628
+        ],
+        [
+          -173.17963459196102,
+          219.48774201032415
+        ],
+        [
+          -166.8360582332811,
+          172.54527695609295
+        ],
+        [
+          -149.0740444289774,
+          126.87152717359777
+        ],
+        [
+          -98.32543355953828,
+          131.94638826054165
+        ]
+      ],
+      "base_edge_id": "EDGE_0046",
+      "route_ids": [
+        "ROUTE_008"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0023",
+      "from": "SIMNODE_0024",
+      "to": "SIMNODE_0025",
+      "length_m": 443.51723517,
+      "polyline_m": [
+        [
+          -168.10477350501708,
+          485.9179490748795
+        ],
+        [
+          -127.50588480946578,
+          380.61458152079337
+        ],
+        [
+          -79.29470448349866,
+          272.7737834232352
+        ],
+        [
+          -36.158385244475426,
+          158.5894089669972
+        ],
+        [
+          -1.9030729088797145,
+          74.85420103554128
+        ]
+      ],
+      "base_edge_id": "EDGE_0047",
+      "route_ids": [
+        "ROUTE_003"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0024",
+      "from": "SIMNODE_0009",
+      "to": "SIMNODE_0026",
+      "length_m": 63.09228054,
+      "polyline_m": [
+        [
+          -136.38689171161764,
+          45.67374978249518
+        ],
+        [
+          -119.89359317946906,
+          -15.22458325928428
+        ]
+      ],
+      "base_edge_id": "EDGE_0049",
+      "route_ids": [
+        "ROUTE_014"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0025",
+      "from": "SIMNODE_0009",
+      "to": "SIMNODE_0025",
+      "length_m": 164.11602674604626,
+      "polyline_m": [
+        [
+          -136.38689171161764,
+          45.67374978249518
+        ],
+        [
+          -118.62487790731393,
+          72.31677048895074
+        ],
+        [
+          -100.86286410301028,
+          87.5413537497825
+        ],
+        [
+          -64.0701212226669,
+          101.49722173887824
+        ],
+        [
+          -29.814808885795514,
+          95.15364538019833
+        ],
+        [
+          -1.9030729076039279,
+          74.85420103242268
+        ]
+      ],
+      "base_edge_id": "EDGE_0050",
+      "route_ids": [
+        "ROUTE_012"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0026",
+      "from": "SIMNODE_0026",
+      "to": "SIMNODE_0027",
+      "length_m": 139.75423729,
+      "polyline_m": [
+        [
+          -119.89359317904996,
+          -15.224583260831764
+        ],
+        [
+          -66.60755176613884,
+          -32.98659706513547
+        ],
+        [
+          -41.23324633141931,
+          -74.85420103242268
+        ],
+        [
+          -36.158385245176426,
+          -109.10951336456242
+        ]
+      ],
+      "base_edge_id": "EDGE_0052",
+      "route_ids": [
+        "ROUTE_014"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0027",
+      "from": "SIMNODE_0023",
+      "to": "SIMNODE_0028",
+      "length_m": 54.775597239999996,
+      "polyline_m": [
+        [
+          -98.32543355953828,
+          131.94638826054165
+        ],
+        [
+          -45.03939215136367,
+          144.63354097677376
+        ]
+      ],
+      "base_edge_id": "EDGE_0058",
+      "route_ids": [
+        "ROUTE_008"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0028",
+      "from": "SIMNODE_0027",
+      "to": "SIMNODE_0021",
+      "length_m": 150.9096293,
+      "polyline_m": [
+        [
+          -36.158385244475426,
+          -109.10951336929418
+        ],
+        [
+          -113.55001682037005,
+          -137.02124934748565
+        ],
+        [
+          -179.41753354459848,
+          -156.32724562872508
+        ]
+      ],
+      "base_edge_id": "EDGE_0060",
+      "route_ids": [
+        "ROUTE_014"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0029",
+      "from": "SIMNODE_0025",
+      "to": "SIMNODE_0029",
+      "length_m": 34.74472957,
+      "polyline_m": [
+        [
+          -1.9030729076039279,
+          74.85420103242268
+        ],
+        [
+          4.6314472805359905,
+          40.7294844943586
+        ]
+      ],
+      "base_edge_id": "EDGE_0061",
+      "route_ids": [
+        "ROUTE_003"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0030",
+      "from": "SIMNODE_0029",
+      "to": "SIMNODE_0030",
+      "length_m": 25.968300569999997,
+      "polyline_m": [
+        [
+          4.6314472805359905,
+          40.7294844943586
+        ],
+        [
+          9.515364537237504,
+          15.224583264917321
+        ]
+      ],
+      "base_edge_id": "EDGE_0062",
+      "route_ids": [
+        "ROUTE_003"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0031",
+      "from": "SIMNODE_0030",
+      "to": "SIMNODE_0031",
+      "length_m": 37.53863857823772,
+      "polyline_m": [
+        [
+          9.515364538019867,
+          15.22458326083165
+        ],
+        [
+          20.93380198364366,
+          2.5374305434719417
+        ],
+        [
+          26.749039038776246,
+          -17.08899451760063
+        ]
+      ],
+      "base_edge_id": "EDGE_0063",
+      "route_ids": [
+        "ROUTE_018"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0032",
+      "from": "SIMNODE_0031",
+      "to": "SIMNODE_0032",
+      "length_m": 3.1048969217622706,
+      "polyline_m": [
+        [
+          26.749039038776246,
+          -17.08899451760063
+        ],
+        [
+          27.631104019143574,
+          -20.065963826340376
+        ]
+      ],
+      "base_edge_id": "EDGE_0063",
+      "route_ids": [
+        "ROUTE_018"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0033",
+      "from": "SIMNODE_0030",
+      "to": "SIMNODE_0033",
+      "length_m": 31.386282445209858,
+      "polyline_m": [
+        [
+          9.515364538019867,
+          15.22458326083165
+        ],
+        [
+          39.96453105968328,
+          22.83687489124759
+        ]
+      ],
+      "base_edge_id": "EDGE_0064",
+      "route_ids": [
+        "ROUTE_003"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0034",
+      "from": "SIMNODE_0032",
+      "to": "SIMNODE_0027",
+      "length_m": 199.68724735,
+      "polyline_m": [
+        [
+          27.631104019143574,
+          -20.065963826340376
+        ],
+        [
+          31.08352415753143,
+          -31.717881793399442
+        ],
+        [
+          33.62095470100337,
+          -49.47989559770315
+        ],
+        [
+          47.57682269009911,
+          -95.15364538019844
+        ],
+        [
+          64.0701212226669,
+          -109.10951336929418
+        ],
+        [
+          -36.15838524196232,
+          -109.10951336929418
+        ]
+      ],
+      "base_edge_id": "EDGE_0065",
+      "route_ids": [
+        "ROUTE_018"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0035",
+      "from": "SIMNODE_0033",
+      "to": "SIMNODE_0034",
+      "length_m": 29.838667406935876,
+      "polyline_m": [
+        [
+          39.96453105968328,
+          22.83687489124759
+        ],
+        [
+          55.189114320515046,
+          34.255312336871384
+        ],
+        [
+          65.34634368535988,
+          30.561774386018733
+        ]
+      ],
+      "base_edge_id": "EDGE_0069",
+      "route_ids": [
+        "ROUTE_003"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0036",
+      "from": "SIMNODE_0034",
+      "to": "SIMNODE_0035",
+      "length_m": 3.3653880900000024,
+      "polyline_m": [
+        [
+          65.34634368535988,
+          30.561774386018733
+        ],
+        [
+          68.5091132798282,
+          29.41167635166662
+        ]
+      ],
+      "base_edge_id": "EDGE_0072",
+      "route_ids": [
+        "ROUTE_003"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0037",
+      "from": "SIMNODE_0035",
+      "to": "SIMNODE_0036",
+      "length_m": 0.6766051069205066,
+      "polyline_m": [
+        [
+          68.5091132798282,
+          29.41167635166662
+        ],
+        [
+          69.14498230961078,
+          29.1804512499275
+        ]
+      ],
+      "base_edge_id": "EDGE_0074",
+      "route_ids": [
+        "ROUTE_003"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "road",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0038",
+      "from": "SIMNODE_0012",
+      "to": "SIMNODE_0037",
+      "length_m": 1.3000000000000114,
+      "polyline_m": [
+        [
+          -414.2355362217968,
+          274.0424986949712
+        ],
+        [
+          -412.9355362217968,
+          274.0424986949712
+        ]
+      ],
+      "base_edge_id": "EDGE_0016",
+      "route_ids": [
+        "ROUTE_002"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "docking_maneuver",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0039",
+      "from": "SIMNODE_0022",
+      "to": "SIMNODE_0038",
+      "length_m": 1.2999999999999945,
+      "polyline_m": [
+        [
+          -173.9262382630825,
+          230.68679707714628
+        ],
+        [
+          -172.6291175578689,
+          230.77327179082718
+        ]
+      ],
+      "base_edge_id": "EDGE_0046",
+      "route_ids": [
+        "ROUTE_008"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "docking_maneuver",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0040",
+      "from": "SIMNODE_0031",
+      "to": "SIMNODE_0039",
+      "length_m": 1.3000000000000014,
+      "polyline_m": [
+        [
+          26.749039038776246,
+          -17.08899451760063
+        ],
+        [
+          25.50260149225534,
+          -17.458309346199414
+        ]
+      ],
+      "base_edge_id": "EDGE_0063",
+      "route_ids": [
+        "ROUTE_018"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "docking_maneuver",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    },
+    {
+      "id": "SIMEDGE_0041",
+      "from": "SIMNODE_0016",
+      "to": "SIMNODE_0040",
+      "length_m": 1.2999999999999954,
+      "polyline_m": [
+        [
+          -373.70892259237905,
+          -224.58067186380148
+        ],
+        [
+          -373.39362627983184,
+          -225.84185711399041
+        ]
+      ],
+      "base_edge_id": "EDGE_0031",
+      "route_ids": [
+        "ROUTE_014"
+      ],
+      "allowed_directions": [
+        "backward",
+        "forward"
+      ],
+      "edge_type": "docking_maneuver",
+      "access_basis": "explicit simulation policy assumption",
+      "real_world_access_confirmed": false,
+      "clearance_pass": true,
+      "sweep_radius_m": 1.0211102550927977
+    }
+  ],
+  "robot_start_node_id": "SIMNODE_0008",
+  "delivery_paths": [
+    {
+      "site_id": "LIBRARY",
+      "start_node_id": "SIMNODE_0008",
+      "goal_node_id": "SIMNODE_0037",
+      "pass_": true,
+      "length_m": 371.1031593559726,
+      "node_ids": [
+        "SIMNODE_0008",
+        "SIMNODE_0007",
+        "SIMNODE_0010",
+        "SIMNODE_0011",
+        "SIMNODE_0012",
+        "SIMNODE_0037"
+      ],
+      "edge_ids": [
+        "SIMEDGE_0006",
+        "SIMEDGE_0008",
+        "SIMEDGE_0009",
+        "SIMEDGE_0011",
+        "SIMEDGE_0038"
+      ],
+      "polyline_m": [
+        [
+          -272.80450384948074,
+          45.09945781148822
+        ],
+        [
+          -321.6193213850704,
+          45.67374978249518
+        ],
+        [
+          -414.2355362217968,
+          45.67374978249518
+        ],
+        [
+          -414.2355362217968,
+          93.8849301084623
+        ],
+        [
+          -414.2355362217968,
+          163.6642700539411
+        ],
+        [
+          -414.2355362217968,
+          274.0424986949712
+        ],
+        [
+          -412.9355362217968,
+          274.0424986949712
+        ]
+      ]
+    },
+    {
+      "site_id": "TEACHING_3",
+      "start_node_id": "SIMNODE_0008",
+      "goal_node_id": "SIMNODE_0038",
+      "pass_": true,
+      "length_m": 752.9528967473623,
+      "node_ids": [
+        "SIMNODE_0008",
+        "SIMNODE_0007",
+        "SIMNODE_0010",
+        "SIMNODE_0011",
+        "SIMNODE_0012",
+        "SIMNODE_0002",
+        "SIMNODE_0013",
+        "SIMNODE_0014",
+        "SIMNODE_0022",
+        "SIMNODE_0038"
+      ],
+      "edge_ids": [
+        "SIMEDGE_0006",
+        "SIMEDGE_0008",
+        "SIMEDGE_0009",
+        "SIMEDGE_0011",
+        "SIMEDGE_0010",
+        "SIMEDGE_0012",
+        "SIMEDGE_0013",
+        "SIMEDGE_0021",
+        "SIMEDGE_0039"
+      ],
+      "polyline_m": [
+        [
+          -272.80450384948074,
+          45.09945781148822
+        ],
+        [
+          -321.6193213850704,
+          45.67374978249518
+        ],
+        [
+          -414.2355362217968,
+          45.67374978249518
+        ],
+        [
+          -414.2355362217968,
+          93.8849301084623
+        ],
+        [
+          -414.2355362217968,
+          163.6642700539411
+        ],
+        [
+          -414.2355362217968,
+          274.0424986949712
+        ],
+        [
+          -414.2355362217968,
+          331.1346859230902
+        ],
+        [
+          -341.91876573284605,
+          331.1346859230902
+        ],
+        [
+          -297.51373122208685,
+          346.3592691839219
+        ],
+        [
+          -259.4522730700075,
+          353.9715608143378
+        ],
+        [
+          -222.65953018966417,
+          346.3592691839219
+        ],
+        [
+          -194.74779421147264,
+          313.3726721187865
+        ],
+        [
+          -175.71706513543296,
+          257.5492001624035
+        ],
+        [
+          -173.9262382630825,
+          230.68679707714628
+        ],
+        [
+          -172.6291175578689,
+          230.77327179082718
+        ]
+      ]
+    },
+    {
+      "site_id": "CANTEEN_20",
+      "start_node_id": "SIMNODE_0008",
+      "goal_node_id": "SIMNODE_0039",
+      "pass_": true,
+      "length_m": 400.099790910668,
+      "node_ids": [
+        "SIMNODE_0008",
+        "SIMNODE_0009",
+        "SIMNODE_0025",
+        "SIMNODE_0029",
+        "SIMNODE_0030",
+        "SIMNODE_0031",
+        "SIMNODE_0039"
+      ],
+      "edge_ids": [
+        "SIMEDGE_0007",
+        "SIMEDGE_0025",
+        "SIMEDGE_0029",
+        "SIMEDGE_0030",
+        "SIMEDGE_0031",
+        "SIMEDGE_0040"
+      ],
+      "polyline_m": [
+        [
+          -272.80450384948074,
+          45.09945781148822
+        ],
+        [
+          -213.77852328751231,
+          44.40503451075915
+        ],
+        [
+          -136.38689171161764,
+          45.67374978249518
+        ],
+        [
+          -118.62487790731393,
+          72.31677048895074
+        ],
+        [
+          -100.86286410301028,
+          87.5413537497825
+        ],
+        [
+          -64.0701212226669,
+          101.49722173887824
+        ],
+        [
+          -29.814808885795514,
+          95.15364538019833
+        ],
+        [
+          -1.9030729076039279,
+          74.85420103242268
+        ],
+        [
+          4.6314472805359905,
+          40.7294844943586
+        ],
+        [
+          9.515364537237504,
+          15.224583264917321
+        ],
+        [
+          20.93380198364366,
+          2.5374305434719417
+        ],
+        [
+          26.749039038776246,
+          -17.08899451760063
+        ],
+        [
+          25.50260149225534,
+          -17.458309346199414
+        ]
+      ]
+    },
+    {
+      "site_id": "DORM_11",
+      "start_node_id": "SIMNODE_0008",
+      "goal_node_id": "SIMNODE_0040",
+      "pass_": true,
+      "length_m": 464.89436265651784,
+      "node_ids": [
+        "SIMNODE_0008",
+        "SIMNODE_0007",
+        "SIMNODE_0006",
+        "SIMNODE_0004",
+        "SIMNODE_0016",
+        "SIMNODE_0040"
+      ],
+      "edge_ids": [
+        "SIMEDGE_0006",
+        "SIMEDGE_0005",
+        "SIMEDGE_0004",
+        "SIMEDGE_0015",
+        "SIMEDGE_0041"
+      ],
+      "polyline_m": [
+        [
+          -272.80450384948074,
+          45.09945781148822
+        ],
+        [
+          -321.6193213850704,
+          45.67374978249518
+        ],
+        [
+          -414.2355362217968,
+          45.67374978249518
+        ],
+        [
+          -414.2355362217968,
+          -19.030729076039734
+        ],
+        [
+          -414.2355362217968,
+          -223.29388782553212
+        ],
+        [
+          -414.2355362217968,
+          -234.71232527115592
+        ],
+        [
+          -373.70892259237905,
+          -224.58067186380148
+        ],
+        [
+          -373.39362627983184,
+          -225.84185711399041
+        ]
+      ]
+    }
+  ],
+  "validation": {
+    "pass_": true,
+    "geometry_only": true,
+    "real_world_access_confirmed": false,
+    "node_count": 40,
+    "edge_count": 41,
+    "path_count": 4
+  }
+}

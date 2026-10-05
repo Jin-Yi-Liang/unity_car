@@ -1,8 +1,10 @@
-# Campus Model V0.4 — 楼体外观与校园道路修正
+# Campus Model V0.5 — 候选入口与配送通行几何
 
 在 V0.2 的尺度校准、固定米制 Z、受限道路修正、独立桥面和基础导航图基础上，增加按楼栋配置的楼层/高度、平顶/坡顶/弧形屋顶、可导出的立面贴图和建筑近景验证。没有使用 Unity/团结引擎，也没有修改 C++ 服务端。
 
 V0.4 进一步按已有照片改进展厅、体育馆、图书馆的立面。展厅下部在原占地包络内收 8%，体育馆增加金属屋面拼缝贴图，图书馆使用成组窗格与顶部窄窗带；这些细节尺寸是建模近似。窗格沿边界累计距离映射，避免弧形立面逐面错位。原高度与 XY 包络继续在源场景、FBX 重新导入后验证。
+
+V0.5 在图书馆、3号教学楼、20号食堂和11号宿舍建立四组候选入口、门前步行连接道和道路侧交付区域。**入口不是经过确认的真实门位，通行规则也不是校园交通事实。** 原图只确定建筑相对位置，门位与连接道属于显式仿真假设。蓝色停靠标记、金色连接道和深色候选门框正式包含在校园 blend/FBX/GLB 中；入口、交付点及停车位置参考 Empty 一同导出。小车本体保持原尺寸与起始位姿。
 
 南区、东北和东南区道路已按原图通道重新描绘；两处错误楼体改为广场并补入可见小结构，实训院落增加侧翼，支流水体改用可见蓝色边界。人工源数据修正记录在 `source_geometry_changes.json`（包括前后坐标与距离），自动调整仍限制在最多 3 px。`source_retrace_overlay.png` 显示人工修改前后；`road_correction_overlay.png` 只显示当前源数据的自动微调。`v03_baseline.json` 保存上一版对照。
 
@@ -211,4 +213,35 @@ output/validation/delivery_robot_report.md
 
 本阶段完成视觉/几何资产、放置和导航数据关联。尚未配置 Rigidbody、Collider 组件、质量/惯量、轮胎动力学、运动控制、传感器或实际导航执行；`collision_hint` 只是下一阶段使用的数据。校园 SCALE/ROADS/NAVIGATION 阶段继续单独报告，ROBOT PASS 不代表全校园车辆导航已通过。
 
-V0.4 增加 `building_exhibition.png`、`roads_south.png`、`roads_northeast.png` 和人工源数据对照图 `source_retrace_overlay.png`。完整流水线生成 15 张 Blender 验证渲染，回归测试覆盖权限保持未知、整段路面覆盖、单行方向和禁止权限优先。实际验收结果以最新 `validation_report.md` 为准，尺度证据不足仍为 PARTIAL。
+V0.4 增加 `building_exhibition.png`、`roads_south.png`、`roads_northeast.png` 和人工源数据对照图 `source_retrace_overlay.png`。V0.5 增加四张配送点近景，共生成 19 张 Blender 验证渲染。实际验收结果以最新 `validation_report.md` 为准，尺度证据不足仍为 PARTIAL。
+
+## V0.5 配送点与仿真路网
+
+`config/delivery_sites.json` 是人工维护的候选入口数据：稳定原始楼体 ID、像素门位、向外法线、连接道路、地图 SHA256、来源和低置信度。原始楼体 ID 经 source_trace_ids 映射到当前建筑，避免对象重新编号造成错配。生成器验证候选点位于对应立面、法线朝外、步行道不穿建筑/水体、停车与旋转包络完全落在道路中。不会自动迁移一个错误入口以让检查通过。
+
+`config/simulation_access.json` 明确列出八条用于演示的路线并假定双向通行。它只用于新生成的 `data/simulation_navigation_graph.json`，不会修改 `source_geometry.json` 或基础 `navigation_graph.json` 中的真实/未知权限；基础数据中的显式禁止优先。所有仿真边都标记 real_world_access_confirmed=false。
+
+固定米制尺寸：步行连接道宽1.80m，门前交付点距立面1.10m，候选门框宽1.60m/高2.30m，交付区域宽1.40m/长1.80m。蓝色标记厚2mm、无碰撞语义，位于原0.045m路面顶上；金色连接道与道路顶面同高。入口框是非碰撞的候选位置提示，不会假装已在真实楼体上建成门洞。
+
+车辆净空采用 `sqrt(1.20²+0.80²)/2 + 0.30 = 1.021110m` 的旋转包络半径。对整条折线使用圆端/圆角 buffer，并检查路面覆盖与障碍交集，避免只检查若干顶点漏掉中间障碍。它覆盖车身及余量，**不证明实际轮式转向、转弯半径或动力学可行**。车辆路径在道路侧交付区域结束，门前连接道标记为 pedestrian_access、driveable=false。
+
+仿真图仅在真实交点、起始小车位置、道路投影站点和停靠点增加节点；曲率点继续保留在 polyline_m 中。执行从实际小车起点到四个停靠点的 Dijkstra 检查，保存完整节点、边与折线。长度随条件XY尺度变化；车体、步行宽度、停车尺寸和门前退让均独立使用建模米数。
+
+新增输出：
+
+```text
+data/delivery_sites.json
+data/simulation_navigation_graph.json
+output/previews/delivery_sites_overlay.png
+output/previews/delivery_site_LIBRARY.png
+output/previews/delivery_site_TEACHING_3.png
+output/previews/delivery_site_CANTEEN_20.png
+output/previews/delivery_site_DORM_11.png
+output/validation/delivery_sites_validation.json
+output/validation/delivery_scene_validation.json
+output/validation/delivery_access_report.md
+```
+
+Blender 新增 `Campus/AccessPaths`、`Campus/DeliverySites`。`ENTRY_*` 是候选立面点，`HANDOFF_*` 是门前交付点，`STOP_*` 是车身中心停靠点；位置和自定义属性在新场景FBX导入后再次检查，停车区域绝对尺寸同样重新测量。独立小车资产不包含这些校园对象。
+
+统一入口依次生成基础图、小车、配送点与仿真图，再建模/验证/导出/渲染。两轮干净构建比较新增JSON哈希；报告新增 `DELIVERY` 阶段，代表候选几何和已声明的仿真假设验证通过。原来的 `SCALE`、道路、FBX、建筑、小车、渲染与幂等性检查继续保留。

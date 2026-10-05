@@ -19,6 +19,7 @@ from analyze_map import analyze, write_json
 from calibrate_scale import calibrate
 from navigation_graph import generate as generate_navigation
 from delivery_robot import generate as generate_robot
+from delivery_sites import generate as generate_delivery_sites
 import PIL
 import shapely
 
@@ -57,6 +58,7 @@ def build_once(blender,index):
     metadata=analyze()
     navigation=generate_navigation()
     robot=generate_robot()
+    delivery,scenario=generate_delivery_sites()
     log=ROOT/f'output/logs/run_{index:02}.log'
     with log.open('w') as stream:
         process=subprocess.run([blender,'--background','--factory-startup','--python-exit-code','1',
@@ -67,7 +69,8 @@ def build_once(blender,index):
     validation=json.loads((ROOT/'output/validation/blender_validation.json').read_text())
     cfg=json.loads((ROOT/'config/campus_config.json').read_text())
     renders=[image_check(ROOT/f'output/previews/{name}.png',cfg['render_resolution'])
-             for name in ['top','perspective_01','perspective_02','reimported_fbx','building_administration','building_teaching','building_gym','building_library','building_exhibition','roads_south','roads_northeast','delivery_robot_closeup','delivery_robot_on_campus','delivery_robot_reimported','delivery_robot_asset']]
+             for name in ['top','perspective_01','perspective_02','reimported_fbx','building_administration','building_teaching','building_gym','building_library','building_exhibition','roads_south','roads_northeast','delivery_robot_closeup','delivery_robot_on_campus','delivery_robot_reimported','delivery_robot_asset',
+                          'delivery_site_LIBRARY','delivery_site_TEACHING_3','delivery_site_CANTEEN_20','delivery_site_DORM_11']]
     # Independent FBX render should also retain material/layout appearance.
     a=Image.open(ROOT/'output/previews/perspective_01.png').convert('RGB')
     b=Image.open(ROOT/'output/previews/reimported_fbx.png').convert('RGB')
@@ -79,21 +82,27 @@ def build_once(blender,index):
                      sha256=hashlib.sha256((ROOT/f'output/{name}').read_bytes()).hexdigest())
            for name in ['campus.blend','campus.fbx','campus.glb','delivery_robot.blend','delivery_robot.fbx','delivery_robot.glb']}
     inputs_unchanged=hashlib.sha256(Path(metadata['input_path']).read_bytes()).hexdigest()==metadata['input_sha256'] and hashlib.sha256(Path(metadata['reference_path']).read_bytes()).hexdigest()==metadata['reference_sha256']
-    passed=validation['pass_'] and validation['delivery_robot']['pass_'] and robot_appearance['pass_'] and all(r['pass'] for r in renders) and appearance['pass_'] and all(f['bytes']>1000 for f in files.values()) and inputs_unchanged
+    passed=validation['pass_'] and validation['delivery_robot']['pass_'] and validation['delivery_sites']['pass_'] and robot_appearance['pass_'] and all(r['pass'] for r in renders) and appearance['pass_'] and all(f['bytes']>1000 for f in files.values()) and inputs_unchanged
     run=dict(index=index,pass_=passed,map_sha256=hashlib.sha256((ROOT/'data/campus_map.json').read_bytes()).hexdigest(),
              source_scene=validation['original_scene'], comparison=validation['comparison'],
              render_validation=renders,fbx_render_appearance=appearance,robot_render_appearance=robot_appearance,artifacts=files,
              inputs_unchanged=inputs_unchanged,log=str(log))
-    run['data_hashes']={name:hashlib.sha256((ROOT/'data'/name).read_bytes()).hexdigest() for name in ['campus_map.json','scale_calibration.json','navigation_graph.json','road_validation.json','building_reconstruction.json','delivery_robot.json']}
+    run['data_hashes']={name:hashlib.sha256((ROOT/'data'/name).read_bytes()).hexdigest() for name in ['campus_map.json','scale_calibration.json','navigation_graph.json','road_validation.json','building_reconstruction.json','delivery_robot.json','delivery_sites.json','simulation_navigation_graph.json']}
     run['data_hashes']['delivery_robot_validation.json']=hashlib.sha256((ROOT/'output/validation/delivery_robot_validation.json').read_bytes()).hexdigest()
     run['stages']=dict(GEOMETRY=validation['original_scene']['pass'] and metadata['planar_validation']['pass'],
                        SCALE=calibration['pass_'],ROADS=metadata['road_validation']['pass_'],
                        NAVIGATION=navigation['pass_'],FBX=validation['comparison']['pass_'] and validation['absolute_metric_validation']['reimport']['pass_'],
                        RENDER=all(v['pass'] for v in renders) and appearance['pass_'],
                        BUILDINGS=all(v['pass_'] for side in ['source','reimport'] for v in validation['absolute_metric_validation'][side]['building_architecture_validation']),
-                       ROBOT=robot['placement_pass'] and validation['delivery_robot']['pass_'] and robot_appearance['pass_'])
+                       ROBOT=robot['placement_pass'] and validation['delivery_robot']['pass_'] and robot_appearance['pass_'],
+                       DELIVERY=delivery['validation']['pass_'] and scenario['validation']['pass_'] and validation['delivery_sites']['pass_'])
     metadata['navigation_validation']=navigation
     metadata['delivery_robot']=robot
+    metadata['delivery_sites']=delivery
+    metadata['simulation_navigation']=scenario
+    metadata['assumptions']+=['Delivery entrances are unconfirmed facade-access candidates; bays and pedestrian connectors are modeled assumptions.',
+                              'Scenario vehicle permission and bidirectionality are explicitly assumed; base map permissions remain unchanged.',
+                              'Swept-disk validation checks complete body clearance, not actual steering, dynamics or traffic safety.']
     if not passed:raise ValueError(f'Artifact/render validation failed: {run}')
     return run,metadata,validation
 
@@ -122,6 +131,11 @@ def report(runs,metadata,validation,idem,regression=None):
     report['regression_tests']=regression
     report['building_reconstruction']=metadata['building_reconstruction']
     report['delivery_robot']=validation['delivery_robot']
+    report['delivery_sites']=metadata['delivery_sites']
+    report['simulation_navigation']=metadata['simulation_navigation']
+    previous_v04=json.loads((ROOT/'config/v04_baseline.json').read_text())
+    report['v04_mesh_comparison']=dict(before_vertices=previous_v04['scene']['total_vertices'],after_vertices=validation['original_scene']['total_vertices'],
+                                       before_faces=previous_v04['scene']['total_faces'],after_faces=validation['original_scene']['total_faces'])
     report['robot_render_appearance']=final['robot_render_appearance']
     report['manual_trace_changes']=json.loads((ROOT/'config/source_geometry_changes.json').read_text())
     previous=json.loads((ROOT/'config/v03_baseline.json').read_text())
@@ -263,6 +277,29 @@ def report(runs,metadata,validation,idem,regression=None):
         'New previews: building_exhibition.png, roads_south.png, roads_northeast.png, source_retrace_overlay.png.',
         'Full V0.3/current mesh comparison: '+json.dumps(report['v03_comparison']['after_scene']),
         'Manual-review assumptions:']+['- '+v for v in review['assumptions']]
+    delivery=metadata['delivery_sites'];scenario=metadata['simulation_navigation'];dv=delivery['validation']
+    delivery_lines=['# V0.5 candidate entrances and delivery access','',
+        f"DELIVERY GEOMETRY: {'PASS' if final['stages']['DELIVERY'] else 'FAIL'}",'',
+        'FACTS: building IDs and relative layout are taken from the source map; base-road geometry and permissions are preserved.',
+        'ASSUMPTIONS: all four entrances are facade-access candidates, not confirmed physical doors. Roadside handoff bays and pedestrian connectors are authored simulation geometry.',
+        'The separate scenario policy assumes bidirectional access on eight explicitly listed routes; it does not establish real-campus traffic permission. A confirmed source prohibition wins.',
+        'config/delivery_sites.json and config/simulation_access.json are source inputs. Generated data is not hand edited.',
+        f"Straight bay width/length: {dv['straight_clear_width_m']:.2f} / {delivery['sites'][0]['bay_length_m']:.2f} m; orientation-independent swept radius: {dv['sweep_radius_m']:.6f} m.",
+        'The swept disk encloses the complete 1.20 x 0.80 m body plus 0.30 m margin. Whole polylines are buffered, not just sampled at vertices. This verifies geometric clearance, not wheel kinematics or steering feasibility.',
+        'Access slabs and bay markers align with the 0.045 m road top; the cyan marking is 0.002 m thick and noncollidable. Candidate portal markers are noncollidable and do not cut a real doorway into a wall.',
+        'Gold access surfaces are pedestrian-only; the vehicle route ends at the roadside bay. The final 1.1 m facade standoff supports handoff, not vehicle entry into buildings.',
+        f"Scenario graph: {len(scenario['nodes'])} nodes, {len(scenario['edges'])} edges. Four Dijkstra paths start at the actual placed robot and end at bay nodes.",'',
+        '| Site | Building trace | Base route | Vehicle path m | Pedestrian connector m | Actual door confirmed |',
+        '|---|---|---|---|---|---|']
+    for site,path in zip(delivery['sites'],scenario['delivery_paths']):
+        delivery_lines.append(f"| {site['id']} | {site['source_trace_id']} | {site['route_id']} | {path['length_m']:.3f} | {site['access_length_m']:.3f} | NO |")
+    delivery_lines+=['',f"Source and fresh FBX marker/bay validation: {validation['delivery_sites']['pass_']}; graph and connector data hashes match across two clean builds: {idem['pass']}.",
+        'XY remains conditional on unverified scale anchors. Bay size, pedestrian width, facade standoff and robot dimensions are independent modeled metres.',
+        'New views: delivery_site_LIBRARY.png, delivery_site_TEACHING_3.png, delivery_site_CANTEEN_20.png, delivery_site_DORM_11.png and delivery_sites_overlay.png.',
+        'Full per-site vectors, evidence hashes and assumptions: data/delivery_sites.json. Waypoint-ready polyline geometry: data/simulation_navigation_graph.json.',
+        'Before/current mesh counts: '+json.dumps(report['v04_mesh_comparison']),'']
+    (ROOT/'output/validation/delivery_access_report.md').write_text('\n'.join(delivery_lines))
+    lines+=['','\n'.join(delivery_lines)]
     (ROOT/'output/validation/validation_report.md').write_text('\n'.join(lines))
 
 

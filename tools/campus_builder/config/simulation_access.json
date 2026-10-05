@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "CAMPUS_DELIVERY_DEMO",
+  "scope": "simulation assumption only; does not certify real-campus traffic permissions",
+  "real_world_access_confirmed": false,
+  "allowed_route_ids": [
+    "ROUTE_002",
+    "ROUTE_003",
+    "ROUTE_005",
+    "ROUTE_007",
+    "ROUTE_008",
+    "ROUTE_012",
+    "ROUTE_014",
+    "ROUTE_018"
+  ],
+  "assumed_bidirectional": true,
+  "confirmed_prohibitions_override_policy": true,
+  "maneuver_model": "Orientation-independent full-body swept disk; kinematics, turning radius and dynamics are unspecified. This checks clearance, not actual steering feasibility."
+}

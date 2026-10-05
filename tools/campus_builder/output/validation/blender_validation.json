@@ -2,10 +2,13 @@
   "blender_version": "5.2.2 LTS",
   "original_scene": {
     "errors": [],
-    "object_count": 169,
+    "object_count": 181,
     "category_counts": {
+      "ACCESS": 4,
       "BLDG": 69,
       "BRIDGE": 4,
+      "DOCK": 4,
+      "ENTRANCE": 4,
       "GRASS": 34,
       "Ground": 1,
       "LANDMARK": 4,
@@ -14,8 +17,8 @@
       "ROBOT": 34,
       "WATER": 9
     },
-    "total_vertices": 9641,
-    "total_faces": 13317,
+    "total_vertices": 9943,
+    "total_faces": 13666,
     "bbox_min": [
       -459.90899658203125,
       -551.8909912109375,
@@ -37,6 +40,82 @@
       21.950000375509262
     ],
     "objects": {
+      "ACCESS_CANTEEN_20": {
+        "vertices": 22,
+        "faces": 29,
+        "bbox_min": [
+          18.885000228881836,
+          -20.048999786376953,
+          0.0
+        ],
+        "bbox_max": [
+          23.964000701904297,
+          -17.12700080871582,
+          0.04500000178813934
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.38768162508701454,
+        "material_count": 1
+      },
+      "ACCESS_DORM_11": {
+        "vertices": 22,
+        "faces": 29,
+        "bbox_min": [
+          -373.35101318359375,
+          -243.8730010986328,
+          0.0
+        ],
+        "bbox_max": [
+          -368.2179870605469,
+          -229.28599548339844,
+          0.04500000178813934
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 1.1812850394789083,
+        "material_count": 1
+      },
+      "ACCESS_LIBRARY": {
+        "vertices": 22,
+        "faces": 29,
+        "bbox_min": [
+          -410.4289855957031,
+          273.1419982910156,
+          0.0
+        ],
+        "bbox_max": [
+          -408.0920104980469,
+          274.9419860839844,
+          0.04500000178813934
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.1721942259482581,
+        "material_count": 1
+      },
+      "ACCESS_TEACHING_3": {
+        "vertices": 22,
+        "faces": 29,
+        "bbox_min": [
+          -170.18800354003906,
+          230.04200744628906,
+          0.0
+        ],
+        "bbox_max": [
+          -129.14500427246094,
+          234.50999450683594,
+          0.04500000178813934
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 3.3098414872428825,
+        "material_count": 1
+      },
       "BLDG_001": {
         "vertices": 16,
         "faces": 20,
@@ -1424,6 +1503,158 @@
         "signed_volume_m3": 3.0013054867214812,
         "material_count": 1
       },
+      "DOCK_CANTEEN_20": {
+        "vertices": 8,
+        "faces": 8,
+        "bbox_min": [
+          24.576000213623047,
+          -18.520000457763672,
+          0.04500000178813934
+        ],
+        "bbox_max": [
+          26.429000854492188,
+          -16.39699935913086,
+          0.04699999839067459
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.0050374802727341,
+        "material_count": 1
+      },
+      "DOCK_DORM_11": {
+        "vertices": 8,
+        "faces": 8,
+        "bbox_min": [
+          -374.43701171875,
+          -226.73899841308594,
+          0.04500000178813934
+        ],
+        "bbox_max": [
+          -372.35101318359375,
+          -224.94400024414062,
+          0.04699999839067459
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.005041588657654472,
+        "material_count": 1
+      },
+      "DOCK_LIBRARY": {
+        "vertices": 8,
+        "faces": 8,
+        "bbox_min": [
+          -413.635986328125,
+          273.1419982910156,
+          0.04500000178813934
+        ],
+        "bbox_max": [
+          -412.2359924316406,
+          274.9419860839844,
+          0.04699999839067459
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.0050399352862945945,
+        "material_count": 1
+      },
+      "DOCK_TEACHING_3": {
+        "vertices": 8,
+        "faces": 8,
+        "bbox_min": [
+          -173.38699340820312,
+          229.82899475097656,
+          0.04500000178813934
+        ],
+        "bbox_max": [
+          -171.87100219726562,
+          231.71800231933594,
+          0.04699999839067459
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.005038458773712812,
+        "material_count": 1
+      },
+      "ENTRANCE_CANTEEN_20": {
+        "vertices": 24,
+        "faces": 18,
+        "bbox_min": [
+          18.700624465942383,
+          -20.18512725830078,
+          0.0
+        ],
+        "bbox_max": [
+          19.337709426879883,
+          -18.617084503173828,
+          2.299999952316284
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.11471990379949429,
+        "material_count": 1
+      },
+      "ENTRANCE_DORM_11": {
+        "vertices": 24,
+        "faces": 18,
+        "bbox_min": [
+          -369.64532470703125,
+          -244.0617218017578,
+          0.0
+        ],
+        "bbox_max": [
+          -368.0772705078125,
+          -243.4246368408203,
+          2.299999952316284
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.11472725905170833,
+        "material_count": 1
+      },
+      "ENTRANCE_LIBRARY": {
+        "vertices": 24,
+        "faces": 18,
+        "bbox_min": [
+          -408.2669677734375,
+          273.24249267578125,
+          0.0
+        ],
+        "bbox_max": [
+          -408.1169738769531,
+          274.8424987792969,
+          2.299999952316284
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.11471233243414236,
+        "material_count": 1
+      },
+      "ENTRANCE_TEACHING_3": {
+        "vertices": 24,
+        "faces": 18,
+        "bbox_min": [
+          -130.84332275390625,
+          234.3373260498047,
+          0.0
+        ],
+        "bbox_max": [
+          -129.24331665039062,
+          234.48731994628906,
+          2.299999952316284
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.11471718452691704,
+        "material_count": 1
+      },
       "GRASS_001": {
         "vertices": 30,
         "faces": 41,
@@ -1459,7 +1690,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 20.13741617707832,
+        "signed_volume_m3": 20.137416177078315,
         "material_count": 1
       },
       "GRASS_003": {
@@ -1482,8 +1713,8 @@
         "material_count": 1
       },
       "GRASS_004": {
-        "vertices": 248,
-        "faces": 368,
+        "vertices": 270,
+        "faces": 401,
         "bbox_min": [
           -425.6369934082031,
           -275.00299072265625,
@@ -1497,7 +1728,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 116.07757389877838,
+        "signed_volume_m3": 115.76257200390664,
         "material_count": 1
       },
       "GRASS_005": {
@@ -1516,7 +1747,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 1.5318240389588311,
+        "signed_volume_m3": 1.5318240389588347,
         "material_count": 1
       },
       "GRASS_006": {
@@ -1535,7 +1766,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 132.14052140508403,
+        "signed_volume_m3": 132.14052140508394,
         "material_count": 1
       },
       "GRASS_007": {
@@ -1573,7 +1804,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 8.66481991367148,
+        "signed_volume_m3": 8.66481991367149,
         "material_count": 1
       },
       "GRASS_009": {
@@ -1592,7 +1823,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 37.29190731147423,
+        "signed_volume_m3": 37.29190731147421,
         "material_count": 1
       },
       "GRASS_010": {
@@ -1611,7 +1842,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 24.98000502394869,
+        "signed_volume_m3": 24.980005023948692,
         "material_count": 1
       },
       "GRASS_011": {
@@ -1630,12 +1861,12 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 42.89103721629522,
+        "signed_volume_m3": 42.89103721629519,
         "material_count": 1
       },
       "GRASS_012": {
-        "vertices": 10,
-        "faces": 11,
+        "vertices": 8,
+        "faces": 8,
         "bbox_min": [
           -174.63900756835938,
           -241.86500549316406,
@@ -1649,7 +1880,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 10.914181235909659,
+        "signed_volume_m3": 10.914974136761487,
         "material_count": 1
       },
       "GRASS_013": {
@@ -1687,7 +1918,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 50.59010380149489,
+        "signed_volume_m3": 50.59010380149484,
         "material_count": 1
       },
       "GRASS_015": {
@@ -1706,7 +1937,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 130.0788947768235,
+        "signed_volume_m3": 130.07889477682357,
         "material_count": 1
       },
       "GRASS_016": {
@@ -1744,7 +1975,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 102.19229311132075,
+        "signed_volume_m3": 102.19229311132078,
         "material_count": 1
       },
       "GRASS_018": {
@@ -1763,7 +1994,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 0.022092957942001945,
+        "signed_volume_m3": 0.02209295794200261,
         "material_count": 1
       },
       "GRASS_019": {
@@ -1782,7 +2013,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 183.4514254909741,
+        "signed_volume_m3": 183.45142549097406,
         "material_count": 1
       },
       "GRASS_020": {
@@ -1801,7 +2032,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 132.39195495414205,
+        "signed_volume_m3": 132.39195495414197,
         "material_count": 1
       },
       "GRASS_021": {
@@ -1820,7 +2051,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 258.06583766831915,
+        "signed_volume_m3": 258.06583766831886,
         "material_count": 1
       },
       "GRASS_022": {
@@ -1843,8 +2074,8 @@
         "material_count": 1
       },
       "GRASS_023": {
-        "vertices": 132,
-        "faces": 206,
+        "vertices": 154,
+        "faces": 239,
         "bbox_min": [
           -130.66600036621094,
           -105.93800354003906,
@@ -1858,12 +2089,12 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 173.73187213710463,
+        "signed_volume_m3": 173.62850139649484,
         "material_count": 1
       },
       "GRASS_024": {
-        "vertices": 888,
-        "faces": 1380,
+        "vertices": 910,
+        "faces": 1413,
         "bbox_min": [
           -410.4289855957031,
           50.1150016784668,
@@ -1877,7 +2108,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 703.2134707869928,
+        "signed_volume_m3": 702.3308473744762,
         "material_count": 1
       },
       "GRASS_025": {
@@ -1915,7 +2146,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 104.40286219326049,
+        "signed_volume_m3": 104.4028621932605,
         "material_count": 1
       },
       "GRASS_027": {
@@ -1938,8 +2169,8 @@
         "material_count": 1
       },
       "GRASS_028": {
-        "vertices": 176,
-        "faces": 268,
+        "vertices": 198,
+        "faces": 301,
         "bbox_min": [
           -410.4289855957031,
           155.24899291992188,
@@ -1953,7 +2184,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 149.82519278598627,
+        "signed_volume_m3": 149.77927432715884,
         "material_count": 1
       },
       "GRASS_029": {
@@ -1972,7 +2203,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 38.20181998493921,
+        "signed_volume_m3": 38.20181998493922,
         "material_count": 1
       },
       "GRASS_030": {
@@ -1991,7 +2222,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 67.56626164662869,
+        "signed_volume_m3": 67.5662616466287,
         "material_count": 1
       },
       "GRASS_032": {
@@ -2010,7 +2241,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 45.9138518865223,
+        "signed_volume_m3": 45.913851886522295,
         "material_count": 1
       },
       "GRASS_033": {
@@ -2029,7 +2260,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 69.37907610837807,
+        "signed_volume_m3": 69.37907610837806,
         "material_count": 1
       },
       "GRASS_034": {
@@ -2067,7 +2298,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 208.75532535241518,
+        "signed_volume_m3": 208.7553253524153,
         "material_count": 1
       },
       "Ground": {
@@ -2181,7 +2412,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 68.6155747315169,
+        "signed_volume_m3": 68.61557473151696,
         "material_count": 1
       },
       "PLAZA_002_0": {
@@ -2200,7 +2431,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 66.31660612226406,
+        "signed_volume_m3": 66.31660612226409,
         "material_count": 1
       },
       "PLAZA_003_0": {
@@ -2219,7 +2450,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 88.12960384592166,
+        "signed_volume_m3": 88.12960384592168,
         "material_count": 1
       },
       "PLAZA_004_0": {
@@ -2238,7 +2469,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 24.44386462684676,
+        "signed_volume_m3": 24.443864626846754,
         "material_count": 1
       },
       "PLAZA_004_1": {
@@ -2257,7 +2488,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 20.91549263782129,
+        "signed_volume_m3": 20.915492637821288,
         "material_count": 1
       },
       "PLAZA_005_0": {
@@ -2276,7 +2507,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 80.10917986457495,
+        "signed_volume_m3": 80.10917986457498,
         "material_count": 1
       },
       "PLAZA_006_0": {
@@ -2295,7 +2526,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 19.157653823556586,
+        "signed_volume_m3": 19.157653823556558,
         "material_count": 1
       },
       "ROAD_001": {
@@ -3258,17 +3489,20 @@
     "apply_unit_scale": true,
     "apply_scale_options": "FBX_SCALE_UNITS",
     "bake_space_transform": false,
-    "exported_meshes": 169,
+    "exported_meshes": 181,
     "cameras_lights_exported": false,
     "scale_references_exported": false,
     "embedded_facade_textures_reimported": 56
   },
   "fbx_reimport": {
     "errors": [],
-    "object_count": 169,
+    "object_count": 181,
     "category_counts": {
+      "ACCESS": 4,
       "BLDG": 69,
       "BRIDGE": 4,
+      "DOCK": 4,
+      "ENTRANCE": 4,
       "GRASS": 34,
       "Ground": 1,
       "LANDMARK": 4,
@@ -3277,8 +3511,8 @@
       "ROBOT": 34,
       "WATER": 9
     },
-    "total_vertices": 9641,
-    "total_faces": 13317,
+    "total_vertices": 9943,
+    "total_faces": 13666,
     "bbox_min": [
       -459.90899658203125,
       -551.8909912109375,
@@ -3300,6 +3534,82 @@
       21.949980691075325
     ],
     "objects": {
+      "ACCESS_CANTEEN_20": {
+        "vertices": 22,
+        "faces": 29,
+        "bbox_min": [
+          18.885000228881836,
+          -20.048999786376953,
+          7.486449931093375e-07
+        ],
+        "bbox_max": [
+          23.964000701904297,
+          -17.12700080871582,
+          0.04500087723135948
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.38768162508701454,
+        "material_count": 1
+      },
+      "ACCESS_DORM_11": {
+        "vertices": 22,
+        "faces": 29,
+        "bbox_min": [
+          -373.35101318359375,
+          -243.8730010986328,
+          1.0022408787335735e-05
+        ],
+        "bbox_max": [
+          -368.2179870605469,
+          -229.28599548339844,
+          0.04501066356897354
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 1.1812850394789083,
+        "material_count": 1
+      },
+      "ACCESS_LIBRARY": {
+        "vertices": 22,
+        "faces": 29,
+        "bbox_min": [
+          -410.4289855957031,
+          273.1419982910156,
+          -1.2018095731036738e-05
+        ],
+        "bbox_max": [
+          -408.0920104980469,
+          274.9419860839844,
+          0.04498806223273277
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.1721942259482581,
+        "material_count": 1
+      },
+      "ACCESS_TEACHING_3": {
+        "vertices": 22,
+        "faces": 29,
+        "bbox_min": [
+          -170.18800354003906,
+          230.04200744628906,
+          -1.0250757441099267e-05
+        ],
+        "bbox_max": [
+          -129.14500427246094,
+          234.50999450683594,
+          0.044989947229623795
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 3.3098414872428825,
+        "material_count": 1
+      },
       "BLDG_001": {
         "vertices": 16,
         "faces": 20,
@@ -4687,6 +4997,158 @@
         "signed_volume_m3": 3.0013054867214812,
         "material_count": 1
       },
+      "DOCK_CANTEEN_20": {
+        "vertices": 8,
+        "faces": 8,
+        "bbox_min": [
+          24.576000213623047,
+          -18.520000457763672,
+          0.04500071704387665
+        ],
+        "bbox_max": [
+          26.429000854492188,
+          -16.39699935913086,
+          0.04700080677866936
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.0050374802727341,
+        "material_count": 1
+      },
+      "DOCK_DORM_11": {
+        "vertices": 8,
+        "faces": 8,
+        "bbox_min": [
+          -374.43701171875,
+          -226.73899841308594,
+          0.045009832829236984
+        ],
+        "bbox_max": [
+          -372.35101318359375,
+          -224.94400024414062,
+          0.0470099076628685
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.005041588657654472,
+        "material_count": 1
+      },
+      "DOCK_LIBRARY": {
+        "vertices": 8,
+        "faces": 8,
+        "bbox_min": [
+          -413.635986328125,
+          273.1419982910156,
+          0.044987984001636505
+        ],
+        "bbox_max": [
+          -412.2359924316406,
+          274.9419860839844,
+          0.04698805883526802
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.0050399352862945945,
+        "material_count": 1
+      },
+      "DOCK_TEACHING_3": {
+        "vertices": 8,
+        "faces": 8,
+        "bbox_min": [
+          -173.38699340820312,
+          229.82899475097656,
+          0.044989872723817825
+        ],
+        "bbox_max": [
+          -171.87100219726562,
+          231.71800231933594,
+          0.04698995128273964
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.005038458773712812,
+        "material_count": 1
+      },
+      "ENTRANCE_CANTEEN_20": {
+        "vertices": 24,
+        "faces": 18,
+        "bbox_min": [
+          18.700624465942383,
+          -20.18512725830078,
+          8.137786267070624e-07
+        ],
+        "bbox_max": [
+          19.337709426879883,
+          -18.617084503173828,
+          2.3000009059906006
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.11471990379949429,
+        "material_count": 1
+      },
+      "ENTRANCE_DORM_11": {
+        "vertices": 24,
+        "faces": 18,
+        "bbox_min": [
+          -369.64532470703125,
+          -244.0617218017578,
+          1.0640428627084475e-05
+        ],
+        "bbox_max": [
+          -368.0772705078125,
+          -243.4246368408203,
+          2.3000106811523438
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.11472725905170833,
+        "material_count": 1
+      },
+      "ENTRANCE_LIBRARY": {
+        "vertices": 24,
+        "faces": 18,
+        "bbox_min": [
+          -408.2669677734375,
+          273.24249267578125,
+          -1.2013747436867561e-05
+        ],
+        "bbox_max": [
+          -408.1169738769531,
+          274.8424987792969,
+          2.299988031387329
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.11471233243414236,
+        "material_count": 1
+      },
+      "ENTRANCE_TEACHING_3": {
+        "vertices": 24,
+        "faces": 18,
+        "bbox_min": [
+          -130.84332275390625,
+          234.3373260498047,
+          -1.0249766091874335e-05
+        ],
+        "bbox_max": [
+          -129.24331665039062,
+          234.48731994628906,
+          2.299989700317383
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.11471718452691704,
+        "material_count": 1
+      },
       "GRASS_001": {
         "vertices": 30,
         "faces": 41,
@@ -4722,7 +5184,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 20.13741617707832,
+        "signed_volume_m3": 20.137416177078315,
         "material_count": 1
       },
       "GRASS_003": {
@@ -4745,8 +5207,8 @@
         "material_count": 1
       },
       "GRASS_004": {
-        "vertices": 248,
-        "faces": 368,
+        "vertices": 270,
+        "faces": 401,
         "bbox_min": [
           -425.6369934082031,
           -275.00299072265625,
@@ -4760,7 +5222,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 116.07757389877838,
+        "signed_volume_m3": 115.76257200390664,
         "material_count": 1
       },
       "GRASS_005": {
@@ -4779,7 +5241,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 1.5318240389588311,
+        "signed_volume_m3": 1.5318240389588347,
         "material_count": 1
       },
       "GRASS_006": {
@@ -4798,7 +5260,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 132.14052140508403,
+        "signed_volume_m3": 132.14052140508394,
         "material_count": 1
       },
       "GRASS_007": {
@@ -4836,7 +5298,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 8.66481991367148,
+        "signed_volume_m3": 8.66481991367149,
         "material_count": 1
       },
       "GRASS_009": {
@@ -4855,7 +5317,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 37.29190731147423,
+        "signed_volume_m3": 37.29190731147421,
         "material_count": 1
       },
       "GRASS_010": {
@@ -4874,7 +5336,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 24.98000502394869,
+        "signed_volume_m3": 24.980005023948692,
         "material_count": 1
       },
       "GRASS_011": {
@@ -4893,12 +5355,12 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 42.89103721629522,
+        "signed_volume_m3": 42.89103721629519,
         "material_count": 1
       },
       "GRASS_012": {
-        "vertices": 10,
-        "faces": 11,
+        "vertices": 8,
+        "faces": 8,
         "bbox_min": [
           -174.63900756835938,
           -241.86500549316406,
@@ -4912,7 +5374,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 10.914181235909659,
+        "signed_volume_m3": 10.914974136761487,
         "material_count": 1
       },
       "GRASS_013": {
@@ -4950,7 +5412,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 50.59010380149489,
+        "signed_volume_m3": 50.59010380149484,
         "material_count": 1
       },
       "GRASS_015": {
@@ -4969,7 +5431,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 130.0788947768235,
+        "signed_volume_m3": 130.07889477682357,
         "material_count": 1
       },
       "GRASS_016": {
@@ -5007,7 +5469,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 102.19229311132075,
+        "signed_volume_m3": 102.19229311132078,
         "material_count": 1
       },
       "GRASS_018": {
@@ -5026,7 +5488,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 0.022092957942001945,
+        "signed_volume_m3": 0.02209295794200261,
         "material_count": 1
       },
       "GRASS_019": {
@@ -5045,7 +5507,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 183.4514254909741,
+        "signed_volume_m3": 183.45142549097406,
         "material_count": 1
       },
       "GRASS_020": {
@@ -5064,7 +5526,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 132.39195495414205,
+        "signed_volume_m3": 132.39195495414197,
         "material_count": 1
       },
       "GRASS_021": {
@@ -5083,7 +5545,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 258.06583766831915,
+        "signed_volume_m3": 258.06583766831886,
         "material_count": 1
       },
       "GRASS_022": {
@@ -5106,8 +5568,8 @@
         "material_count": 1
       },
       "GRASS_023": {
-        "vertices": 132,
-        "faces": 206,
+        "vertices": 154,
+        "faces": 239,
         "bbox_min": [
           -130.66600036621094,
           -105.93800354003906,
@@ -5121,12 +5583,12 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 173.73187213710463,
+        "signed_volume_m3": 173.62850139649484,
         "material_count": 1
       },
       "GRASS_024": {
-        "vertices": 888,
-        "faces": 1380,
+        "vertices": 910,
+        "faces": 1413,
         "bbox_min": [
           -410.4289855957031,
           50.1150016784668,
@@ -5140,7 +5602,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 703.2134707869928,
+        "signed_volume_m3": 702.3308473744762,
         "material_count": 1
       },
       "GRASS_025": {
@@ -5178,7 +5640,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 104.40286219326049,
+        "signed_volume_m3": 104.4028621932605,
         "material_count": 1
       },
       "GRASS_027": {
@@ -5201,8 +5663,8 @@
         "material_count": 1
       },
       "GRASS_028": {
-        "vertices": 176,
-        "faces": 268,
+        "vertices": 198,
+        "faces": 301,
         "bbox_min": [
           -410.4289855957031,
           155.24899291992188,
@@ -5216,7 +5678,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 149.82519278598627,
+        "signed_volume_m3": 149.77927432715884,
         "material_count": 1
       },
       "GRASS_029": {
@@ -5235,7 +5697,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 38.20181998493921,
+        "signed_volume_m3": 38.20181998493922,
         "material_count": 1
       },
       "GRASS_030": {
@@ -5254,7 +5716,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 67.56626164662869,
+        "signed_volume_m3": 67.5662616466287,
         "material_count": 1
       },
       "GRASS_032": {
@@ -5273,7 +5735,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 45.9138518865223,
+        "signed_volume_m3": 45.913851886522295,
         "material_count": 1
       },
       "GRASS_033": {
@@ -5292,7 +5754,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 69.37907610837807,
+        "signed_volume_m3": 69.37907610837806,
         "material_count": 1
       },
       "GRASS_034": {
@@ -5330,7 +5792,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 208.75532535241518,
+        "signed_volume_m3": 208.7553253524153,
         "material_count": 1
       },
       "Ground": {
@@ -5444,7 +5906,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 68.6155747315169,
+        "signed_volume_m3": 68.61557473151696,
         "material_count": 1
       },
       "PLAZA_002_0": {
@@ -5463,7 +5925,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 66.31660612226406,
+        "signed_volume_m3": 66.31660612226409,
         "material_count": 1
       },
       "PLAZA_003_0": {
@@ -5482,7 +5944,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 88.12960384592166,
+        "signed_volume_m3": 88.12960384592168,
         "material_count": 1
       },
       "PLAZA_004_0": {
@@ -5501,7 +5963,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 24.44386462684676,
+        "signed_volume_m3": 24.443864626846754,
         "material_count": 1
       },
       "PLAZA_004_1": {
@@ -5520,7 +5982,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 20.91549263782129,
+        "signed_volume_m3": 20.915492637821288,
         "material_count": 1
       },
       "PLAZA_005_0": {
@@ -5539,7 +6001,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 80.10917986457495,
+        "signed_volume_m3": 80.10917986457498,
         "material_count": 1
       },
       "PLAZA_006_0": {
@@ -5558,7 +6020,7 @@
         "nonmanifold_edges": 0,
         "degenerate_faces": 0,
         "invalid_normals": 0,
-        "signed_volume_m3": 19.157653823556586,
+        "signed_volume_m3": 19.157653823556558,
         "material_count": 1
       },
       "ROAD_001": {
@@ -6656,6 +7118,50 @@
         678.8513793945312
       ],
       "ortho_scale": 459.8239440917969,
+      "all_bbox_corners_in_frame": true,
+      "map_orientation_correct": null
+    },
+    {
+      "path": "/home/michael/workspace/unity/tools/campus_builder/output/previews/delivery_site_LIBRARY.png",
+      "camera_location": [
+        -429.9515686035156,
+        274.0425109863281,
+        31.445371627807617
+      ],
+      "ortho_scale": 21.16135597229004,
+      "all_bbox_corners_in_frame": true,
+      "map_orientation_correct": null
+    },
+    {
+      "path": "/home/michael/workspace/unity/tools/campus_builder/output/previews/delivery_site_TEACHING_3.png",
+      "camera_location": [
+        -151.33621215820312,
+        182.08090209960938,
+        69.79428100585938
+      ],
+      "ortho_scale": 54.9019660949707,
+      "all_bbox_corners_in_frame": true,
+      "map_orientation_correct": null
+    },
+    {
+      "path": "/home/michael/workspace/unity/tools/campus_builder/output/previews/delivery_site_CANTEEN_20.png",
+      "camera_location": [
+        37.88833999633789,
+        -13.35203742980957,
+        24.098018646240234
+      ],
+      "ortho_scale": 18.77410316467285,
+      "all_bbox_corners_in_frame": true,
+      "map_orientation_correct": null
+    },
+    {
+      "path": "/home/michael/workspace/unity/tools/campus_builder/output/previews/delivery_site_DORM_11.png",
+      "camera_location": [
+        -380.9134521484375,
+        -204.67433166503906,
+        48.18177032470703
+      ],
+      "ortho_scale": 37.286930084228516,
       "all_bbox_corners_in_frame": true,
       "map_orientation_correct": null
     },
@@ -10073,6 +10579,61 @@
     },
     "design_provenance": "Original compact delivery-robot design, not a measured commercial vehicle. Independent modeled metres; never multiplied by campus XY scale.",
     "physics_runtime_tested": false
+  },
+  "delivery_sites": {
+    "pass_": true,
+    "source": {
+      "pass_": true,
+      "sites": [
+        {
+          "site_id": "LIBRARY",
+          "pass_": true,
+          "errors": []
+        },
+        {
+          "site_id": "TEACHING_3",
+          "pass_": true,
+          "errors": []
+        },
+        {
+          "site_id": "CANTEEN_20",
+          "pass_": true,
+          "errors": []
+        },
+        {
+          "site_id": "DORM_11",
+          "pass_": true,
+          "errors": []
+        }
+      ],
+      "scope": "Absolute marker positions, bay dimensions and assumptions survive export; real door locations and traffic access are not certified."
+    },
+    "reimport": {
+      "pass_": true,
+      "sites": [
+        {
+          "site_id": "LIBRARY",
+          "pass_": true,
+          "errors": []
+        },
+        {
+          "site_id": "TEACHING_3",
+          "pass_": true,
+          "errors": []
+        },
+        {
+          "site_id": "CANTEEN_20",
+          "pass_": true,
+          "errors": []
+        },
+        {
+          "site_id": "DORM_11",
+          "pass_": true,
+          "errors": []
+        }
+      ],
+      "scope": "Absolute marker positions, bay dimensions and assumptions survive export; real door locations and traffic access are not certified."
+    }
   },
   "pass_": true
 }

@@ -1,0 +1,1574 @@
+{
+  "schema_version": 1,
+  "model_version": "0.5",
+  "config": {
+    "schema_version": 1,
+    "model_version": "0.5",
+    "entry_standoff_m": 1.1,
+    "access_width_m": 1.8,
+    "dock_lateral_offset_m": 1.3,
+    "entry_anchor_tolerance_px": 0.1,
+    "portal_width_m": 1.6,
+    "portal_height_m": 2.3,
+    "portal_depth_m": 0.15,
+    "portal_offset_m": 0.3,
+    "bay_thickness_m": 0.002,
+    "sites": [
+      {
+        "confidence": "low",
+        "entrance_status": "candidate facade access, not a confirmed physical doorway",
+        "source": "input/campus_1.jpg",
+        "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+        "provenance": "Building position read from map; facade access, connector alignment and roadside handoff bay are explicit simulation modeling assumptions.",
+        "id": "LIBRARY",
+        "name": "Library 18",
+        "source_trace_id": "BLDG_019",
+        "map_label": "18",
+        "entry_pixel": [
+          161,
+          309
+        ],
+        "outward_pixel": [
+          -1,
+          0
+        ],
+        "route_id": "ROUTE_002"
+      },
+      {
+        "confidence": "low",
+        "entrance_status": "candidate facade access, not a confirmed physical doorway",
+        "source": "input/campus_1.jpg",
+        "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+        "provenance": "Building position read from map; facade access, connector alignment and roadside handoff bay are explicit simulation modeling assumptions.",
+        "id": "TEACHING_3",
+        "name": "Teaching building 3",
+        "source_trace_id": "BLDG_003",
+        "map_label": "3",
+        "entry_pixel": [
+          380,
+          340
+        ],
+        "outward_pixel": [
+          0,
+          1
+        ],
+        "route_id": "ROUTE_008"
+      },
+      {
+        "confidence": "low",
+        "entrance_status": "candidate facade access, not a confirmed physical doorway",
+        "source": "input/campus_1.jpg",
+        "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+        "provenance": "Building position read from map; facade access, connector alignment and roadside handoff bay are explicit simulation modeling assumptions.",
+        "id": "CANTEEN_20",
+        "name": "Canteen 20",
+        "source_trace_id": "BLDG_023",
+        "map_label": "20",
+        "entry_pixel": [
+          497.266,
+          540.365
+        ],
+        "outward_pixel": [
+          0.9510565163,
+          -0.3090169944
+        ],
+        "route_id": "ROUTE_018"
+      },
+      {
+        "confidence": "low",
+        "entrance_status": "candidate facade access, not a confirmed physical doorway",
+        "source": "input/campus_1.jpg",
+        "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+        "provenance": "Building position read from map; facade access, connector alignment and roadside handoff bay are explicit simulation modeling assumptions.",
+        "id": "DORM_11",
+        "name": "Dormitory 11",
+        "source_trace_id": "BLDG_012",
+        "map_label": "11",
+        "entry_pixel": [
+          191.837,
+          717.343
+        ],
+        "outward_pixel": [
+          -0.3090169944,
+          -0.9510565163
+        ],
+        "route_id": "ROUTE_014"
+      }
+    ]
+  },
+  "sites": [
+    {
+      "confidence": "low",
+      "entrance_status": "candidate facade access, not a confirmed physical doorway",
+      "source": "input/campus_1.jpg",
+      "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+      "provenance": "Building position read from map; facade access, connector alignment and roadside handoff bay are explicit simulation modeling assumptions.",
+      "id": "LIBRARY",
+      "name": "Library 18",
+      "source_trace_id": "BLDG_019",
+      "map_label": "18",
+      "entry_pixel": [
+        161,
+        309
+      ],
+      "outward_pixel": [
+        -1,
+        0
+      ],
+      "route_id": "ROUTE_002",
+      "building_id": "BLDG_019",
+      "entry_world_m": [
+        -407.89195986311694,
+        274.0424986949712,
+        0
+      ],
+      "outward_world_xy": [
+        -1.0,
+        0.0
+      ],
+      "approach_world_m": [
+        -408.99195986311696,
+        274.0424986949712,
+        0.045
+      ],
+      "dock_world_m": [
+        -412.9355362217968,
+        274.0424986949712,
+        0.045
+      ],
+      "dock_yaw_rad": 0.0,
+      "road_attachment_world_m": [
+        -414.2355362217968,
+        274.0424986949712,
+        0.045
+      ],
+      "base_edge_id": "EDGE_0016",
+      "facade_anchor_error_m": 4.0136883058039536e-05,
+      "access_length_m": 3.9435763586798203,
+      "bay_width_m": 1.4,
+      "bay_length_m": 1.7999999999999998,
+      "road_edge_clearance_m": 1.4854259667039855,
+      "obstacle_clearance_m": 4.022425966703963,
+      "source_access_permission": null,
+      "actual_entrance_confirmed": false,
+      "geometry_pass": true,
+      "dock_node_id": "SIMNODE_0037",
+      "attachment_node_id": "SIMNODE_0012"
+    },
+    {
+      "confidence": "low",
+      "entrance_status": "candidate facade access, not a confirmed physical doorway",
+      "source": "input/campus_1.jpg",
+      "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+      "provenance": "Building position read from map; facade access, connector alignment and roadside handoff bay are explicit simulation modeling assumptions.",
+      "id": "TEACHING_3",
+      "name": "Teaching building 3",
+      "source_trace_id": "BLDG_003",
+      "map_label": "3",
+      "entry_pixel": [
+        380,
+        340
+      ],
+      "outward_pixel": [
+        0,
+        1
+      ],
+      "route_id": "ROUTE_008",
+      "building_id": "BLDG_003",
+      "entry_world_m": [
+        -130.04331535293773,
+        234.71232527115592,
+        0
+      ],
+      "outward_world_xy": [
+        0.0,
+        -1.0
+      ],
+      "approach_world_m": [
+        -130.04331535293773,
+        233.61232527115592,
+        0.045
+      ],
+      "dock_world_m": [
+        -172.6291175578689,
+        230.77327179082718,
+        0.045
+      ],
+      "dock_yaw_rad": 0.06656816377584271,
+      "road_attachment_world_m": [
+        -173.9262382630825,
+        230.68679707714628,
+        0.045
+      ],
+      "base_edge_id": "EDGE_0046",
+      "facade_anchor_error_m": 0.00032527115592984046,
+      "access_length_m": 42.680332403833134,
+      "bay_width_m": 1.4,
+      "bay_length_m": 1.7999999999999998,
+      "road_edge_clearance_m": 1.486043429381199,
+      "obstacle_clearance_m": 16.635385012024543,
+      "source_access_permission": null,
+      "actual_entrance_confirmed": false,
+      "geometry_pass": true,
+      "dock_node_id": "SIMNODE_0038",
+      "attachment_node_id": "SIMNODE_0022"
+    },
+    {
+      "confidence": "low",
+      "entrance_status": "candidate facade access, not a confirmed physical doorway",
+      "source": "input/campus_1.jpg",
+      "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+      "provenance": "Building position read from map; facade access, connector alignment and roadside handoff bay are explicit simulation modeling assumptions.",
+      "id": "CANTEEN_20",
+      "name": "Canteen 20",
+      "source_trace_id": "BLDG_023",
+      "map_label": "20",
+      "entry_pixel": [
+        497.266,
+        540.365
+      ],
+      "outward_pixel": [
+        0.9510565163,
+        -0.3090169944
+      ],
+      "route_id": "ROUTE_018",
+      "building_id": "BLDG_022",
+      "entry_world_m": [
+        18.733849702453426,
+        -19.49381015022334,
+        0
+      ],
+      "outward_world_xy": [
+        0.951056516288244,
+        0.3090169943962131
+      ],
+      "approach_world_m": [
+        19.780011870370494,
+        -19.153891456387505,
+        0.045
+      ],
+      "dock_world_m": [
+        25.50260149225534,
+        -17.458309346199414,
+        0.045
+      ],
+      "dock_yaw_rad": 0.2880554470506208,
+      "road_attachment_world_m": [
+        26.749039038776246,
+        -17.08899451760063,
+        0.045
+      ],
+      "base_edge_id": "EDGE_0063",
+      "facade_anchor_error_m": 0.00039125217429596495,
+      "access_length_m": 5.968503218805704,
+      "bay_width_m": 1.4,
+      "bay_length_m": 1.7999999999999998,
+      "road_edge_clearance_m": 0.8508008746465545,
+      "obstacle_clearance_m": 6.045950339655065,
+      "source_access_permission": null,
+      "actual_entrance_confirmed": false,
+      "geometry_pass": true,
+      "dock_node_id": "SIMNODE_0039",
+      "attachment_node_id": "SIMNODE_0031"
+    },
+    {
+      "confidence": "low",
+      "entrance_status": "candidate facade access, not a confirmed physical doorway",
+      "source": "input/campus_1.jpg",
+      "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+      "provenance": "Building position read from map; facade access, connector alignment and roadside handoff bay are explicit simulation modeling assumptions.",
+      "id": "DORM_11",
+      "name": "Dormitory 11",
+      "source_trace_id": "BLDG_012",
+      "map_label": "11",
+      "entry_pixel": [
+        191.837,
+        717.343
+      ],
+      "outward_pixel": [
+        -0.3090169944,
+        -0.9510565163
+      ],
+      "route_id": "ROUTE_014",
+      "building_id": "BLDG_012",
+      "entry_world_m": [
+        -368.7685870285946,
+        -244.02850151151324,
+        0
+      ],
+      "outward_world_xy": [
+        -0.3090169943961726,
+        0.9510565162882572
+      ],
+      "approach_world_m": [
+        -369.1085057224304,
+        -242.98233934359615,
+        0.045
+      ],
+      "dock_world_m": [
+        -373.39362627983184,
+        -225.84185711399041,
+        0.045
+      ],
+      "dock_yaw_rad": -1.3258176636680326,
+      "road_attachment_world_m": [
+        -373.70892259237905,
+        -224.58067186380148,
+        0.045
+      ],
+      "base_edge_id": "EDGE_0031",
+      "facade_anchor_error_m": 2.5455363690533604e-05,
+      "access_length_m": 17.668004676671746,
+      "bay_width_m": 1.4,
+      "bay_length_m": 1.7999999999999998,
+      "road_edge_clearance_m": 2.7550259874136036,
+      "obstacle_clearance_m": 17.704860431986816,
+      "source_access_permission": null,
+      "actual_entrance_confirmed": false,
+      "geometry_pass": true,
+      "dock_node_id": "SIMNODE_0040",
+      "attachment_node_id": "SIMNODE_0016"
+    }
+  ],
+  "access_paths": [
+    {
+      "id": "ACCESS_LIBRARY",
+      "surface_type": "pedestrian_access",
+      "driveable": false,
+      "collidable": true,
+      "top_m": 0.045,
+      "bottom_m": 0.0,
+      "site_id": "LIBRARY",
+      "vertices_xy_m": [
+        [
+          -408.356,
+          274.679
+        ],
+        [
+          -408.16,
+          274.387
+        ],
+        [
+          -408.092,
+          274.042
+        ],
+        [
+          -408.16,
+          273.698
+        ],
+        [
+          -408.356,
+          273.406
+        ],
+        [
+          -408.648,
+          273.211
+        ],
+        [
+          -408.992,
+          273.142
+        ],
+        [
+          -410.429,
+          273.142
+        ],
+        [
+          -410.429,
+          274.942
+        ],
+        [
+          -408.992,
+          274.942
+        ],
+        [
+          -408.648,
+          274.874
+        ]
+      ],
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          9,
+          5,
+          6
+        ],
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          0,
+          9,
+          10
+        ],
+        [
+          4,
+          0,
+          2
+        ],
+        [
+          9,
+          4,
+          5
+        ],
+        [
+          9,
+          6,
+          8
+        ],
+        [
+          4,
+          9,
+          0
+        ]
+      ],
+      "boundary_rings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "area_m2": 3.826593999999954,
+      "polygon": [
+        [
+          -408.356,
+          274.679
+        ],
+        [
+          -408.16,
+          274.387
+        ],
+        [
+          -408.092,
+          274.042
+        ],
+        [
+          -408.16,
+          273.698
+        ],
+        [
+          -408.356,
+          273.406
+        ],
+        [
+          -408.648,
+          273.211
+        ],
+        [
+          -408.992,
+          273.142
+        ],
+        [
+          -410.429,
+          273.142
+        ],
+        [
+          -410.429,
+          274.942
+        ],
+        [
+          -408.992,
+          274.942
+        ],
+        [
+          -408.648,
+          274.874
+        ]
+      ],
+      "holes": []
+    },
+    {
+      "id": "ACCESS_TEACHING_3",
+      "surface_type": "pedestrian_access",
+      "driveable": false,
+      "collidable": true,
+      "top_m": 0.045,
+      "bottom_m": 0.0,
+      "site_id": "TEACHING_3",
+      "vertices_xy_m": [
+        [
+          -129.451,
+          234.29
+        ],
+        [
+          -129.237,
+          234.011
+        ],
+        [
+          -129.145,
+          233.672
+        ],
+        [
+          -129.191,
+          233.324
+        ],
+        [
+          -129.366,
+          233.02
+        ],
+        [
+          -129.644,
+          232.806
+        ],
+        [
+          -129.983,
+          232.714
+        ],
+        [
+          -170.068,
+          230.042
+        ],
+        [
+          -170.188,
+          231.838
+        ],
+        [
+          -130.103,
+          234.51
+        ],
+        [
+          -129.755,
+          234.465
+        ]
+      ],
+      "triangles": [
+        [
+          3,
+          1,
+          2
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          9,
+          5,
+          6
+        ],
+        [
+          9,
+          7,
+          8
+        ],
+        [
+          1,
+          9,
+          10
+        ],
+        [
+          1,
+          10,
+          0
+        ],
+        [
+          4,
+          1,
+          3
+        ],
+        [
+          7,
+          9,
+          6
+        ],
+        [
+          5,
+          9,
+          1
+        ]
+      ],
+      "boundary_rings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "area_m2": 73.55243299999964,
+      "polygon": [
+        [
+          -129.451,
+          234.29
+        ],
+        [
+          -129.237,
+          234.011
+        ],
+        [
+          -129.145,
+          233.672
+        ],
+        [
+          -129.191,
+          233.324
+        ],
+        [
+          -129.366,
+          233.02
+        ],
+        [
+          -129.644,
+          232.806
+        ],
+        [
+          -129.983,
+          232.714
+        ],
+        [
+          -170.068,
+          230.042
+        ],
+        [
+          -170.188,
+          231.838
+        ],
+        [
+          -130.103,
+          234.51
+        ],
+        [
+          -129.755,
+          234.465
+        ]
+      ],
+      "holes": []
+    },
+    {
+      "id": "ACCESS_CANTEEN_20",
+      "surface_type": "pedestrian_access",
+      "driveable": false,
+      "collidable": true,
+      "top_m": 0.045,
+      "bottom_m": 0.0,
+      "site_id": "CANTEEN_20",
+      "vertices_xy_m": [
+        [
+          19.351,
+          -19.945
+        ],
+        [
+          19.081,
+          -19.72
+        ],
+        [
+          18.917,
+          -19.41
+        ],
+        [
+          18.885,
+          -19.06
+        ],
+        [
+          18.989,
+          -18.725
+        ],
+        [
+          19.214,
+          -18.455
+        ],
+        [
+          19.524,
+          -18.291
+        ],
+        [
+          23.452,
+          -17.127
+        ],
+        [
+          23.964,
+          -18.853
+        ],
+        [
+          20.036,
+          -20.017
+        ],
+        [
+          19.686,
+          -20.049
+        ]
+      ],
+      "triangles": [
+        [
+          3,
+          1,
+          2
+        ],
+        [
+          5,
+          3,
+          4
+        ],
+        [
+          9,
+          5,
+          6
+        ],
+        [
+          9,
+          7,
+          8
+        ],
+        [
+          1,
+          9,
+          10
+        ],
+        [
+          1,
+          10,
+          0
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          7,
+          9,
+          6
+        ],
+        [
+          5,
+          9,
+          1
+        ]
+      ],
+      "boundary_rings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "area_m2": 8.615148,
+      "polygon": [
+        [
+          19.351,
+          -19.945
+        ],
+        [
+          19.081,
+          -19.72
+        ],
+        [
+          18.917,
+          -19.41
+        ],
+        [
+          18.885,
+          -19.06
+        ],
+        [
+          18.989,
+          -18.725
+        ],
+        [
+          19.214,
+          -18.455
+        ],
+        [
+          19.524,
+          -18.291
+        ],
+        [
+          23.452,
+          -17.127
+        ],
+        [
+          23.964,
+          -18.853
+        ],
+        [
+          20.036,
+          -20.017
+        ],
+        [
+          19.686,
+          -20.049
+        ]
+      ],
+      "holes": []
+    },
+    {
+      "id": "ACCESS_DORM_11",
+      "surface_type": "pedestrian_access",
+      "driveable": false,
+      "collidable": true,
+      "top_m": 0.045,
+      "bottom_m": 0.0,
+      "site_id": "DORM_11",
+      "vertices_xy_m": [
+        [
+          -368.337,
+          -243.445
+        ],
+        [
+          -368.573,
+          -243.705
+        ],
+        [
+          -368.89,
+          -243.855
+        ],
+        [
+          -369.241,
+          -243.873
+        ],
+        [
+          -369.572,
+          -243.754
+        ],
+        [
+          -369.832,
+          -243.518
+        ],
+        [
+          -369.982,
+          -243.201
+        ],
+        [
+          -373.351,
+          -229.722
+        ],
+        [
+          -371.605,
+          -229.286
+        ],
+        [
+          -368.235,
+          -242.764
+        ],
+        [
+          -368.218,
+          -243.115
+        ]
+      ],
+      "triangles": [
+        [
+          5,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          5,
+          6
+        ],
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          0,
+          9,
+          10
+        ],
+        [
+          1,
+          6,
+          0
+        ],
+        [
+          5,
+          2,
+          4
+        ],
+        [
+          9,
+          6,
+          8
+        ],
+        [
+          9,
+          0,
+          6
+        ]
+      ],
+      "boundary_rings": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "area_m2": 26.250685499999943,
+      "polygon": [
+        [
+          -368.337,
+          -243.445
+        ],
+        [
+          -368.573,
+          -243.705
+        ],
+        [
+          -368.89,
+          -243.855
+        ],
+        [
+          -369.241,
+          -243.873
+        ],
+        [
+          -369.572,
+          -243.754
+        ],
+        [
+          -369.832,
+          -243.518
+        ],
+        [
+          -369.982,
+          -243.201
+        ],
+        [
+          -373.351,
+          -229.722
+        ],
+        [
+          -371.605,
+          -229.286
+        ],
+        [
+          -368.235,
+          -242.764
+        ],
+        [
+          -368.218,
+          -243.115
+        ]
+      ],
+      "holes": []
+    }
+  ],
+  "delivery_bays": [
+    {
+      "id": "DOCK_LIBRARY",
+      "surface_type": "delivery_bay_marker",
+      "driveable": false,
+      "collidable": false,
+      "top_m": 0.047,
+      "bottom_m": 0.045,
+      "site_id": "LIBRARY",
+      "vertices_xy_m": [
+        [
+          -413.636,
+          273.142
+        ],
+        [
+          -413.636,
+          274.942
+        ],
+        [
+          -412.236,
+          274.942
+        ],
+        [
+          -412.236,
+          273.142
+        ]
+      ],
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          0
+        ]
+      ],
+      "boundary_rings": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "area_m2": 2.5200000000000773,
+      "polygon": [
+        [
+          -413.636,
+          273.142
+        ],
+        [
+          -413.636,
+          274.942
+        ],
+        [
+          -412.236,
+          274.942
+        ],
+        [
+          -412.236,
+          273.142
+        ]
+      ],
+      "holes": []
+    },
+    {
+      "id": "DOCK_TEACHING_3",
+      "surface_type": "delivery_bay_marker",
+      "driveable": false,
+      "collidable": false,
+      "top_m": 0.047,
+      "bottom_m": 0.045,
+      "site_id": "TEACHING_3",
+      "vertices_xy_m": [
+        [
+          -173.268,
+          229.829
+        ],
+        [
+          -173.387,
+          231.625
+        ],
+        [
+          -171.991,
+          231.718
+        ],
+        [
+          -171.871,
+          229.922
+        ]
+      ],
+      "triangles": [
+        [
+          3,
+          1,
+          2
+        ],
+        [
+          1,
+          3,
+          0
+        ]
+      ],
+      "boundary_rings": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "area_m2": 2.5192274999999684,
+      "polygon": [
+        [
+          -173.268,
+          229.829
+        ],
+        [
+          -173.387,
+          231.625
+        ],
+        [
+          -171.991,
+          231.718
+        ],
+        [
+          -171.871,
+          229.922
+        ]
+      ],
+      "holes": []
+    },
+    {
+      "id": "DOCK_CANTEEN_20",
+      "surface_type": "delivery_bay_marker",
+      "driveable": false,
+      "collidable": false,
+      "top_m": 0.047,
+      "bottom_m": 0.045,
+      "site_id": "CANTEEN_20",
+      "vertices_xy_m": [
+        [
+          25.087,
+          -18.52
+        ],
+        [
+          24.576,
+          -16.794
+        ],
+        [
+          25.918,
+          -16.397
+        ],
+        [
+          26.429,
+          -18.122
+        ]
+      ],
+      "triangles": [
+        [
+          3,
+          1,
+          2
+        ],
+        [
+          1,
+          3,
+          0
+        ]
+      ],
+      "boundary_rings": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "area_m2": 2.5187434999999985,
+      "polygon": [
+        [
+          25.087,
+          -18.52
+        ],
+        [
+          24.576,
+          -16.794
+        ],
+        [
+          25.918,
+          -16.397
+        ],
+        [
+          26.429,
+          -18.122
+        ]
+      ],
+      "holes": []
+    },
+    {
+      "id": "DOCK_DORM_11",
+      "surface_type": "delivery_bay_marker",
+      "driveable": false,
+      "collidable": false,
+      "top_m": 0.047,
+      "bottom_m": 0.045,
+      "site_id": "DORM_11",
+      "vertices_xy_m": [
+        [
+          -374.437,
+          -225.381
+        ],
+        [
+          -372.69,
+          -224.944
+        ],
+        [
+          -372.351,
+          -226.303
+        ],
+        [
+          -374.097,
+          -226.739
+        ]
+      ],
+      "triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          0
+        ]
+      ],
+      "boundary_rings": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "area_m2": 2.5208120000000176,
+      "polygon": [
+        [
+          -374.437,
+          -225.381
+        ],
+        [
+          -372.69,
+          -224.944
+        ],
+        [
+          -372.351,
+          -226.303
+        ],
+        [
+          -374.097,
+          -226.739
+        ]
+      ],
+      "holes": []
+    }
+  ],
+  "validation": {
+    "pass_": true,
+    "site_count": 4,
+    "actual_confirmed_entrances": 0,
+    "straight_clear_width_m": 1.4,
+    "sweep_radius_m": 1.0211102550927977,
+    "vehicle_dynamics_validated": false,
+    "real_world_access_confirmed": false,
+    "access_scope": "simulation assumption only; does not certify real-campus traffic permissions",
+    "path_tests": [
+      {
+        "site_id": "LIBRARY",
+        "start_node_id": "SIMNODE_0008",
+        "goal_node_id": "SIMNODE_0037",
+        "pass_": true,
+        "length_m": 371.1031593559726,
+        "node_ids": [
+          "SIMNODE_0008",
+          "SIMNODE_0007",
+          "SIMNODE_0010",
+          "SIMNODE_0011",
+          "SIMNODE_0012",
+          "SIMNODE_0037"
+        ],
+        "edge_ids": [
+          "SIMEDGE_0006",
+          "SIMEDGE_0008",
+          "SIMEDGE_0009",
+          "SIMEDGE_0011",
+          "SIMEDGE_0038"
+        ],
+        "polyline_m": [
+          [
+            -272.80450384948074,
+            45.09945781148822
+          ],
+          [
+            -321.6193213850704,
+            45.67374978249518
+          ],
+          [
+            -414.2355362217968,
+            45.67374978249518
+          ],
+          [
+            -414.2355362217968,
+            93.8849301084623
+          ],
+          [
+            -414.2355362217968,
+            163.6642700539411
+          ],
+          [
+            -414.2355362217968,
+            274.0424986949712
+          ],
+          [
+            -412.9355362217968,
+            274.0424986949712
+          ]
+        ]
+      },
+      {
+        "site_id": "TEACHING_3",
+        "start_node_id": "SIMNODE_0008",
+        "goal_node_id": "SIMNODE_0038",
+        "pass_": true,
+        "length_m": 752.9528967473623,
+        "node_ids": [
+          "SIMNODE_0008",
+          "SIMNODE_0007",
+          "SIMNODE_0010",
+          "SIMNODE_0011",
+          "SIMNODE_0012",
+          "SIMNODE_0002",
+          "SIMNODE_0013",
+          "SIMNODE_0014",
+          "SIMNODE_0022",
+          "SIMNODE_0038"
+        ],
+        "edge_ids": [
+          "SIMEDGE_0006",
+          "SIMEDGE_0008",
+          "SIMEDGE_0009",
+          "SIMEDGE_0011",
+          "SIMEDGE_0010",
+          "SIMEDGE_0012",
+          "SIMEDGE_0013",
+          "SIMEDGE_0021",
+          "SIMEDGE_0039"
+        ],
+        "polyline_m": [
+          [
+            -272.80450384948074,
+            45.09945781148822
+          ],
+          [
+            -321.6193213850704,
+            45.67374978249518
+          ],
+          [
+            -414.2355362217968,
+            45.67374978249518
+          ],
+          [
+            -414.2355362217968,
+            93.8849301084623
+          ],
+          [
+            -414.2355362217968,
+            163.6642700539411
+          ],
+          [
+            -414.2355362217968,
+            274.0424986949712
+          ],
+          [
+            -414.2355362217968,
+            331.1346859230902
+          ],
+          [
+            -341.91876573284605,
+            331.1346859230902
+          ],
+          [
+            -297.51373122208685,
+            346.3592691839219
+          ],
+          [
+            -259.4522730700075,
+            353.9715608143378
+          ],
+          [
+            -222.65953018966417,
+            346.3592691839219
+          ],
+          [
+            -194.74779421147264,
+            313.3726721187865
+          ],
+          [
+            -175.71706513543296,
+            257.5492001624035
+          ],
+          [
+            -173.9262382630825,
+            230.68679707714628
+          ],
+          [
+            -172.6291175578689,
+            230.77327179082718
+          ]
+        ]
+      },
+      {
+        "site_id": "CANTEEN_20",
+        "start_node_id": "SIMNODE_0008",
+        "goal_node_id": "SIMNODE_0039",
+        "pass_": true,
+        "length_m": 400.099790910668,
+        "node_ids": [
+          "SIMNODE_0008",
+          "SIMNODE_0009",
+          "SIMNODE_0025",
+          "SIMNODE_0029",
+          "SIMNODE_0030",
+          "SIMNODE_0031",
+          "SIMNODE_0039"
+        ],
+        "edge_ids": [
+          "SIMEDGE_0007",
+          "SIMEDGE_0025",
+          "SIMEDGE_0029",
+          "SIMEDGE_0030",
+          "SIMEDGE_0031",
+          "SIMEDGE_0040"
+        ],
+        "polyline_m": [
+          [
+            -272.80450384948074,
+            45.09945781148822
+          ],
+          [
+            -213.77852328751231,
+            44.40503451075915
+          ],
+          [
+            -136.38689171161764,
+            45.67374978249518
+          ],
+          [
+            -118.62487790731393,
+            72.31677048895074
+          ],
+          [
+            -100.86286410301028,
+            87.5413537497825
+          ],
+          [
+            -64.0701212226669,
+            101.49722173887824
+          ],
+          [
+            -29.814808885795514,
+            95.15364538019833
+          ],
+          [
+            -1.9030729076039279,
+            74.85420103242268
+          ],
+          [
+            4.6314472805359905,
+            40.7294844943586
+          ],
+          [
+            9.515364537237504,
+            15.224583264917321
+          ],
+          [
+            20.93380198364366,
+            2.5374305434719417
+          ],
+          [
+            26.749039038776246,
+            -17.08899451760063
+          ],
+          [
+            25.50260149225534,
+            -17.458309346199414
+          ]
+        ]
+      },
+      {
+        "site_id": "DORM_11",
+        "start_node_id": "SIMNODE_0008",
+        "goal_node_id": "SIMNODE_0040",
+        "pass_": true,
+        "length_m": 464.89436265651784,
+        "node_ids": [
+          "SIMNODE_0008",
+          "SIMNODE_0007",
+          "SIMNODE_0006",
+          "SIMNODE_0004",
+          "SIMNODE_0016",
+          "SIMNODE_0040"
+        ],
+        "edge_ids": [
+          "SIMEDGE_0006",
+          "SIMEDGE_0005",
+          "SIMEDGE_0004",
+          "SIMEDGE_0015",
+          "SIMEDGE_0041"
+        ],
+        "polyline_m": [
+          [
+            -272.80450384948074,
+            45.09945781148822
+          ],
+          [
+            -321.6193213850704,
+            45.67374978249518
+          ],
+          [
+            -414.2355362217968,
+            45.67374978249518
+          ],
+          [
+            -414.2355362217968,
+            -19.030729076039734
+          ],
+          [
+            -414.2355362217968,
+            -223.29388782553212
+          ],
+          [
+            -414.2355362217968,
+            -234.71232527115592
+          ],
+          [
+            -373.70892259237905,
+            -224.58067186380148
+          ],
+          [
+            -373.39362627983184,
+            -225.84185711399041
+          ]
+        ]
+      }
+    ],
+    "coplanar_overlap_tolerance_m2": 0.01,
+    "access_road_overlaps": [
+      {
+        "site_id": "LIBRARY",
+        "area_m2": 0.0
+      },
+      {
+        "site_id": "TEACHING_3",
+        "area_m2": 3.8748996786961954e-05
+      },
+      {
+        "site_id": "CANTEEN_20",
+        "area_m2": 0.00034162789037147935
+      },
+      {
+        "site_id": "DORM_11",
+        "area_m2": 0.00016763522737097208
+      }
+    ]
+  }
+}

@@ -9,7 +9,7 @@
   ],
   "map_type": "Stylized color campus planning diagram",
   "method": "Visual polygon/centreline digitization + Shapely union/difference + constrained triangulation",
-  "model_version": "0.4",
+  "model_version": "0.5",
   "meters_per_pixel": 1.268715271735978,
   "scale_status": "conditional",
   "scale_reason": "INSUFFICIENT SCALE EVIDENCE",
@@ -2914,7 +2914,7 @@
     "Fixed overhead camera roll explicitly so north is at the top, matching the source map"
   ],
   "building_reconstruction": {
-    "model_version": "0.4",
+    "model_version": "0.5",
     "appearance_revision": "2026-10-05-photo-informed-envelope-preserving",
     "profile_validation_pass": true,
     "measured_height_count": 0,

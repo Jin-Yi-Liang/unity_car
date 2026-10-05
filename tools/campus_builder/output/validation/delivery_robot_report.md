@@ -12,7 +12,7 @@ Source metric/hierarchy check: True; placed FBX: True; standalone FBX: True; sta
 Measured local dimensions XYZ after FBX: [0.800000011920929, 1.2000000476837158, 1.100000025551024] m.
 Wheel contacts after placed FBX: [0.04500088095664978, 0.04500088095664978, 0.044999122619628906, 0.044999122619628906] m; expected road top: 0.045 m.
 Standalone FBX round trip: {"pass_": true, "errors": [], "max_bbox_delta_m": 1.1920928955078125e-07, "max_vertex_delta_m": 1.2731557319511921e-07, "dimension_ratios": [1.0, 1.0, 1.000000121918602], "direction_check": "Named object world-space bounds and bidirectional vertices match; Z remains height"}
-Closeup source/reimport appearance: {"mean_absolute_rgb_error": [0.00296875, 0.003759027777777778, 0.0034604166666666668], "pass_": true}
+Closeup source/reimport appearance: {"mean_absolute_rgb_error": [0.002970138888888889, 0.003757638888888889, 0.0034638888888888887], "pass_": true}
 Full clean-build idempotency: True; runs: 2.
 
 ## Integration limits
