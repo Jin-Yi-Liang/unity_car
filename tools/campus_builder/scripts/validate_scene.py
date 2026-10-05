@@ -5,12 +5,13 @@ import bmesh
 from mathutils import Vector
 
 
-def snapshot(require_applied=True):
+def snapshot(require_applied=True, required_categories=None, campus_bounds=True, object_filter=None):
     objects={}
     errors=[]
     all_points=[]
     category_counts={}
     for obj in sorted(bpy.context.scene.objects, key=lambda o:o.name):
+        if object_filter is not None and not object_filter(obj):continue
         if obj.get('validation_only'):continue
         if obj.type!='MESH':
             continue
@@ -59,7 +60,7 @@ def snapshot(require_applied=True):
             signed_volume_m3=signed_volume,
             material_count=len(obj.data.materials), points=coords)
         all_points+=coords
-    for required in ['Ground','BLDG','ROAD']:
+    for required in (['Ground','BLDG','ROAD'] if required_categories is None else required_categories):
         if not category_counts.get(required):
             errors.append(f'Missing {required}')
     if not all_points:
@@ -68,9 +69,9 @@ def snapshot(require_applied=True):
     hi=[max(p[i] for p in all_points) for i in range(3)]
     dimensions=[hi[i]-lo[i] for i in range(3)]
     center=[(hi[i]+lo[i])/2 for i in range(3)]
-    if max(abs(center[0]),abs(center[1]))>1:
+    if campus_bounds and max(abs(center[0]),abs(center[1]))>1:
         errors.append('Campus horizontal origin is not centered')
-    if not (1<dimensions[0]<3000 and 1<dimensions[1]<3000 and 0<dimensions[2]<300):
+    if campus_bounds and not (1<dimensions[0]<3000 and 1<dimensions[1]<3000 and 0<dimensions[2]<300):
         errors.append('Unexpected campus dimensions')
     return dict(pass_=not errors, errors=errors, object_count=len(objects),
         category_counts=category_counts, total_vertices=sum(o['vertices'] for o in objects.values()),

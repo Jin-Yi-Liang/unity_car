@@ -232,8 +232,8 @@
     },
     {
       "id": "BLDG_028",
-      "expected_m": 12.600000000000001,
-      "actual_m": 12.600000381469727,
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
       "pass_": true
     },
     {
@@ -244,8 +244,8 @@
     },
     {
       "id": "BLDG_030",
-      "expected_m": 14.4,
-      "actual_m": 14.399999618530273,
+      "expected_m": 12.600000000000001,
+      "actual_m": 12.600000381469727,
       "pass_": true
     },
     {
@@ -268,8 +268,8 @@
     },
     {
       "id": "BLDG_034",
-      "expected_m": 12.600000000000001,
-      "actual_m": 12.600000381469727,
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
       "pass_": true
     },
     {
@@ -280,20 +280,20 @@
     },
     {
       "id": "BLDG_036",
-      "expected_m": 14.4,
-      "actual_m": 14.399999618530273,
-      "pass_": true
-    },
-    {
-      "id": "BLDG_037",
       "expected_m": 12.600000000000001,
       "actual_m": 12.600000381469727,
       "pass_": true
     },
     {
-      "id": "BLDG_038",
+      "id": "BLDG_037",
       "expected_m": 14.4,
       "actual_m": 14.399999618530273,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_038",
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
       "pass_": true
     },
     {
@@ -310,8 +310,8 @@
     },
     {
       "id": "BLDG_041",
-      "expected_m": 18.6,
-      "actual_m": 18.600000381469727,
+      "expected_m": 14.4,
+      "actual_m": 14.399999618530273,
       "pass_": true
     },
     {
@@ -322,8 +322,8 @@
     },
     {
       "id": "BLDG_043",
-      "expected_m": 14.4,
-      "actual_m": 14.399999618530273,
+      "expected_m": 18.6,
+      "actual_m": 18.600000381469727,
       "pass_": true
     },
     {
@@ -454,36 +454,30 @@
     },
     {
       "id": "BLDG_065",
-      "expected_m": 18.6,
-      "actual_m": 18.600000381469727,
-      "pass_": true
-    },
-    {
-      "id": "BLDG_066",
-      "expected_m": 18.6,
-      "actual_m": 18.600000381469727,
-      "pass_": true
-    },
-    {
-      "id": "BLDG_067",
-      "expected_m": 18.6,
-      "actual_m": 18.600000381469727,
-      "pass_": true
-    },
-    {
-      "id": "BLDG_068",
       "expected_m": 8.4,
       "actual_m": 8.399999618530273,
       "pass_": true
     },
     {
-      "id": "BLDG_069",
+      "id": "BLDG_066",
       "expected_m": 4.5,
       "actual_m": 4.5,
       "pass_": true
     },
     {
-      "id": "BLDG_070",
+      "id": "BLDG_067",
+      "expected_m": 4.5,
+      "actual_m": 4.5,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_068",
+      "expected_m": 4.5,
+      "actual_m": 4.5,
+      "pass_": true
+    },
+    {
+      "id": "BLDG_069",
       "expected_m": 7.0,
       "actual_m": 7.0,
       "pass_": true
@@ -495,6 +489,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.1230468771827873e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -502,6 +499,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.0742187498635758e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -509,6 +509,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 5.615234385913936e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -516,6 +519,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 7.446289060908384e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -523,6 +529,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 7.080078120225153e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -530,6 +539,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.4404296848624654e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -537,6 +549,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 5.8593749940882844e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -544,6 +559,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 5.0048828086346475e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -551,6 +569,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 3.4179687560254024e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -558,6 +579,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 3.662109378410605e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -565,6 +589,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 7.568359364995558e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -572,6 +599,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.0986328106810106e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -579,6 +609,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.3916015632275958e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -586,6 +619,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 8.300781246362021e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -593,6 +629,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.1718749988176569e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -600,6 +639,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 4.7607422004602995e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -607,6 +649,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 3.1738281336401997e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -614,6 +659,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 7.202148424312327e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -621,6 +669,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.0009765617269295e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -628,6 +679,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.5136718729991117e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -635,6 +689,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 9.765625009094947e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -642,6 +699,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.1901855501150749e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -649,6 +709,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.7700195371617156e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -656,6 +719,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 7.568359364995558e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -663,6 +729,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 6.835937512050805e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -670,6 +739,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 8.789062519554136e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -677,6 +749,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 9.277343735902832e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -684,6 +759,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 4.394531259777068e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -691,6 +769,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.4404296848624654e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -698,6 +779,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.464843751364242e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -705,6 +789,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.2451171869543032e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -712,6 +799,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.464843751364242e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -719,6 +809,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.0009765617269295e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -726,6 +819,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.4404296848624654e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -733,6 +829,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.4404296848624654e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -740,6 +839,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.2939453142735147e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -747,6 +849,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 2.685546888869794e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -754,6 +859,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.464843751364242e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -761,6 +869,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.1962890653194336e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -768,6 +879,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.3916015632275958e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -775,6 +889,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.4892578121816769e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -782,6 +899,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.2939453142735147e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -789,6 +909,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.2451171869543032e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -796,6 +919,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.0009765617269295e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -803,6 +929,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.1962890653194336e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -810,6 +939,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.5136718729991117e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -817,6 +949,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 2.3193359481865627e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -824,6 +959,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 6.103515630684342e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -831,6 +969,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.0986328106810106e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -838,6 +979,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.5136718729991117e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -845,6 +989,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.2207031261368684e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -852,6 +999,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 6.347656267280399e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -859,6 +1009,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.0986328078388397e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -866,6 +1019,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 5.981445326597168e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -873,6 +1029,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 6.713867179541921e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -880,6 +1039,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 7.080078120225153e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -887,6 +1049,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 4.8828125045474735e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -894,6 +1059,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 7.324218813664629e-07,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -901,6 +1069,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 7.080078148646862e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -908,6 +1079,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 5.371093749317879e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -915,6 +1089,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.1474609380002221e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -922,6 +1099,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 5.1269531127218215e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -929,6 +1109,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 1.1474609380002221e-05,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -936,6 +1119,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 8.54492185453637e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -943,6 +1129,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 6.591796875454747e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -950,6 +1139,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 7.568359364995558e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -957,6 +1149,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 6.958007816137979e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -964,6 +1159,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
+      "xy_envelope_error_m": 5.0048828086346475e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     },
     {
@@ -971,13 +1169,9 @@
       "uv_finite": true,
       "provenance_preserved": true,
       "textures_loaded": true,
-      "pass_": true
-    },
-    {
-      "id": "BLDG_070",
-      "uv_finite": true,
-      "provenance_preserved": true,
-      "textures_loaded": true,
+      "xy_envelope_error_m": 7.812499973169906e-06,
+      "xy_envelope_preserved": true,
+      "taper_property_preserved": true,
       "pass_": true
     }
   ],
@@ -998,6 +1192,13 @@
     },
     {
       "id": "BRIDGE_003",
+      "top_m": 0.04500000178813934,
+      "water_top_m": 0.018,
+      "semantic_properties_preserved": true,
+      "pass_": true
+    },
+    {
+      "id": "BRIDGE_004",
       "top_m": 0.04500000178813934,
       "water_top_m": 0.018,
       "semantic_properties_preserved": true,

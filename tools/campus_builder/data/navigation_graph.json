@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "model_version": "0.3",
+  "model_version": "0.4",
   "coordinate_system": "local_metric",
   "nodes": [
     {
@@ -20,23 +20,23 @@
     },
     {
       "id": "NODE_0004",
-      "x_m": -416.7729668,
-      "y_m": 471.9620811
+      "x_m": -419.8876628,
+      "y_m": -329.5551354
     },
     {
       "id": "NODE_0005",
-      "x_m": -414.2355362,
-      "y_m": -340.0156928
+      "x_m": -392.7067068,
+      "y_m": -496.1450629
     },
     {
       "id": "NODE_0006",
-      "x_m": -392.6673766,
-      "y_m": -496.0676712
+      "x_m": -337.4148265,
+      "y_m": -300.0904919
     },
     {
       "id": "NODE_0007",
-      "x_m": -310.2008839,
-      "y_m": -303.2229499
+      "x_m": -416.7729668,
+      "y_m": 471.9620811
     },
     {
       "id": "NODE_0008",
@@ -95,53 +95,53 @@
     },
     {
       "id": "NODE_0019",
-      "x_m": -217.5846691,
-      "y_m": -447.8564909
+      "x_m": -299.6007678,
+      "y_m": -477.2323243
     },
     {
       "id": "NODE_0020",
-      "x_m": -319.0818908,
-      "y_m": -329.8659707
+      "x_m": -320.556138,
+      "y_m": -351.974603
     },
     {
       "id": "NODE_0021",
-      "x_m": -201.0913706,
-      "y_m": -310.8352416
+      "x_m": -228.8191428,
+      "y_m": -264.8049828
     },
     {
       "id": "NODE_0022",
-      "x_m": -216.3159538,
-      "y_m": -274.0424987
+      "x_m": -211.9604543,
+      "y_m": -316.6903626
     },
     {
       "id": "NODE_0023",
+      "x_m": -63.3444161,
+      "y_m": -400.4687068
+    },
+    {
+      "id": "NODE_0024",
       "x_m": -258.1835578,
       "y_m": 100.2285065
     },
     {
-      "id": "NODE_0024",
+      "id": "NODE_0025",
       "x_m": -175.7170651,
       "y_m": 257.5492002
     },
     {
-      "id": "NODE_0025",
+      "id": "NODE_0026",
       "x_m": -151.611475,
       "y_m": 427.5570466
     },
     {
-      "id": "NODE_0026",
-      "x_m": -136.3868917,
-      "y_m": -422.4821855
-    },
-    {
       "id": "NODE_0027",
-      "x_m": -187.8125042,
-      "y_m": -258.3164575
+      "x_m": -188.4674929,
+      "y_m": -251.6940715
     },
     {
       "id": "NODE_0028",
-      "x_m": -141.4617528,
-      "y_m": -287.9983667
+      "x_m": -185.3009403,
+      "y_m": -398.7407166
     },
     {
       "id": "NODE_0029",
@@ -175,8 +175,8 @@
     },
     {
       "id": "NODE_0035",
-      "x_m": -179.523211,
-      "y_m": -253.7430543
+      "x_m": -181.0367883,
+      "y_m": -249.279714
     },
     {
       "id": "NODE_0036",
@@ -200,8 +200,8 @@
     },
     {
       "id": "NODE_0040",
-      "x_m": -167.116502,
-      "y_m": -249.6074847
+      "x_m": -167.7299774,
+      "y_m": -244.956171
     },
     {
       "id": "NODE_0041",
@@ -220,33 +220,33 @@
     },
     {
       "id": "NODE_0044",
-      "x_m": -88.1757114,
-      "y_m": -223.2938878
+      "x_m": -119.0169109,
+      "y_m": -229.1287094
     },
     {
       "id": "NODE_0045",
-      "x_m": -151.611475,
-      "y_m": -263.8927765
-    },
-    {
-      "id": "NODE_0046",
-      "x_m": -70.4136976,
-      "y_m": -263.8927765
-    },
-    {
-      "id": "NODE_0047",
-      "x_m": -56.4578296,
-      "y_m": -394.5704495
-    },
-    {
-      "id": "NODE_0048",
       "x_m": -119.8935932,
       "y_m": -15.2245833
     },
     {
-      "id": "NODE_0049",
+      "id": "NODE_0046",
       "x_m": -36.1583852,
       "y_m": -109.1095134
+    },
+    {
+      "id": "NODE_0047",
+      "x_m": -108.4307507,
+      "y_m": -261.7067801
+    },
+    {
+      "id": "NODE_0048",
+      "x_m": 36.6366909,
+      "y_m": -178.5539125
+    },
+    {
+      "id": "NODE_0049",
+      "x_m": 47.2228511,
+      "y_m": -211.1319832
     },
     {
       "id": "NODE_0050",
@@ -260,173 +260,188 @@
     },
     {
       "id": "NODE_0052",
-      "x_m": 74.2198434,
-      "y_m": -171.2765617
+      "x_m": 92.3091857,
+      "y_m": -349.8939099
     },
     {
       "id": "NODE_0053",
-      "x_m": 9.5153645,
-      "y_m": -373.0022899
-    },
-    {
-      "id": "NODE_0054",
-      "x_m": 93.2505725,
-      "y_m": -229.6374642
-    },
-    {
-      "id": "NODE_0055",
       "x_m": 4.6314473,
       "y_m": 40.7294845
     },
     {
-      "id": "NODE_0056",
+      "id": "NODE_0054",
       "x_m": 9.5153645,
       "y_m": 15.2245833
     },
     {
-      "id": "NODE_0057",
-      "x_m": 120.659099,
-      "y_m": -329.9348029
+      "id": "NODE_0055",
+      "x_m": 27.631104,
+      "y_m": -20.0659638
     },
     {
-      "id": "NODE_0058",
-      "x_m": 26.4809256,
-      "y_m": -20.4660259
-    },
-    {
-      "id": "NODE_0059",
+      "id": "NODE_0056",
       "x_m": 39.9645311,
       "y_m": 22.8368749
     },
     {
-      "id": "NODE_0060",
+      "id": "NODE_0057",
+      "x_m": 90.9351671,
+      "y_m": -160.9111579
+    },
+    {
+      "id": "NODE_0058",
       "x_m": 65.3463437,
       "y_m": 30.5617744
     },
     {
-      "id": "NODE_0061",
+      "id": "NODE_0059",
       "x_m": 67.932119,
       "y_m": 31.3487495
     },
     {
-      "id": "NODE_0062",
+      "id": "NODE_0060",
       "x_m": 68.5091133,
       "y_m": 29.4116764
     },
     {
-      "id": "NODE_0063",
+      "id": "NODE_0061",
       "x_m": 68.5554782,
       "y_m": 31.5384675
     },
     {
-      "id": "NODE_0064",
+      "id": "NODE_0062",
       "x_m": 69.1449823,
       "y_m": 29.1804512
     },
     {
+      "id": "NODE_0063",
+      "x_m": 91.9818572,
+      "y_m": 34.2553123
+    },
+    {
+      "id": "NODE_0064",
+      "x_m": 207.9996345,
+      "y_m": 147.80662
+    },
+    {
       "id": "NODE_0065",
-      "x_m": 236.0977147,
-      "y_m": 81.7683085
+      "x_m": 72.9600828,
+      "y_m": 14.4689189
     },
     {
       "id": "NODE_0066",
-      "x_m": 288.6327243,
-      "y_m": 175.0827075
+      "x_m": 77.808873,
+      "y_m": -2.6125447
     },
     {
       "id": "NODE_0067",
+      "x_m": 94.9823688,
+      "y_m": -58.626064
+    },
+    {
+      "id": "NODE_0068",
       "x_m": 88.1757114,
       "y_m": -383.1520121
     },
     {
-      "id": "NODE_0068",
-      "x_m": 107.2064405,
-      "y_m": -427.5570466
+      "id": "NODE_0069",
+      "x_m": 123.699739,
+      "y_m": -437.7067687
     },
     {
-      "id": "NODE_0069",
+      "id": "NODE_0070",
       "x_m": 123.699739,
       "y_m": -365.3899983
     },
     {
-      "id": "NODE_0070",
-      "x_m": 88.1757114,
-      "y_m": -50.7486109
-    },
-    {
       "id": "NODE_0071",
-      "x_m": 265.9997673,
-      "y_m": 2.6874833
+      "x_m": 139.8243638,
+      "y_m": -311.3750432
     },
     {
       "id": "NODE_0072",
-      "x_m": 123.6048127,
-      "y_m": -327.0015716
+      "x_m": 230.1250048,
+      "y_m": 79.7121297
     },
     {
       "id": "NODE_0073",
-      "x_m": 107.2064405,
-      "y_m": -88.810069
+      "x_m": 126.7568894,
+      "y_m": -338.7008411
     },
     {
       "id": "NODE_0074",
-      "x_m": 374.9053628,
-      "y_m": -1.2687153
+      "x_m": 109.9417906,
+      "y_m": -96.4540785
     },
     {
       "id": "NODE_0075",
-      "x_m": 123.699739,
-      "y_m": -327.3285401
+      "x_m": 257.8765287,
+      "y_m": -5.699069
     },
     {
       "id": "NODE_0076",
-      "x_m": 145.2678986,
-      "y_m": -323.5223943
+      "x_m": 270.422854,
+      "y_m": -44.3111496
     },
     {
       "id": "NODE_0077",
-      "x_m": 132.8994941,
-      "y_m": -347.5316501
+      "x_m": 139.1905606,
+      "y_m": -334.6607768
     },
     {
       "id": "NODE_0078",
+      "x_m": 132.7851323,
+      "y_m": -347.3672575
+    },
+    {
+      "id": "NODE_0079",
+      "x_m": 146.6063932,
+      "y_m": -332.2511554
+    },
+    {
+      "id": "NODE_0080",
+      "x_m": 144.1768035,
+      "y_m": -324.7695414
+    },
+    {
+      "id": "NODE_0081",
       "x_m": 197.2852248,
       "y_m": -307.0290958
     },
     {
-      "id": "NODE_0079",
-      "x_m": 203.6823464,
-      "y_m": -312.8931239
-    },
-    {
-      "id": "NODE_0080",
-      "x_m": 430.7288348,
-      "y_m": -341.2844081
-    },
-    {
-      "id": "NODE_0081",
-      "x_m": 212.509808,
-      "y_m": 139.5586799
-    },
-    {
       "id": "NODE_0082",
+      "x_m": 198.1468286,
+      "y_m": -323.399568
+    },
+    {
+      "id": "NODE_0083",
+      "x_m": 434.5349806,
+      "y_m": -337.4782623
+    },
+    {
+      "id": "NODE_0084",
+      "x_m": 207.6937648,
+      "y_m": 148.7479846
+    },
+    {
+      "id": "NODE_0085",
+      "x_m": 288.6327243,
+      "y_m": 175.0827075
+    },
+    {
+      "id": "NODE_0086",
       "x_m": 326.6941825,
       "y_m": 110.3782286
     },
     {
-      "id": "NODE_0083",
-      "x_m": 281.0204327,
-      "y_m": -32.9865971
+      "id": "NODE_0087",
+      "x_m": 365.8893805,
+      "y_m": 29.3964207
     },
     {
-      "id": "NODE_0084",
-      "x_m": 359.6807795,
-      "y_m": 34.2553123
-    },
-    {
-      "id": "NODE_0085",
-      "x_m": 340.6500505,
-      "y_m": 1.2687153
+      "id": "NODE_0088",
+      "x_m": 378.4146292,
+      "y_m": -9.2222913
     }
   ],
   "edges": [
@@ -443,6 +458,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -420.5791125804767,
@@ -474,6 +490,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -420.5791125804767,
@@ -495,6 +512,74 @@
     {
       "id": "EDGE_0003",
       "from": "NODE_0004",
+      "to": "NODE_0005",
+      "length_m": 171.40929426561124,
+      "width_m": 11.418437445623802,
+      "route_id": "ROUTE_020",
+      "route_ids": [
+        "ROUTE_020"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          -419.8876627573806,
+          -329.55513540977904
+        ],
+        [
+          -420.54866341395507,
+          -374.32555991879826
+        ],
+        [
+          -420.596874594281,
+          -412.3603750501711
+        ],
+        [
+          -410.4826764480018,
+          -454.1632745385998
+        ],
+        [
+          -392.706706775709,
+          -496.1450628803434
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0004",
+      "from": "NODE_0004",
+      "to": "NODE_0006",
+      "length_m": 87.57815898999999,
+      "width_m": 10.149722173887824,
+      "route_id": "ROUTE_021",
+      "route_ids": [
+        "ROUTE_021"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          -419.8876627573806,
+          -329.55513540977904
+        ],
+        [
+          -337.41482651883325,
+          -300.09049193921476
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0005",
+      "from": "NODE_0007",
       "to": "NODE_0001",
       "length_m": 41.65313005000002,
       "width_m": 7.612291630415868,
@@ -505,6 +590,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -416.7729667652688,
@@ -524,8 +610,8 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0004",
-      "from": "NODE_0004",
+      "id": "EDGE_0006",
+      "from": "NODE_0007",
       "to": "NODE_0003",
       "length_m": 174.44299674,
       "width_m": 12.68715271735978,
@@ -536,6 +622,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -416.7729667652688,
@@ -559,72 +646,6 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0005",
-      "from": "NODE_0005",
-      "to": "NODE_0006",
-      "length_m": 161.45900285,
-      "width_m": 11.418437445623802,
-      "route_id": "ROUTE_020",
-      "route_ids": [
-        "ROUTE_020"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          -414.2355362217968,
-          -340.0156928252421
-        ],
-        [
-          -420.5791125804767,
-          -374.2710051621136
-        ],
-        [
-          -420.5791125804767,
-          -412.33246331419286
-        ],
-        [
-          -410.4293904065889,
-          -454.2000672814802
-        ],
-        [
-          -392.6673766034765,
-          -496.06767124595956
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": true,
-      "validation_pass": true
-    },
-    {
-      "id": "EDGE_0006",
-      "from": "NODE_0005",
-      "to": "NODE_0007",
-      "length_m": 110.34905891836398,
-      "width_m": 10.149722173887824,
-      "route_id": "ROUTE_021",
-      "route_ids": [
-        "ROUTE_021"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          -414.2355362217968,
-          -340.0156928252421
-        ],
-        [
-          -310.2008839394466,
-          -303.2229499448988
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
       "id": "EDGE_0007",
       "from": "NODE_0008",
       "to": "NODE_0009",
@@ -637,6 +658,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -414.2355362217968,
@@ -664,6 +686,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -414.2355362217968,
@@ -695,6 +718,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -414.2355362217968,
@@ -731,6 +755,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -414.2355362217968,
@@ -758,6 +783,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -414.2355362217968,
@@ -793,6 +819,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -414.2355362217968,
@@ -820,6 +847,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -414.2355362217968,
@@ -847,6 +875,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -414.2355362217968,
@@ -874,6 +903,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -414.2355362217968,
@@ -905,6 +935,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -414.2355362217968,
@@ -932,6 +963,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -414.2355362217968,
@@ -956,9 +988,9 @@
     },
     {
       "id": "EDGE_0018",
-      "from": "NODE_0006",
+      "from": "NODE_0005",
       "to": "NODE_0019",
-      "length_m": 181.87669227,
+      "length_m": 95.00740783758252,
       "width_m": 11.418437445623802,
       "route_id": "ROUTE_024",
       "route_ids": [
@@ -967,29 +999,26 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          -392.66737660228523,
-          -496.0676712487675
+          -392.706706775709,
+          -496.1450628803434
         ],
         [
-          -300.0511617655588,
-          -475.76822690099175
-        ],
-        [
-          -217.58466910523745,
-          -447.85649092365225
+          -299.60076784409256,
+          -477.2323243245751
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
       "id": "EDGE_0019",
-      "from": "NODE_0020",
-      "to": "NODE_0019",
-      "length_m": 172.87277572,
+      "from": "NODE_0006",
+      "to": "NODE_0020",
+      "length_m": 54.554343155663794,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_025",
       "route_ids": [
@@ -998,91 +1027,26 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          -319.08189084159847,
-          -329.86597065135436
+          -337.41482651818336,
+          -300.0904919389826
         ],
         [
-          -305.12602285250273,
-          -380.61458152079354
-        ],
-        [
-          -269.6019952438953,
-          -437.7067687489125
-        ],
-        [
-          -217.58466910717848,
-          -447.8564909219304
+          -320.55613798735567,
+          -351.97460297662553
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
       "id": "EDGE_0020",
-      "from": "NODE_0020",
+      "from": "NODE_0006",
       "to": "NODE_0021",
-      "length_m": 122.89223398999998,
-      "width_m": 7.612291630415868,
-      "route_id": "ROUTE_026",
-      "route_ids": [
-        "ROUTE_026"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          -319.08189084159847,
-          -329.86597065135436
-        ],
-        [
-          -231.54053709181596,
-          -303.2229499448988
-        ],
-        [
-          -201.0913705732891,
-          -310.83524157453047
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0021",
-      "from": "NODE_0007",
-      "to": "NODE_0020",
-      "length_m": 28.08420972647599,
-      "width_m": 7.612291630415868,
-      "route_id": "ROUTE_025",
-      "route_ids": [
-        "ROUTE_025"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          -310.2008839394466,
-          -303.2229499448988
-        ],
-        [
-          -319.08189084159847,
-          -329.86597065135436
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0022",
-      "from": "NODE_0007",
-      "to": "NODE_0022",
-      "length_m": 98.31520145000002,
+      "length_m": 114.18445458967608,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_021",
       "route_ids": [
@@ -1091,24 +1055,121 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          -310.2008839394466,
-          -303.2229499448988
+          -337.41482651818336,
+          -300.0904919389826
         ],
         [
-          -216.31595383324822,
-          -274.04249869567496
+          -228.81914283394235,
+          -264.80498280146173
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0021",
+      "from": "NODE_0020",
+      "to": "NODE_0019",
+      "length_m": 133.30635756999996,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_025",
+      "route_ids": [
+        "ROUTE_025"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          -320.55613798735567,
+          -351.97460297662553
+        ],
+        [
+          -304.0907511907661,
+          -402.6534345061191
+        ],
+        [
+          -287.6240956789049,
+          -453.3309973203411
+        ],
+        [
+          -299.60076784357284,
+          -477.2323243235379
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0022",
+      "from": "NODE_0020",
+      "to": "NODE_0022",
+      "length_m": 114.184062535114,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_026",
+      "route_ids": [
+        "ROUTE_026"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          -320.55613798735567,
+          -351.97460297662553
+        ],
+        [
+          -211.96045430311466,
+          -316.6903625543762
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
       "id": "EDGE_0023",
-      "from": "NODE_0018",
+      "from": "NODE_0019",
       "to": "NODE_0023",
+      "length_m": 248.41440522,
+      "width_m": 11.418437445623802,
+      "route_id": "ROUTE_024",
+      "route_ids": [
+        "ROUTE_024"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          -299.60076784409256,
+          -477.2323243245751
+        ],
+        [
+          -173.14791671016764,
+          -436.14498024940553
+        ],
+        [
+          -63.34441608855177,
+          -400.46870680861804
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0024",
+      "from": "NODE_0018",
+      "to": "NODE_0024",
       "length_m": 317.3295107176024,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_006",
@@ -1118,6 +1179,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -259.4522730700075,
@@ -1169,9 +1231,9 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0024",
+      "id": "EDGE_0025",
       "from": "NODE_0018",
-      "to": "NODE_0024",
+      "to": "NODE_0025",
       "length_m": 139.76105991903992,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_007",
@@ -1181,6 +1243,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -259.4522730700075,
@@ -1204,7 +1267,7 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0025",
+      "id": "EDGE_0026",
       "from": "NODE_0003",
       "to": "NODE_0018",
       "length_m": 77.39163157589468,
@@ -1216,6 +1279,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -259.4522730700075,
@@ -1231,9 +1295,9 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0026",
+      "id": "EDGE_0027",
       "from": "NODE_0003",
-      "to": "NODE_0025",
+      "to": "NODE_0026",
       "length_m": 111.16221606,
       "width_m": 8.881006902151846,
       "route_id": "ROUTE_004",
@@ -1243,6 +1307,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -259.4522730700075,
@@ -1262,37 +1327,10 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0027",
-      "from": "NODE_0019",
-      "to": "NODE_0026",
-      "length_m": 85.07017356,
-      "width_m": 11.418437445623802,
-      "route_id": "ROUTE_024",
-      "route_ids": [
-        "ROUTE_024"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          -217.58466910272023,
-          -447.8564909228003
-        ],
-        [
-          -136.38689171173527,
-          -422.4821854881174
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
       "id": "EDGE_0028",
-      "from": "NODE_0022",
-      "to": "NODE_0021",
-      "length_m": 39.81826043569773,
+      "from": "NODE_0021",
+      "to": "NODE_0022",
+      "length_m": 54.55554977,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_022",
       "route_ids": [
@@ -1301,25 +1339,26 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          -216.31595383098426,
-          -274.0424986949713
+          -228.81914283394235,
+          -264.80498280146173
         ],
         [
-          -201.09137057015255,
-          -310.8352415753146
+          -211.9604543041814,
+          -316.6903625510931
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
       "id": "EDGE_0029",
-      "from": "NODE_0022",
+      "from": "NODE_0021",
       "to": "NODE_0027",
-      "length_m": 32.5538786,
+      "length_m": 42.42819398,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_021",
       "route_ids": [
@@ -1328,52 +1367,26 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          -216.31595383098426,
-          -274.0424986949713
+          -228.81914283394235,
+          -264.80498280146173
         ],
         [
-          -187.81250420030682,
-          -258.31645751942517
+          -188.46749292589473,
+          -251.6940715401165
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
       "id": "EDGE_0030",
-      "from": "NODE_0021",
+      "from": "NODE_0022",
       "to": "NODE_0028",
-      "length_m": 63.85306703976351,
-      "width_m": 7.612291630415868,
-      "route_id": "ROUTE_026",
-      "route_ids": [
-        "ROUTE_026"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          -201.09137057015255,
-          -310.8352415753146
-        ],
-        [
-          -141.46175279856158,
-          -287.99836668406704
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0031",
-      "from": "NODE_0021",
-      "to": "NODE_0026",
-      "length_m": 137.855991396371,
+      "length_m": 86.27276678000001,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_022",
       "route_ids": [
@@ -1382,30 +1395,27 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          -201.09137057015255,
-          -310.8352415753146
+          -211.96045430311466,
+          -316.6903625543762
         ],
         [
-          -187.13550258105676,
-          -356.5089913578098
+          -189.22127048779072,
+          -386.6739656586044
         ],
         [
-          -169.37348877675305,
-          -407.257602227249
-        ],
-        [
-          -136.38689171161764,
-          -422.48218548808063
+          -185.30094029877193,
+          -398.7407166060987
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0032",
+      "id": "EDGE_0031",
       "from": "NODE_0029",
       "to": "NODE_0008",
       "length_m": 229.07033582999998,
@@ -1417,6 +1427,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -197.1790322747796,
@@ -1444,7 +1455,7 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0033",
+      "id": "EDGE_0032",
       "from": "NODE_0030",
       "to": "NODE_0011",
       "length_m": 9.721953139999998,
@@ -1456,6 +1467,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -196.0165094832086,
@@ -1471,7 +1483,7 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0034",
+      "id": "EDGE_0033",
       "from": "NODE_0011",
       "to": "NODE_0031",
       "length_m": 118.12844543999998,
@@ -1483,6 +1495,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -195.20914521937664,
@@ -1506,7 +1519,7 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0035",
+      "id": "EDGE_0034",
       "from": "NODE_0011",
       "to": "NODE_0032",
       "length_m": 38.30144954,
@@ -1518,6 +1531,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -195.20914521937664,
@@ -1537,7 +1551,7 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0036",
+      "id": "EDGE_0035",
       "from": "NODE_0031",
       "to": "NODE_0033",
       "length_m": 11.602340439433629,
@@ -1547,8 +1561,9 @@
         "ROUTE_015"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -189.9994209431206,
@@ -1566,7 +1581,7 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0037",
+      "id": "EDGE_0036",
       "from": "NODE_0033",
       "to": "NODE_0029",
       "length_m": 9.385000729999998,
@@ -1576,8 +1591,9 @@
         "ROUTE_014"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -188.78483243431353,
@@ -1595,7 +1611,7 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0038",
+      "id": "EDGE_0037",
       "from": "NODE_0033",
       "to": "NODE_0034",
       "length_m": 15.755201299999998,
@@ -1605,8 +1621,9 @@
         "ROUTE_015"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -188.78483243431353,
@@ -1624,36 +1641,37 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0039",
+      "id": "EDGE_0038",
       "from": "NODE_0027",
       "to": "NODE_0035",
-      "length_m": 9.467227638264353,
+      "length_m": 7.813097587691707,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_021",
       "route_ids": [
         "ROUTE_021"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          -187.81250420030682,
-          -258.31645751942517
+          -188.46749292589473,
+          -251.6940715401165
         ],
         [
-          -179.52321095064087,
-          -253.74305434719565
+          -181.0367882698219,
+          -249.27971402122841
         ]
       ],
       "bridge_ids": [
         "BRIDGE_001"
       ],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0040",
+      "id": "EDGE_0039",
       "from": "NODE_0036",
       "to": "NODE_0033",
       "length_m": 1.8440068299999943,
@@ -1663,8 +1681,9 @@
         "ROUTE_014"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -187.13550258105676,
@@ -1682,10 +1701,10 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0041",
+      "id": "EDGE_0040",
       "from": "NODE_0036",
       "to": "NODE_0035",
-      "length_m": 95.52612461721708,
+      "length_m": 91.04253716882235,
       "width_m": 12.68715271735978,
       "route_id": "ROUTE_019",
       "route_ids": [
@@ -1694,6 +1713,7 @@
       "road_type": "bridge",
       "driveable": true,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -187.13550258105676,
@@ -1704,8 +1724,8 @@
           -215.6815961951163
         ],
         [
-          -179.52321095064087,
-          -253.74305434719565
+          -181.0367882698219,
+          -249.27971402122841
         ]
       ],
       "bridge_ids": [
@@ -1715,7 +1735,7 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0042",
+      "id": "EDGE_0041",
       "from": "NODE_0037",
       "to": "NODE_0038",
       "length_m": 54.90767523000001,
@@ -1727,6 +1747,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -184.5980720375848,
@@ -1742,7 +1763,7 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0043",
+      "id": "EDGE_0042",
       "from": "NODE_0037",
       "to": "NODE_0039",
       "length_m": 94.34582933594592,
@@ -1754,6 +1775,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -184.5980720375848,
@@ -1773,36 +1795,37 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0044",
+      "id": "EDGE_0043",
       "from": "NODE_0035",
       "to": "NODE_0040",
-      "length_m": 13.07781949999999,
+      "length_m": 13.99157742000001,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_021",
       "route_ids": [
         "ROUTE_021"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          -179.52321095064087,
-          -253.74305434719565
+          -181.0367882698219,
+          -249.27971402122841
         ],
         [
-          -167.11650201607156,
-          -249.6074847023392
+          -167.72997743673974,
+          -244.95617101202618
         ]
       ],
       "bridge_ids": [
         "BRIDGE_001"
       ],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0045",
+      "id": "EDGE_0044",
       "from": "NODE_0041",
       "to": "NODE_0036",
       "length_m": 8.042663055030445,
@@ -1812,8 +1835,9 @@
         "ROUTE_014"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -179.41753354459848,
@@ -1831,8 +1855,8 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0046",
-      "from": "NODE_0024",
+      "id": "EDGE_0045",
+      "from": "NODE_0025",
       "to": "NODE_0037",
       "length_m": 132.2276986262098,
       "width_m": 10.149722173887824,
@@ -1843,6 +1867,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -175.71706513543296,
@@ -1866,8 +1891,8 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0047",
-      "from": "NODE_0024",
+      "id": "EDGE_0046",
+      "from": "NODE_0025",
       "to": "NODE_0039",
       "length_m": 185.52273770847154,
       "width_m": 7.612291630415868,
@@ -1878,6 +1903,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -175.71706513543296,
@@ -1905,7 +1931,7 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0048",
+      "id": "EDGE_0047",
       "from": "NODE_0042",
       "to": "NODE_0043",
       "length_m": 443.51723517,
@@ -1917,6 +1943,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -168.10477350501708,
@@ -1944,10 +1971,10 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0049",
+      "id": "EDGE_0048",
       "from": "NODE_0040",
       "to": "NODE_0044",
-      "length_m": 83.21089956000003,
+      "length_m": 51.21983395999998,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_021",
       "route_ids": [
@@ -1956,140 +1983,25 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          -167.11650201607156,
-          -249.6074847023392
+          -167.72997743673974,
+          -244.95617101202618
         ],
         [
-          -88.1757113877407,
-          -223.29388782622885
+          -119.01691092907527,
+          -229.12870936115414
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0050",
-      "from": "NODE_0045",
-      "to": "NODE_0028",
-      "length_m": 26.15523536999999,
-      "width_m": 7.612291630415868,
-      "route_id": "ROUTE_027",
-      "route_ids": [
-        "ROUTE_027"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          -151.6114749724494,
-          -263.8927765210834
-        ],
-        [
-          -141.46175279895286,
-          -287.99836668313776
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0051",
-      "from": "NODE_0028",
-      "to": "NODE_0046",
-      "length_m": 75.02603299691468,
-      "width_m": 7.612291630415868,
-      "route_id": "ROUTE_026",
-      "route_ids": [
-        "ROUTE_026"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          -141.46175279856158,
-          -287.99836668406704
-        ],
-        [
-          -70.41369758134681,
-          -263.8927765210834
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0052",
-      "from": "NODE_0028",
-      "to": "NODE_0047",
-      "length_m": 139.09371425919375,
-      "width_m": 7.612291630415868,
-      "route_id": "ROUTE_027",
-      "route_ids": [
-        "ROUTE_027"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          -141.46175279856158,
-          -287.99836668406704
-        ],
-        [
-          -116.08744736384199,
-          -327.3285401078823
-        ],
-        [
-          -89.44442665738643,
-          -373.0022898903776
-        ],
-        [
-          -56.45782959225107,
-          -394.57044950988916
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0053",
-      "from": "NODE_0026",
-      "to": "NODE_0047",
-      "length_m": 84.66238820513999,
-      "width_m": 11.418437445623802,
-      "route_id": "ROUTE_024",
-      "route_ids": [
-        "ROUTE_024"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          -136.38689171161764,
-          -422.48218548808063
-        ],
-        [
-          -56.45782959225107,
-          -394.57044950988916
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0054",
+      "id": "EDGE_0049",
       "from": "NODE_0013",
-      "to": "NODE_0048",
+      "to": "NODE_0045",
       "length_m": 63.09228054,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_014",
@@ -2099,6 +2011,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -136.38689171161764,
@@ -2114,7 +2027,7 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0055",
+      "id": "EDGE_0050",
       "from": "NODE_0013",
       "to": "NODE_0043",
       "length_m": 164.11602674604626,
@@ -2126,6 +2039,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -136.38689171161764,
@@ -2157,8 +2071,8 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0056",
-      "from": "NODE_0048",
+      "id": "EDGE_0051",
+      "from": "NODE_0045",
       "to": "NODE_0032",
       "length_m": 78.40348354,
       "width_m": 7.612291630415868,
@@ -2169,6 +2083,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -119.89359317904996,
@@ -2188,9 +2103,9 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0057",
-      "from": "NODE_0048",
-      "to": "NODE_0049",
+      "id": "EDGE_0052",
+      "from": "NODE_0045",
+      "to": "NODE_0046",
       "length_m": 139.75423729,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_014",
@@ -2200,6 +2115,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -119.89359317904996,
@@ -2223,7 +2139,127 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0058",
+      "id": "EDGE_0053",
+      "from": "NODE_0044",
+      "to": "NODE_0047",
+      "length_m": 34.25488989907058,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_027",
+      "route_ids": [
+        "ROUTE_027"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          -119.01691092628039,
+          -229.12870936024603
+        ],
+        [
+          -108.43075069891535,
+          -261.7067801078824
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0054",
+      "from": "NODE_0044",
+      "to": "NODE_0048",
+      "length_m": 163.66384402568295,
+      "width_m": 10.149722173887824,
+      "route_id": "ROUTE_021",
+      "route_ids": [
+        "ROUTE_021"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          -119.01691092628039,
+          -229.12870936024603
+        ],
+        [
+          36.63669090191979,
+          -178.55391248303465
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0055",
+      "from": "NODE_0047",
+      "to": "NODE_0023",
+      "length_m": 145.90287821716566,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_027",
+      "route_ids": [
+        "ROUTE_027"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          -108.43075069891535,
+          -261.7067801078824
+        ],
+        [
+          -102.1582223954527,
+          -281.01282039788873
+        ],
+        [
+          -79.41903858012881,
+          -350.9976922173887
+        ],
+        [
+          -63.34441608723387,
+          -400.46870680818984
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0056",
+      "from": "NODE_0047",
+      "to": "NODE_0049",
+      "length_m": 163.6638440256829,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_041",
+      "route_ids": [
+        "ROUTE_041"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          -108.43075069891535,
+          -261.7067801078824
+        ],
+        [
+          47.22285112928478,
+          -211.13198323067104
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0057",
       "from": "NODE_0039",
       "to": "NODE_0050",
       "length_m": 39.391515036484684,
@@ -2235,6 +2271,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -98.32543355953828,
@@ -2250,7 +2287,7 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0059",
+      "id": "EDGE_0058",
       "from": "NODE_0039",
       "to": "NODE_0051",
       "length_m": 54.775597239999996,
@@ -2262,6 +2299,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -98.32543355953828,
@@ -2277,134 +2315,10 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0060",
-      "from": "NODE_0044",
-      "to": "NODE_0046",
-      "length_m": 44.31431933,
-      "width_m": 7.612291630415868,
-      "route_id": "ROUTE_028",
-      "route_ids": [
-        "ROUTE_028"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          -88.17571138565052,
-          -223.29388782553212
-        ],
-        [
-          -70.41369758142291,
-          -263.8927765209095
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0061",
-      "from": "NODE_0044",
+      "id": "EDGE_0059",
+      "from": "NODE_0023",
       "to": "NODE_0052",
-      "length_m": 170.61595595514518,
-      "width_m": 10.149722173887824,
-      "route_id": "ROUTE_021",
-      "route_ids": [
-        "ROUTE_021"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          -88.17571138565052,
-          -223.29388782553212
-        ],
-        [
-          5.709218722811897,
-          -190.30729076039677
-        ],
-        [
-          74.21984339655467,
-          -171.27656168435703
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0062",
-      "from": "NODE_0046",
-      "to": "NODE_0053",
-      "length_m": 142.74791778,
-      "width_m": 7.612291630415868,
-      "route_id": "ROUTE_028",
-      "route_ids": [
-        "ROUTE_028"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          -70.41369758134681,
-          -263.8927765210834
-        ],
-        [
-          -45.03939214662728,
-          -319.7162484774665
-        ],
-        [
-          -15.858940896699778,
-          -366.6587135316977
-        ],
-        [
-          9.5153645357986,
-          -373.0022898898223
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0063",
-      "from": "NODE_0046",
-      "to": "NODE_0054",
-      "length_m": 167.82115115,
-      "width_m": 7.612291630415868,
-      "route_id": "ROUTE_026",
-      "route_ids": [
-        "ROUTE_026"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          -70.41369758134681,
-          -263.8927765210834
-        ],
-        [
-          -1.9030729076039279,
-          -242.32461690157186
-        ],
-        [
-          93.25057246840076,
-          -229.63746418477118
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0064",
-      "from": "NODE_0047",
-      "to": "NODE_0053",
-      "length_m": 69.40927786,
+      "length_m": 163.66384402568298,
       "width_m": 11.418437445623802,
       "route_id": "ROUTE_024",
       "route_ids": [
@@ -2413,23 +2327,24 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          -56.45782959225107,
-          -394.57044950988916
+          -63.34441608723387,
+          -400.46870680818984
         ],
         [
-          9.515364537496353,
-          -373.00228989054875
+          92.30918574096631,
+          -349.89390993097834
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0065",
-      "from": "NODE_0049",
+      "id": "EDGE_0060",
+      "from": "NODE_0046",
       "to": "NODE_0041",
       "length_m": 150.9096293,
       "width_m": 10.149722173887824,
@@ -2440,6 +2355,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -36.158385244475426,
@@ -2459,9 +2375,9 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0066",
+      "id": "EDGE_0061",
       "from": "NODE_0043",
-      "to": "NODE_0055",
+      "to": "NODE_0053",
       "length_m": 34.74472957,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_003",
@@ -2471,6 +2387,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           -1.9030729076039279,
@@ -2486,9 +2403,9 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0067",
-      "from": "NODE_0055",
-      "to": "NODE_0056",
+      "id": "EDGE_0062",
+      "from": "NODE_0053",
+      "to": "NODE_0054",
       "length_m": 25.968300569999997,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_003",
@@ -2496,8 +2413,9 @@
         "ROUTE_003"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           4.6314472805359905,
@@ -2515,61 +2433,31 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0068",
-      "from": "NODE_0053",
-      "to": "NODE_0057",
-      "length_m": 120.50508519999998,
-      "width_m": 11.418437445623802,
-      "route_id": "ROUTE_024",
-      "route_ids": [
-        "ROUTE_024"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          9.515364538019867,
-          -373.0022898903776
-        ],
-        [
-          105.93772518995411,
-          -342.55312336871407
-        ],
-        [
-          120.6590990403909,
-          -329.93480292548253
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0069",
-      "from": "NODE_0056",
-      "to": "NODE_0058",
-      "length_m": 40.2394539,
+      "id": "EDGE_0063",
+      "from": "NODE_0054",
+      "to": "NODE_0055",
+      "length_m": 40.6435355,
       "width_m": 6.34357635867989,
       "route_id": "ROUTE_018",
       "route_ids": [
         "ROUTE_018"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           9.515364538019867,
           15.22458326083165
         ],
         [
-          19.665086711907634,
+          20.93380198364366,
           2.5374305434719417
         ],
         [
-          26.480925646998557,
-          -20.46602586245978
+          27.631104019143574,
+          -20.065963826340376
         ]
       ],
       "bridge_ids": [
@@ -2579,9 +2467,9 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0070",
-      "from": "NODE_0056",
-      "to": "NODE_0059",
+      "id": "EDGE_0064",
+      "from": "NODE_0054",
+      "to": "NODE_0056",
       "length_m": 31.386282445209858,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_003",
@@ -2589,8 +2477,9 @@
         "ROUTE_003"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           9.515364538019867,
@@ -2608,10 +2497,10 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0071",
-      "from": "NODE_0058",
-      "to": "NODE_0049",
-      "length_m": 198.00127840576783,
+      "id": "EDGE_0065",
+      "from": "NODE_0055",
+      "to": "NODE_0046",
+      "length_m": 199.68724735,
       "width_m": 6.34357635867989,
       "route_id": "ROUTE_018",
       "route_ids": [
@@ -2620,29 +2509,30 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          26.480925646998557,
-          -20.46602586245978
+          27.631104019143574,
+          -20.065963826340376
         ],
         [
-          29.814808885795514,
+          31.08352415753143,
           -31.717881793399442
         ],
         [
-          32.352239429267456,
+          33.62095470100337,
           -49.47989559770315
         ],
         [
-          46.30810741836319,
+          47.57682269009911,
           -95.15364538019844
         ],
         [
-          62.80140595093087,
+          64.0701212226669,
           -109.10951336929418
         ],
         [
-          -36.158385244475426,
+          -36.15838524196232,
           -109.10951336929418
         ]
       ],
@@ -2651,9 +2541,65 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0072",
-      "from": "NODE_0059",
-      "to": "NODE_0060",
+      "id": "EDGE_0066",
+      "from": "NODE_0048",
+      "to": "NODE_0049",
+      "length_m": 34.254889899070555,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_028",
+      "route_ids": [
+        "ROUTE_028"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          36.63669090191979,
+          -178.55391248303465
+        ],
+        [
+          47.22285112928478,
+          -211.13198323067104
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0067",
+      "from": "NODE_0048",
+      "to": "NODE_0057",
+      "length_m": 57.0928306,
+      "width_m": 10.149722173887824,
+      "route_id": "ROUTE_021",
+      "route_ids": [
+        "ROUTE_021"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          36.63669090191979,
+          -178.55391248303465
+        ],
+        [
+          90.9351670977721,
+          -160.91115791554273
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0068",
+      "from": "NODE_0056",
+      "to": "NODE_0058",
       "length_m": 26.531311395580726,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_029",
@@ -2661,8 +2607,9 @@
         "ROUTE_029"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           39.96453105968328,
@@ -2680,9 +2627,9 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0073",
-      "from": "NODE_0059",
-      "to": "NODE_0060",
+      "id": "EDGE_0069",
+      "from": "NODE_0056",
+      "to": "NODE_0058",
       "length_m": 29.838667406935876,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_003",
@@ -2690,8 +2637,9 @@
         "ROUTE_003"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           39.96453105968328,
@@ -2713,9 +2661,41 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0074",
-      "from": "NODE_0060",
-      "to": "NODE_0061",
+      "id": "EDGE_0070",
+      "from": "NODE_0049",
+      "to": "NODE_0052",
+      "length_m": 145.90287821,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_028",
+      "route_ids": [
+        "ROUTE_028"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          47.22285112928478,
+          -211.13198323067104
+        ],
+        [
+          68.78593588770946,
+          -277.4959416646366
+        ],
+        [
+          92.30918574045931,
+          -349.89390992941793
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0071",
+      "from": "NODE_0058",
+      "to": "NODE_0059",
       "length_m": 2.702880679999994,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_029",
@@ -2723,8 +2703,9 @@
         "ROUTE_029"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           65.34634368535988,
@@ -2742,9 +2723,9 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0075",
-      "from": "NODE_0060",
-      "to": "NODE_0062",
+      "id": "EDGE_0072",
+      "from": "NODE_0058",
+      "to": "NODE_0060",
       "length_m": 3.3653880900000024,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_003",
@@ -2752,8 +2733,9 @@
         "ROUTE_003"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           65.34634368535988,
@@ -2771,9 +2753,9 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0076",
-      "from": "NODE_0061",
-      "to": "NODE_0063",
+      "id": "EDGE_0073",
+      "from": "NODE_0059",
+      "to": "NODE_0061",
       "length_m": 0.6515900798342769,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_029",
@@ -2783,6 +2765,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           67.93211903383167,
@@ -2798,9 +2781,9 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0077",
-      "from": "NODE_0062",
-      "to": "NODE_0064",
+      "id": "EDGE_0074",
+      "from": "NODE_0060",
+      "to": "NODE_0062",
       "length_m": 0.6766051069205066,
       "width_m": 10.149722173887824,
       "route_id": "ROUTE_003",
@@ -2810,6 +2793,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           68.5091132798282,
@@ -2825,10 +2809,10 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0078",
-      "from": "NODE_0063",
-      "to": "NODE_0065",
-      "length_m": 175.35137567000004,
+      "id": "EDGE_0075",
+      "from": "NODE_0061",
+      "to": "NODE_0063",
+      "length_m": 23.59361252633797,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_029",
       "route_ids": [
@@ -2837,6 +2821,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           68.55547824395568,
@@ -2849,14 +2834,6 @@
         [
           91.98185720085837,
           34.255312336871384
-        ],
-        [
-          168.10477350501708,
-          58.360902499855
-        ],
-        [
-          236.09771470736092,
-          81.76830848754707
         ]
       ],
       "bridge_ids": [],
@@ -2864,10 +2841,10 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0079",
-      "from": "NODE_0063",
-      "to": "NODE_0066",
-      "length_m": 308.67769956,
+      "id": "EDGE_0076",
+      "from": "NODE_0061",
+      "to": "NODE_0064",
+      "length_m": 223.5514441974743,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_030",
       "route_ids": [
@@ -2876,6 +2853,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           68.55547824395568,
@@ -2894,12 +2872,8 @@
           119.25923554318194
         ],
         [
-          220.12209964619217,
-          152.2458326083173
-        ],
-        [
-          288.6327243156261,
-          175.08270749812868
+          207.99963452218466,
+          147.80662002769483
         ]
       ],
       "bridge_ids": [],
@@ -2907,9 +2881,9 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0080",
-      "from": "NODE_0064",
-      "to": "NODE_0063",
+      "id": "EDGE_0077",
+      "from": "NODE_0062",
+      "to": "NODE_0061",
       "length_m": 2.430587529427016,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_030",
@@ -2919,6 +2893,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           69.14498230961078,
@@ -2934,37 +2909,72 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0081",
-      "from": "NODE_0052",
-      "to": "NODE_0054",
-      "length_m": 61.38536950905489,
-      "width_m": 10.149722173887824,
-      "route_id": "ROUTE_023",
+      "id": "EDGE_0078",
+      "from": "NODE_0065",
+      "to": "NODE_0066",
+      "length_m": 17.97076699,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_040",
       "route_ids": [
-        "ROUTE_023"
+        "ROUTE_040"
+      ],
+      "road_type": "bridge",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          72.96008284557672,
+          14.46891887450058
+        ],
+        [
+          72.66566718867807,
+          14.162668578388661
+        ],
+        [
+          77.80887296831803,
+          -2.612544724027611
+        ]
+      ],
+      "bridge_ids": [
+        "BRIDGE_004"
+      ],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0079",
+      "from": "NODE_0066",
+      "to": "NODE_0067",
+      "length_m": 58.587057448388364,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_040",
+      "route_ids": [
+        "ROUTE_040"
       ],
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          74.21984339655467,
-          -171.27656168435703
+          77.80887296831803,
+          -2.612544724027611
         ],
         [
-          93.2505724725944,
-          -229.63746418421204
+          94.98236881851403,
+          -58.62606399164781
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0082",
-      "from": "NODE_0067",
-      "to": "NODE_0068",
-      "length_m": 48.72453375508064,
+      "id": "EDGE_0080",
+      "from": "NODE_0068",
+      "to": "NODE_0069",
+      "length_m": 73.91654010000003,
       "width_m": 6.34357635867989,
       "route_id": "ROUTE_039",
       "route_ids": [
@@ -2973,29 +2983,34 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           88.1757113856504,
           -383.15201206426536
         ],
         [
-          100.86286410301022,
-          -404.7201716837769
+          112.28130154863402,
+          -395.8391647816252
         ],
         [
-          107.20644046169014,
-          -427.5570465750245
+          127.50588480946578,
+          -419.9447549446088
+        ],
+        [
+          123.69973899431503,
+          -437.7067687486456
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0083",
-      "from": "NODE_0067",
-      "to": "NODE_0069",
-      "length_m": 424.70805408,
+      "id": "EDGE_0081",
+      "from": "NODE_0068",
+      "to": "NODE_0070",
+      "length_m": 489.04755603,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_038",
       "route_ids": [
@@ -3004,6 +3019,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           88.1757113856504,
@@ -3014,43 +3030,211 @@
           -402.1827411403051
         ],
         [
-          43.77067687489125,
-          -449.1252061945363
+          22.202517255379576,
+          -418.6760396728728
         ],
         [
-          83.10085029870652,
-          -503.6799628791832
+          29.814808885795514,
+          -455.4687825532162
         ],
         [
-          154.14890551592134,
-          -484.6492338031437
+          53.92039904877902,
+          -520.1732614117509
+        ],
+        [
+          98.32543355953828,
+          -506.2173934226553
+        ],
+        [
+          136.38689171161764,
+          -493.53024070529545
+        ],
+        [
+          168.10477350501708,
+          -479.5743727161996
+        ],
+        [
+          203.6288011136245,
+          -452.93135200974416
         ],
         [
           192.2103636680007,
-          -459.27492836842407
+          -418.6760396728728
         ],
         [
-          180.7919262223769,
-          -425.0196160315527
+          179.52321095064087,
+          -386.9581578794732
         ],
         [
-          150.34275970071337,
-          -364.12128298822563
+          161.76119714633717,
+          -362.85256771648983
         ],
         [
-          123.6997389956883,
-          -365.38999825989356
+          123.69973899701701,
+          -365.3899982597777
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0082",
+      "from": "NODE_0057",
+      "to": "NODE_0071",
+      "length_m": 158.20725125,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_023",
+      "route_ids": [
+        "ROUTE_023"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          90.93516710167614,
+          -160.9111579142742
+        ],
+        [
+          101.52005861376949,
+          -193.4892286619106
+        ],
+        [
+          123.08314337219417,
+          -259.8544558111479
+        ],
+        [
+          139.82436384140436,
+          -311.37504323612137
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0083",
+      "from": "NODE_0063",
+      "to": "NODE_0065",
+      "length_m": 27.446844369999997,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_040",
+      "route_ids": [
+        "ROUTE_040"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          91.98185720085837,
+          34.255312336871384
+        ],
+        [
+          72.96008284557672,
+          14.46891887450058
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
       "id": "EDGE_0084",
-      "from": "NODE_0070",
-      "to": "NODE_0071",
-      "length_m": 186.6580480998331,
+      "from": "NODE_0063",
+      "to": "NODE_0072",
+      "length_m": 145.44102863946398,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_029",
+      "route_ids": [
+        "ROUTE_029"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          91.98185720085837,
+          34.255312336871384
+        ],
+        [
+          168.10477350501708,
+          58.360902499855
+        ],
+        [
+          230.12500481370455,
+          79.71212967169816
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0085",
+      "from": "NODE_0052",
+      "to": "NODE_0073",
+      "length_m": 36.220561569999994,
+      "width_m": 11.418437445623802,
+      "route_id": "ROUTE_024",
+      "route_ids": [
+        "ROUTE_024"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          92.30918574096631,
+          -349.89390993097834
+        ],
+        [
+          126.75688943993093,
+          -338.70084107947474
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0086",
+      "from": "NODE_0067",
+      "to": "NODE_0074",
+      "length_m": 40.67853222,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_040",
+      "route_ids": [
+        "ROUTE_040"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          94.98236881851403,
+          -58.62606399164781
+        ],
+        [
+          109.94179058625909,
+          -96.45407853045613
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0087",
+      "from": "NODE_0067",
+      "to": "NODE_0075",
+      "length_m": 171.2768931382526,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_032",
       "route_ids": [
@@ -3059,64 +3243,30 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          88.1757113856504,
-          -50.748610869439176
+          94.98236881851403,
+          -58.62606399164781
         ],
         [
-          155.41762078765726,
-          -39.33017342381538
+          179.44581931906498,
+          -31.182483948726826
         ],
         [
-          203.6288011136245,
-          -17.762013804303706
-        ],
-        [
-          265.99976727372757,
-          2.68748329736942
+          257.87652870251145,
+          -5.699069000638019
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0085",
-      "from": "NODE_0054",
-      "to": "NODE_0072",
-      "length_m": 101.99906056999998,
-      "width_m": 10.149722173887824,
-      "route_id": "ROUTE_023",
-      "route_ids": [
-        "ROUTE_023"
-      ],
-      "road_type": "unknown",
-      "driveable": null,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          93.2505724725944,
-          -229.63746418421204
-        ],
-        [
-          112.28130154863402,
-          -287.99836668406704
-        ],
-        [
-          123.60481266748063,
-          -327.0015716489831
-        ]
-      ],
-      "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0086",
-      "from": "NODE_0073",
-      "to": "NODE_0074",
-      "length_m": 281.75238736,
+      "id": "EDGE_0088",
+      "from": "NODE_0074",
+      "to": "NODE_0076",
+      "length_m": 168.73961230762106,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_035",
       "route_ids": [
@@ -3125,94 +3275,29 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          107.20644046169014,
-          -88.81006902151853
+          109.94179058755287,
+          -96.45407853372774
         ],
         [
-          180.7919262223769,
-          -65.97319413027094
+          191.99214464126203,
+          -69.79456452873956
         ],
         [
-          254.37741198306355,
-          -43.13631923902324
-        ],
-        [
-          336.84390464590217,
-          -16.493298532567792
-        ],
-        [
-          374.90536279405865,
-          -1.268715273305185
+          270.4228540247085,
+          -44.31114958065086
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0087",
-      "from": "NODE_0057",
-      "to": "NODE_0075",
-      "length_m": 4.004759319042439,
-      "width_m": 11.418437445623802,
-      "route_id": "ROUTE_024",
-      "route_ids": [
-        "ROUTE_024"
-      ],
-      "road_type": "bridge",
-      "driveable": true,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          120.6590990403909,
-          -329.93480292548253
-        ],
-        [
-          123.69973899425781,
-          -327.3285401078823
-        ]
-      ],
-      "bridge_ids": [
-        "BRIDGE_002"
-      ],
-      "source_trace_valid": false,
-      "validation_pass": false
-    },
-    {
-      "id": "EDGE_0088",
-      "from": "NODE_0072",
-      "to": "NODE_0075",
-      "length_m": 0.34046934999999195,
-      "width_m": 10.149722173887824,
-      "route_id": "ROUTE_023",
-      "route_ids": [
-        "ROUTE_023"
-      ],
-      "road_type": "bridge",
-      "driveable": true,
-      "bidirectional": null,
-      "polyline_m": [
-        [
-          123.60481266748063,
-          -327.0015716489831
-        ],
-        [
-          123.69973899329933,
-          -327.32854010458084
-        ]
-      ],
-      "bridge_ids": [
-        "BRIDGE_002"
-      ],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
       "id": "EDGE_0089",
-      "from": "NODE_0069",
-      "to": "NODE_0067",
+      "from": "NODE_0070",
+      "to": "NODE_0068",
       "length_m": 39.71707028,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_038",
@@ -3222,6 +3307,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           123.69973899425781,
@@ -3233,43 +3319,44 @@
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
       "id": "EDGE_0090",
-      "from": "NODE_0075",
-      "to": "NODE_0076",
-      "length_m": 21.901421308658445,
-      "width_m": 12.68715271735978,
-      "route_id": "ROUTE_036",
+      "from": "NODE_0073",
+      "to": "NODE_0077",
+      "length_m": 13.073572460000012,
+      "width_m": 11.418437445623802,
+      "route_id": "ROUTE_024",
       "route_ids": [
-        "ROUTE_036"
+        "ROUTE_024"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          123.69973899425781,
-          -327.3285401078823
+          126.75688943993093,
+          -338.70084107947474
         ],
         [
-          145.2678986137695,
-          -323.52239429267445
+          139.19056056119908,
+          -334.6607768083259
         ]
       ],
       "bridge_ids": [
         "BRIDGE_002"
       ],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
       "id": "EDGE_0091",
-      "from": "NODE_0077",
-      "to": "NODE_0069",
-      "length_m": 20.088705629999957,
+      "from": "NODE_0078",
+      "to": "NODE_0070",
+      "length_m": 20.183249369999988,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_038",
       "route_ids": [
@@ -3278,55 +3365,177 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          132.89949411571163,
-          -347.531650083022
+          132.7851322510135,
+          -347.36725749778407
         ],
         [
-          123.69973899442569,
-          -365.3899982596358
+          123.69973899513826,
+          -365.3899982582151
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
       "id": "EDGE_0092",
-      "from": "NODE_0076",
-      "to": "NODE_0077",
-      "length_m": 27.007809860000023,
+      "from": "NODE_0077",
+      "to": "NODE_0078",
+      "length_m": 14.22969302,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_038",
       "route_ids": [
         "ROUTE_038"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          145.2678986137695,
-          -323.52239429267445
+          139.19056056570525,
+          -334.66077680686175
         ],
         [
-          132.89949411571163,
-          -347.531650083022
+          132.7851322510135,
+          -347.36725749778407
         ]
       ],
       "bridge_ids": [
         "BRIDGE_002"
       ],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
       "id": "EDGE_0093",
-      "from": "NODE_0076",
-      "to": "NODE_0078",
-      "length_m": 54.56950719000001,
-      "width_m": 12.68715271735978,
+      "from": "NODE_0077",
+      "to": "NODE_0079",
+      "length_m": 7.797489949999991,
+      "width_m": 11.418437445623802,
+      "route_id": "ROUTE_024",
+      "route_ids": [
+        "ROUTE_024"
+      ],
+      "road_type": "bridge",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          139.19056056570525,
+          -334.66077680686175
+        ],
+        [
+          146.60639322401857,
+          -332.25115536268333
+        ]
+      ],
+      "bridge_ids": [
+        "BRIDGE_002"
+      ],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0094",
+      "from": "NODE_0071",
+      "to": "NODE_0080",
+      "length_m": 14.083902579999986,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_023",
+      "route_ids": [
+        "ROUTE_023"
+      ],
+      "road_type": "bridge",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          139.82436384140436,
+          -311.37504323612137
+        ],
+        [
+          144.17680347880554,
+          -324.7695414008795
+        ]
+      ],
+      "bridge_ids": [
+        "BRIDGE_002"
+      ],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0095",
+      "from": "NODE_0080",
+      "to": "NODE_0077",
+      "length_m": 11.07696511596466,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_038",
+      "route_ids": [
+        "ROUTE_038"
+      ],
+      "road_type": "bridge",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          144.1768034800765,
+          -324.76954140479086
+        ],
+        [
+          139.19056056570525,
+          -334.66077680686175
+        ]
+      ],
+      "bridge_ids": [
+        "BRIDGE_002"
+      ],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0096",
+      "from": "NODE_0080",
+      "to": "NODE_0079",
+      "length_m": 7.86622232960623,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_023",
+      "route_ids": [
+        "ROUTE_023"
+      ],
+      "road_type": "bridge",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          144.1768034800765,
+          -324.76954140479086
+        ],
+        [
+          146.60639322545092,
+          -332.2511553622179
+        ]
+      ],
+      "bridge_ids": [
+        "BRIDGE_002"
+      ],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0097",
+      "from": "NODE_0080",
+      "to": "NODE_0081",
+      "length_m": 56.46817761629198,
+      "width_m": 7.612291630415868,
       "route_id": "ROUTE_036",
       "route_ids": [
         "ROUTE_036"
@@ -3334,56 +3543,62 @@
       "road_type": "bridge",
       "driveable": true,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          145.2678986137695,
-          -323.52239429267445
+          144.1768034800765,
+          -324.76954140479086
         ],
         [
-          197.2852247514307,
-          -307.0290957612208
+          166.83605823328105,
+          -320.9849637492025
+        ],
+        [
+          197.28522475494458,
+          -307.02909576010666
         ]
       ],
       "bridge_ids": [
         "BRIDGE_002"
       ],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0094",
-      "from": "NODE_0078",
-      "to": "NODE_0079",
-      "length_m": 8.678132980000024,
+      "id": "EDGE_0098",
+      "from": "NODE_0081",
+      "to": "NODE_0082",
+      "length_m": 16.393130319999994,
       "width_m": 6.34357635867989,
       "route_id": "ROUTE_037",
       "route_ids": [
         "ROUTE_037"
       ],
       "road_type": "bridge",
-      "driveable": true,
+      "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           197.28522475494458,
           -307.02909576010666
         ],
         [
-          203.68234641036418,
-          -312.8931239442413
+          198.14682855579312,
+          -323.39956797623
         ]
       ],
       "bridge_ids": [
         "BRIDGE_002"
       ],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0095",
-      "from": "NODE_0079",
-      "to": "NODE_0080",
-      "length_m": 262.07389391816986,
+      "id": "EDGE_0099",
+      "from": "NODE_0082",
+      "to": "NODE_0083",
+      "length_m": 285.8630294495012,
       "width_m": 6.34357635867989,
       "route_id": "ROUTE_037",
       "route_ids": [
@@ -3392,49 +3607,54 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          203.68234641036418,
-          -312.8931239442413
+          198.14682855579312,
+          -323.39956797623
         ],
         [
-          212.50980801577634,
-          -320.9849637492025
+          198.5539400266805,
+          -331.1346859230903
         ],
         [
-          216.3159538309842,
-          -345.090553912186
+          201.09137057015255,
+          -351.4341302708659
         ],
         [
-          255.64612725479958,
-          -369.19614407516974
+          207.43494692883235,
+          -373.0022898903776
         ],
         [
-          296.2450159503509,
-          -356.5089913578098
+          239.1528287222318,
+          -384.4207273360014
         ],
         [
-          335.57518937416614,
-          -359.04642190128175
+          293.70758540687893,
+          -367.9274288034337
         ],
         [
-          376.17407806971744,
-          -345.090553912186
+          357.1433489936778,
+          -348.896699727394
         ],
         [
-          430.72883475436447,
-          -341.28440809697815
+          386.3238002436053,
+          -343.8218386404501
+        ],
+        [
+          434.53498056957255,
+          -337.4782622817702
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0096",
-      "from": "NODE_0081",
-      "to": "NODE_0065",
-      "length_m": 62.41887830663807,
+      "id": "EDGE_0100",
+      "from": "NODE_0084",
+      "to": "NODE_0064",
+      "length_m": 0.9898098400000097,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_033",
       "route_ids": [
@@ -3443,25 +3663,26 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          212.50980801577634,
-          139.5586798909576
+          207.6937648442664,
+          148.74798460414127
         ],
         [
-          236.0977147105919,
-          81.76830848865937
+          207.99963452120167,
+          147.80662003072013
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0097",
-      "from": "NODE_0065",
-      "to": "NODE_0071",
-      "length_m": 84.55919421849636,
+      "id": "EDGE_0101",
+      "from": "NODE_0064",
+      "to": "NODE_0072",
+      "length_m": 71.5988242,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_033",
       "route_ids": [
@@ -3470,33 +3691,90 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          236.0977147105919,
-          81.76830848865937
+          207.99963452218466,
+          147.80662002769483
         ],
         [
-          237.88411345049587,
-          77.39163157589462
-        ],
-        [
-          260.72098834174346,
-          15.22458326083165
-        ],
-        [
-          265.99976727372757,
-          2.68748329736942
+          230.1250048125019,
+          79.71212967539942
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0098",
-      "from": "NODE_0065",
-      "to": "NODE_0082",
-      "length_m": 95.01022302000003,
+      "id": "EDGE_0102",
+      "from": "NODE_0064",
+      "to": "NODE_0085",
+      "length_m": 85.1262553670676,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_030",
+      "route_ids": [
+        "ROUTE_030"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          207.99963452218466,
+          147.80662002769483
+        ],
+        [
+          220.12209964619217,
+          152.2458326083173
+        ],
+        [
+          288.63272431993494,
+          175.08270749956495
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0103",
+      "from": "NODE_0072",
+      "to": "NODE_0075",
+      "length_m": 89.80656955999999,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_033",
+      "route_ids": [
+        "ROUTE_033"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          230.12500481370455,
+          79.71212967169816
+        ],
+        [
+          230.43294865959035,
+          78.76438149991293
+        ],
+        [
+          257.87652870137083,
+          -5.699068997127597
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0104",
+      "from": "NODE_0072",
+      "to": "NODE_0086",
+      "length_m": 101.32695752829052,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_029",
       "route_ids": [
@@ -3505,18 +3783,19 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          236.0977147105919,
-          81.76830848865937
+          230.12500481370455,
+          79.71212967169816
         ],
         [
           245.4964050809117,
           85.00392320631045
         ],
         [
-          326.6941824713697,
-          110.37822864082864
+          326.6941824720143,
+          110.37822864103009
         ]
       ],
       "bridge_ids": [],
@@ -3524,10 +3803,10 @@
       "validation_pass": true
     },
     {
-      "id": "EDGE_0099",
-      "from": "NODE_0071",
-      "to": "NODE_0083",
-      "length_m": 38.70736879773169,
+      "id": "EDGE_0105",
+      "from": "NODE_0075",
+      "to": "NODE_0076",
+      "length_m": 40.599298587633356,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_033",
       "route_ids": [
@@ -3536,25 +3815,26 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          265.99976727372757,
-          2.68748329736942
+          257.87652870251145,
+          -5.699069000638019
         ],
         [
-          281.0204326895191,
-          -32.98659706513547
+          270.4228540247085,
+          -44.31114958065086
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0100",
-      "from": "NODE_0071",
-      "to": "NODE_0084",
-      "length_m": 98.85739660972564,
+      "id": "EDGE_0106",
+      "from": "NODE_0075",
+      "to": "NODE_0087",
+      "length_m": 113.57142931618841,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_032",
       "route_ids": [
@@ -3563,29 +3843,54 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
-          265.99976727372757,
-          2.68748329736942
+          257.87652870251145,
+          -5.699069000638019
         ],
         [
-          281.0204326895191,
-          7.612291630415825
-        ],
-        [
-          359.68077953714976,
-          34.255312336871384
+          365.8893805399565,
+          29.396420664903417
         ]
       ],
       "bridge_ids": [],
-      "source_trace_valid": false,
-      "validation_pass": false
+      "source_trace_valid": true,
+      "validation_pass": true
     },
     {
-      "id": "EDGE_0101",
-      "from": "NODE_0066",
-      "to": "NODE_0085",
-      "length_m": 231.29045389999996,
+      "id": "EDGE_0107",
+      "from": "NODE_0076",
+      "to": "NODE_0088",
+      "length_m": 113.54933504000002,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_035",
+      "route_ids": [
+        "ROUTE_035"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          270.4228540247085,
+          -44.31114958065086
+        ],
+        [
+          378.4146292364266,
+          -9.222291311281062
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0108",
+      "from": "NODE_0085",
+      "to": "NODE_0087",
+      "length_m": 177.15784735724932,
       "width_m": 7.612291630415868,
       "route_id": "ROUTE_031",
       "route_ids": [
@@ -3594,6 +3899,7 @@
       "road_type": "unknown",
       "driveable": null,
       "bidirectional": null,
+      "allowed_directions": [],
       "polyline_m": [
         [
           288.63272431993494,
@@ -3612,12 +3918,40 @@
           57.09218722811897
         ],
         [
+          365.8893805399565,
+          29.396420664903417
+        ]
+      ],
+      "bridge_ids": [],
+      "source_trace_valid": true,
+      "validation_pass": true
+    },
+    {
+      "id": "EDGE_0109",
+      "from": "NODE_0087",
+      "to": "NODE_0088",
+      "length_m": 40.60047175,
+      "width_m": 7.612291630415868,
+      "route_id": "ROUTE_031",
+      "route_ids": [
+        "ROUTE_031"
+      ],
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "allowed_directions": [],
+      "polyline_m": [
+        [
+          365.8893805399565,
+          29.396420664903417
+        ],
+        [
           372.36793225450947,
           8.881006902151853
         ],
         [
-          340.6500504650309,
-          1.268715272676923
+          378.41462923908676,
+          -9.222291308702811
         ]
       ],
       "bridge_ids": [],
@@ -3626,59 +3960,24 @@
     }
   ],
   "validation": {
-    "pass_": false,
-    "errors": [
-      {
-        "node_id": "NODE_0046",
-        "reason": "Source trace node outside the corresponding rendered road/bridge surface"
-      },
-      {
-        "node_id": "NODE_0054",
-        "reason": "Source trace node outside the corresponding rendered road/bridge surface"
-      }
-    ],
+    "pass_": true,
+    "errors": [],
     "missing_junctions": [],
-    "node_count": 85,
-    "edge_count": 101,
-    "connected_component_count": 2,
+    "node_count": 88,
+    "edge_count": 109,
+    "connected_component_count": 1,
     "component_sizes": [
-      83,
-      2
+      88
     ],
-    "driveable_node_count": 14,
-    "driveable_edge_count": 13,
+    "driveable_node_count": 4,
+    "driveable_edge_count": 2,
     "driveable_component_count": 2,
-    "dijkstra_tests": [
-      {
-        "start": "NODE_0031",
-        "end": "NODE_0029",
-        "path_length_m": 20.987341169433627,
-        "pass_": true
-      },
-      {
-        "start": "NODE_0062",
-        "end": "NODE_0058",
-        "path_length_m": 101.52243583079058,
-        "pass_": true
-      }
-    ],
-    "connectivity_scope": "Undirected structural checks only. Unknown road access/direction is not promoted to a legal driving route.",
-    "flagged_source_routes": [
-      "ROUTE_021",
-      "ROUTE_022",
-      "ROUTE_023",
-      "ROUTE_024",
-      "ROUTE_025",
-      "ROUTE_026",
-      "ROUTE_027",
-      "ROUTE_028",
-      "ROUTE_032",
-      "ROUTE_033",
-      "ROUTE_035",
-      "ROUTE_036",
-      "ROUTE_037",
-      "ROUTE_038",
-      "ROUTE_039"
-    ]
+    "dijkstra_tests": [],
+    "directed_routable_edge_count": 0,
+    "unresolved_direction_edge_count": 2,
+    "nearby_node_pairs": [],
+    "short_edges": [],
+    "connectivity_scope": "Component counts are undirected structural connectivity. Dijkstra uses only explicit access and permitted directions; unknown direction is excluded. Nearby nodes and short edges are diagnostics, not automatically merged across semantic boundaries.",
+    "flagged_source_routes": []
   }
 }

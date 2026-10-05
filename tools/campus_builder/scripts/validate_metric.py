@@ -55,7 +55,14 @@ def validate_metric(data, calibration, config):
         textures=[n.image for m in obj.data.materials if m and m.use_nodes for n in m.node_tree.nodes if n.type=='TEX_IMAGE' and n.image]
         # Blender loads image pixels lazily; force decoding before testing data.
         textures_ok=bool(textures) and all(len(image.pixels)>0 and image.has_data for image in textures)
-        architecture.append(dict(id=b['id'],uv_finite=uv_ok,provenance_preserved=provenance,textures_loaded=textures_ok,pass_=uv_ok and provenance and textures_ok))
+        world=[obj.matrix_world@v.co for v in obj.data.vertices]
+        envelope_error=max(abs(fn(p[i] for p in world)-fn(p[i] for p in b['polygon']))
+                           for i in [0,1] for fn in [min,max])
+        envelope_ok=envelope_error<config['bbox_tolerance_m']
+        taper_ok=abs(obj.get('facade_base_inset_fraction',0)-a.get('facade_base_inset_fraction',0))<1e-6
+        architecture.append(dict(id=b['id'],uv_finite=uv_ok,provenance_preserved=provenance,textures_loaded=textures_ok,
+                                 xy_envelope_error_m=envelope_error,xy_envelope_preserved=envelope_ok,taper_property_preserved=taper_ok,
+                                 pass_=uv_ok and provenance and textures_ok and envelope_ok and taper_ok))
     bridge_checks=[]
     for b in data['bridges']:
         obj=bpy.data.objects[b['id']]

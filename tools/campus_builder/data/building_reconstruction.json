@@ -1,11 +1,12 @@
 {
-  "model_version": "0.3",
+  "model_version": "0.4",
+  "appearance_revision": "2026-10-05-photo-informed-envelope-preserving",
   "profile_validation_pass": true,
   "measured_height_count": 0,
   "photo_referenced_buildings": 13,
-  "floor_based_buildings": 70,
+  "floor_based_buildings": 69,
   "floor_evidence_buildings": 14,
-  "building_count": 70,
+  "building_count": 69,
   "sources": [
     {
       "id": "ADMIN_OFFICIAL",
@@ -106,6 +107,7 @@
           0.39
         ],
         "end_wall_max_span_m": 24,
+        "facade_uv_mode": "full_height",
         "eave_height_m": 44.199999999999996,
         "total_height_m": 44.199999999999996,
         "source_trace_ids": [
@@ -134,7 +136,7 @@
         "floor_status": "photo interpretation, medium confidence",
         "height_status": "estimated from floor count and assumed storey height; NOT measured",
         "appearance_status": "simplified photo-informed reconstruction",
-        "notes": "Curved dark curtain wall and metal mullions. Floor interpretation is approximate.",
+        "notes": "Curved dark curtain wall and metal mullions. Floor interpretation is approximate. Bottom is inset within the traced envelope; its exact taper is not measured.",
         "wall_rgb": [
           0.47,
           0.49,
@@ -145,7 +147,7 @@
           0.12,
           0.16
         ],
-        "window_pitch_m": 3.2,
+        "window_pitch_m": 3.6,
         "window_width_ratio": 0.58,
         "window_height_ratio": 0.52,
         "roof_rgb": [
@@ -153,6 +155,9 @@
           0.38,
           0.39
         ],
+        "facade_base_inset_fraction": 0.08,
+        "facade_uv_mode": "full_height",
+        "facade_geometry_provenance": "Outward-sloping curtain wall visible in exhibition.jpg; 8 percent base inset is a modeling approximation. Top XY envelope and total height retained; source polygon remains conservative navigation obstacle.",
         "eave_height_m": 15.2,
         "total_height_m": 15.2,
         "source_trace_ids": [
@@ -509,7 +514,7 @@
         "floor_status": "equivalent facade levels, low confidence",
         "height_status": "estimated from floor count and assumed storey height; NOT measured",
         "appearance_status": "simplified photo-informed reconstruction",
-        "notes": "Large-span gym volume with upswept roof edges; equivalent three levels are for facade layout, not three usable floors.",
+        "notes": "Large-span gym volume with upswept roof edges; equivalent three levels are for facade layout, not three usable floors. Full-height upper clerestory, glazed lower bays and pale piers follow the published front photograph. Roof rib spacing and facade bay spacing are modeled estimates.",
         "wall_rgb": [
           0.74,
           0.75,
@@ -520,14 +525,17 @@
           0.28,
           0.28
         ],
-        "window_pitch_m": 5.0,
+        "window_pitch_m": 7.0,
         "window_width_ratio": 0.58,
         "window_height_ratio": 0.52,
         "roof_rgb": [
-          0.35,
-          0.38,
-          0.39
+          0.53,
+          0.56,
+          0.56
         ],
+        "facade_uv_mode": "full_height",
+        "roof_surface": "standing_seam",
+        "roof_seam_pitch_m": 1.2,
         "eave_height_m": 10.8,
         "total_height_m": 13.8,
         "source_trace_ids": [
@@ -556,7 +564,7 @@
         "floor_status": "equivalent facade levels, low confidence",
         "height_status": "estimated from floor count and assumed storey height; NOT measured",
         "appearance_status": "simplified photo-informed reconstruction",
-        "notes": "Large-span gym volume with upswept roof edges; equivalent three levels are for facade layout, not three usable floors.",
+        "notes": "Large-span gym volume with upswept roof edges; equivalent three levels are for facade layout, not three usable floors. Full-height upper clerestory, glazed lower bays and pale piers follow the published front photograph. Roof rib spacing and facade bay spacing are modeled estimates.",
         "wall_rgb": [
           0.74,
           0.75,
@@ -567,14 +575,17 @@
           0.28,
           0.28
         ],
-        "window_pitch_m": 5.0,
+        "window_pitch_m": 7.0,
         "window_width_ratio": 0.58,
         "window_height_ratio": 0.52,
         "roof_rgb": [
-          0.35,
-          0.38,
-          0.39
+          0.53,
+          0.56,
+          0.56
         ],
+        "facade_uv_mode": "full_height",
+        "roof_surface": "standing_seam",
+        "roof_seam_pitch_m": 1.2,
         "eave_height_m": 7.2,
         "override_provenance": "Gym photo shows lower annex; mapping to this footprint and dimensions are approximate.",
         "total_height_m": 9.0,
@@ -921,7 +932,7 @@
         "floor_status": "documented minimum 4",
         "height_status": "estimated from floor count and assumed storey height; NOT measured",
         "appearance_status": "simplified photo-informed reconstruction",
-        "notes": "At least four floors confirmed by official room addresses. Curved planning-map footprint retained; facade not verified.",
+        "notes": "Official room addresses support at least four floors. Front photograph shows pale wall panels, grouped windows and a narrow upper glazing band; exact bay spacing is estimated. The entrance dome is omitted because its plan location and dimensions are not established.",
         "wall_rgb": [
           0.82,
           0.82,
@@ -932,7 +943,7 @@
           0.28,
           0.34
         ],
-        "window_pitch_m": 3.2,
+        "window_pitch_m": 5.2,
         "window_width_ratio": 0.58,
         "window_height_ratio": 0.52,
         "roof_rgb": [
@@ -940,6 +951,7 @@
           0.38,
           0.39
         ],
+        "facade_uv_mode": "full_height",
         "eave_height_m": 16.0,
         "total_height_m": 16.0,
         "source_trace_ids": [
@@ -969,7 +981,7 @@
         "floor_status": "documented minimum 4",
         "height_status": "estimated from floor count and assumed storey height; NOT measured",
         "appearance_status": "simplified photo-informed reconstruction",
-        "notes": "At least four floors confirmed by official room addresses. Curved planning-map footprint retained; facade not verified.",
+        "notes": "Official room addresses support at least four floors. Front photograph shows pale wall panels, grouped windows and a narrow upper glazing band; exact bay spacing is estimated. The entrance dome is omitted because its plan location and dimensions are not established.",
         "wall_rgb": [
           0.82,
           0.82,
@@ -980,7 +992,7 @@
           0.28,
           0.34
         ],
-        "window_pitch_m": 3.2,
+        "window_pitch_m": 5.2,
         "window_width_ratio": 0.58,
         "window_height_ratio": 0.52,
         "roof_rgb": [
@@ -988,6 +1000,7 @@
           0.38,
           0.39
         ],
+        "facade_uv_mode": "full_height",
         "eave_height_m": 16.0,
         "total_height_m": 16.0,
         "source_trace_ids": [
@@ -1310,58 +1323,16 @@
         "total_height_m": 12.600000000000001,
         "source_trace_ids": [
           "BLDG_028",
-          "BLDG_029"
+          "BLDG_029",
+          "BLDG_030",
+          "BLDG_077",
+          "BLDG_078"
         ],
         "actual_height_measured": false
       }
     },
     {
       "id": "BLDG_028",
-      "name": "Engineering training centre",
-      "map_label": "23",
-      "height_m": 12.600000000000001,
-      "architecture": {
-        "kind": "laboratory",
-        "floor_count": 3,
-        "floor_height_m": 4.2,
-        "roof_shape": "flat",
-        "roof_rise_m": 0,
-        "source_ids": [
-          "MAP"
-        ],
-        "photos": [],
-        "floor_status": "typology modeling assumption, low confidence; not verified floor count",
-        "height_status": "estimated floor count times assumed storey height; NOT measured",
-        "appearance_status": "simplified typology approximation; facade not photo verified",
-        "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
-        "wall_rgb": [
-          0.68,
-          0.73,
-          0.74
-        ],
-        "glass_rgb": [
-          0.19,
-          0.26,
-          0.3
-        ],
-        "window_pitch_m": 3.2,
-        "window_width_ratio": 0.55,
-        "window_height_ratio": 0.52,
-        "roof_rgb": [
-          0.37,
-          0.39,
-          0.4
-        ],
-        "eave_height_m": 12.600000000000001,
-        "total_height_m": 12.600000000000001,
-        "source_trace_ids": [
-          "BLDG_030"
-        ],
-        "actual_height_measured": false
-      }
-    },
-    {
-      "id": "BLDG_029",
       "name": "Applied arts north",
       "map_label": "24",
       "height_m": 14.4,
@@ -1407,7 +1378,7 @@
       }
     },
     {
-      "id": "BLDG_030",
+      "id": "BLDG_029",
       "name": "Applied arts south",
       "map_label": "25",
       "height_m": 14.4,
@@ -1453,7 +1424,7 @@
       }
     },
     {
-      "id": "BLDG_031",
+      "id": "BLDG_030",
       "name": "Energy materials school",
       "map_label": "26",
       "height_m": 12.600000000000001,
@@ -1498,7 +1469,7 @@
       }
     },
     {
-      "id": "BLDG_032",
+      "id": "BLDG_031",
       "name": "Energy materials school",
       "map_label": "26",
       "height_m": 12.600000000000001,
@@ -1543,7 +1514,7 @@
       }
     },
     {
-      "id": "BLDG_033",
+      "id": "BLDG_032",
       "name": "Energy materials school",
       "map_label": "26",
       "height_m": 12.600000000000001,
@@ -1588,7 +1559,7 @@
       }
     },
     {
-      "id": "BLDG_034",
+      "id": "BLDG_033",
       "name": "Materials transfer engineering",
       "map_label": "27",
       "height_m": 12.600000000000001,
@@ -1633,7 +1604,7 @@
       }
     },
     {
-      "id": "BLDG_035",
+      "id": "BLDG_034",
       "name": "Computer information school",
       "map_label": "28",
       "height_m": 14.4,
@@ -1678,7 +1649,7 @@
       }
     },
     {
-      "id": "BLDG_036",
+      "id": "BLDG_035",
       "name": "Computer information school",
       "map_label": "28",
       "height_m": 14.4,
@@ -1723,7 +1694,7 @@
       }
     },
     {
-      "id": "BLDG_037",
+      "id": "BLDG_036",
       "name": "Intelligent manufacturing school",
       "map_label": "29",
       "height_m": 12.600000000000001,
@@ -1768,7 +1739,7 @@
       }
     },
     {
-      "id": "BLDG_038",
+      "id": "BLDG_037",
       "name": "Student activity centre",
       "map_label": "30",
       "height_m": 14.4,
@@ -1813,7 +1784,7 @@
       }
     },
     {
-      "id": "BLDG_039",
+      "id": "BLDG_038",
       "name": "Student dormitory 31",
       "map_label": "31",
       "height_m": 18.6,
@@ -1858,7 +1829,7 @@
       }
     },
     {
-      "id": "BLDG_040",
+      "id": "BLDG_039",
       "name": "Student dormitory 32",
       "map_label": "32",
       "height_m": 18.6,
@@ -1903,7 +1874,7 @@
       }
     },
     {
-      "id": "BLDG_041",
+      "id": "BLDG_040",
       "name": "Student dormitory 37",
       "map_label": "37",
       "height_m": 18.6,
@@ -1948,7 +1919,7 @@
       }
     },
     {
-      "id": "BLDG_042",
+      "id": "BLDG_041",
       "name": "South garden building",
       "map_label": "38",
       "height_m": 14.4,
@@ -1993,7 +1964,7 @@
       }
     },
     {
-      "id": "BLDG_043",
+      "id": "BLDG_042",
       "name": "South garden building",
       "map_label": "38",
       "height_m": 14.4,
@@ -2038,7 +2009,7 @@
       }
     },
     {
-      "id": "BLDG_044",
+      "id": "BLDG_043",
       "name": "Student dormitory 39",
       "map_label": "39",
       "height_m": 18.6,
@@ -2083,52 +2054,7 @@
       }
     },
     {
-      "id": "BLDG_045",
-      "name": "Student dormitory 39",
-      "map_label": "39",
-      "height_m": 18.6,
-      "architecture": {
-        "kind": "residential",
-        "floor_count": 6,
-        "floor_height_m": 3.1,
-        "roof_shape": "flat",
-        "roof_rise_m": 0,
-        "source_ids": [
-          "MAP"
-        ],
-        "photos": [],
-        "floor_status": "typology modeling assumption, low confidence; not verified floor count",
-        "height_status": "estimated floor count times assumed storey height; NOT measured",
-        "appearance_status": "simplified typology approximation; facade not photo verified",
-        "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
-        "wall_rgb": [
-          0.78,
-          0.72,
-          0.62
-        ],
-        "glass_rgb": [
-          0.19,
-          0.26,
-          0.3
-        ],
-        "window_pitch_m": 3.2,
-        "window_width_ratio": 0.55,
-        "window_height_ratio": 0.52,
-        "roof_rgb": [
-          0.37,
-          0.39,
-          0.4
-        ],
-        "eave_height_m": 18.6,
-        "total_height_m": 18.6,
-        "source_trace_ids": [
-          "BLDG_049"
-        ],
-        "actual_height_measured": false
-      }
-    },
-    {
-      "id": "BLDG_046",
+      "id": "BLDG_044",
       "name": "Student dormitory 40",
       "map_label": "40",
       "height_m": 18.6,
@@ -2173,7 +2099,7 @@
       }
     },
     {
-      "id": "BLDG_047",
+      "id": "BLDG_045",
       "name": "Faculty dormitory 41",
       "map_label": "41",
       "height_m": 18.6,
@@ -2218,7 +2144,7 @@
       }
     },
     {
-      "id": "BLDG_048",
+      "id": "BLDG_046",
       "name": "Faculty dormitory 42",
       "map_label": "42",
       "height_m": 18.6,
@@ -2263,7 +2189,7 @@
       }
     },
     {
-      "id": "BLDG_049",
+      "id": "BLDG_047",
       "name": "Visible residential wing",
       "map_label": "unnumbered",
       "height_m": 18.6,
@@ -2308,7 +2234,7 @@
       }
     },
     {
-      "id": "BLDG_050",
+      "id": "BLDG_048",
       "name": "Visible residential wing",
       "map_label": "unnumbered",
       "height_m": 18.6,
@@ -2353,7 +2279,7 @@
       }
     },
     {
-      "id": "BLDG_051",
+      "id": "BLDG_049",
       "name": "Visible residential wing",
       "map_label": "unnumbered",
       "height_m": 18.6,
@@ -2398,7 +2324,7 @@
       }
     },
     {
-      "id": "BLDG_052",
+      "id": "BLDG_050",
       "name": "Visible residential wing",
       "map_label": "unnumbered",
       "height_m": 18.6,
@@ -2443,7 +2369,7 @@
       }
     },
     {
-      "id": "BLDG_053",
+      "id": "BLDG_051",
       "name": "Visible residential wing",
       "map_label": "unnumbered",
       "height_m": 18.6,
@@ -2488,7 +2414,7 @@
       }
     },
     {
-      "id": "BLDG_054",
+      "id": "BLDG_052",
       "name": "Visible residential wing",
       "map_label": "unnumbered",
       "height_m": 18.6,
@@ -2533,7 +2459,7 @@
       }
     },
     {
-      "id": "BLDG_055",
+      "id": "BLDG_053",
       "name": "Northeast residential wing",
       "map_label": "res_1_1",
       "height_m": 18.6,
@@ -2578,7 +2504,7 @@
       }
     },
     {
-      "id": "BLDG_056",
+      "id": "BLDG_054",
       "name": "Northeast residential wing",
       "map_label": "res_1_2",
       "height_m": 18.6,
@@ -2623,7 +2549,7 @@
       }
     },
     {
-      "id": "BLDG_057",
+      "id": "BLDG_055",
       "name": "Northeast residential wing",
       "map_label": "res_1_3",
       "height_m": 18.6,
@@ -2668,7 +2594,7 @@
       }
     },
     {
-      "id": "BLDG_058",
+      "id": "BLDG_056",
       "name": "Northeast residential wing",
       "map_label": "res_2_1",
       "height_m": 18.6,
@@ -2713,7 +2639,7 @@
       }
     },
     {
-      "id": "BLDG_059",
+      "id": "BLDG_057",
       "name": "Northeast residential wing",
       "map_label": "res_2_2",
       "height_m": 18.6,
@@ -2758,52 +2684,7 @@
       }
     },
     {
-      "id": "BLDG_060",
-      "name": "Northeast residential wing",
-      "map_label": "res_2_3",
-      "height_m": 18.6,
-      "architecture": {
-        "kind": "residential",
-        "floor_count": 6,
-        "floor_height_m": 3.1,
-        "roof_shape": "flat",
-        "roof_rise_m": 0,
-        "source_ids": [
-          "MAP"
-        ],
-        "photos": [],
-        "floor_status": "typology modeling assumption, low confidence; not verified floor count",
-        "height_status": "estimated floor count times assumed storey height; NOT measured",
-        "appearance_status": "simplified typology approximation; facade not photo verified",
-        "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
-        "wall_rgb": [
-          0.78,
-          0.72,
-          0.62
-        ],
-        "glass_rgb": [
-          0.19,
-          0.26,
-          0.3
-        ],
-        "window_pitch_m": 3.2,
-        "window_width_ratio": 0.55,
-        "window_height_ratio": 0.52,
-        "roof_rgb": [
-          0.37,
-          0.39,
-          0.4
-        ],
-        "eave_height_m": 18.6,
-        "total_height_m": 18.6,
-        "source_trace_ids": [
-          "BLDG_064"
-        ],
-        "actual_height_measured": false
-      }
-    },
-    {
-      "id": "BLDG_061",
+      "id": "BLDG_058",
       "name": "Northeast residential wing",
       "map_label": "res_2_4",
       "height_m": 18.6,
@@ -2848,7 +2729,7 @@
       }
     },
     {
-      "id": "BLDG_062",
+      "id": "BLDG_059",
       "name": "Northeast residential wing",
       "map_label": "res_2_5",
       "height_m": 18.6,
@@ -2893,7 +2774,7 @@
       }
     },
     {
-      "id": "BLDG_063",
+      "id": "BLDG_060",
       "name": "Northeast residential wing",
       "map_label": "res_3_1",
       "height_m": 18.6,
@@ -2938,7 +2819,7 @@
       }
     },
     {
-      "id": "BLDG_064",
+      "id": "BLDG_061",
       "name": "Northeast residential wing",
       "map_label": "res_3_2",
       "height_m": 18.6,
@@ -2983,7 +2864,7 @@
       }
     },
     {
-      "id": "BLDG_065",
+      "id": "BLDG_062",
       "name": "Northeast residential wing",
       "map_label": "res_3_3",
       "height_m": 18.6,
@@ -3028,7 +2909,7 @@
       }
     },
     {
-      "id": "BLDG_066",
+      "id": "BLDG_063",
       "name": "Northeast residential wing",
       "map_label": "res_3_4",
       "height_m": 18.6,
@@ -3073,7 +2954,7 @@
       }
     },
     {
-      "id": "BLDG_067",
+      "id": "BLDG_064",
       "name": "Northeast residential wing",
       "map_label": "res_3_5",
       "height_m": 18.6,
@@ -3118,7 +2999,7 @@
       }
     },
     {
-      "id": "BLDG_068",
+      "id": "BLDG_065",
       "name": "Northeast dining hall",
       "map_label": "dining",
       "height_m": 8.4,
@@ -3163,7 +3044,7 @@
       }
     },
     {
-      "id": "BLDG_069",
+      "id": "BLDG_066",
       "name": "North guardhouse",
       "map_label": "guard",
       "height_m": 4.5,
@@ -3208,7 +3089,97 @@
       }
     },
     {
-      "id": "BLDG_070",
+      "id": "BLDG_067",
+      "name": "North guardhouse",
+      "map_label": "guard",
+      "height_m": 4.5,
+      "architecture": {
+        "kind": "guardhouse",
+        "floor_count": 1,
+        "floor_height_m": 4.5,
+        "roof_shape": "flat",
+        "roof_rise_m": 0,
+        "source_ids": [
+          "MAP"
+        ],
+        "photos": [],
+        "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+        "height_status": "estimated floor count times assumed storey height; NOT measured",
+        "appearance_status": "simplified typology approximation; facade not photo verified",
+        "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+        "wall_rgb": [
+          0.77,
+          0.77,
+          0.71
+        ],
+        "glass_rgb": [
+          0.19,
+          0.26,
+          0.3
+        ],
+        "window_pitch_m": 3.2,
+        "window_width_ratio": 0.55,
+        "window_height_ratio": 0.52,
+        "roof_rgb": [
+          0.37,
+          0.39,
+          0.4
+        ],
+        "eave_height_m": 4.5,
+        "total_height_m": 4.5,
+        "source_trace_ids": [
+          "BLDG_075"
+        ],
+        "actual_height_measured": false
+      }
+    },
+    {
+      "id": "BLDG_068",
+      "name": "North guardhouse",
+      "map_label": "guard",
+      "height_m": 4.5,
+      "architecture": {
+        "kind": "guardhouse",
+        "floor_count": 1,
+        "floor_height_m": 4.5,
+        "roof_shape": "flat",
+        "roof_rise_m": 0,
+        "source_ids": [
+          "MAP"
+        ],
+        "photos": [],
+        "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+        "height_status": "estimated floor count times assumed storey height; NOT measured",
+        "appearance_status": "simplified typology approximation; facade not photo verified",
+        "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+        "wall_rgb": [
+          0.77,
+          0.77,
+          0.71
+        ],
+        "glass_rgb": [
+          0.19,
+          0.26,
+          0.3
+        ],
+        "window_pitch_m": 3.2,
+        "window_width_ratio": 0.55,
+        "window_height_ratio": 0.52,
+        "roof_rgb": [
+          0.37,
+          0.39,
+          0.4
+        ],
+        "eave_height_m": 4.5,
+        "total_height_m": 4.5,
+        "source_trace_ids": [
+          "BLDG_076"
+        ],
+        "actual_height_measured": false
+      }
+    },
+    {
+      "id": "BLDG_069",
       "name": "Northeast service building",
       "map_label": "service",
       "height_m": 7.0,
@@ -3258,6 +3229,8 @@
     "Storey heights, window spacing and roof rise are modeled estimates, not surveyed dimensions.",
     "Official 2023 new-building counts are not assigned to unidentified footprints on the older planning map.",
     "Known floor counts / minimum counts / photographic interpretations have distinct provenance.",
-    "Facade textures are authored approximations; source photographs are not applied to the mesh."
+    "Facade textures are authored approximations; source photographs are not applied to the mesh.",
+    "Exhibition taper stays inside the original XY envelope; the source polygon remains a conservative navigation obstacle.",
+    "Curved facades use continuous perimeter UVs. Metal roof seams are image details, not added mesh strips."
   ]
 }

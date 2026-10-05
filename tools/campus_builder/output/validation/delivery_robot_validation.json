@@ -1,0 +1,959 @@
+{
+  "pass_": true,
+  "placed_source": {
+    "pass_": true,
+    "errors": [],
+    "mesh_count": 34,
+    "measured_dimensions_xyz_m": [
+      0.8000106811523438,
+      1.200006127357483,
+      1.0999999046325684
+    ],
+    "expected_dimensions_xyz_m": [
+      0.8,
+      1.2,
+      1.1
+    ],
+    "root_position_m": [
+      -272.80450439453125,
+      45.099456787109375,
+      0.04500000178813934
+    ],
+    "forward_world": [
+      0.9999307990074158,
+      -0.011763853952288628,
+      0.0
+    ],
+    "wheel_contacts_z_m": [
+      0.04500000178813934,
+      0.04500000178813934,
+      0.04500000178813934,
+      0.04500000178813934
+    ],
+    "expected_road_top_m": 0.045,
+    "wheel_pivots": [
+      {
+        "wheel": "FL",
+        "pass_": true
+      },
+      {
+        "wheel": "FR",
+        "pass_": true
+      },
+      {
+        "wheel": "RL",
+        "pass_": true
+      },
+      {
+        "wheel": "RR",
+        "pass_": true
+      }
+    ],
+    "local_bbox_min": [
+      -0.4000053405761719,
+      -0.5999924540519714,
+      0.0
+    ],
+    "local_bbox_max": [
+      0.4000053405761719,
+      0.6000136733055115,
+      1.0999999046325684
+    ],
+    "placement": {
+      "route_id": "ROUTE_012",
+      "edge_id": "EDGE_0011",
+      "distance_to_graph_edge_m": 2.767109516749634e-15,
+      "route_width_m": 11.418437445623802,
+      "road_edge_clearance_m": 5.309055883586771,
+      "obstacle_clearance_m": 14.243427155195693,
+      "width_to_road_ratio": 0.07006212573390291,
+      "access_permission": null,
+      "scope": "Pose geometry verified; unknown vehicle access is not promoted to permission."
+    }
+  },
+  "placed_fbx": {
+    "pass_": true,
+    "errors": [],
+    "mesh_count": 34,
+    "measured_dimensions_xyz_m": [
+      0.8000144958496094,
+      1.200006365776062,
+      1.1000000211076895
+    ],
+    "expected_dimensions_xyz_m": [
+      0.8,
+      1.2,
+      1.1
+    ],
+    "root_position_m": [
+      -272.80450439453125,
+      45.099456787109375,
+      0.04500000178813934
+    ],
+    "forward_world": [
+      0.9999307990074158,
+      -0.011763853952288628,
+      2.308687953700428e-06
+    ],
+    "wheel_contacts_z_m": [
+      0.04500088095664978,
+      0.04500088095664978,
+      0.044999122619628906,
+      0.044999122619628906
+    ],
+    "expected_road_top_m": 0.045,
+    "wheel_pivots": [
+      {
+        "wheel": "FL",
+        "pass_": true
+      },
+      {
+        "wheel": "FR",
+        "pass_": true
+      },
+      {
+        "wheel": "RL",
+        "pass_": true
+      },
+      {
+        "wheel": "RR",
+        "pass_": true
+      }
+    ],
+    "local_bbox_min": [
+      -0.4000091552734375,
+      -0.5999934077262878,
+      2.7341684472048655e-09
+    ],
+    "local_bbox_max": [
+      0.4000053405761719,
+      0.6000129580497742,
+      1.100000023841858
+    ],
+    "placement": {
+      "route_id": "ROUTE_012",
+      "edge_id": "EDGE_0011",
+      "distance_to_graph_edge_m": 2.767109516749634e-15,
+      "route_width_m": 11.418437445623802,
+      "road_edge_clearance_m": 5.309055883586771,
+      "obstacle_clearance_m": 14.243427155195693,
+      "width_to_road_ratio": 0.07006212573390291,
+      "access_permission": null,
+      "scope": "Pose geometry verified; unknown vehicle access is not promoted to permission."
+    }
+  },
+  "standalone_fbx": {
+    "pass_": true,
+    "errors": [],
+    "mesh_count": 34,
+    "measured_dimensions_xyz_m": [
+      0.800000011920929,
+      1.2000000476837158,
+      1.100000025551024
+    ],
+    "expected_dimensions_xyz_m": [
+      0.8,
+      1.2,
+      1.1
+    ],
+    "root_position_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forward_world": [
+      0.0,
+      -1.0,
+      4.371138828673793e-08
+    ],
+    "wheel_contacts_z_m": [
+      1.4901161193847656e-08,
+      1.4901161193847656e-08,
+      -1.4901161193847656e-08,
+      -1.4901161193847656e-08
+    ],
+    "expected_road_top_m": 0,
+    "wheel_pivots": [
+      {
+        "wheel": "FL",
+        "pass_": true
+      },
+      {
+        "wheel": "FR",
+        "pass_": true
+      },
+      {
+        "wheel": "RL",
+        "pass_": true
+      },
+      {
+        "wheel": "RR",
+        "pass_": true
+      }
+    ],
+    "local_bbox_min": [
+      -0.4000000059604645,
+      -0.6000000238418579,
+      -1.709166141949936e-09
+    ],
+    "local_bbox_max": [
+      0.4000000059604645,
+      0.6000000238418579,
+      1.100000023841858
+    ],
+    "placement": null
+  },
+  "standalone_blend": {
+    "pass_": true,
+    "errors": [],
+    "mesh_count": 34,
+    "measured_dimensions_xyz_m": [
+      0.800000011920929,
+      1.2000000476837158,
+      1.100000025551024
+    ],
+    "expected_dimensions_xyz_m": [
+      0.8,
+      1.2,
+      1.1
+    ],
+    "root_position_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "forward_world": [
+      0.0,
+      -1.0,
+      4.371138828673793e-08
+    ],
+    "wheel_contacts_z_m": [
+      1.4901161193847656e-08,
+      1.4901161193847656e-08,
+      -1.4901161193847656e-08,
+      -1.4901161193847656e-08
+    ],
+    "expected_road_top_m": 0,
+    "wheel_pivots": [
+      {
+        "wheel": "FL",
+        "pass_": true
+      },
+      {
+        "wheel": "FR",
+        "pass_": true
+      },
+      {
+        "wheel": "RL",
+        "pass_": true
+      },
+      {
+        "wheel": "RR",
+        "pass_": true
+      }
+    ],
+    "local_bbox_min": [
+      -0.4000000059604645,
+      -0.6000000238418579,
+      -1.709166141949936e-09
+    ],
+    "local_bbox_max": [
+      0.4000000059604645,
+      0.6000000238418579,
+      1.100000023841858
+    ],
+    "placement": null
+  },
+  "standalone_comparison": {
+    "pass_": true,
+    "errors": [],
+    "max_bbox_delta_m": 1.1920928955078125e-07,
+    "max_vertex_delta_m": 1.2731557319511921e-07,
+    "dimension_ratios": [
+      1.0,
+      1.0,
+      1.000000121918602
+    ],
+    "direction_check": "Named object world-space bounds and bidirectional vertices match; Z remains height"
+  },
+  "standalone_mesh": {
+    "errors": [],
+    "object_count": 34,
+    "category_counts": {
+      "ROBOT": 34
+    },
+    "total_vertices": 1264,
+    "total_faces": 976,
+    "bbox_min": [
+      -0.4000000059604645,
+      -0.6000000238418579,
+      -1.4901161193847656e-08
+    ],
+    "bbox_max": [
+      0.4000000059604645,
+      0.6000000238418579,
+      1.100000023841858
+    ],
+    "dimensions_m": [
+      0.800000011920929,
+      1.2000000476837158,
+      1.100000038743019
+    ],
+    "center_m": [
+      0.0,
+      0.0,
+      0.5500000044703484
+    ],
+    "objects": {
+      "ROBOT_Bumper_Front": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.3700000047683716,
+          -0.6000000238418579,
+          0.24500003457069397
+        ],
+        "bbox_max": [
+          0.3700000047683716,
+          -0.5199999809265137,
+          0.3750000298023224
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.006558111643097762,
+        "material_count": 1
+      },
+      "ROBOT_Bumper_Rear": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.3700000047683716,
+          0.5199999809265137,
+          0.2449999749660492
+        ],
+        "bbox_max": [
+          0.3700000047683716,
+          0.6000000238418579,
+          0.3749999701976776
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.006558111643097762,
+        "material_count": 1
+      },
+      "ROBOT_CargoBody": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.3499999940395355,
+          -0.5299999713897705,
+          0.31999996304512024
+        ],
+        "bbox_max": [
+          0.3499999940395355,
+          0.5300000309944153,
+          0.949999988079071
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.4495589553259025,
+        "material_count": 1
+      },
+      "ROBOT_Chassis": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.3400000035762787,
+          -0.515999972820282,
+          0.1499999761581421
+        ],
+        "bbox_max": [
+          0.3400000035762787,
+          0.515999972820282,
+          0.320000022649765
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.11484419577587249,
+        "material_count": 1
+      },
+      "ROBOT_DisplayStatus": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.0949999988079071,
+          -0.5554999709129333,
+          0.7709999680519104
+        ],
+        "bbox_max": [
+          0.0949999988079071,
+          -0.5364999175071716,
+          0.7889999747276306
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 6.147599393087644e-05,
+        "material_count": 1
+      },
+      "ROBOT_Door_Left": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.3612000048160553,
+          -0.437999963760376,
+          0.3959999978542328
+        ],
+        "bbox_max": [
+          -0.34919998049736023,
+          0.43800002336502075,
+          0.8800000548362732
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.005038848173324475,
+        "material_count": 1
+      },
+      "ROBOT_Door_Right": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          0.34919998049736023,
+          -0.437999963760376,
+          0.3959999978542328
+        ],
+        "bbox_max": [
+          0.3612000048160553,
+          0.43800002336502075,
+          0.8800000548362732
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.005038848173324475,
+        "material_count": 1
+      },
+      "ROBOT_FrontDisplay": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.17499999701976776,
+          -0.5467999577522278,
+          0.7099999785423279
+        ],
+        "bbox_max": [
+          0.17499999701976776,
+          -0.530799925327301,
+          0.8499999642372131
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.0007526400355336082,
+        "material_count": 1
+      },
+      "ROBOT_Handle_Left": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.3804999887943268,
+          -0.3189999759197235,
+          0.7524999976158142
+        ],
+        "bbox_max": [
+          -0.3555000126361847,
+          -0.20899996161460876,
+          0.7874999642372131
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 7.522599892090255e-05,
+        "material_count": 1
+      },
+      "ROBOT_Handle_Right": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          0.3555000126361847,
+          -0.3189999759197235,
+          0.7524999976158142
+        ],
+        "bbox_max": [
+          0.3804999887943268,
+          -0.20899996161460876,
+          0.7874999642372131
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 7.522599892090255e-05,
+        "material_count": 1
+      },
+      "ROBOT_Hub_FL": {
+        "vertices": 48,
+        "faces": 26,
+        "bbox_min": [
+          -0.4000000059604645,
+          -0.46799999475479126,
+          0.07200001180171967
+        ],
+        "bbox_max": [
+          -0.3879999816417694,
+          -0.2919999957084656,
+          0.24800001084804535
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.00028861841450131536,
+        "material_count": 1
+      },
+      "ROBOT_Hub_FR": {
+        "vertices": 48,
+        "faces": 26,
+        "bbox_min": [
+          0.3879999816417694,
+          -0.46799999475479126,
+          0.07200001180171967
+        ],
+        "bbox_max": [
+          0.4000000059604645,
+          -0.2919999957084656,
+          0.24800001084804535
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.00028861841450131536,
+        "material_count": 1
+      },
+      "ROBOT_Hub_RL": {
+        "vertices": 48,
+        "faces": 26,
+        "bbox_min": [
+          -0.4000000059604645,
+          0.2919999957084656,
+          0.07199998199939728
+        ],
+        "bbox_max": [
+          -0.3879999816417694,
+          0.46799999475479126,
+          0.24799998104572296
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.00028861841450131536,
+        "material_count": 1
+      },
+      "ROBOT_Hub_RR": {
+        "vertices": 48,
+        "faces": 26,
+        "bbox_min": [
+          0.3879999816417694,
+          0.2919999957084656,
+          0.07199998199939728
+        ],
+        "bbox_max": [
+          0.4000000059604645,
+          0.46799999475479126,
+          0.24799998104572296
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.00028861841450131536,
+        "material_count": 1
+      },
+      "ROBOT_Lid": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.35199999809265137,
+          -0.5339999198913574,
+          0.9234999418258667
+        ],
+        "bbox_max": [
+          0.35199999809265137,
+          0.534000039100647,
+          0.968500018119812
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.032937165002677286,
+        "material_count": 1
+      },
+      "ROBOT_Lidar": {
+        "vertices": 48,
+        "faces": 26,
+        "bbox_min": [
+          -0.08500000089406967,
+          -0.08499995619058609,
+          0.9800000190734863
+        ],
+        "bbox_max": [
+          0.08500000089406967,
+          0.08500004559755325,
+          1.0820000171661377
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.002288840271240252,
+        "material_count": 1
+      },
+      "ROBOT_LidarBase": {
+        "vertices": 48,
+        "faces": 26,
+        "bbox_min": [
+          -0.10499999672174454,
+          -0.10499995201826096,
+          0.949999988079071
+        ],
+        "bbox_max": [
+          0.10499999672174454,
+          0.10500004142522812,
+          0.9799999594688416
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.0010272526361145755,
+        "material_count": 1
+      },
+      "ROBOT_LidarCap": {
+        "vertices": 48,
+        "faces": 26,
+        "bbox_min": [
+          -0.09000000357627869,
+          -0.0899999588727951,
+          1.0819998979568481
+        ],
+        "bbox_max": [
+          0.09000000357627869,
+          0.09000004827976227,
+          1.100000023841858
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.0004528298194727729,
+        "material_count": 1
+      },
+      "ROBOT_Light_Front_Left": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.29999998211860657,
+          -0.5511999726295471,
+          0.4025000035762787
+        ],
+        "bbox_max": [
+          -0.17999999225139618,
+          -0.5311999917030334,
+          0.4375000298023224
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 6.849999736249448e-05,
+        "material_count": 1
+      },
+      "ROBOT_Light_Front_Right": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          0.17999999225139618,
+          -0.5511999726295471,
+          0.4025000035762787
+        ],
+        "bbox_max": [
+          0.29999998211860657,
+          -0.5311999917030334,
+          0.4375000298023224
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 6.849999736249448e-05,
+        "material_count": 1
+      },
+      "ROBOT_Light_Rear_Left": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.29999998211860657,
+          0.5311999917030334,
+          0.4024999439716339
+        ],
+        "bbox_max": [
+          -0.17999999225139618,
+          0.5511999726295471,
+          0.4374999701976776
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 6.849999736249448e-05,
+        "material_count": 1
+      },
+      "ROBOT_Light_Rear_Right": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          0.17999999225139618,
+          0.5311999917030334,
+          0.4024999439716339
+        ],
+        "bbox_max": [
+          0.29999998211860657,
+          0.5511999726295471,
+          0.4374999701976776
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 6.849999736249448e-05,
+        "material_count": 1
+      },
+      "ROBOT_Stripe_Left": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.37060001492500305,
+          -0.46799996495246887,
+          0.4404999613761902
+        ],
+        "bbox_max": [
+          -0.35260000824928284,
+          0.46800002455711365,
+          0.5055000185966492
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.0010588679147591228,
+        "material_count": 1
+      },
+      "ROBOT_Stripe_Right": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          0.35260000824928284,
+          -0.46799996495246887,
+          0.4404999613761902
+        ],
+        "bbox_max": [
+          0.37060001492500305,
+          0.46800002455711365,
+          0.5055000185966492
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.0010588679147591228,
+        "material_count": 1
+      },
+      "ROBOT_Tire_FL": {
+        "vertices": 48,
+        "faces": 26,
+        "bbox_min": [
+          -0.3920000195503235,
+          -0.5400000214576721,
+          1.4901161193847656e-08
+        ],
+        "bbox_max": [
+          -0.28700000047683716,
+          -0.2199999988079071,
+          0.3199999928474426
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.00834846643844266,
+        "material_count": 1
+      },
+      "ROBOT_Tire_FR": {
+        "vertices": 48,
+        "faces": 26,
+        "bbox_min": [
+          0.28700000047683716,
+          -0.5400000214576721,
+          1.4901161193847656e-08
+        ],
+        "bbox_max": [
+          0.3920000195503235,
+          -0.2199999988079071,
+          0.3199999928474426
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.00834846643844266,
+        "material_count": 1
+      },
+      "ROBOT_Tire_RL": {
+        "vertices": 48,
+        "faces": 26,
+        "bbox_min": [
+          -0.3920000195503235,
+          0.2199999988079071,
+          -1.4901161193847656e-08
+        ],
+        "bbox_max": [
+          -0.28700000047683716,
+          0.5400000214576721,
+          0.3199999928474426
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.00834846643844266,
+        "material_count": 1
+      },
+      "ROBOT_Tire_RR": {
+        "vertices": 48,
+        "faces": 26,
+        "bbox_min": [
+          0.28700000047683716,
+          0.2199999988079071,
+          -1.4901161193847656e-08
+        ],
+        "bbox_max": [
+          0.3920000195503235,
+          0.5400000214576721,
+          0.3199999928474426
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 0.00834846643844266,
+        "material_count": 1
+      },
+      "ROBOT_Vent_Left_0": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.36800000071525574,
+          -0.25999996066093445,
+          0.8600000143051147
+        ],
+        "bbox_max": [
+          -0.35200002789497375,
+          -0.15999995172023773,
+          0.878000020980835
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 2.6783999688893404e-05,
+        "material_count": 1
+      },
+      "ROBOT_Vent_Left_1": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.36800000071525574,
+          -0.049999963492155075,
+          0.8600000143051147
+        ],
+        "bbox_max": [
+          -0.35200002789497375,
+          0.050000037997961044,
+          0.878000020980835
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 2.6783999688893404e-05,
+        "material_count": 1
+      },
+      "ROBOT_Vent_Left_2": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          -0.36800000071525574,
+          0.1600000411272049,
+          0.8600000143051147
+        ],
+        "bbox_max": [
+          -0.35200002789497375,
+          0.2600000500679016,
+          0.878000020980835
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 2.6783999688893404e-05,
+        "material_count": 1
+      },
+      "ROBOT_Vent_Right_0": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          0.35200002789497375,
+          -0.25999996066093445,
+          0.8600000143051147
+        ],
+        "bbox_max": [
+          0.36800000071525574,
+          -0.15999995172023773,
+          0.878000020980835
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 2.6783999688893404e-05,
+        "material_count": 1
+      },
+      "ROBOT_Vent_Right_1": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          0.35200002789497375,
+          -0.049999963492155075,
+          0.8600000143051147
+        ],
+        "bbox_max": [
+          0.36800000071525574,
+          0.050000037997961044,
+          0.878000020980835
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 2.6783999688893404e-05,
+        "material_count": 1
+      },
+      "ROBOT_Vent_Right_2": {
+        "vertices": 32,
+        "faces": 30,
+        "bbox_min": [
+          0.35200002789497375,
+          0.1600000411272049,
+          0.8600000143051147
+        ],
+        "bbox_max": [
+          0.36800000071525574,
+          0.2600000500679016,
+          0.878000020980835
+        ],
+        "nonmanifold_edges": 0,
+        "degenerate_faces": 0,
+        "invalid_normals": 0,
+        "signed_volume_m3": 2.6783999688893404e-05,
+        "material_count": 1
+      }
+    },
+    "pass": true
+  },
+  "design_provenance": "Original compact delivery-robot design, not a measured commercial vehicle. Independent modeled metres; never multiplied by campus XY scale.",
+  "physics_runtime_tested": false
+}

@@ -121,7 +121,8 @@
         0.38,
         0.39
       ],
-      "end_wall_max_span_m": 24
+      "end_wall_max_span_m": 24,
+      "facade_uv_mode": "full_height"
     },
     "2": {
       "kind": "exhibition",
@@ -138,7 +139,7 @@
       "floor_status": "photo interpretation, medium confidence",
       "height_status": "estimated from floor count and assumed storey height; NOT measured",
       "appearance_status": "simplified photo-informed reconstruction",
-      "notes": "Curved dark curtain wall and metal mullions. Floor interpretation is approximate.",
+      "notes": "Curved dark curtain wall and metal mullions. Floor interpretation is approximate. Bottom is inset within the traced envelope; its exact taper is not measured.",
       "wall_rgb": [
         0.47,
         0.49,
@@ -149,14 +150,17 @@
         0.12,
         0.16
       ],
-      "window_pitch_m": 3.2,
+      "window_pitch_m": 3.6,
       "window_width_ratio": 0.58,
       "window_height_ratio": 0.52,
       "roof_rgb": [
         0.35,
         0.38,
         0.39
-      ]
+      ],
+      "facade_base_inset_fraction": 0.08,
+      "facade_uv_mode": "full_height",
+      "facade_geometry_provenance": "Outward-sloping curtain wall visible in exhibition.jpg; 8 percent base inset is a modeling approximation. Top XY envelope and total height retained; source polygon remains conservative navigation obstacle."
     },
     "3": {
       "kind": "teaching",
@@ -417,7 +421,7 @@
       "floor_status": "equivalent facade levels, low confidence",
       "height_status": "estimated from floor count and assumed storey height; NOT measured",
       "appearance_status": "simplified photo-informed reconstruction",
-      "notes": "Large-span gym volume with upswept roof edges; equivalent three levels are for facade layout, not three usable floors.",
+      "notes": "Large-span gym volume with upswept roof edges; equivalent three levels are for facade layout, not three usable floors. Full-height upper clerestory, glazed lower bays and pale piers follow the published front photograph. Roof rib spacing and facade bay spacing are modeled estimates.",
       "wall_rgb": [
         0.74,
         0.75,
@@ -428,14 +432,17 @@
         0.28,
         0.28
       ],
-      "window_pitch_m": 5.0,
+      "window_pitch_m": 7.0,
       "window_width_ratio": 0.58,
       "window_height_ratio": 0.52,
       "roof_rgb": [
-        0.35,
-        0.38,
-        0.39
-      ]
+        0.53,
+        0.56,
+        0.56
+      ],
+      "facade_uv_mode": "full_height",
+      "roof_surface": "standing_seam",
+      "roof_seam_pitch_m": 1.2
     },
     "18": {
       "kind": "library",
@@ -453,7 +460,7 @@
       "floor_status": "documented minimum 4",
       "height_status": "estimated from floor count and assumed storey height; NOT measured",
       "appearance_status": "simplified photo-informed reconstruction",
-      "notes": "At least four floors confirmed by official room addresses. Curved planning-map footprint retained; facade not verified.",
+      "notes": "Official room addresses support at least four floors. Front photograph shows pale wall panels, grouped windows and a narrow upper glazing band; exact bay spacing is estimated. The entrance dome is omitted because its plan location and dimensions are not established.",
       "wall_rgb": [
         0.82,
         0.82,
@@ -464,14 +471,15 @@
         0.28,
         0.34
       ],
-      "window_pitch_m": 3.2,
+      "window_pitch_m": 5.2,
       "window_width_ratio": 0.58,
       "window_height_ratio": 0.52,
       "roof_rgb": [
         0.35,
         0.38,
         0.39
-      ]
+      ],
+      "facade_uv_mode": "full_height"
     },
     "19": {
       "kind": "exchange",
@@ -2231,5 +2239,6 @@
       "map_label": "service"
     }
   },
-  "height_policy": "Use measured_height_m only with measurement provenance. Otherwise estimate from documented/observed floors and explicit assumed storey height; unknown buildings retain modeled defaults."
+  "height_policy": "Use measured_height_m only with measurement provenance. Otherwise estimate from documented/observed floors and explicit assumed storey height; unknown buildings retain modeled defaults.",
+  "appearance_revision": "2026-10-05-photo-informed-envelope-preserving"
 }

@@ -1,6 +1,10 @@
-# Campus Model V0.3 — 建筑近似重建与几何修正
+# Campus Model V0.4 — 楼体外观与校园道路修正
 
 在 V0.2 的尺度校准、固定米制 Z、受限道路修正、独立桥面和基础导航图基础上，增加按楼栋配置的楼层/高度、平顶/坡顶/弧形屋顶、可导出的立面贴图和建筑近景验证。没有使用 Unity/团结引擎，也没有修改 C++ 服务端。
+
+V0.4 进一步按已有照片改进展厅、体育馆、图书馆的立面。展厅下部在原占地包络内收 8%，体育馆增加金属屋面拼缝贴图，图书馆使用成组窗格与顶部窄窗带；这些细节尺寸是建模近似。窗格沿边界累计距离映射，避免弧形立面逐面错位。原高度与 XY 包络继续在源场景、FBX 重新导入后验证。
+
+南区、东北和东南区道路已按原图通道重新描绘；两处错误楼体改为广场并补入可见小结构，实训院落增加侧翼，支流水体改用可见蓝色边界。人工源数据修正记录在 `source_geometry_changes.json`（包括前后坐标与距离），自动调整仍限制在最多 3 px。`source_retrace_overlay.png` 显示人工修改前后；`road_correction_overlay.png` 只显示当前源数据的自动微调。`v03_baseline.json` 保存上一版对照。
 
 ```bash
 # 从仓库根目录执行完整验收
@@ -54,7 +58,7 @@ tools/campus_builder/.venv/bin/python tools/campus_builder/run_pipeline.py --ver
 
 ## 道路与桥梁
 
-每条路线保留 road_type、driveable、bidirectional；不能确定的权限/方向为 null，类型为 unknown。桥面范围内显式赋予 bridge 语义；桥头道路不继承已确认通行权限。
+每条路线保留 road_type、driveable、bidirectional；不能确定的权限/方向为 null，类型为 unknown。桥面范围内赋予 bridge 表面分类；表面分类不会把未知车辆权限提升为 true，桥头道路也不继承通行权限。
 
 自动描线修正上限为 `min(max_auto_road_adjustment_px, 0.5 × width_px)`，默认最大 3 px。仅搜索小幅坐标修正，并固定原始路线共享顶点；用双向 Hausdorff 距离核对上限。需要更大绕行时保留原路线并输出 FLAG_RETRACE_REQUIRED。`road_correction_overlay.png` 中红色为原描线、紫色为接受的小修正、黄色为仍冲突段。
 
@@ -66,7 +70,7 @@ tools/campus_builder/.venv/bin/python tools/campus_builder/run_pipeline.py --ver
 
 `data/navigation_graph.json` 的节点位于路线端点、实际交叉口和桥面边界；曲率描绘点保留为 edge 的 polyline_m。边记录米制长度、宽度、route_id、类型、权限及方向。生成时检查有限坐标、重复节点、长度一致、路面覆盖、建筑/水体穿越、桥面对应及共享路口；对通过验证的 driveable 连通分量执行固定随机种子的 Dijkstra 连通检查。
 
-未知权限不提升为允许车辆行驶。当前文件包含未通过的源描线，边带 validation_pass/source_trace_valid，整体验证失败时不得直接接入小车导航。连通分量统计包含全部描线；Dijkstra 的无向结构连通检查不是交通合法性判断。
+未知权限不提升为允许车辆行驶，未知方向不默认为双向。所有边（包括 unknown）都检查整条几何是否落在路面内；重叠来源的禁止权限优先。Dijkstra 使用 `allowed_directions` 的有向弧；连通分量统计则是无向结构连通性，两者分别报告。几何/拓扑通过不代表车辆权限已确认。当前两个显式桥梁来源没有确认方向，校园 Dijkstra 配对为零并明确记录；回归夹具验证双向、单行与禁止覆盖等规则。
 
 ## Blender、FBX 与自动验证
 
@@ -74,7 +78,7 @@ tools/campus_builder/.venv/bin/python tools/campus_builder/run_pipeline.py --ver
 2. 0.001 m 坐标精度与约 0.002 m 简化；约 0.003 m 向内清理处理点接触轮廓，避免侵入相邻桥面。受约束三角剖分保持凹边界和孔洞并核对面积。
 3. 独立封闭建筑和地表实体，检查 manifold、法线、零面积面、正有向体积、finite 顶点、变换与 bbox。
 4. 对实际 Ground Mesh 四角和校准端点进行绝对米制检查；建筑 Z 与配置直接比较。另建 ValidationOnly_ScaleReferences 下的 1/10/50 m Mesh，保留在 blend 供检查，明确排除在 FBX/GLB 之外。
-5. 保存 campus.blend；仅导出正式 Mesh，FBX -Z forward / Y up，记录单位设置，材质为 Principled BSDF；附加 GLB。
+5. 保存 campus.blend；导出正式 Mesh 和小车根节点/轮轴/安装参考 Empty，FBX -Z forward / Y up，记录单位设置，材质为 Principled BSDF；附加 GLB。验证相机、灯光与尺度尺排除在交换资产之外。
 6. 全新空 Blender Scene 导入 FBX，保留原有 bbox、双向顶点偏差、方向和尺寸比例检查，并再次检查绝对米制锚点、建筑高度、桥梁属性及无 debug 对象泄漏。
 7. bbox 自动取景，CPU Cycles 生成 top、两个 perspective 和 reimported_fbx；检查相机范围、1200 × 1200 分辨率、图像均值/方差/非背景比例以及同视角 FBX 色彩差。
 8. 完整 clean rebuild 再执行一轮；比较校准、地图、导航、道路数据哈希和所有源 Mesh 验证摘要。序列化文件可含不同元数据，不以 blend/FBX 二进制相同为幂等标准。
@@ -118,7 +122,7 @@ output/logs/run_02.log
 
 尺度最小补充：提供主图像素 [210,552] 到 [210,692]（田径场外轮廓北端到南端）的真实直线长度，单位米，并说明测量来源。它可替换 TRACK_OUTER_LONG 假设、检验现有比例。要提升 HIGH confidence，还需要体育区域之外、端点明确的一条独立长基线及可信来源；不能保证任意一个新数值都会与其他锚点相符。
 
-道路冲突需根据地图修正报告列出的 ROUTE 描线或对应障碍边界，不能恢复 V0.1 的 46.6 px 自动绕行。
+若后续出现道路冲突，应根据地图修正报告列出的 ROUTE 描线或对应障碍边界，不能恢复 V0.1 的 46.6 px 自动绕行。
 
 Unity/团结阶段需实际验证导入、配置 Collider/图层/水体排除和允许车辆行驶的路面。Ground 延伸在水体下方，不可把全 Ground 当道路；路顶面高于 Ground 4.5 cm，碰撞连接需考虑小台阶。本轮未开发服务器路径规划、NavMesh、小车运动、TCP、DWA/APF 或精细室内资产。
 
@@ -159,3 +163,52 @@ output/validation/building_reconstruction_report.md
 ```
 
 文件保存了全景视角并默认使用材质预览。想检查某栋楼，在 Buildings collection 选中对象，按小键盘 `.` 聚焦；对象自定义属性中能看到地图楼号、近似层数、屋顶类型和高度依据。需要轻量浏览时可切换 Solid shading；贴图效果在 Material Preview 或 Rendered shading 下查看。
+
+## 配送小车资产
+
+完整入口现在同时生成一辆参数化四轮配送小车，并把它放在校园中的有效道路段。设计尺寸为 **长 1.20 m × 宽 0.80 m × 高 1.10 m**，轮半径 0.16 m、前后轴距 0.76 m、底盘离地 0.15 m；它是本项目自定义设计，并非某款实车的测量复刻。尺寸在 `config/delivery_robot.json` 中独立保存，校园 XY 比例改变不会缩放小车。
+
+放置点在 `ROUTE_012` 的 32% 弧长位置，朝向沿路线切向。生成器要求源路线通过几何检查，整个矩形占地加 0.30 m 安全余量必须落在路面内，并避开建筑和水体。`data/delivery_robot.json` 保存实际位姿、道路宽度、边界余量、关联 graph edge、轮胎规格和碰撞体尺寸提示。道路车辆通行权限仍保持原数据的 unknown；几何放置检查不会替它做交通许可判断。
+
+校园文件 `campus.blend / campus.fbx / campus.glb` 包含一个已摆放的小车实例，独立的 `delivery_robot.blend / delivery_robot.fbx / delivery_robot.glb` 包含同一辆放在原点的小车。若后续在引擎中使用独立小车资产，应移除或禁用校园文件中原有的 `DeliveryRobot_ROOT`，避免重复实例。所有文件都由同一个命令重新生成。
+
+```text
+DeliveryRobot_ROOT           根节点在占地中心、轮胎接地平面
+  ROBOT_Chassis              底盘
+  ROBOT_CargoBody            货箱
+  ROBOT_Lid / Door_*         顶盖与侧舱门视觉部件
+  ROBOT_*                   灯、保险杠、显示面板、雷达外壳等
+  WheelPivot_FL / FR         前左 / 前右轮轴心
+    ROBOT_Tire_* / Hub_*
+  WheelPivot_RL / RR         后左 / 后右轮轴心
+    ROBOT_Tire_* / Hub_*
+  BaseLink                  位姿参考点
+  ForwardAxis               朝向参考点
+  LidarMount / CameraMount   传感器安装参考点
+```
+
+局部坐标为 **+X 向右、-Y 向前、+Z 向上**；轮轴沿局部 X，旋转各 `WheelPivot_*` 即可驱动视觉轮胎转动。FBX 使用 -Z forward / Y up，保留 Empty 父子节点、轴心和 custom properties；不烘焙父子层级的空间变换。实际 Unity/团结引擎中的轴向和组件仍须在导入阶段核对。
+
+小车全部正式 Mesh 继续经过封闭性、法线、退化面和双向顶点偏差检查。新增验证分别检查地图实例与原点资产的宽长高、根节点位置、前进方向、四个车轮的轴心/旋转轴、轮胎接地、独立 `.blend` 可重开，并比较 FBX 前后近景图。两次干净构建还比较小车规格及验证报告哈希。
+
+额外产物：
+
+```text
+config/delivery_robot.json
+data/delivery_robot.json
+output/delivery_robot.blend
+output/delivery_robot.fbx
+output/delivery_robot.glb
+output/previews/delivery_robot_closeup.png
+output/previews/delivery_robot_on_campus.png
+output/previews/delivery_robot_reimported.png
+output/previews/delivery_robot_asset.png
+output/validation/delivery_robot_validation.json
+output/validation/delivery_robot_report.md
+```
+
+打开 `output/delivery_robot.blend` 可单独检查小车；在校园中可通过 Outliner 找到 `DeliveryRobot` collection，选择其中全部对象后按小键盘 `.` 聚焦。根节点作为整体移动入口，不要分别移动轮胎 Mesh。
+
+本阶段完成视觉/几何资产、放置和导航数据关联。尚未配置 Rigidbody、Collider 组件、质量/惯量、轮胎动力学、运动控制、传感器或实际导航执行；`collision_hint` 只是下一阶段使用的数据。校园 SCALE/ROADS/NAVIGATION 阶段继续单独报告，ROBOT PASS 不代表全校园车辆导航已通过。
+
+V0.4 增加 `building_exhibition.png`、`roads_south.png`、`roads_northeast.png` 和人工源数据对照图 `source_retrace_overlay.png`。完整流水线生成 15 张 Blender 验证渲染，回归测试覆盖权限保持未知、整段路面覆盖、单行方向和禁止权限优先。实际验收结果以最新 `validation_report.md` 为准，尺度证据不足仍为 PARTIAL。

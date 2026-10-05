@@ -269,7 +269,32 @@ def analyze():
     draw.text((12,9),'ORANGE: footprints | MAGENTA: roads | BLUE: water',fill='black')
     draw.text((12,28),'YELLOW: plazas/sports | IDs match campus_map.json',fill='black')
     result.save(ROOT/'output/previews/map_debug_overlay.png')
+    manual_trace_overlay(image)
     return metadata
+
+
+def manual_trace_overlay(image):
+    """Compare the explicitly reviewed revision; automated drift is separate."""
+    path=ROOT/'config/source_geometry_changes.json'
+    if not path.is_file():return
+    journal=json.loads(path.read_text())
+    review=journal.get('geometry_review_v04')
+    if not review:return
+    out=image.copy().resize((image.width*2,image.height*2));draw=ImageDraw.Draw(out)
+    def points(values):return [(x*2,y*2)for x,y in values]
+    for r in journal['changes']:
+        if r.get('review_date')!=review['date']:continue
+        draw.line(points(r['before_centerline_px']),fill=(220,20,40),width=3)
+        draw.line(points(r['after_centerline_px']),fill=(0,190,210),width=3)
+    for r in review['new_routes']:draw.line(points(r['centerline_px']),fill=(0,190,210),width=3)
+    for b in review['removed_buildings']:
+        p=points(b['feature']['polygon_px']);draw.line(p+[p[0]],fill=(255,200,0),width=4)
+    for b in review['added_buildings']:
+        p=points(b['polygon_px']);draw.line(p+[p[0]],fill=(255,120,0),width=4)
+    draw.rectangle((0,0,out.width,62),fill='white')
+    draw.text((12,8),'MANUAL SOURCE REVIEW: red = previous roads | cyan = retraced/new corridors',fill='black')
+    draw.text((12,30),'Yellow = removed false footprint | orange = added visible wing/structure; approximate map traces, not survey.',fill='black')
+    out.save(ROOT/'output/previews/source_retrace_overlay.png')
 
 
 def road_overlay(image,validation,obstacles):

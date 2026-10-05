@@ -2,7 +2,7 @@
 
 PARTIAL: unmeasured heights and unverified buildings remain explicitly marked
 
-Buildings: 70; photo-referenced: 13; floor-based: 70; non-typology floor evidence: 14; measured heights: 0
+Buildings: 69; photo-referenced: 13; floor-based: 69; non-typology floor evidence: 14; measured heights: 0
 
 | Mesh | Map label | Floors | Eave / total m | Roof | Floor provenance | Height provenance |
 |---|---|---|---|---|---|---|
@@ -33,49 +33,48 @@ Buildings: 70; photo-referenced: 13; floor-based: 70; non-typology floor evidenc
 | BLDG_025 | 22 | 4 | 14.40 / 14.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
 | BLDG_026 | 22 | 4 | 14.40 / 14.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
 | BLDG_027 | 23 | 3 | 12.60 / 12.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_028 | 23 | 3 | 12.60 / 12.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_029 | 24 | 4 | 14.40 / 14.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_030 | 25 | 4 | 14.40 / 14.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_028 | 24 | 4 | 14.40 / 14.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_029 | 25 | 4 | 14.40 / 14.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_030 | 26 | 3 | 12.60 / 12.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
 | BLDG_031 | 26 | 3 | 12.60 / 12.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
 | BLDG_032 | 26 | 3 | 12.60 / 12.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_033 | 26 | 3 | 12.60 / 12.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_034 | 27 | 3 | 12.60 / 12.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_033 | 27 | 3 | 12.60 / 12.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_034 | 28 | 4 | 14.40 / 14.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
 | BLDG_035 | 28 | 4 | 14.40 / 14.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_036 | 28 | 4 | 14.40 / 14.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_037 | 29 | 3 | 12.60 / 12.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_038 | 30 | 4 | 14.40 / 14.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_039 | 31 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_040 | 32 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_041 | 37 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_036 | 29 | 3 | 12.60 / 12.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_037 | 30 | 4 | 14.40 / 14.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_038 | 31 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_039 | 32 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_040 | 37 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_041 | 38 | 4 | 14.40 / 14.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
 | BLDG_042 | 38 | 4 | 14.40 / 14.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_043 | 38 | 4 | 14.40 / 14.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_044 | 39 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_045 | 39 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_046 | 40 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_047 | 41 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_048 | 42 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_043 | 39 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_044 | 40 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_045 | 41 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_046 | 42 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_047 | unnumbered | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_048 | unnumbered | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
 | BLDG_049 | unnumbered | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
 | BLDG_050 | unnumbered | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
 | BLDG_051 | unnumbered | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
 | BLDG_052 | unnumbered | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_053 | unnumbered | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_054 | unnumbered | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_055 | res_1_1 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_056 | res_1_2 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_057 | res_1_3 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_058 | res_2_1 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_059 | res_2_2 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_060 | res_2_3 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_061 | res_2_4 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_062 | res_2_5 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_063 | res_3_1 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_064 | res_3_2 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_065 | res_3_3 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_066 | res_3_4 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_067 | res_3_5 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_068 | dining | 2 | 8.40 / 8.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_069 | guard | 1 | 4.50 / 4.50 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
-| BLDG_070 | service | 2 | 7.00 / 7.00 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_053 | res_1_1 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_054 | res_1_2 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_055 | res_1_3 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_056 | res_2_1 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_057 | res_2_2 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_058 | res_2_4 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_059 | res_2_5 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_060 | res_3_1 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_061 | res_3_2 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_062 | res_3_3 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_063 | res_3_4 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_064 | res_3_5 | 6 | 18.60 / 18.60 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_065 | dining | 2 | 8.40 / 8.40 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_066 | guard | 1 | 4.50 / 4.50 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_067 | guard | 1 | 4.50 / 4.50 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_068 | guard | 1 | 4.50 / 4.50 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
+| BLDG_069 | service | 2 | 7.00 / 7.00 | flat | typology modeling assumption, low confidence; not verified floor count | estimated floor count times assumed storey height; NOT measured |
 
 ## Sources
 
@@ -93,3 +92,5 @@ Buildings: 70; photo-referenced: 13; floor-based: 70; non-typology floor evidenc
 - Official 2023 new-building counts are not assigned to unidentified footprints on the older planning map.
 - Known floor counts / minimum counts / photographic interpretations have distinct provenance.
 - Facade textures are authored approximations; source photographs are not applied to the mesh.
+- Exhibition taper stays inside the original XY envelope; the source polygon remains a conservative navigation obstacle.
+- Curved facades use continuous perimeter UVs. Metal roof seams are image details, not added mesh strips.

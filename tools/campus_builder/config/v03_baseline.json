@@ -1,0 +1,2583 @@
+{
+  "model_version": "0.3",
+  "stages": {
+    "GEOMETRY": true,
+    "SCALE": false,
+    "ROADS": false,
+    "NAVIGATION": false,
+    "FBX": true,
+    "RENDER": true,
+    "BUILDINGS": true,
+    "ROBOT": true,
+    "IDEMPOTENCY": true
+  },
+  "scene": {
+    "object_count": 165,
+    "total_vertices": 12577,
+    "total_faces": 17729,
+    "category_counts": {
+      "BLDG": 70,
+      "BRIDGE": 3,
+      "GRASS": 24,
+      "Ground": 1,
+      "LANDMARK": 4,
+      "PLAZA": 5,
+      "ROAD": 16,
+      "ROBOT": 34,
+      "WATER": 8
+    }
+  },
+  "road_validation": {
+    "pass_": false,
+    "max_automatic_adjustment_px": 2.1213203435596424,
+    "flagged_route_ids": [
+      "ROUTE_021",
+      "ROUTE_022",
+      "ROUTE_023",
+      "ROUTE_024",
+      "ROUTE_025",
+      "ROUTE_026",
+      "ROUTE_027",
+      "ROUTE_028",
+      "ROUTE_032",
+      "ROUTE_033",
+      "ROUTE_035",
+      "ROUTE_036",
+      "ROUTE_037",
+      "ROUTE_038",
+      "ROUTE_039"
+    ],
+    "routes": [
+      {
+        "route_id": "ROUTE_001",
+        "name": "North approach",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            154,
+            153
+          ],
+          [
+            244,
+            153
+          ],
+          [
+            262,
+            164
+          ],
+          [
+            278,
+            185
+          ],
+          [
+            278,
+            246
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            154.0,
+            153.0
+          ],
+          [
+            244.0,
+            153.0
+          ],
+          [
+            262.0,
+            164.0
+          ],
+          [
+            278.0,
+            185.0
+          ],
+          [
+            278.0,
+            246.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_002",
+        "name": "West campus spine",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            154,
+            153
+          ],
+          [
+            151,
+            158
+          ],
+          [
+            151,
+            185
+          ],
+          [
+            156,
+            200
+          ],
+          [
+            156,
+            264
+          ],
+          [
+            156,
+            396
+          ],
+          [
+            156,
+            489
+          ],
+          [
+            156,
+            540
+          ],
+          [
+            156,
+            701
+          ],
+          [
+            156,
+            734
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            154.0,
+            153.0
+          ],
+          [
+            151.0,
+            158.0
+          ],
+          [
+            151.0,
+            185.0
+          ],
+          [
+            156.0,
+            200.0
+          ],
+          [
+            156.0,
+            264.0
+          ],
+          [
+            156.0,
+            396.0
+          ],
+          [
+            156.0,
+            489.0
+          ],
+          [
+            156.0,
+            540.0
+          ],
+          [
+            156.0,
+            701.0
+          ],
+          [
+            156.0,
+            734.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_003",
+        "name": "East campus spine",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            350,
+            142
+          ],
+          [
+            382,
+            225
+          ],
+          [
+            420,
+            310
+          ],
+          [
+            454,
+            400
+          ],
+          [
+            481,
+            466
+          ],
+          [
+            490,
+            513
+          ],
+          [
+            514,
+            507
+          ],
+          [
+            526,
+            498
+          ],
+          [
+            537,
+            502
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            350.0,
+            142.0
+          ],
+          [
+            382.0,
+            225.0
+          ],
+          [
+            420.0,
+            310.0
+          ],
+          [
+            454.0,
+            400.0
+          ],
+          [
+            481.0,
+            466.0
+          ],
+          [
+            490.0,
+            513.0
+          ],
+          [
+            514.0,
+            507.0
+          ],
+          [
+            526.0,
+            498.0
+          ],
+          [
+            537.0,
+            502.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_004",
+        "name": "North link",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            151,
+            185
+          ],
+          [
+            244,
+            181
+          ],
+          [
+            278,
+            185
+          ],
+          [
+            347,
+            179
+          ],
+          [
+            363,
+            188
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            151.0,
+            185.0
+          ],
+          [
+            244.0,
+            181.0
+          ],
+          [
+            278.0,
+            185.0
+          ],
+          [
+            347.0,
+            179.0
+          ],
+          [
+            363.0,
+            188.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_005",
+        "name": "West teaching access",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            156,
+            264
+          ],
+          [
+            213,
+            264
+          ],
+          [
+            248,
+            252
+          ],
+          [
+            278,
+            246
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            156.0,
+            264.0
+          ],
+          [
+            213.0,
+            264.0
+          ],
+          [
+            248.0,
+            252.0
+          ],
+          [
+            278.0,
+            246.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_006",
+        "name": "Central west loop",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            278,
+            246
+          ],
+          [
+            264,
+            258
+          ],
+          [
+            267,
+            277
+          ],
+          [
+            264,
+            307
+          ],
+          [
+            241,
+            329
+          ],
+          [
+            225,
+            355
+          ],
+          [
+            222,
+            380
+          ],
+          [
+            225,
+            400
+          ],
+          [
+            246,
+            422
+          ],
+          [
+            279,
+            439
+          ],
+          [
+            279,
+            446
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            278.0,
+            246.0
+          ],
+          [
+            264.0,
+            258.0
+          ],
+          [
+            267.0,
+            277.0
+          ],
+          [
+            264.0,
+            307.0
+          ],
+          [
+            241.0,
+            329.0
+          ],
+          [
+            225.0,
+            355.0
+          ],
+          [
+            222.0,
+            380.0
+          ],
+          [
+            225.0,
+            400.0
+          ],
+          [
+            246.0,
+            422.0
+          ],
+          [
+            279.0,
+            439.0
+          ],
+          [
+            279.0,
+            446.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_007",
+        "name": "Central east loop",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            278,
+            246
+          ],
+          [
+            307,
+            252
+          ],
+          [
+            329,
+            278
+          ],
+          [
+            344,
+            322
+          ],
+          [
+            341,
+            354
+          ],
+          [
+            326,
+            385
+          ],
+          [
+            337,
+            421
+          ],
+          [
+            365,
+            454
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            278.0,
+            246.0
+          ],
+          [
+            307.0,
+            252.0
+          ],
+          [
+            329.0,
+            278.0
+          ],
+          [
+            344.0,
+            322.0
+          ],
+          [
+            341.0,
+            354.0
+          ],
+          [
+            326.0,
+            385.0
+          ],
+          [
+            337.0,
+            421.0
+          ],
+          [
+            365.0,
+            454.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_008",
+        "name": "East teaching lane",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            344,
+            322
+          ],
+          [
+            346,
+            352
+          ],
+          [
+            351,
+            389
+          ],
+          [
+            365,
+            425
+          ],
+          [
+            405,
+            421
+          ],
+          [
+            447,
+            411
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            344.0,
+            322.0
+          ],
+          [
+            346.0,
+            352.0
+          ],
+          [
+            351.0,
+            389.0
+          ],
+          [
+            365.0,
+            425.0
+          ],
+          [
+            405.0,
+            421.0
+          ],
+          [
+            447.0,
+            411.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_009",
+        "name": "Teaching loop south",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 1.4142135623730951,
+        "translation_px": [
+          1.0,
+          1.0
+        ],
+        "status": "BOUNDED_FIX",
+        "original_collision_length_px": 5.8283184262322765,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            337,
+            421
+          ],
+          [
+            367,
+            435
+          ],
+          [
+            405,
+            421
+          ],
+          [
+            434,
+            412
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            337.0,
+            421.0
+          ],
+          [
+            368.0,
+            436.0
+          ],
+          [
+            405.0,
+            421.0
+          ],
+          [
+            435.0,
+            413.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_010",
+        "name": "South library link",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 2.1213203435596424,
+        "translation_px": [
+          1.5,
+          -1.5
+        ],
+        "status": "BOUNDED_FIX",
+        "original_collision_length_px": 8.366571523571995,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            156,
+            396
+          ],
+          [
+            194,
+            392
+          ],
+          [
+            225,
+            410
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            156.0,
+            396.0
+          ],
+          [
+            195.5,
+            390.5
+          ],
+          [
+            226.5,
+            408.5
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_011",
+        "name": "West cross link",
+        "pass_": true,
+        "allowed_adjustment_px": 2.5,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            156,
+            451
+          ],
+          [
+            185,
+            451
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            156.0,
+            451.0
+          ],
+          [
+            185.0,
+            451.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_012",
+        "name": "Central cross link",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            156,
+            489
+          ],
+          [
+            229,
+            489
+          ],
+          [
+            314,
+            490
+          ],
+          [
+            375,
+            489
+          ],
+          [
+            389,
+            468
+          ],
+          [
+            403,
+            456
+          ],
+          [
+            432,
+            445
+          ],
+          [
+            459,
+            450
+          ],
+          [
+            481,
+            466
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            156.0,
+            489.0
+          ],
+          [
+            229.0,
+            489.0
+          ],
+          [
+            314.0,
+            490.0
+          ],
+          [
+            375.0,
+            489.0
+          ],
+          [
+            389.0,
+            468.0
+          ],
+          [
+            403.0,
+            456.0
+          ],
+          [
+            432.0,
+            445.0
+          ],
+          [
+            459.0,
+            450.0
+          ],
+          [
+            481.0,
+            466.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_013",
+        "name": "Sports north access",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            156,
+            540
+          ],
+          [
+            220,
+            540
+          ],
+          [
+            320,
+            540
+          ],
+          [
+            335,
+            555
+          ],
+          [
+            342,
+            575
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            156.0,
+            540.0
+          ],
+          [
+            220.0,
+            540.0
+          ],
+          [
+            320.0,
+            540.0
+          ],
+          [
+            335.0,
+            555.0
+          ],
+          [
+            342.0,
+            575.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_014",
+        "name": "Gym perimeter",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            375,
+            489
+          ],
+          [
+            388,
+            537
+          ],
+          [
+            430,
+            551
+          ],
+          [
+            450,
+            584
+          ],
+          [
+            454,
+            611
+          ],
+          [
+            393,
+            633
+          ],
+          [
+            335,
+            650
+          ],
+          [
+            305,
+            665
+          ],
+          [
+            271,
+            678
+          ],
+          [
+            236,
+            690
+          ],
+          [
+            156,
+            710
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            375.0,
+            489.0
+          ],
+          [
+            388.0,
+            537.0
+          ],
+          [
+            430.0,
+            551.0
+          ],
+          [
+            450.0,
+            584.0
+          ],
+          [
+            454.0,
+            611.0
+          ],
+          [
+            393.0,
+            633.0
+          ],
+          [
+            335.0,
+            650.0
+          ],
+          [
+            305.0,
+            665.0
+          ],
+          [
+            271.0,
+            678.0
+          ],
+          [
+            236.0,
+            690.0
+          ],
+          [
+            156.0,
+            710.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_015",
+        "name": "Sports east access",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            328,
+            541
+          ],
+          [
+            331,
+            577
+          ],
+          [
+            331,
+            625
+          ],
+          [
+            335,
+            663
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            328.0,
+            541.0
+          ],
+          [
+            331.0,
+            577.0
+          ],
+          [
+            331.0,
+            625.0
+          ],
+          [
+            335.0,
+            663.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_016",
+        "name": "Gym north entrance",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            388,
+            537
+          ],
+          [
+            350,
+            559
+          ],
+          [
+            342,
+            575
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            388.0,
+            537.0
+          ],
+          [
+            350.0,
+            559.0
+          ],
+          [
+            342.0,
+            575.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_017",
+        "name": "West clinic access",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            156,
+            489
+          ],
+          [
+            156,
+            540
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            156.0,
+            489.0
+          ],
+          [
+            156.0,
+            540.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_018",
+        "name": "Canteen access",
+        "pass_": true,
+        "allowed_adjustment_px": 2.5,
+        "automatic_adjustment_px": 1.0,
+        "translation_px": [
+          -1.0,
+          0.0
+        ],
+        "status": "BOUNDED_FIX",
+        "original_collision_length_px": 7.370982848749655,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            490,
+            513
+          ],
+          [
+            499,
+            523
+          ],
+          [
+            507,
+            550
+          ],
+          [
+            509,
+            564
+          ],
+          [
+            520,
+            600
+          ],
+          [
+            533,
+            611
+          ],
+          [
+            454,
+            611
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            490.0,
+            513.0
+          ],
+          [
+            498.0,
+            523.0
+          ],
+          [
+            506.0,
+            550.0
+          ],
+          [
+            508.0,
+            564.0
+          ],
+          [
+            519.0,
+            600.0
+          ],
+          [
+            532.0,
+            611.0
+          ],
+          [
+            454.0,
+            611.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_019",
+        "name": "Main canal bridge",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            335,
+            650
+          ],
+          [
+            340,
+            695
+          ],
+          [
+            341,
+            725
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            335.0,
+            650.0
+          ],
+          [
+            340.0,
+            695.0
+          ],
+          [
+            341.0,
+            725.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_020",
+        "name": "South west spine",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            156,
+            793
+          ],
+          [
+            151,
+            820
+          ],
+          [
+            151,
+            850
+          ],
+          [
+            159,
+            883
+          ],
+          [
+            173,
+            916
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            156.0,
+            793.0
+          ],
+          [
+            151.0,
+            820.0
+          ],
+          [
+            151.0,
+            850.0
+          ],
+          [
+            159.0,
+            883.0
+          ],
+          [
+            173.0,
+            916.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_021",
+        "name": "South canal-side road",
+        "pass_": false,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 131.18572329769813,
+        "remaining_collision_length_px": 131.18572329769813,
+        "original_centerline_px": [
+          [
+            156,
+            793
+          ],
+          [
+            238,
+            764
+          ],
+          [
+            312,
+            741
+          ],
+          [
+            341,
+            725
+          ],
+          [
+            413,
+            701
+          ],
+          [
+            487,
+            675
+          ],
+          [
+            541,
+            660
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            156.0,
+            793.0
+          ],
+          [
+            238.0,
+            764.0
+          ],
+          [
+            312.0,
+            741.0
+          ],
+          [
+            341.0,
+            725.0
+          ],
+          [
+            413.0,
+            701.0
+          ],
+          [
+            487.0,
+            675.0
+          ],
+          [
+            541.0,
+            660.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      },
+      {
+        "route_id": "ROUTE_022",
+        "name": "South central spine",
+        "pass_": false,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 55.11833674674297,
+        "remaining_collision_length_px": 55.11833674674297,
+        "original_centerline_px": [
+          [
+            312,
+            741
+          ],
+          [
+            324,
+            770
+          ],
+          [
+            335,
+            806
+          ],
+          [
+            349,
+            846
+          ],
+          [
+            375,
+            858
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            312.0,
+            741.0
+          ],
+          [
+            324.0,
+            770.0
+          ],
+          [
+            335.0,
+            806.0
+          ],
+          [
+            349.0,
+            846.0
+          ],
+          [
+            375.0,
+            858.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      },
+      {
+        "route_id": "ROUTE_023",
+        "name": "South east spine",
+        "pass_": false,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 100.2819154126108,
+        "remaining_collision_length_px": 100.2819154126108,
+        "original_centerline_px": [
+          [
+            541,
+            660
+          ],
+          [
+            556,
+            706
+          ],
+          [
+            571,
+            752
+          ],
+          [
+            580,
+            783
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            541.0,
+            660.0
+          ],
+          [
+            556.0,
+            706.0
+          ],
+          [
+            571.0,
+            752.0
+          ],
+          [
+            580.0,
+            783.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      },
+      {
+        "route_id": "ROUTE_024",
+        "name": "South perimeter",
+        "pass_": false,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 11.01211228999464,
+        "remaining_collision_length_px": 11.01211228999464,
+        "original_centerline_px": [
+          [
+            173,
+            916
+          ],
+          [
+            246,
+            900
+          ],
+          [
+            311,
+            878
+          ],
+          [
+            375,
+            858
+          ],
+          [
+            438,
+            836
+          ],
+          [
+            490,
+            819
+          ],
+          [
+            566,
+            795
+          ],
+          [
+            580,
+            783
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            173.0,
+            916.0
+          ],
+          [
+            246.0,
+            900.0
+          ],
+          [
+            311.0,
+            878.0
+          ],
+          [
+            375.0,
+            858.0
+          ],
+          [
+            438.0,
+            836.0
+          ],
+          [
+            490.0,
+            819.0
+          ],
+          [
+            566.0,
+            795.0
+          ],
+          [
+            580.0,
+            783.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      },
+      {
+        "route_id": "ROUTE_025",
+        "name": "South cross lane",
+        "pass_": false,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 50.58301059731817,
+        "remaining_collision_length_px": 50.58301059731817,
+        "original_centerline_px": [
+          [
+            238,
+            764
+          ],
+          [
+            231,
+            785
+          ],
+          [
+            242,
+            825
+          ],
+          [
+            270,
+            870
+          ],
+          [
+            311,
+            878
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            238.0,
+            764.0
+          ],
+          [
+            231.0,
+            785.0
+          ],
+          [
+            242.0,
+            825.0
+          ],
+          [
+            270.0,
+            870.0
+          ],
+          [
+            311.0,
+            878.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      },
+      {
+        "route_id": "ROUTE_026",
+        "name": "South academic link",
+        "pass_": false,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 233.49968656029884,
+        "remaining_collision_length_px": 233.49968656029884,
+        "original_centerline_px": [
+          [
+            231,
+            785
+          ],
+          [
+            300,
+            764
+          ],
+          [
+            324,
+            770
+          ],
+          [
+            371,
+            752
+          ],
+          [
+            427,
+            733
+          ],
+          [
+            481,
+            716
+          ],
+          [
+            556,
+            706
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            231.0,
+            785.0
+          ],
+          [
+            300.0,
+            764.0
+          ],
+          [
+            324.0,
+            770.0
+          ],
+          [
+            371.0,
+            752.0
+          ],
+          [
+            427.0,
+            733.0
+          ],
+          [
+            481.0,
+            716.0
+          ],
+          [
+            556.0,
+            706.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      },
+      {
+        "route_id": "ROUTE_027",
+        "name": "South residential lane",
+        "pass_": false,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 62.82526570841762,
+        "remaining_collision_length_px": 62.82526570841762,
+        "original_centerline_px": [
+          [
+            363,
+            733
+          ],
+          [
+            371,
+            752
+          ],
+          [
+            391,
+            783
+          ],
+          [
+            412,
+            819
+          ],
+          [
+            438,
+            836
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            363.0,
+            733.0
+          ],
+          [
+            371.0,
+            752.0
+          ],
+          [
+            391.0,
+            783.0
+          ],
+          [
+            412.0,
+            819.0
+          ],
+          [
+            438.0,
+            836.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      },
+      {
+        "route_id": "ROUTE_028",
+        "name": "South residential east link",
+        "pass_": false,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 75.23932002626012,
+        "remaining_collision_length_px": 75.23932002626012,
+        "original_centerline_px": [
+          [
+            413,
+            701
+          ],
+          [
+            427,
+            733
+          ],
+          [
+            447,
+            777
+          ],
+          [
+            470,
+            814
+          ],
+          [
+            490,
+            819
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            413.0,
+            701.0
+          ],
+          [
+            427.0,
+            733.0
+          ],
+          [
+            447.0,
+            777.0
+          ],
+          [
+            470.0,
+            814.0
+          ],
+          [
+            490.0,
+            819.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      },
+      {
+        "route_id": "ROUTE_029",
+        "name": "Northeast gate",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            514,
+            507
+          ],
+          [
+            537,
+            500
+          ],
+          [
+            555,
+            498
+          ],
+          [
+            615,
+            479
+          ],
+          [
+            676,
+            458
+          ],
+          [
+            740,
+            438
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            514.0,
+            507.0
+          ],
+          [
+            537.0,
+            500.0
+          ],
+          [
+            555.0,
+            498.0
+          ],
+          [
+            615.0,
+            479.0
+          ],
+          [
+            676.0,
+            458.0
+          ],
+          [
+            740.0,
+            438.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_030",
+        "name": "Northeast west perimeter",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            537,
+            502
+          ],
+          [
+            527,
+            462
+          ],
+          [
+            528,
+            451
+          ],
+          [
+            585,
+            431
+          ],
+          [
+            656,
+            405
+          ],
+          [
+            710,
+            387
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            537.0,
+            502.0
+          ],
+          [
+            527.0,
+            462.0
+          ],
+          [
+            528.0,
+            451.0
+          ],
+          [
+            585.0,
+            431.0
+          ],
+          [
+            656.0,
+            405.0
+          ],
+          [
+            710.0,
+            387.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_031",
+        "name": "Northeast east perimeter",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            710,
+            387
+          ],
+          [
+            739,
+            398
+          ],
+          [
+            751,
+            438
+          ],
+          [
+            764,
+            480
+          ],
+          [
+            776,
+            518
+          ],
+          [
+            751,
+            524
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            710.0,
+            387.0
+          ],
+          [
+            739.0,
+            398.0
+          ],
+          [
+            751.0,
+            438.0
+          ],
+          [
+            764.0,
+            480.0
+          ],
+          [
+            776.0,
+            518.0
+          ],
+          [
+            751.0,
+            524.0
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_032",
+        "name": "Northeast cross street",
+        "pass_": false,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 24.356581022995726,
+        "remaining_collision_length_px": 24.356581022995726,
+        "original_centerline_px": [
+          [
+            552,
+            565
+          ],
+          [
+            605,
+            556
+          ],
+          [
+            643,
+            539
+          ],
+          [
+            704,
+            519
+          ],
+          [
+            766,
+            498
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            552.0,
+            565.0
+          ],
+          [
+            605.0,
+            556.0
+          ],
+          [
+            643.0,
+            539.0
+          ],
+          [
+            704.0,
+            519.0
+          ],
+          [
+            766.0,
+            498.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      },
+      {
+        "route_id": "ROUTE_033",
+        "name": "Northeast longitudinal street",
+        "pass_": false,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 87.8979449181322,
+        "remaining_collision_length_px": 87.8979449181322,
+        "original_centerline_px": [
+          [
+            650,
+            415
+          ],
+          [
+            670,
+            464
+          ],
+          [
+            688,
+            513
+          ],
+          [
+            704,
+            551
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            650.0,
+            415.0
+          ],
+          [
+            670.0,
+            464.0
+          ],
+          [
+            688.0,
+            513.0
+          ],
+          [
+            704.0,
+            551.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      },
+      {
+        "route_id": "ROUTE_035",
+        "name": "Northeast south lane",
+        "pass_": false,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 61.939473392310596,
+        "remaining_collision_length_px": 61.939473392310596,
+        "original_centerline_px": [
+          [
+            567,
+            595
+          ],
+          [
+            625,
+            577
+          ],
+          [
+            683,
+            559
+          ],
+          [
+            748,
+            538
+          ],
+          [
+            778,
+            526
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            567.0,
+            595.0
+          ],
+          [
+            625.0,
+            577.0
+          ],
+          [
+            683.0,
+            559.0
+          ],
+          [
+            748.0,
+            538.0
+          ],
+          [
+            778.0,
+            526.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      },
+      {
+        "route_id": "ROUTE_036",
+        "name": "Branch canal bridge",
+        "pass_": false,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 11.731594257138239,
+        "remaining_collision_length_px": 11.731594257138239,
+        "original_centerline_px": [
+          [
+            580,
+            783
+          ],
+          [
+            597,
+            780
+          ],
+          [
+            638,
+            767
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            580.0,
+            783.0
+          ],
+          [
+            597.0,
+            780.0
+          ],
+          [
+            638.0,
+            767.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      },
+      {
+        "route_id": "ROUTE_037",
+        "name": "Southeast dormitory access",
+        "pass_": false,
+        "allowed_adjustment_px": 2.5,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 30.850024795379156,
+        "remaining_collision_length_px": 30.850024795379156,
+        "original_centerline_px": [
+          [
+            638,
+            767
+          ],
+          [
+            650,
+            778
+          ],
+          [
+            653,
+            797
+          ],
+          [
+            684,
+            816
+          ],
+          [
+            716,
+            806
+          ],
+          [
+            747,
+            808
+          ],
+          [
+            779,
+            797
+          ],
+          [
+            822,
+            794
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            638.0,
+            767.0
+          ],
+          [
+            650.0,
+            778.0
+          ],
+          [
+            653.0,
+            797.0
+          ],
+          [
+            684.0,
+            816.0
+          ],
+          [
+            716.0,
+            806.0
+          ],
+          [
+            747.0,
+            808.0
+          ],
+          [
+            779.0,
+            797.0
+          ],
+          [
+            822.0,
+            794.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      },
+      {
+        "route_id": "ROUTE_038",
+        "name": "South garden access",
+        "pass_": false,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 76.91146618348223,
+        "remaining_collision_length_px": 76.91146618348223,
+        "original_centerline_px": [
+          [
+            597,
+            780
+          ],
+          [
+            580,
+            813
+          ],
+          [
+            552,
+            827
+          ],
+          [
+            508,
+            842
+          ],
+          [
+            517,
+            879
+          ],
+          [
+            548,
+            922
+          ],
+          [
+            604,
+            907
+          ],
+          [
+            634,
+            887
+          ],
+          [
+            625,
+            860
+          ],
+          [
+            601,
+            812
+          ],
+          [
+            580,
+            813
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            597.0,
+            780.0
+          ],
+          [
+            580.0,
+            813.0
+          ],
+          [
+            552.0,
+            827.0
+          ],
+          [
+            508.0,
+            842.0
+          ],
+          [
+            517.0,
+            879.0
+          ],
+          [
+            548.0,
+            922.0
+          ],
+          [
+            604.0,
+            907.0
+          ],
+          [
+            634.0,
+            887.0
+          ],
+          [
+            625.0,
+            860.0
+          ],
+          [
+            601.0,
+            812.0
+          ],
+          [
+            580.0,
+            813.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      },
+      {
+        "route_id": "ROUTE_039",
+        "name": "South garden entry",
+        "pass_": false,
+        "allowed_adjustment_px": 2.5,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "FLAG_RETRACE_REQUIRED",
+        "original_collision_length_px": 21.205033370943582,
+        "remaining_collision_length_px": 21.205033370943582,
+        "original_centerline_px": [
+          [
+            552,
+            827
+          ],
+          [
+            562,
+            844
+          ],
+          [
+            567,
+            862
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            552.0,
+            827.0
+          ],
+          [
+            562.0,
+            844.0
+          ],
+          [
+            567.0,
+            862.0
+          ]
+        ],
+        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+      }
+    ]
+  },
+  "navigation_validation": {
+    "pass_": false,
+    "errors": [
+      {
+        "node_id": "NODE_0046",
+        "reason": "Source trace node outside the corresponding rendered road/bridge surface"
+      },
+      {
+        "node_id": "NODE_0054",
+        "reason": "Source trace node outside the corresponding rendered road/bridge surface"
+      }
+    ],
+    "missing_junctions": [],
+    "node_count": 85,
+    "edge_count": 101,
+    "connected_component_count": 2,
+    "component_sizes": [
+      83,
+      2
+    ],
+    "driveable_node_count": 14,
+    "driveable_edge_count": 13,
+    "driveable_component_count": 2,
+    "dijkstra_tests": [
+      {
+        "start": "NODE_0031",
+        "end": "NODE_0029",
+        "path_length_m": 20.987341169433627,
+        "pass_": true
+      },
+      {
+        "start": "NODE_0062",
+        "end": "NODE_0058",
+        "path_length_m": 101.52243583079058,
+        "pass_": true
+      }
+    ],
+    "connectivity_scope": "Undirected structural checks only. Unknown road access/direction is not promoted to a legal driving route.",
+    "flagged_source_routes": [
+      "ROUTE_021",
+      "ROUTE_022",
+      "ROUTE_023",
+      "ROUTE_024",
+      "ROUTE_025",
+      "ROUTE_026",
+      "ROUTE_027",
+      "ROUTE_028",
+      "ROUTE_032",
+      "ROUTE_033",
+      "ROUTE_035",
+      "ROUTE_036",
+      "ROUTE_037",
+      "ROUTE_038",
+      "ROUTE_039"
+    ]
+  }
+}

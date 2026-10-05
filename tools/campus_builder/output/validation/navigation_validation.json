@@ -1,56 +1,21 @@
 {
-  "pass_": false,
-  "errors": [
-    {
-      "node_id": "NODE_0046",
-      "reason": "Source trace node outside the corresponding rendered road/bridge surface"
-    },
-    {
-      "node_id": "NODE_0054",
-      "reason": "Source trace node outside the corresponding rendered road/bridge surface"
-    }
-  ],
+  "pass_": true,
+  "errors": [],
   "missing_junctions": [],
-  "node_count": 85,
-  "edge_count": 101,
-  "connected_component_count": 2,
+  "node_count": 88,
+  "edge_count": 109,
+  "connected_component_count": 1,
   "component_sizes": [
-    83,
-    2
+    88
   ],
-  "driveable_node_count": 14,
-  "driveable_edge_count": 13,
+  "driveable_node_count": 4,
+  "driveable_edge_count": 2,
   "driveable_component_count": 2,
-  "dijkstra_tests": [
-    {
-      "start": "NODE_0031",
-      "end": "NODE_0029",
-      "path_length_m": 20.987341169433627,
-      "pass_": true
-    },
-    {
-      "start": "NODE_0062",
-      "end": "NODE_0058",
-      "path_length_m": 101.52243583079058,
-      "pass_": true
-    }
-  ],
-  "connectivity_scope": "Undirected structural checks only. Unknown road access/direction is not promoted to a legal driving route.",
-  "flagged_source_routes": [
-    "ROUTE_021",
-    "ROUTE_022",
-    "ROUTE_023",
-    "ROUTE_024",
-    "ROUTE_025",
-    "ROUTE_026",
-    "ROUTE_027",
-    "ROUTE_028",
-    "ROUTE_032",
-    "ROUTE_033",
-    "ROUTE_035",
-    "ROUTE_036",
-    "ROUTE_037",
-    "ROUTE_038",
-    "ROUTE_039"
-  ]
+  "dijkstra_tests": [],
+  "directed_routable_edge_count": 0,
+  "unresolved_direction_edge_count": 2,
+  "nearby_node_pairs": [],
+  "short_edges": [],
+  "connectivity_scope": "Component counts are undirected structural connectivity. Dijkstra uses only explicit access and permitted directions; unknown direction is excluded. Nearby nodes and short edges are diagnostics, not automatically merged across semantic boundaries.",
+  "flagged_source_routes": []
 }

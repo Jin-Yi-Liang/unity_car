@@ -18,6 +18,7 @@ sys.path.insert(0,str(ROOT/'scripts'))
 from analyze_map import analyze, write_json
 from calibrate_scale import calibrate
 from navigation_graph import generate as generate_navigation
+from delivery_robot import generate as generate_robot
 import PIL
 import shapely
 
@@ -55,6 +56,7 @@ def build_once(blender,index):
     calibration=calibrate()
     metadata=analyze()
     navigation=generate_navigation()
+    robot=generate_robot()
     log=ROOT/f'output/logs/run_{index:02}.log'
     with log.open('w') as stream:
         process=subprocess.run([blender,'--background','--factory-startup','--python-exit-code','1',
@@ -65,28 +67,33 @@ def build_once(blender,index):
     validation=json.loads((ROOT/'output/validation/blender_validation.json').read_text())
     cfg=json.loads((ROOT/'config/campus_config.json').read_text())
     renders=[image_check(ROOT/f'output/previews/{name}.png',cfg['render_resolution'])
-             for name in ['top','perspective_01','perspective_02','reimported_fbx','building_administration','building_teaching','building_gym','building_library']]
+             for name in ['top','perspective_01','perspective_02','reimported_fbx','building_administration','building_teaching','building_gym','building_library','building_exhibition','roads_south','roads_northeast','delivery_robot_closeup','delivery_robot_on_campus','delivery_robot_reimported','delivery_robot_asset']]
     # Independent FBX render should also retain material/layout appearance.
     a=Image.open(ROOT/'output/previews/perspective_01.png').convert('RGB')
     b=Image.open(ROOT/'output/previews/reimported_fbx.png').convert('RGB')
     diff=ImageStat.Stat(ImageChops.difference(a,b))
     appearance=dict(mean_absolute_rgb_error=diff.mean,pass_=max(diff.mean)<12)
+    robot_diff=ImageStat.Stat(ImageChops.difference(Image.open(ROOT/'output/previews/delivery_robot_closeup.png').convert('RGB'),Image.open(ROOT/'output/previews/delivery_robot_reimported.png').convert('RGB')))
+    robot_appearance=dict(mean_absolute_rgb_error=robot_diff.mean,pass_=max(robot_diff.mean)<12)
     files={name:dict(bytes=(ROOT/f'output/{name}').stat().st_size,
                      sha256=hashlib.sha256((ROOT/f'output/{name}').read_bytes()).hexdigest())
-           for name in ['campus.blend','campus.fbx','campus.glb']}
+           for name in ['campus.blend','campus.fbx','campus.glb','delivery_robot.blend','delivery_robot.fbx','delivery_robot.glb']}
     inputs_unchanged=hashlib.sha256(Path(metadata['input_path']).read_bytes()).hexdigest()==metadata['input_sha256'] and hashlib.sha256(Path(metadata['reference_path']).read_bytes()).hexdigest()==metadata['reference_sha256']
-    passed=validation['pass_'] and all(r['pass'] for r in renders) and appearance['pass_'] and all(f['bytes']>1000 for f in files.values()) and inputs_unchanged
+    passed=validation['pass_'] and validation['delivery_robot']['pass_'] and robot_appearance['pass_'] and all(r['pass'] for r in renders) and appearance['pass_'] and all(f['bytes']>1000 for f in files.values()) and inputs_unchanged
     run=dict(index=index,pass_=passed,map_sha256=hashlib.sha256((ROOT/'data/campus_map.json').read_bytes()).hexdigest(),
              source_scene=validation['original_scene'], comparison=validation['comparison'],
-             render_validation=renders,fbx_render_appearance=appearance,artifacts=files,
+             render_validation=renders,fbx_render_appearance=appearance,robot_render_appearance=robot_appearance,artifacts=files,
              inputs_unchanged=inputs_unchanged,log=str(log))
-    run['data_hashes']={name:hashlib.sha256((ROOT/'data'/name).read_bytes()).hexdigest() for name in ['campus_map.json','scale_calibration.json','navigation_graph.json','road_validation.json','building_reconstruction.json']}
+    run['data_hashes']={name:hashlib.sha256((ROOT/'data'/name).read_bytes()).hexdigest() for name in ['campus_map.json','scale_calibration.json','navigation_graph.json','road_validation.json','building_reconstruction.json','delivery_robot.json']}
+    run['data_hashes']['delivery_robot_validation.json']=hashlib.sha256((ROOT/'output/validation/delivery_robot_validation.json').read_bytes()).hexdigest()
     run['stages']=dict(GEOMETRY=validation['original_scene']['pass'] and metadata['planar_validation']['pass'],
                        SCALE=calibration['pass_'],ROADS=metadata['road_validation']['pass_'],
                        NAVIGATION=navigation['pass_'],FBX=validation['comparison']['pass_'] and validation['absolute_metric_validation']['reimport']['pass_'],
                        RENDER=all(v['pass'] for v in renders) and appearance['pass_'],
-                       BUILDINGS=all(v['pass_'] for side in ['source','reimport'] for v in validation['absolute_metric_validation'][side]['building_architecture_validation']))
+                       BUILDINGS=all(v['pass_'] for side in ['source','reimport'] for v in validation['absolute_metric_validation'][side]['building_architecture_validation']),
+                       ROBOT=robot['placement_pass'] and validation['delivery_robot']['pass_'] and robot_appearance['pass_'])
     metadata['navigation_validation']=navigation
+    metadata['delivery_robot']=robot
     if not passed:raise ValueError(f'Artifact/render validation failed: {run}')
     return run,metadata,validation
 
@@ -114,7 +121,13 @@ def report(runs,metadata,validation,idem,regression=None):
     report['versions']=dict(git_commit=commit,python=platform.python_version(),shapely=shapely.__version__,pillow=PIL.__version__,blender=validation['blender_version'])
     report['regression_tests']=regression
     report['building_reconstruction']=metadata['building_reconstruction']
+    report['delivery_robot']=validation['delivery_robot']
+    report['robot_render_appearance']=final['robot_render_appearance']
     report['manual_trace_changes']=json.loads((ROOT/'config/source_geometry_changes.json').read_text())
+    previous=json.loads((ROOT/'config/v03_baseline.json').read_text())
+    report['v03_comparison']=dict(before=previous,after_scene={k:validation['original_scene'][k] for k in ['object_count','total_vertices','total_faces','category_counts']},
+        flagged_roads_before=len(previous['road_validation']['flagged_route_ids']),flagged_roads_after=len(metadata['road_validation']['flagged_route_ids']),
+        components_before=previous['navigation_validation']['connected_component_count'],components_after=metadata['navigation_validation']['connected_component_count'])
     before=json.loads((ROOT/'input/evidence/buildings/v02_source_scene.json').read_text())
     report['v02_mesh_comparison']=dict(before_vertices=before['total_vertices'],after_vertices=validation['original_scene']['total_vertices'],before_faces=before['total_faces'],after_faces=validation['original_scene']['total_faces'])
     report['source_manifest']=json.loads((ROOT/'input/evidence/source_manifest.json').read_text())
@@ -143,7 +156,7 @@ def report(runs,metadata,validation,idem,regression=None):
         '| Original scene | PASS: required categories; finite coordinates; applied transforms; manifold solids; positive heights; normals and face areas |',
         '| Planar road/building overlap | '+str(metadata['planar_validation']['building_road_overlap_m2'])+' m² |',
         '| Unbridged road/water overlap | '+str(metadata['planar_validation']['unbridged_road_water_overlap_m2'])+' m² |',
-        '| FBX export | PASS: -Z forward / Y up; meshes only; unit handling recorded in JSON |',
+        '| FBX export | PASS: -Z forward / Y up; formal meshes and robot root/joint/reference empties; unit handling recorded in JSON |',
         f"| Fresh FBX import | PASS: {validation['fbx_reimport']['object_count']} Mesh objects; same object names/material slots |",
         f"| Bbox deviation | {validation['comparison']['max_bbox_delta_m']} m |",
         f"| Bidirectional vertex deviation | {validation['comparison']['max_vertex_delta_m']} m |",
@@ -216,6 +229,40 @@ def report(runs,metadata,validation,idem,regression=None):
         'Bridge decks use the explicit bridge masks, including the water gap drawn beneath a bridge symbol.',
         'Zero-area polygon self-touches after bridge cuts are repaired only when area stays within a strict tolerance.',
         'V0.2 to current mesh counts: '+json.dumps(report['v02_mesh_comparison']),'']
+    robot=metadata['delivery_robot'];vehicle=validation['delivery_robot']
+    robot_lines=['# Delivery robot validation','',f"ROBOT RESULT: {'PASS' if final['stages']['ROBOT'] else 'FAIL'}",'',
+        f"Design dimensions L/W/H: {robot['dimensions_m']} m. {robot['config']['dimension_provenance']}",
+        f"Placed root XYZ: {robot['pose']['position_m']} m; yaw: {robot['pose']['yaw_rad']} rad; forward world: {robot['pose']['forward_world']}.",
+        f"Road/graph placement: {json.dumps(robot['navigation'])}",
+        'Root: DeliveryRobot_ROOT, at footprint center on the wheel contact plane. Local forward -Y, right +X, up +Z.',
+        'WheelPivot_FL/FR/RL/RR retain individual local +X spin axes, radius and independent tire/hub children.',
+        'BaseLink, ForwardAxis, LidarMount and CameraMount are reference empties; sensors and dynamics are not implemented.',
+        f"Source metric/hierarchy check: {vehicle['placed_source']['pass_']}; placed FBX: {vehicle['placed_fbx']['pass_']}; standalone FBX: {vehicle['standalone_fbx']['pass_']}; standalone blend: {vehicle['standalone_blend']['pass_']}.",
+        f"Measured local dimensions XYZ after FBX: {vehicle['standalone_fbx']['measured_dimensions_xyz_m']} m.",
+        f"Wheel contacts after placed FBX: {vehicle['placed_fbx']['wheel_contacts_z_m']} m; expected road top: {vehicle['placed_fbx']['expected_road_top_m']} m.",
+        f"Standalone FBX round trip: {json.dumps(vehicle['standalone_comparison'])}",
+        f"Closeup source/reimport appearance: {json.dumps(final['robot_render_appearance'])}",
+        f"Full clean-build idempotency: {idem['pass']}; runs: {idem['runs']}.",
+        '', '## Integration limits','',
+        'Campus blend/FBX/GLB include one placed robot. Standalone delivery_robot.blend/fbx/glb contain the same vehicle at the origin. Do not instantiate both copies when using the standalone asset in an engine.',
+        'Campus scale remains conditional; robot design dimensions are independently fixed metres. Navigation and vehicle access outside this checked starting pose remain unverified.',
+        'Collider hints are data only. Rigidbody, wheel physics, mass/inertia, control, sensors and navigation execution belong to the next stage. No Unity/Tuanjie runtime was used.','']
+    (ROOT/'output/validation/delivery_robot_report.md').write_text('\n'.join(robot_lines))
+    lines+=['## Delivery robot','', '\n'.join(robot_lines[2:])]
+    graph=metadata['navigation_validation'];review=report['manual_trace_changes']['geometry_review_v04']
+    lines+=['','## V0.4 buildings and road review','',
+        'Exhibition facade: bottom inset 8 percent inside the original convex envelope. Top XY envelope and height remain fixed; taper is a modeling approximation.',
+        'Gym/library/exhibition use photo-informed full-height facade patterns. Gym roof seams are exportable image texture details; no mesh strip proliferation.',
+        'Facade UV distance follows the perimeter continuously across curved walls. XY envelope, taper properties, height, manifold geometry and texture decoding are checked again after FBX import.',
+        f"Flagged road routes: {report['v03_comparison']['flagged_roads_before']} -> {report['v03_comparison']['flagged_roads_after']}. Structural graph components: {report['v03_comparison']['components_before']} -> {report['v03_comparison']['components_after']}.",
+        'Manual source retraces may differ substantially from the erroneous previous annotation; all before/after coordinates and Hausdorff distances are recorded separately in config/source_geometry_changes.json. They are NOT automatic corrections.',
+        'Two false large footprints were replaced by plaza surfaces; two small northeast structures and two training-courtyard wings were traced from the original image. Function/heights of small structures remain approximations.',
+        'The branch canal boundary was retraced from the visible blue-water edge instead of moving its bank road into buildings.',
+        f"Unknown-direction driveable edges: {graph['unresolved_direction_edge_count']}; explicitly directed routable edges: {graph['directed_routable_edge_count']}. Dijkstra uses directed arcs, not undirected components.",
+        'NAVIGATION PASS covers geometric/topological data validation. Unknown vehicle access or direction still requires confirmation before vehicle routing; zero campus Dijkstra pairs is not a driving connectivity proof.',
+        'New previews: building_exhibition.png, roads_south.png, roads_northeast.png, source_retrace_overlay.png.',
+        'Full V0.3/current mesh comparison: '+json.dumps(report['v03_comparison']['after_scene']),
+        'Manual-review assumptions:']+['- '+v for v in review['assumptions']]
     (ROOT/'output/validation/validation_report.md').write_text('\n'.join(lines))
 
 

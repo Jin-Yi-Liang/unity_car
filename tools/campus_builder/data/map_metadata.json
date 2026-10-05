@@ -9,7 +9,7 @@
   ],
   "map_type": "Stylized color campus planning diagram",
   "method": "Visual polygon/centreline digitization + Shapely union/difference + constrained triangulation",
-  "model_version": "0.3",
+  "model_version": "0.4",
   "meters_per_pixel": 1.268715271735978,
   "scale_status": "conditional",
   "scale_reason": "INSUFFICIENT SCALE EVIDENCE",
@@ -346,66 +346,25 @@
     "building_road_overlap_m2": 0.0,
     "unbridged_road_water_overlap_m2": 0.0,
     "road_surface_component_areas_m2": [
-      77045.42864822708,
-      1931.1163049161762,
-      1244.451567276664,
-      354.4970776731234,
-      269.4066213023123,
-      260.7397981869541,
-      206.15762466794106,
-      122.49230435700771,
-      67.48142938184456,
-      65.02188988616324
+      87105.79886679977
     ],
-    "road_routes": 38,
+    "road_routes": 40,
     "road_width_range_m": [
       6.34357635867989,
       12.68715271735978
     ],
-    "trimmed_road_building_clearance_area_m2": 5497.302935218125,
+    "trimmed_road_building_clearance_area_m2": -1.264859395447263e-09,
     "triangulation_area_coverage": true,
     "road_max_centerline_adjustment_px": 2.1213203435596424,
-    "road_correction_pass": false,
-    "flagged_route_ids": [
-      "ROUTE_021",
-      "ROUTE_022",
-      "ROUTE_023",
-      "ROUTE_024",
-      "ROUTE_025",
-      "ROUTE_026",
-      "ROUTE_027",
-      "ROUTE_028",
-      "ROUTE_032",
-      "ROUTE_033",
-      "ROUTE_035",
-      "ROUTE_036",
-      "ROUTE_037",
-      "ROUTE_038",
-      "ROUTE_039"
-    ],
+    "road_correction_pass": true,
+    "flagged_route_ids": [],
     "coplanar_surface_overlaps": [],
     "pass": true
   },
   "road_validation": {
-    "pass_": false,
+    "pass_": true,
     "max_automatic_adjustment_px": 2.1213203435596424,
-    "flagged_route_ids": [
-      "ROUTE_021",
-      "ROUTE_022",
-      "ROUTE_023",
-      "ROUTE_024",
-      "ROUTE_025",
-      "ROUTE_026",
-      "ROUTE_027",
-      "ROUTE_028",
-      "ROUTE_032",
-      "ROUTE_033",
-      "ROUTE_035",
-      "ROUTE_036",
-      "ROUTE_037",
-      "ROUTE_038",
-      "ROUTE_039"
-    ],
+    "flagged_route_ids": [],
     "routes": [
       {
         "route_id": "ROUTE_001",
@@ -1543,13 +1502,13 @@
         "name": "Canteen access",
         "pass_": true,
         "allowed_adjustment_px": 2.5,
-        "automatic_adjustment_px": 1.0,
+        "automatic_adjustment_px": 0.0,
         "translation_px": [
-          -1.0,
+          0.0,
           0.0
         ],
-        "status": "BOUNDED_FIX",
-        "original_collision_length_px": 7.370982848749655,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
         "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
@@ -1587,23 +1546,23 @@
             513.0
           ],
           [
-            498.0,
+            499.0,
             523.0
           ],
           [
-            506.0,
+            507.0,
             550.0
           ],
           [
-            508.0,
+            509.0,
             564.0
           ],
           [
-            519.0,
+            520.0,
             600.0
           ],
           [
-            532.0,
+            533.0,
             611.0
           ],
           [
@@ -1636,8 +1595,8 @@
             695
           ],
           [
-            341,
-            725
+            339.807,
+            721.482
           ]
         ],
         "accepted_centerline_px": [
@@ -1650,8 +1609,8 @@
             695.0
           ],
           [
-            341.0,
-            725.0
+            339.807,
+            721.482
           ]
         ],
         "reason": null
@@ -1671,46 +1630,46 @@
         "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
-            156,
-            793
+            151.545,
+            784.755
           ],
           [
-            151,
-            820
+            151.024,
+            820.043
           ],
           [
-            151,
-            850
+            150.986,
+            850.022
           ],
           [
-            159,
-            883
+            158.958,
+            882.971
           ],
           [
-            173,
-            916
+            172.969,
+            916.061
           ]
         ],
         "accepted_centerline_px": [
           [
-            156.0,
-            793.0
+            151.545,
+            784.755
           ],
           [
-            151.0,
-            820.0
+            151.024,
+            820.043
           ],
           [
-            151.0,
-            850.0
+            150.986,
+            850.022
           ],
           [
-            159.0,
-            883.0
+            158.958,
+            882.971
           ],
           [
-            173.0,
-            916.0
+            172.969,
+            916.061
           ]
         ],
         "reason": null
@@ -1718,522 +1677,458 @@
       {
         "route_id": "ROUTE_021",
         "name": "South canal-side road",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 3.0,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 131.18572329769813,
-        "remaining_collision_length_px": 131.18572329769813,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
-            156,
-            793
+            151.545,
+            784.755
           ],
           [
-            238,
-            764
+            216.55,
+            761.531
           ],
           [
-            312,
-            741
+            302.145,
+            733.719
           ],
           [
-            341,
-            725
+            339.807,
+            721.482
           ],
           [
-            413,
-            701
+            388.691,
+            705.599
           ],
           [
-            487,
-            675
+            511.377,
+            665.736
           ],
           [
-            541,
-            660
+            554.175,
+            651.83
           ]
         ],
         "accepted_centerline_px": [
           [
-            156.0,
-            793.0
+            151.545,
+            784.755
           ],
           [
-            238.0,
-            764.0
+            216.55,
+            761.531
           ],
           [
-            312.0,
-            741.0
+            302.145,
+            733.719
           ],
           [
-            341.0,
-            725.0
+            339.807,
+            721.482
           ],
           [
-            413.0,
-            701.0
+            388.691,
+            705.599
           ],
           [
-            487.0,
-            675.0
+            511.377,
+            665.736
           ],
           [
-            541.0,
-            660.0
+            554.175,
+            651.83
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
       },
       {
         "route_id": "ROUTE_022",
         "name": "South central spine",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 3.0,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 55.11833674674297,
-        "remaining_collision_length_px": 55.11833674674297,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
-            312,
-            741
+            302.145,
+            733.719
           ],
           [
-            324,
-            770
+            315.433,
+            774.615
           ],
           [
-            335,
-            806
+            333.356,
+            829.776
           ],
           [
-            349,
-            846
-          ],
-          [
-            375,
-            858
+            336.446,
+            839.287
           ]
         ],
         "accepted_centerline_px": [
           [
-            312.0,
-            741.0
+            302.145,
+            733.719
           ],
           [
-            324.0,
-            770.0
+            315.433,
+            774.615
           ],
           [
-            335.0,
-            806.0
+            333.356,
+            829.776
           ],
           [
-            349.0,
-            846.0
-          ],
-          [
-            375.0,
-            858.0
+            336.446,
+            839.287
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
       },
       {
         "route_id": "ROUTE_023",
         "name": "South east spine",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 3.0,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 100.2819154126108,
-        "remaining_collision_length_px": 100.2819154126108,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
-            541,
-            660
+            554.175,
+            651.83
           ],
           [
-            556,
-            706
+            562.518,
+            677.508
           ],
           [
-            571,
-            752
+            579.514,
+            729.817
           ],
           [
-            580,
-            783
+            596.14,
+            780.983
+          ],
+          [
+            598.055,
+            786.88
           ]
         ],
         "accepted_centerline_px": [
           [
-            541.0,
-            660.0
+            554.175,
+            651.83
           ],
           [
-            556.0,
-            706.0
+            562.518,
+            677.508
           ],
           [
-            571.0,
-            752.0
+            579.514,
+            729.817
           ],
           [
-            580.0,
-            783.0
+            596.14,
+            780.983
+          ],
+          [
+            598.055,
+            786.88
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
       },
       {
         "route_id": "ROUTE_024",
         "name": "South perimeter",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 3.0,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 11.01211228999464,
-        "remaining_collision_length_px": 11.01211228999464,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
-            173,
-            916
+            172.969,
+            916.061
           ],
           [
-            246,
-            900
+            246.355,
+            901.154
           ],
           [
-            311,
-            878
+            346.025,
+            868.769
           ],
           [
-            375,
-            858
+            432.572,
+            840.649
           ],
           [
-            438,
-            836
+            555.258,
+            800.786
           ],
           [
-            490,
-            819
-          ],
-          [
-            566,
-            795
-          ],
-          [
-            580,
-            783
+            598.055,
+            786.88
           ]
         ],
         "accepted_centerline_px": [
           [
-            173.0,
-            916.0
+            172.969,
+            916.061
           ],
           [
-            246.0,
-            900.0
+            246.355,
+            901.154
           ],
           [
-            311.0,
-            878.0
+            346.025,
+            868.769
           ],
           [
-            375.0,
-            858.0
+            432.572,
+            840.649
           ],
           [
-            438.0,
-            836.0
+            555.258,
+            800.786
           ],
           [
-            490.0,
-            819.0
-          ],
-          [
-            566.0,
-            795.0
-          ],
-          [
-            580.0,
-            783.0
+            598.055,
+            786.88
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
       },
       {
         "route_id": "ROUTE_025",
         "name": "South cross lane",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 3.0,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 50.58301059731817,
-        "remaining_collision_length_px": 50.58301059731817,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
-            238,
-            764
+            216.55,
+            761.531
           ],
           [
-            231,
-            785
+            229.838,
+            802.426
           ],
           [
-            242,
-            825
+            242.816,
+            842.371
           ],
           [
-            270,
-            870
+            255.795,
+            882.315
           ],
           [
-            311,
-            878
+            246.355,
+            901.154
           ]
         ],
         "accepted_centerline_px": [
           [
-            238.0,
-            764.0
+            216.55,
+            761.531
           ],
           [
-            231.0,
-            785.0
+            229.838,
+            802.426
           ],
           [
-            242.0,
-            825.0
+            242.816,
+            842.371
           ],
           [
-            270.0,
-            870.0
+            255.795,
+            882.315
           ],
           [
-            311.0,
-            878.0
+            246.355,
+            901.154
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
       },
       {
         "route_id": "ROUTE_026",
         "name": "South academic link",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 3.0,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 233.49968656029884,
-        "remaining_collision_length_px": 233.49968656029884,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
-            231,
-            785
+            229.838,
+            802.426
           ],
           [
-            300,
-            764
-          ],
-          [
-            324,
-            770
-          ],
-          [
-            371,
-            752
-          ],
-          [
-            427,
-            733
-          ],
-          [
-            481,
-            716
-          ],
-          [
-            556,
-            706
+            315.433,
+            774.615
           ]
         ],
         "accepted_centerline_px": [
           [
-            231.0,
-            785.0
+            229.838,
+            802.426
           ],
           [
-            300.0,
-            764.0
-          ],
-          [
-            324.0,
-            770.0
-          ],
-          [
-            371.0,
-            752.0
-          ],
-          [
-            427.0,
-            733.0
-          ],
-          [
-            481.0,
-            716.0
-          ],
-          [
-            556.0,
-            706.0
+            315.433,
+            774.615
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
       },
       {
         "route_id": "ROUTE_027",
         "name": "South residential lane",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 3.0,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 62.82526570841762,
-        "remaining_collision_length_px": 62.82526570841762,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
-            363,
-            733
+            388.691,
+            705.599
           ],
           [
-            371,
-            752
+            397.035,
+            731.277
           ],
           [
-            391,
-            783
+            401.979,
+            746.494
           ],
           [
-            412,
-            819
+            419.902,
+            801.656
           ],
           [
-            438,
-            836
+            432.572,
+            840.649
           ]
         ],
         "accepted_centerline_px": [
           [
-            363.0,
-            733.0
+            388.691,
+            705.599
           ],
           [
-            371.0,
-            752.0
+            397.035,
+            731.277
           ],
           [
-            391.0,
-            783.0
+            401.979,
+            746.494
           ],
           [
-            412.0,
-            819.0
+            419.902,
+            801.656
           ],
           [
-            438.0,
-            836.0
+            432.572,
+            840.649
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
       },
       {
         "route_id": "ROUTE_028",
         "name": "South residential east link",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 3.0,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 75.23932002626012,
-        "remaining_collision_length_px": 75.23932002626012,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
-            413,
-            701
+            511.377,
+            665.736
           ],
           [
-            427,
-            733
+            519.721,
+            691.414
           ],
           [
-            447,
-            777
+            536.717,
+            743.722
           ],
           [
-            470,
-            814
-          ],
-          [
-            490,
-            819
+            555.258,
+            800.786
           ]
         ],
         "accepted_centerline_px": [
           [
-            413.0,
-            701.0
+            511.377,
+            665.736
           ],
           [
-            427.0,
-            733.0
+            519.721,
+            691.414
           ],
           [
-            447.0,
-            777.0
+            536.717,
+            743.722
           ],
           [
-            470.0,
-            814.0
-          ],
-          [
-            490.0,
-            819.0
+            555.258,
+            800.786
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
       },
       {
         "route_id": "ROUTE_029",
@@ -2400,12 +2295,16 @@
             480
           ],
           [
+            770.8936125710156,
+            501.82977314154937
+          ],
+          [
             776,
             518
           ],
           [
-            751,
-            524
+            780.766,
+            532.269
           ]
         ],
         "accepted_centerline_px": [
@@ -2426,12 +2325,16 @@
             480.0
           ],
           [
+            770.8936125710156,
+            501.82977314154937
+          ],
+          [
             776.0,
             518.0
           ],
           [
-            751.0,
-            524.0
+            780.766,
+            532.269
           ]
         ],
         "reason": null
@@ -2439,193 +2342,177 @@
       {
         "route_id": "ROUTE_032",
         "name": "Northeast cross street",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 3.0,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 24.356581022995726,
-        "remaining_collision_length_px": 24.356581022995726,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
-            552,
-            565
+            557.365,
+            571.209
           ],
           [
-            605,
-            556
+            623.939,
+            549.578
           ],
           [
-            643,
-            539
+            685.758,
+            529.492
           ],
           [
-            704,
-            519
-          ],
-          [
-            766,
-            498
+            770.8936125710156,
+            501.82977314154937
           ]
         ],
         "accepted_centerline_px": [
           [
-            552.0,
-            565.0
+            557.365,
+            571.209
           ],
           [
-            605.0,
-            556.0
+            623.939,
+            549.578
           ],
           [
-            643.0,
-            539.0
+            685.758,
+            529.492
           ],
           [
-            704.0,
-            519.0
-          ],
-          [
-            766.0,
-            498.0
+            770.8936125710156,
+            501.82977314154937
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
       },
       {
         "route_id": "ROUTE_033",
         "name": "Northeast longitudinal street",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 3.0,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 87.8979449181322,
-        "remaining_collision_length_px": 87.8979449181322,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
-            650,
-            415
+            646.204,
+            407.757
           ],
           [
-            670,
-            464
+            664.127,
+            462.918
           ],
           [
-            688,
-            513
+            685.758,
+            529.492
           ],
           [
-            704,
-            551
+            695.647,
+            559.926
           ]
         ],
         "accepted_centerline_px": [
           [
-            650.0,
-            415.0
+            646.204,
+            407.757
           ],
           [
-            670.0,
-            464.0
+            664.127,
+            462.918
           ],
           [
-            688.0,
-            513.0
+            685.758,
+            529.492
           ],
           [
-            704.0,
-            551.0
+            695.647,
+            559.926
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
       },
       {
         "route_id": "ROUTE_035",
         "name": "Northeast south lane",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 3.0,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 61.939473392310596,
-        "remaining_collision_length_px": 61.939473392310596,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
-            567,
-            595
+            569.156,
+            601.025
           ],
           [
-            625,
-            577
+            633.828,
+            580.012
           ],
           [
-            683,
-            559
+            695.647,
+            559.926
           ],
           [
-            748,
-            538
-          ],
-          [
-            778,
-            526
+            780.766,
+            532.269
           ]
         ],
         "accepted_centerline_px": [
           [
-            567.0,
-            595.0
+            569.156,
+            601.025
           ],
           [
-            625.0,
-            577.0
+            633.828,
+            580.012
           ],
           [
-            683.0,
-            559.0
+            695.647,
+            559.926
           ],
           [
-            748.0,
-            538.0
-          ],
-          [
-            778.0,
-            526.0
+            780.766,
+            532.269
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
       },
       {
         "route_id": "ROUTE_036",
         "name": "Branch canal bridge",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 3.0,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 11.731594257138239,
-        "remaining_collision_length_px": 11.731594257138239,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
-            580,
-            783
+            596.14,
+            780.983
           ],
           [
-            597,
-            780
+            614,
+            778
           ],
           [
             638,
@@ -2634,65 +2521,69 @@
         ],
         "accepted_centerline_px": [
           [
-            580.0,
-            783.0
+            596.14,
+            780.983
           ],
           [
-            597.0,
-            780.0
+            614.0,
+            778.0
           ],
           [
             638.0,
             767.0
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
       },
       {
         "route_id": "ROUTE_037",
         "name": "Southeast dormitory access",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 2.5,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 30.850024795379156,
-        "remaining_collision_length_px": 30.850024795379156,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
             638,
             767
           ],
           [
-            650,
-            778
+            639,
+            786
           ],
           [
-            653,
-            797
+            641,
+            802
           ],
           [
-            684,
-            816
+            646,
+            819
           ],
           [
-            716,
-            806
+            671,
+            828
           ],
           [
-            747,
-            808
+            714,
+            815
           ],
           [
-            779,
-            797
+            764,
+            800
           ],
           [
-            822,
-            794
+            787,
+            796
+          ],
+          [
+            825,
+            791
           ]
         ],
         "accepted_centerline_px": [
@@ -2701,53 +2592,57 @@
             767.0
           ],
           [
-            650.0,
-            778.0
+            639.0,
+            786.0
           ],
           [
-            653.0,
-            797.0
+            641.0,
+            802.0
           ],
           [
-            684.0,
-            816.0
+            646.0,
+            819.0
           ],
           [
-            716.0,
-            806.0
+            671.0,
+            828.0
           ],
           [
-            747.0,
-            808.0
+            714.0,
+            815.0
           ],
           [
-            779.0,
-            797.0
+            764.0,
+            800.0
           ],
           [
-            822.0,
-            794.0
+            787.0,
+            796.0
+          ],
+          [
+            825.0,
+            791.0
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
       },
       {
         "route_id": "ROUTE_038",
         "name": "South garden access",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 3.0,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 76.91146618348223,
-        "remaining_collision_length_px": 76.91146618348223,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
-            597,
-            780
+            596.14,
+            780.983
           ],
           [
             580,
@@ -2762,28 +2657,44 @@
             842
           ],
           [
-            517,
-            879
+            500,
+            855
           ],
           [
-            548,
-            922
+            506,
+            884
           ],
           [
-            604,
-            907
+            525,
+            935
+          ],
+          [
+            560,
+            924
+          ],
+          [
+            590,
+            914
+          ],
+          [
+            615,
+            903
+          ],
+          [
+            643,
+            882
           ],
           [
             634,
-            887
+            855
           ],
           [
-            625,
-            860
+            624,
+            830
           ],
           [
-            601,
-            812
+            610,
+            811
           ],
           [
             580,
@@ -2792,8 +2703,8 @@
         ],
         "accepted_centerline_px": [
           [
-            597.0,
-            780.0
+            596.14,
+            780.983
           ],
           [
             580.0,
@@ -2808,61 +2719,81 @@
             842.0
           ],
           [
-            517.0,
-            879.0
+            500.0,
+            855.0
           ],
           [
-            548.0,
-            922.0
+            506.0,
+            884.0
           ],
           [
-            604.0,
-            907.0
+            525.0,
+            935.0
+          ],
+          [
+            560.0,
+            924.0
+          ],
+          [
+            590.0,
+            914.0
+          ],
+          [
+            615.0,
+            903.0
+          ],
+          [
+            643.0,
+            882.0
           ],
           [
             634.0,
-            887.0
+            855.0
           ],
           [
-            625.0,
-            860.0
+            624.0,
+            830.0
           ],
           [
-            601.0,
-            812.0
+            610.0,
+            811.0
           ],
           [
             580.0,
             813.0
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
       },
       {
         "route_id": "ROUTE_039",
         "name": "South garden entry",
-        "pass_": false,
+        "pass_": true,
         "allowed_adjustment_px": 2.5,
         "automatic_adjustment_px": 0.0,
         "translation_px": [
           0.0,
           0.0
         ],
-        "status": "FLAG_RETRACE_REQUIRED",
-        "original_collision_length_px": 21.205033370943582,
-        "remaining_collision_length_px": 21.205033370943582,
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
         "original_centerline_px": [
           [
             552,
             827
           ],
           [
-            562,
-            844
+            571,
+            837
           ],
           [
-            567,
-            862
+            583,
+            856
+          ],
+          [
+            580,
+            870
           ]
         ],
         "accepted_centerline_px": [
@@ -2871,20 +2802,110 @@
             827.0
           ],
           [
-            562.0,
-            844.0
+            571.0,
+            837.0
           ],
           [
-            567.0,
-            862.0
+            583.0,
+            856.0
+          ],
+          [
+            580.0,
+            870.0
           ]
         ],
-        "reason": "Trace intersects building clearance or unbridged water; no valid correction exists within the configured limit."
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_040",
+        "name": "Northeast west bank connection",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            555,
+            498
+          ],
+          [
+            539.775,
+            513.837
+          ],
+          [
+            557.365,
+            571.209
+          ],
+          [
+            569.156,
+            601.025
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            555.0,
+            498.0
+          ],
+          [
+            539.775,
+            513.837
+          ],
+          [
+            557.365,
+            571.209
+          ],
+          [
+            569.156,
+            601.025
+          ]
+        ],
+        "reason": null
+      },
+      {
+        "route_id": "ROUTE_041",
+        "name": "South residential cross lane",
+        "pass_": true,
+        "allowed_adjustment_px": 3.0,
+        "automatic_adjustment_px": 0.0,
+        "translation_px": [
+          0.0,
+          0.0
+        ],
+        "status": "UNCHANGED",
+        "original_collision_length_px": 0.0,
+        "remaining_collision_length_px": 0.0,
+        "original_centerline_px": [
+          [
+            397.035,
+            731.277
+          ],
+          [
+            519.721,
+            691.414
+          ]
+        ],
+        "accepted_centerline_px": [
+          [
+            397.035,
+            731.277
+          ],
+          [
+            519.721,
+            691.414
+          ]
+        ],
+        "reason": null
       }
     ]
   },
   "automatic_repairs": [
-    "Merged overlapping same-label wings: 74 traces -> 70 disjoint building solids",
+    "Merged overlapping same-label wings: 76 traces -> 69 disjoint building solids",
     "Unioned road intersections; trimmed approximate road corridors against building clearance and unbridged water",
     "Removed V0.1 large-detour repair; translations are bounded by min(3 px, half road width); conflicting traces are explicitly FLAGGED, not rerouted",
     "Normalized vertices on a 0.001 m grid with 0.002 m boundary simplification for stable Blender float32 meshes",
@@ -2893,13 +2914,14 @@
     "Fixed overhead camera roll explicitly so north is at the top, matching the source map"
   ],
   "building_reconstruction": {
-    "model_version": "0.3",
+    "model_version": "0.4",
+    "appearance_revision": "2026-10-05-photo-informed-envelope-preserving",
     "profile_validation_pass": true,
     "measured_height_count": 0,
     "photo_referenced_buildings": 13,
-    "floor_based_buildings": 70,
+    "floor_based_buildings": 69,
     "floor_evidence_buildings": 14,
-    "building_count": 70,
+    "building_count": 69,
     "sources": [
       {
         "id": "ADMIN_OFFICIAL",
@@ -3000,6 +3022,7 @@
             0.39
           ],
           "end_wall_max_span_m": 24,
+          "facade_uv_mode": "full_height",
           "eave_height_m": 44.199999999999996,
           "total_height_m": 44.199999999999996,
           "source_trace_ids": [
@@ -3028,7 +3051,7 @@
           "floor_status": "photo interpretation, medium confidence",
           "height_status": "estimated from floor count and assumed storey height; NOT measured",
           "appearance_status": "simplified photo-informed reconstruction",
-          "notes": "Curved dark curtain wall and metal mullions. Floor interpretation is approximate.",
+          "notes": "Curved dark curtain wall and metal mullions. Floor interpretation is approximate. Bottom is inset within the traced envelope; its exact taper is not measured.",
           "wall_rgb": [
             0.47,
             0.49,
@@ -3039,7 +3062,7 @@
             0.12,
             0.16
           ],
-          "window_pitch_m": 3.2,
+          "window_pitch_m": 3.6,
           "window_width_ratio": 0.58,
           "window_height_ratio": 0.52,
           "roof_rgb": [
@@ -3047,6 +3070,9 @@
             0.38,
             0.39
           ],
+          "facade_base_inset_fraction": 0.08,
+          "facade_uv_mode": "full_height",
+          "facade_geometry_provenance": "Outward-sloping curtain wall visible in exhibition.jpg; 8 percent base inset is a modeling approximation. Top XY envelope and total height retained; source polygon remains conservative navigation obstacle.",
           "eave_height_m": 15.2,
           "total_height_m": 15.2,
           "source_trace_ids": [
@@ -3403,7 +3429,7 @@
           "floor_status": "equivalent facade levels, low confidence",
           "height_status": "estimated from floor count and assumed storey height; NOT measured",
           "appearance_status": "simplified photo-informed reconstruction",
-          "notes": "Large-span gym volume with upswept roof edges; equivalent three levels are for facade layout, not three usable floors.",
+          "notes": "Large-span gym volume with upswept roof edges; equivalent three levels are for facade layout, not three usable floors. Full-height upper clerestory, glazed lower bays and pale piers follow the published front photograph. Roof rib spacing and facade bay spacing are modeled estimates.",
           "wall_rgb": [
             0.74,
             0.75,
@@ -3414,14 +3440,17 @@
             0.28,
             0.28
           ],
-          "window_pitch_m": 5.0,
+          "window_pitch_m": 7.0,
           "window_width_ratio": 0.58,
           "window_height_ratio": 0.52,
           "roof_rgb": [
-            0.35,
-            0.38,
-            0.39
+            0.53,
+            0.56,
+            0.56
           ],
+          "facade_uv_mode": "full_height",
+          "roof_surface": "standing_seam",
+          "roof_seam_pitch_m": 1.2,
           "eave_height_m": 10.8,
           "total_height_m": 13.8,
           "source_trace_ids": [
@@ -3450,7 +3479,7 @@
           "floor_status": "equivalent facade levels, low confidence",
           "height_status": "estimated from floor count and assumed storey height; NOT measured",
           "appearance_status": "simplified photo-informed reconstruction",
-          "notes": "Large-span gym volume with upswept roof edges; equivalent three levels are for facade layout, not three usable floors.",
+          "notes": "Large-span gym volume with upswept roof edges; equivalent three levels are for facade layout, not three usable floors. Full-height upper clerestory, glazed lower bays and pale piers follow the published front photograph. Roof rib spacing and facade bay spacing are modeled estimates.",
           "wall_rgb": [
             0.74,
             0.75,
@@ -3461,14 +3490,17 @@
             0.28,
             0.28
           ],
-          "window_pitch_m": 5.0,
+          "window_pitch_m": 7.0,
           "window_width_ratio": 0.58,
           "window_height_ratio": 0.52,
           "roof_rgb": [
-            0.35,
-            0.38,
-            0.39
+            0.53,
+            0.56,
+            0.56
           ],
+          "facade_uv_mode": "full_height",
+          "roof_surface": "standing_seam",
+          "roof_seam_pitch_m": 1.2,
           "eave_height_m": 7.2,
           "override_provenance": "Gym photo shows lower annex; mapping to this footprint and dimensions are approximate.",
           "total_height_m": 9.0,
@@ -3815,7 +3847,7 @@
           "floor_status": "documented minimum 4",
           "height_status": "estimated from floor count and assumed storey height; NOT measured",
           "appearance_status": "simplified photo-informed reconstruction",
-          "notes": "At least four floors confirmed by official room addresses. Curved planning-map footprint retained; facade not verified.",
+          "notes": "Official room addresses support at least four floors. Front photograph shows pale wall panels, grouped windows and a narrow upper glazing band; exact bay spacing is estimated. The entrance dome is omitted because its plan location and dimensions are not established.",
           "wall_rgb": [
             0.82,
             0.82,
@@ -3826,7 +3858,7 @@
             0.28,
             0.34
           ],
-          "window_pitch_m": 3.2,
+          "window_pitch_m": 5.2,
           "window_width_ratio": 0.58,
           "window_height_ratio": 0.52,
           "roof_rgb": [
@@ -3834,6 +3866,7 @@
             0.38,
             0.39
           ],
+          "facade_uv_mode": "full_height",
           "eave_height_m": 16.0,
           "total_height_m": 16.0,
           "source_trace_ids": [
@@ -3863,7 +3896,7 @@
           "floor_status": "documented minimum 4",
           "height_status": "estimated from floor count and assumed storey height; NOT measured",
           "appearance_status": "simplified photo-informed reconstruction",
-          "notes": "At least four floors confirmed by official room addresses. Curved planning-map footprint retained; facade not verified.",
+          "notes": "Official room addresses support at least four floors. Front photograph shows pale wall panels, grouped windows and a narrow upper glazing band; exact bay spacing is estimated. The entrance dome is omitted because its plan location and dimensions are not established.",
           "wall_rgb": [
             0.82,
             0.82,
@@ -3874,7 +3907,7 @@
             0.28,
             0.34
           ],
-          "window_pitch_m": 3.2,
+          "window_pitch_m": 5.2,
           "window_width_ratio": 0.58,
           "window_height_ratio": 0.52,
           "roof_rgb": [
@@ -3882,6 +3915,7 @@
             0.38,
             0.39
           ],
+          "facade_uv_mode": "full_height",
           "eave_height_m": 16.0,
           "total_height_m": 16.0,
           "source_trace_ids": [
@@ -4204,58 +4238,16 @@
           "total_height_m": 12.600000000000001,
           "source_trace_ids": [
             "BLDG_028",
-            "BLDG_029"
+            "BLDG_029",
+            "BLDG_030",
+            "BLDG_077",
+            "BLDG_078"
           ],
           "actual_height_measured": false
         }
       },
       {
         "id": "BLDG_028",
-        "name": "Engineering training centre",
-        "map_label": "23",
-        "height_m": 12.600000000000001,
-        "architecture": {
-          "kind": "laboratory",
-          "floor_count": 3,
-          "floor_height_m": 4.2,
-          "roof_shape": "flat",
-          "roof_rise_m": 0,
-          "source_ids": [
-            "MAP"
-          ],
-          "photos": [],
-          "floor_status": "typology modeling assumption, low confidence; not verified floor count",
-          "height_status": "estimated floor count times assumed storey height; NOT measured",
-          "appearance_status": "simplified typology approximation; facade not photo verified",
-          "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
-          "wall_rgb": [
-            0.68,
-            0.73,
-            0.74
-          ],
-          "glass_rgb": [
-            0.19,
-            0.26,
-            0.3
-          ],
-          "window_pitch_m": 3.2,
-          "window_width_ratio": 0.55,
-          "window_height_ratio": 0.52,
-          "roof_rgb": [
-            0.37,
-            0.39,
-            0.4
-          ],
-          "eave_height_m": 12.600000000000001,
-          "total_height_m": 12.600000000000001,
-          "source_trace_ids": [
-            "BLDG_030"
-          ],
-          "actual_height_measured": false
-        }
-      },
-      {
-        "id": "BLDG_029",
         "name": "Applied arts north",
         "map_label": "24",
         "height_m": 14.4,
@@ -4301,7 +4293,7 @@
         }
       },
       {
-        "id": "BLDG_030",
+        "id": "BLDG_029",
         "name": "Applied arts south",
         "map_label": "25",
         "height_m": 14.4,
@@ -4347,7 +4339,7 @@
         }
       },
       {
-        "id": "BLDG_031",
+        "id": "BLDG_030",
         "name": "Energy materials school",
         "map_label": "26",
         "height_m": 12.600000000000001,
@@ -4392,7 +4384,7 @@
         }
       },
       {
-        "id": "BLDG_032",
+        "id": "BLDG_031",
         "name": "Energy materials school",
         "map_label": "26",
         "height_m": 12.600000000000001,
@@ -4437,7 +4429,7 @@
         }
       },
       {
-        "id": "BLDG_033",
+        "id": "BLDG_032",
         "name": "Energy materials school",
         "map_label": "26",
         "height_m": 12.600000000000001,
@@ -4482,7 +4474,7 @@
         }
       },
       {
-        "id": "BLDG_034",
+        "id": "BLDG_033",
         "name": "Materials transfer engineering",
         "map_label": "27",
         "height_m": 12.600000000000001,
@@ -4527,7 +4519,7 @@
         }
       },
       {
-        "id": "BLDG_035",
+        "id": "BLDG_034",
         "name": "Computer information school",
         "map_label": "28",
         "height_m": 14.4,
@@ -4572,7 +4564,7 @@
         }
       },
       {
-        "id": "BLDG_036",
+        "id": "BLDG_035",
         "name": "Computer information school",
         "map_label": "28",
         "height_m": 14.4,
@@ -4617,7 +4609,7 @@
         }
       },
       {
-        "id": "BLDG_037",
+        "id": "BLDG_036",
         "name": "Intelligent manufacturing school",
         "map_label": "29",
         "height_m": 12.600000000000001,
@@ -4662,7 +4654,7 @@
         }
       },
       {
-        "id": "BLDG_038",
+        "id": "BLDG_037",
         "name": "Student activity centre",
         "map_label": "30",
         "height_m": 14.4,
@@ -4707,7 +4699,7 @@
         }
       },
       {
-        "id": "BLDG_039",
+        "id": "BLDG_038",
         "name": "Student dormitory 31",
         "map_label": "31",
         "height_m": 18.6,
@@ -4752,7 +4744,7 @@
         }
       },
       {
-        "id": "BLDG_040",
+        "id": "BLDG_039",
         "name": "Student dormitory 32",
         "map_label": "32",
         "height_m": 18.6,
@@ -4797,7 +4789,7 @@
         }
       },
       {
-        "id": "BLDG_041",
+        "id": "BLDG_040",
         "name": "Student dormitory 37",
         "map_label": "37",
         "height_m": 18.6,
@@ -4842,7 +4834,7 @@
         }
       },
       {
-        "id": "BLDG_042",
+        "id": "BLDG_041",
         "name": "South garden building",
         "map_label": "38",
         "height_m": 14.4,
@@ -4887,7 +4879,7 @@
         }
       },
       {
-        "id": "BLDG_043",
+        "id": "BLDG_042",
         "name": "South garden building",
         "map_label": "38",
         "height_m": 14.4,
@@ -4932,7 +4924,7 @@
         }
       },
       {
-        "id": "BLDG_044",
+        "id": "BLDG_043",
         "name": "Student dormitory 39",
         "map_label": "39",
         "height_m": 18.6,
@@ -4977,52 +4969,7 @@
         }
       },
       {
-        "id": "BLDG_045",
-        "name": "Student dormitory 39",
-        "map_label": "39",
-        "height_m": 18.6,
-        "architecture": {
-          "kind": "residential",
-          "floor_count": 6,
-          "floor_height_m": 3.1,
-          "roof_shape": "flat",
-          "roof_rise_m": 0,
-          "source_ids": [
-            "MAP"
-          ],
-          "photos": [],
-          "floor_status": "typology modeling assumption, low confidence; not verified floor count",
-          "height_status": "estimated floor count times assumed storey height; NOT measured",
-          "appearance_status": "simplified typology approximation; facade not photo verified",
-          "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
-          "wall_rgb": [
-            0.78,
-            0.72,
-            0.62
-          ],
-          "glass_rgb": [
-            0.19,
-            0.26,
-            0.3
-          ],
-          "window_pitch_m": 3.2,
-          "window_width_ratio": 0.55,
-          "window_height_ratio": 0.52,
-          "roof_rgb": [
-            0.37,
-            0.39,
-            0.4
-          ],
-          "eave_height_m": 18.6,
-          "total_height_m": 18.6,
-          "source_trace_ids": [
-            "BLDG_049"
-          ],
-          "actual_height_measured": false
-        }
-      },
-      {
-        "id": "BLDG_046",
+        "id": "BLDG_044",
         "name": "Student dormitory 40",
         "map_label": "40",
         "height_m": 18.6,
@@ -5067,7 +5014,7 @@
         }
       },
       {
-        "id": "BLDG_047",
+        "id": "BLDG_045",
         "name": "Faculty dormitory 41",
         "map_label": "41",
         "height_m": 18.6,
@@ -5112,7 +5059,7 @@
         }
       },
       {
-        "id": "BLDG_048",
+        "id": "BLDG_046",
         "name": "Faculty dormitory 42",
         "map_label": "42",
         "height_m": 18.6,
@@ -5157,7 +5104,7 @@
         }
       },
       {
-        "id": "BLDG_049",
+        "id": "BLDG_047",
         "name": "Visible residential wing",
         "map_label": "unnumbered",
         "height_m": 18.6,
@@ -5202,7 +5149,7 @@
         }
       },
       {
-        "id": "BLDG_050",
+        "id": "BLDG_048",
         "name": "Visible residential wing",
         "map_label": "unnumbered",
         "height_m": 18.6,
@@ -5247,7 +5194,7 @@
         }
       },
       {
-        "id": "BLDG_051",
+        "id": "BLDG_049",
         "name": "Visible residential wing",
         "map_label": "unnumbered",
         "height_m": 18.6,
@@ -5292,7 +5239,7 @@
         }
       },
       {
-        "id": "BLDG_052",
+        "id": "BLDG_050",
         "name": "Visible residential wing",
         "map_label": "unnumbered",
         "height_m": 18.6,
@@ -5337,7 +5284,7 @@
         }
       },
       {
-        "id": "BLDG_053",
+        "id": "BLDG_051",
         "name": "Visible residential wing",
         "map_label": "unnumbered",
         "height_m": 18.6,
@@ -5382,7 +5329,7 @@
         }
       },
       {
-        "id": "BLDG_054",
+        "id": "BLDG_052",
         "name": "Visible residential wing",
         "map_label": "unnumbered",
         "height_m": 18.6,
@@ -5427,7 +5374,7 @@
         }
       },
       {
-        "id": "BLDG_055",
+        "id": "BLDG_053",
         "name": "Northeast residential wing",
         "map_label": "res_1_1",
         "height_m": 18.6,
@@ -5472,7 +5419,7 @@
         }
       },
       {
-        "id": "BLDG_056",
+        "id": "BLDG_054",
         "name": "Northeast residential wing",
         "map_label": "res_1_2",
         "height_m": 18.6,
@@ -5517,7 +5464,7 @@
         }
       },
       {
-        "id": "BLDG_057",
+        "id": "BLDG_055",
         "name": "Northeast residential wing",
         "map_label": "res_1_3",
         "height_m": 18.6,
@@ -5562,7 +5509,7 @@
         }
       },
       {
-        "id": "BLDG_058",
+        "id": "BLDG_056",
         "name": "Northeast residential wing",
         "map_label": "res_2_1",
         "height_m": 18.6,
@@ -5607,7 +5554,7 @@
         }
       },
       {
-        "id": "BLDG_059",
+        "id": "BLDG_057",
         "name": "Northeast residential wing",
         "map_label": "res_2_2",
         "height_m": 18.6,
@@ -5652,52 +5599,7 @@
         }
       },
       {
-        "id": "BLDG_060",
-        "name": "Northeast residential wing",
-        "map_label": "res_2_3",
-        "height_m": 18.6,
-        "architecture": {
-          "kind": "residential",
-          "floor_count": 6,
-          "floor_height_m": 3.1,
-          "roof_shape": "flat",
-          "roof_rise_m": 0,
-          "source_ids": [
-            "MAP"
-          ],
-          "photos": [],
-          "floor_status": "typology modeling assumption, low confidence; not verified floor count",
-          "height_status": "estimated floor count times assumed storey height; NOT measured",
-          "appearance_status": "simplified typology approximation; facade not photo verified",
-          "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
-          "wall_rgb": [
-            0.78,
-            0.72,
-            0.62
-          ],
-          "glass_rgb": [
-            0.19,
-            0.26,
-            0.3
-          ],
-          "window_pitch_m": 3.2,
-          "window_width_ratio": 0.55,
-          "window_height_ratio": 0.52,
-          "roof_rgb": [
-            0.37,
-            0.39,
-            0.4
-          ],
-          "eave_height_m": 18.6,
-          "total_height_m": 18.6,
-          "source_trace_ids": [
-            "BLDG_064"
-          ],
-          "actual_height_measured": false
-        }
-      },
-      {
-        "id": "BLDG_061",
+        "id": "BLDG_058",
         "name": "Northeast residential wing",
         "map_label": "res_2_4",
         "height_m": 18.6,
@@ -5742,7 +5644,7 @@
         }
       },
       {
-        "id": "BLDG_062",
+        "id": "BLDG_059",
         "name": "Northeast residential wing",
         "map_label": "res_2_5",
         "height_m": 18.6,
@@ -5787,7 +5689,7 @@
         }
       },
       {
-        "id": "BLDG_063",
+        "id": "BLDG_060",
         "name": "Northeast residential wing",
         "map_label": "res_3_1",
         "height_m": 18.6,
@@ -5832,7 +5734,7 @@
         }
       },
       {
-        "id": "BLDG_064",
+        "id": "BLDG_061",
         "name": "Northeast residential wing",
         "map_label": "res_3_2",
         "height_m": 18.6,
@@ -5877,7 +5779,7 @@
         }
       },
       {
-        "id": "BLDG_065",
+        "id": "BLDG_062",
         "name": "Northeast residential wing",
         "map_label": "res_3_3",
         "height_m": 18.6,
@@ -5922,7 +5824,7 @@
         }
       },
       {
-        "id": "BLDG_066",
+        "id": "BLDG_063",
         "name": "Northeast residential wing",
         "map_label": "res_3_4",
         "height_m": 18.6,
@@ -5967,7 +5869,7 @@
         }
       },
       {
-        "id": "BLDG_067",
+        "id": "BLDG_064",
         "name": "Northeast residential wing",
         "map_label": "res_3_5",
         "height_m": 18.6,
@@ -6012,7 +5914,7 @@
         }
       },
       {
-        "id": "BLDG_068",
+        "id": "BLDG_065",
         "name": "Northeast dining hall",
         "map_label": "dining",
         "height_m": 8.4,
@@ -6057,7 +5959,7 @@
         }
       },
       {
-        "id": "BLDG_069",
+        "id": "BLDG_066",
         "name": "North guardhouse",
         "map_label": "guard",
         "height_m": 4.5,
@@ -6102,7 +6004,97 @@
         }
       },
       {
-        "id": "BLDG_070",
+        "id": "BLDG_067",
+        "name": "North guardhouse",
+        "map_label": "guard",
+        "height_m": 4.5,
+        "architecture": {
+          "kind": "guardhouse",
+          "floor_count": 1,
+          "floor_height_m": 4.5,
+          "roof_shape": "flat",
+          "roof_rise_m": 0,
+          "source_ids": [
+            "MAP"
+          ],
+          "photos": [],
+          "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+          "height_status": "estimated floor count times assumed storey height; NOT measured",
+          "appearance_status": "simplified typology approximation; facade not photo verified",
+          "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+          "wall_rgb": [
+            0.77,
+            0.77,
+            0.71
+          ],
+          "glass_rgb": [
+            0.19,
+            0.26,
+            0.3
+          ],
+          "window_pitch_m": 3.2,
+          "window_width_ratio": 0.55,
+          "window_height_ratio": 0.52,
+          "roof_rgb": [
+            0.37,
+            0.39,
+            0.4
+          ],
+          "eave_height_m": 4.5,
+          "total_height_m": 4.5,
+          "source_trace_ids": [
+            "BLDG_075"
+          ],
+          "actual_height_measured": false
+        }
+      },
+      {
+        "id": "BLDG_068",
+        "name": "North guardhouse",
+        "map_label": "guard",
+        "height_m": 4.5,
+        "architecture": {
+          "kind": "guardhouse",
+          "floor_count": 1,
+          "floor_height_m": 4.5,
+          "roof_shape": "flat",
+          "roof_rise_m": 0,
+          "source_ids": [
+            "MAP"
+          ],
+          "photos": [],
+          "floor_status": "typology modeling assumption, low confidence; not verified floor count",
+          "height_status": "estimated floor count times assumed storey height; NOT measured",
+          "appearance_status": "simplified typology approximation; facade not photo verified",
+          "notes": "User accepts basic approximate data. Building use comes from map; modeled floors and facade pattern are assumptions.",
+          "wall_rgb": [
+            0.77,
+            0.77,
+            0.71
+          ],
+          "glass_rgb": [
+            0.19,
+            0.26,
+            0.3
+          ],
+          "window_pitch_m": 3.2,
+          "window_width_ratio": 0.55,
+          "window_height_ratio": 0.52,
+          "roof_rgb": [
+            0.37,
+            0.39,
+            0.4
+          ],
+          "eave_height_m": 4.5,
+          "total_height_m": 4.5,
+          "source_trace_ids": [
+            "BLDG_076"
+          ],
+          "actual_height_measured": false
+        }
+      },
+      {
+        "id": "BLDG_069",
         "name": "Northeast service building",
         "map_label": "service",
         "height_m": 7.0,
@@ -6152,7 +6144,9 @@
       "Storey heights, window spacing and roof rise are modeled estimates, not surveyed dimensions.",
       "Official 2023 new-building counts are not assigned to unidentified footprints on the older planning map.",
       "Known floor counts / minimum counts / photographic interpretations have distinct provenance.",
-      "Facade textures are authored approximations; source photographs are not applied to the mesh."
+      "Facade textures are authored approximations; source photographs are not applied to the mesh.",
+      "Exhibition taper stays inside the original XY envelope; the source polygon remains a conservative navigation obstacle.",
+      "Curved facades use continuous perimeter UVs. Metal roof seams are image details, not added mesh strips."
     ]
   }
 }

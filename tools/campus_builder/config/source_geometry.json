@@ -1607,32 +1607,6 @@
       "confidence": "approximate"
     },
     {
-      "id": "BLDG_049",
-      "map_label": "39",
-      "name": "Student dormitory 39",
-      "polygon_px": [
-        [
-          659.438,
-          830.295
-        ],
-        [
-          702.236,
-          816.39
-        ],
-        [
-          706.562,
-          829.705
-        ],
-        [
-          663.764,
-          843.61
-        ]
-      ],
-      "height_class": "default",
-      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
-      "confidence": "approximate"
-    },
-    {
       "id": "BLDG_050",
       "map_label": "40",
       "name": "Student dormitory 40",
@@ -1997,32 +1971,6 @@
       "confidence": "approximate"
     },
     {
-      "id": "BLDG_064",
-      "map_label": "res_2_3",
-      "name": "Northeast residential wing",
-      "polygon_px": [
-        [
-          611.622,
-          494.113
-        ],
-        [
-          662.979,
-          477.426
-        ],
-        [
-          666.378,
-          487.887
-        ],
-        [
-          615.021,
-          504.574
-        ]
-      ],
-      "height_class": "default",
-      "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
-      "confidence": "approximate"
-    },
-    {
       "id": "BLDG_065",
       "map_label": "res_2_4",
       "name": "Northeast residential wing",
@@ -2280,6 +2228,110 @@
       ],
       "height_class": "low",
       "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_075",
+      "map_label": "guard",
+      "name": "Unidentified northeast plaza structure",
+      "polygon_px": [
+        [
+          620,
+          500
+        ],
+        [
+          628,
+          497
+        ],
+        [
+          631,
+          505
+        ],
+        [
+          623,
+          508
+        ]
+      ],
+      "height_class": "low",
+      "provenance": "Visible small structure on campus_1.jpg; function and height unknown, low-building approximation",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_076",
+      "map_label": "guard",
+      "name": "Unidentified northeast plaza structure",
+      "polygon_px": [
+        [
+          624,
+          510
+        ],
+        [
+          638,
+          506
+        ],
+        [
+          641,
+          514
+        ],
+        [
+          627,
+          518
+        ]
+      ],
+      "height_class": "low",
+      "provenance": "Visible small structure on campus_1.jpg; function and height unknown, low-building approximation",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_077",
+      "map_label": "23",
+      "name": "Engineering training centre side wing",
+      "polygon_px": [
+        [
+          328.011,
+          764.787
+        ],
+        [
+          338.473,
+          761.388
+        ],
+        [
+          350.358,
+          797.965
+        ],
+        [
+          339.896,
+          801.365
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Approximate visible courtyard side-wing retrace from campus_1.jpg",
+      "confidence": "approximate"
+    },
+    {
+      "id": "BLDG_078",
+      "map_label": "23",
+      "name": "Engineering training centre side wing",
+      "polygon_px": [
+        [
+          381.582,
+          745.204
+        ],
+        [
+          391.093,
+          742.114
+        ],
+        [
+          404.42,
+          783.133
+        ],
+        [
+          394.91,
+          786.223
+        ]
+      ],
+      "height_class": "default",
+      "provenance": "Approximate visible courtyard side-wing retrace from campus_1.jpg",
       "confidence": "approximate"
     }
   ],
@@ -2957,8 +3009,8 @@
           695
         ],
         [
-          341,
-          725
+          339.807,
+          721.482
         ]
       ],
       "width_px": 10,
@@ -2975,24 +3027,24 @@
       "name": "South west spine",
       "centerline_px": [
         [
-          156,
-          793
+          151.545,
+          784.755
         ],
         [
-          151,
-          820
+          151.024,
+          820.043
         ],
         [
-          151,
-          850
+          150.986,
+          850.022
         ],
         [
-          159,
-          883
+          158.958,
+          882.971
         ],
         [
-          173,
-          916
+          172.969,
+          916.061
         ]
       ],
       "width_px": 9,
@@ -3007,32 +3059,32 @@
       "name": "South canal-side road",
       "centerline_px": [
         [
-          156,
-          793
+          151.545,
+          784.755
         ],
         [
-          238,
-          764
+          216.55,
+          761.531
         ],
         [
-          312,
-          741
+          302.145,
+          733.719
         ],
         [
-          341,
-          725
+          339.807,
+          721.482
         ],
         [
-          413,
-          701
+          388.691,
+          705.599
         ],
         [
-          487,
-          675
+          511.377,
+          665.736
         ],
         [
-          541,
-          660
+          554.175,
+          651.83
         ]
       ],
       "width_px": 8,
@@ -3047,24 +3099,20 @@
       "name": "South central spine",
       "centerline_px": [
         [
-          312,
-          741
+          302.145,
+          733.719
         ],
         [
-          324,
-          770
+          315.433,
+          774.615
         ],
         [
-          335,
-          806
+          333.356,
+          829.776
         ],
         [
-          349,
-          846
-        ],
-        [
-          375,
-          858
+          336.446,
+          839.287
         ]
       ],
       "width_px": 8,
@@ -3079,23 +3127,27 @@
       "name": "South east spine",
       "centerline_px": [
         [
-          541,
-          660
+          554.175,
+          651.83
         ],
         [
-          556,
-          706
+          562.518,
+          677.508
         ],
         [
-          571,
-          752
+          579.514,
+          729.817
         ],
         [
-          580,
-          783
+          596.14,
+          780.983
+        ],
+        [
+          598.055,
+          786.88
         ]
       ],
-      "width_px": 8,
+      "width_px": 6,
       "confidence": "approximate visual centreline",
       "road_type": "unknown",
       "driveable": null,
@@ -3107,36 +3159,28 @@
       "name": "South perimeter",
       "centerline_px": [
         [
-          173,
-          916
+          172.969,
+          916.061
         ],
         [
-          246,
-          900
+          246.355,
+          901.154
         ],
         [
-          311,
-          878
+          346.025,
+          868.769
         ],
         [
-          375,
-          858
+          432.572,
+          840.649
         ],
         [
-          438,
-          836
+          555.258,
+          800.786
         ],
         [
-          490,
-          819
-        ],
-        [
-          566,
-          795
-        ],
-        [
-          580,
-          783
+          598.055,
+          786.88
         ]
       ],
       "width_px": 9,
@@ -3151,24 +3195,24 @@
       "name": "South cross lane",
       "centerline_px": [
         [
-          238,
-          764
+          216.55,
+          761.531
         ],
         [
-          231,
-          785
+          229.838,
+          802.426
         ],
         [
-          242,
-          825
+          242.816,
+          842.371
         ],
         [
-          270,
-          870
+          255.795,
+          882.315
         ],
         [
-          311,
-          878
+          246.355,
+          901.154
         ]
       ],
       "width_px": 6,
@@ -3183,32 +3227,12 @@
       "name": "South academic link",
       "centerline_px": [
         [
-          231,
-          785
+          229.838,
+          802.426
         ],
         [
-          300,
-          764
-        ],
-        [
-          324,
-          770
-        ],
-        [
-          371,
-          752
-        ],
-        [
-          427,
-          733
-        ],
-        [
-          481,
-          716
-        ],
-        [
-          556,
-          706
+          315.433,
+          774.615
         ]
       ],
       "width_px": 6,
@@ -3223,24 +3247,24 @@
       "name": "South residential lane",
       "centerline_px": [
         [
-          363,
-          733
+          388.691,
+          705.599
         ],
         [
-          371,
-          752
+          397.035,
+          731.277
         ],
         [
-          391,
-          783
+          401.979,
+          746.494
         ],
         [
-          412,
-          819
+          419.902,
+          801.656
         ],
         [
-          438,
-          836
+          432.572,
+          840.649
         ]
       ],
       "width_px": 6,
@@ -3255,24 +3279,20 @@
       "name": "South residential east link",
       "centerline_px": [
         [
-          413,
-          701
+          511.377,
+          665.736
         ],
         [
-          427,
-          733
+          519.721,
+          691.414
         ],
         [
-          447,
-          777
+          536.717,
+          743.722
         ],
         [
-          470,
-          814
-        ],
-        [
-          490,
-          819
+          555.258,
+          800.786
         ]
       ],
       "width_px": 6,
@@ -3375,12 +3395,16 @@
           480
         ],
         [
+          770.8936125710156,
+          501.82977314154937
+        ],
+        [
           776,
           518
         ],
         [
-          751,
-          524
+          780.766,
+          532.269
         ]
       ],
       "width_px": 6,
@@ -3395,24 +3419,20 @@
       "name": "Northeast cross street",
       "centerline_px": [
         [
-          552,
-          565
+          557.365,
+          571.209
         ],
         [
-          605,
-          556
+          623.939,
+          549.578
         ],
         [
-          643,
-          539
+          685.758,
+          529.492
         ],
         [
-          704,
-          519
-        ],
-        [
-          766,
-          498
+          770.8936125710156,
+          501.82977314154937
         ]
       ],
       "width_px": 6,
@@ -3427,20 +3447,20 @@
       "name": "Northeast longitudinal street",
       "centerline_px": [
         [
-          650,
-          415
+          646.204,
+          407.757
         ],
         [
-          670,
-          464
+          664.127,
+          462.918
         ],
         [
-          688,
-          513
+          685.758,
+          529.492
         ],
         [
-          704,
-          551
+          695.647,
+          559.926
         ]
       ],
       "width_px": 6,
@@ -3455,24 +3475,20 @@
       "name": "Northeast south lane",
       "centerline_px": [
         [
-          567,
-          595
+          569.156,
+          601.025
         ],
         [
-          625,
-          577
+          633.828,
+          580.012
         ],
         [
-          683,
-          559
+          695.647,
+          559.926
         ],
         [
-          748,
-          538
-        ],
-        [
-          778,
-          526
+          780.766,
+          532.269
         ]
       ],
       "width_px": 6,
@@ -3487,19 +3503,19 @@
       "name": "Branch canal bridge",
       "centerline_px": [
         [
-          580,
-          783
+          596.14,
+          780.983
         ],
         [
-          597,
-          780
+          614,
+          778
         ],
         [
           638,
           767
         ]
       ],
-      "width_px": 10,
+      "width_px": 6,
       "confidence": "approximate visual centreline",
       "road_type": "bridge",
       "driveable": true,
@@ -3515,32 +3531,36 @@
           767
         ],
         [
-          650,
-          778
+          639,
+          786
         ],
         [
-          653,
-          797
+          641,
+          802
         ],
         [
-          684,
-          816
+          646,
+          819
         ],
         [
-          716,
-          806
+          671,
+          828
         ],
         [
-          747,
-          808
+          714,
+          815
         ],
         [
-          779,
-          797
+          764,
+          800
         ],
         [
-          822,
-          794
+          787,
+          796
+        ],
+        [
+          825,
+          791
         ]
       ],
       "width_px": 5,
@@ -3555,8 +3575,8 @@
       "name": "South garden access",
       "centerline_px": [
         [
-          597,
-          780
+          596.14,
+          780.983
         ],
         [
           580,
@@ -3571,28 +3591,44 @@
           842
         ],
         [
-          517,
-          879
+          500,
+          855
         ],
         [
-          548,
-          922
+          506,
+          884
         ],
         [
-          604,
-          907
+          525,
+          935
+        ],
+        [
+          560,
+          924
+        ],
+        [
+          590,
+          914
+        ],
+        [
+          615,
+          903
+        ],
+        [
+          643,
+          882
         ],
         [
           634,
-          887
+          855
         ],
         [
-          625,
-          860
+          624,
+          830
         ],
         [
-          601,
-          812
+          610,
+          811
         ],
         [
           580,
@@ -3615,12 +3651,16 @@
           827
         ],
         [
-          562,
-          844
+          571,
+          837
         ],
         [
-          567,
-          862
+          583,
+          856
+        ],
+        [
+          580,
+          870
         ]
       ],
       "width_px": 5,
@@ -3629,6 +3669,56 @@
       "driveable": null,
       "bidirectional": null,
       "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified"
+    },
+    {
+      "id": "ROUTE_040",
+      "name": "Northeast west bank connection",
+      "centerline_px": [
+        [
+          555,
+          498
+        ],
+        [
+          539.775,
+          513.837
+        ],
+        [
+          557.365,
+          571.209
+        ],
+        [
+          569.156,
+          601.025
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate source-image retrace",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified",
+      "trace_provenance": "2026-10-05 visual review; access permissions remain unverified"
+    },
+    {
+      "id": "ROUTE_041",
+      "name": "South residential cross lane",
+      "centerline_px": [
+        [
+          397.035,
+          731.277
+        ],
+        [
+          519.721,
+          691.414
+        ]
+      ],
+      "width_px": 6,
+      "confidence": "approximate source-image retrace",
+      "road_type": "unknown",
+      "driveable": null,
+      "bidirectional": null,
+      "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified",
+      "trace_provenance": "2026-10-05 visual review; access permissions remain unverified"
     }
   ],
   "bridge_masks_px": [
@@ -3759,20 +3849,36 @@
       "name": "Branch canal",
       "polygon_px": [
         [
-          501,
-          526
-        ],
-        [
-          522,
+          510,
           518
         ],
         [
-          633,
-          778
+          528,
+          512
         ],
         [
-          613,
-          785
+          555,
+          590
+        ],
+        [
+          578,
+          640
+        ],
+        [
+          630,
+          775
+        ],
+        [
+          609,
+          783
+        ],
+        [
+          556,
+          640
+        ],
+        [
+          536,
+          590
         ]
       ]
     },
@@ -4277,6 +4383,50 @@
         [
           341,
           576
+        ]
+      ]
+    },
+    {
+      "id": "PLAZA_005",
+      "name": "Northeast residential court",
+      "polygon_px": [
+        [
+          608,
+          485
+        ],
+        [
+          666,
+          466
+        ],
+        [
+          677,
+          502
+        ],
+        [
+          617,
+          521
+        ]
+      ]
+    },
+    {
+      "id": "PLAZA_006",
+      "name": "Southeast residential entrance court",
+      "polygon_px": [
+        [
+          659.438,
+          830.295
+        ],
+        [
+          702.236,
+          816.39
+        ],
+        [
+          706.562,
+          829.705
+        ],
+        [
+          663.764,
+          843.61
         ]
       ]
     }
@@ -4922,5 +5072,5 @@
     845,
     960
   ],
-  "model_version": "0.3"
+  "model_version": "0.4"
 }

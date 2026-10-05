@@ -1,5 +1,5 @@
 {
-  "model_version": "0.3",
+  "model_version": "0.4",
   "source_image": "input/campus_1.jpg",
   "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
   "changes": [
@@ -969,7 +969,1307 @@
       ],
       "reason": "Source-image review: pass west/south of guardhouse or east of dining corner; retain narrow visible corridor.",
       "method": "Manual trace refinement"
+    },
+    {
+      "route_id": "ROUTE_019",
+      "before_centerline_px": [
+        [
+          335,
+          650
+        ],
+        [
+          340,
+          695
+        ],
+        [
+          341,
+          725
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          335,
+          650
+        ],
+        [
+          340,
+          695
+        ],
+        [
+          339.807,
+          721.482
+        ]
+      ],
+      "before_width_px": 10,
+      "after_width_px": 10,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 3.7147776514887356
+    },
+    {
+      "route_id": "ROUTE_020",
+      "before_centerline_px": [
+        [
+          156,
+          793
+        ],
+        [
+          151,
+          820
+        ],
+        [
+          151,
+          850
+        ],
+        [
+          159,
+          883
+        ],
+        [
+          173,
+          916
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          151.545,
+          784.755
+        ],
+        [
+          151.024,
+          820.043
+        ],
+        [
+          150.986,
+          850.022
+        ],
+        [
+          158.958,
+          882.971
+        ],
+        [
+          172.969,
+          916.061
+        ]
+      ],
+      "before_width_px": 9,
+      "after_width_px": 9,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 9.371608719958394
+    },
+    {
+      "route_id": "ROUTE_021",
+      "before_centerline_px": [
+        [
+          156,
+          793
+        ],
+        [
+          238,
+          764
+        ],
+        [
+          312,
+          741
+        ],
+        [
+          341,
+          725
+        ],
+        [
+          413,
+          701
+        ],
+        [
+          487,
+          675
+        ],
+        [
+          541,
+          660
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          151.545,
+          784.755
+        ],
+        [
+          216.55,
+          761.531
+        ],
+        [
+          302.145,
+          733.719
+        ],
+        [
+          339.807,
+          721.482
+        ],
+        [
+          388.691,
+          705.599
+        ],
+        [
+          511.377,
+          665.736
+        ],
+        [
+          554.175,
+          651.83
+        ]
+      ],
+      "before_width_px": 8,
+      "after_width_px": 8,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 15.502565110329263
+    },
+    {
+      "route_id": "ROUTE_022",
+      "before_centerline_px": [
+        [
+          312,
+          741
+        ],
+        [
+          324,
+          770
+        ],
+        [
+          335,
+          806
+        ],
+        [
+          349,
+          846
+        ],
+        [
+          375,
+          858
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          302.145,
+          733.719
+        ],
+        [
+          315.433,
+          774.615
+        ],
+        [
+          333.356,
+          829.776
+        ],
+        [
+          336.446,
+          839.287
+        ]
+      ],
+      "before_width_px": 8,
+      "after_width_px": 8,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. Terminate north of the continuous building 25 rather than crossing its roof.",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 42.85542305239789
+    },
+    {
+      "route_id": "ROUTE_023",
+      "before_centerline_px": [
+        [
+          541,
+          660
+        ],
+        [
+          556,
+          706
+        ],
+        [
+          571,
+          752
+        ],
+        [
+          580,
+          783
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          554.175,
+          651.83
+        ],
+        [
+          562.518,
+          677.508
+        ],
+        [
+          579.514,
+          729.817
+        ],
+        [
+          596.14,
+          780.983
+        ],
+        [
+          598.055,
+          786.88
+        ]
+      ],
+      "before_width_px": 8,
+      "after_width_px": 6,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 18.467198623505357
+    },
+    {
+      "route_id": "ROUTE_024",
+      "before_centerline_px": [
+        [
+          173,
+          916
+        ],
+        [
+          246,
+          900
+        ],
+        [
+          311,
+          878
+        ],
+        [
+          375,
+          858
+        ],
+        [
+          438,
+          836
+        ],
+        [
+          490,
+          819
+        ],
+        [
+          566,
+          795
+        ],
+        [
+          580,
+          783
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          172.969,
+          916.061
+        ],
+        [
+          246.355,
+          901.154
+        ],
+        [
+          346.025,
+          868.769
+        ],
+        [
+          432.572,
+          840.649
+        ],
+        [
+          555.258,
+          800.786
+        ],
+        [
+          598.055,
+          786.88
+        ]
+      ],
+      "before_width_px": 9,
+      "after_width_px": 9,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 18.467198623505357
+    },
+    {
+      "route_id": "ROUTE_025",
+      "before_centerline_px": [
+        [
+          238,
+          764
+        ],
+        [
+          231,
+          785
+        ],
+        [
+          242,
+          825
+        ],
+        [
+          270,
+          870
+        ],
+        [
+          311,
+          878
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          216.55,
+          761.531
+        ],
+        [
+          229.838,
+          802.426
+        ],
+        [
+          242.816,
+          842.371
+        ],
+        [
+          255.795,
+          882.315
+        ],
+        [
+          246.355,
+          901.154
+        ]
+      ],
+      "before_width_px": 6,
+      "after_width_px": 6,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 55.373380337487085
+    },
+    {
+      "route_id": "ROUTE_026",
+      "before_centerline_px": [
+        [
+          231,
+          785
+        ],
+        [
+          300,
+          764
+        ],
+        [
+          324,
+          770
+        ],
+        [
+          371,
+          752
+        ],
+        [
+          427,
+          733
+        ],
+        [
+          481,
+          716
+        ],
+        [
+          556,
+          706
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          229.838,
+          802.426
+        ],
+        [
+          315.433,
+          774.615
+        ]
+      ],
+      "before_width_px": 6,
+      "after_width_px": 6,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. Split courtyard crossing into the two actually visible lanes.",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 250.1609476197274
+    },
+    {
+      "route_id": "ROUTE_027",
+      "before_centerline_px": [
+        [
+          363,
+          733
+        ],
+        [
+          371,
+          752
+        ],
+        [
+          391,
+          783
+        ],
+        [
+          412,
+          819
+        ],
+        [
+          438,
+          836
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          388.691,
+          705.599
+        ],
+        [
+          397.035,
+          731.277
+        ],
+        [
+          401.979,
+          746.494
+        ],
+        [
+          419.902,
+          801.656
+        ],
+        [
+          432.572,
+          840.649
+        ]
+      ],
+      "before_width_px": 6,
+      "after_width_px": 6,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 37.56118051925414
+    },
+    {
+      "route_id": "ROUTE_028",
+      "before_centerline_px": [
+        [
+          413,
+          701
+        ],
+        [
+          427,
+          733
+        ],
+        [
+          447,
+          777
+        ],
+        [
+          470,
+          814
+        ],
+        [
+          490,
+          819
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          511.377,
+          665.736
+        ],
+        [
+          519.721,
+          691.414
+        ],
+        [
+          536.717,
+          743.722
+        ],
+        [
+          555.258,
+          800.786
+        ]
+      ],
+      "before_width_px": 6,
+      "after_width_px": 6,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 104.45934086318906
+    },
+    {
+      "route_id": "ROUTE_031",
+      "before_centerline_px": [
+        [
+          710,
+          387
+        ],
+        [
+          739,
+          398
+        ],
+        [
+          751,
+          438
+        ],
+        [
+          764,
+          480
+        ],
+        [
+          776,
+          518
+        ],
+        [
+          751,
+          524
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          710,
+          387
+        ],
+        [
+          739,
+          398
+        ],
+        [
+          751,
+          438
+        ],
+        [
+          764,
+          480
+        ],
+        [
+          770.8936125710156,
+          501.82977314154937
+        ],
+        [
+          776,
+          518
+        ],
+        [
+          780.766,
+          532.269
+        ]
+      ],
+      "before_width_px": 6,
+      "after_width_px": 6,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 25.646354835976123
+    },
+    {
+      "route_id": "ROUTE_032",
+      "before_centerline_px": [
+        [
+          552,
+          565
+        ],
+        [
+          605,
+          556
+        ],
+        [
+          643,
+          539
+        ],
+        [
+          704,
+          519
+        ],
+        [
+          766,
+          498
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          557.365,
+          571.209
+        ],
+        [
+          623.939,
+          549.578
+        ],
+        [
+          685.758,
+          529.492
+        ],
+        [
+          770.8936125710156,
+          501.82977314154937
+        ]
+      ],
+      "before_width_px": 6,
+      "after_width_px": 6,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 8.20578491065903
+    },
+    {
+      "route_id": "ROUTE_033",
+      "before_centerline_px": [
+        [
+          650,
+          415
+        ],
+        [
+          670,
+          464
+        ],
+        [
+          688,
+          513
+        ],
+        [
+          704,
+          551
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          646.204,
+          407.757
+        ],
+        [
+          664.127,
+          462.918
+        ],
+        [
+          685.758,
+          529.492
+        ],
+        [
+          695.647,
+          559.926
+        ]
+      ],
+      "before_width_px": 6,
+      "after_width_px": 6,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 12.224814313518221
+    },
+    {
+      "route_id": "ROUTE_035",
+      "before_centerline_px": [
+        [
+          567,
+          595
+        ],
+        [
+          625,
+          577
+        ],
+        [
+          683,
+          559
+        ],
+        [
+          748,
+          538
+        ],
+        [
+          778,
+          526
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          569.156,
+          601.025
+        ],
+        [
+          633.828,
+          580.012
+        ],
+        [
+          695.647,
+          559.926
+        ],
+        [
+          780.766,
+          532.269
+        ]
+      ],
+      "before_width_px": 6,
+      "after_width_px": 6,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 6.852088513730676
+    },
+    {
+      "route_id": "ROUTE_036",
+      "before_centerline_px": [
+        [
+          580,
+          783
+        ],
+        [
+          597,
+          780
+        ],
+        [
+          638,
+          767
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          596.14,
+          780.983
+        ],
+        [
+          614,
+          778
+        ],
+        [
+          638,
+          767
+        ]
+      ],
+      "before_width_px": 10,
+      "after_width_px": 6,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 16.265542997391748
+    },
+    {
+      "route_id": "ROUTE_037",
+      "before_centerline_px": [
+        [
+          638,
+          767
+        ],
+        [
+          650,
+          778
+        ],
+        [
+          653,
+          797
+        ],
+        [
+          684,
+          816
+        ],
+        [
+          716,
+          806
+        ],
+        [
+          747,
+          808
+        ],
+        [
+          779,
+          797
+        ],
+        [
+          822,
+          794
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          638,
+          767
+        ],
+        [
+          639,
+          786
+        ],
+        [
+          641,
+          802
+        ],
+        [
+          646,
+          819
+        ],
+        [
+          671,
+          828
+        ],
+        [
+          714,
+          815
+        ],
+        [
+          764,
+          800
+        ],
+        [
+          787,
+          796
+        ],
+        [
+          825,
+          791
+        ]
+      ],
+      "before_width_px": 5,
+      "after_width_px": 5,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 22.415161958545763
+    },
+    {
+      "route_id": "ROUTE_038",
+      "before_centerline_px": [
+        [
+          597,
+          780
+        ],
+        [
+          580,
+          813
+        ],
+        [
+          552,
+          827
+        ],
+        [
+          508,
+          842
+        ],
+        [
+          517,
+          879
+        ],
+        [
+          548,
+          922
+        ],
+        [
+          604,
+          907
+        ],
+        [
+          634,
+          887
+        ],
+        [
+          625,
+          860
+        ],
+        [
+          601,
+          812
+        ],
+        [
+          580,
+          813
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          596.14,
+          780.983
+        ],
+        [
+          580,
+          813
+        ],
+        [
+          552,
+          827
+        ],
+        [
+          508,
+          842
+        ],
+        [
+          500,
+          855
+        ],
+        [
+          506,
+          884
+        ],
+        [
+          525,
+          935
+        ],
+        [
+          560,
+          924
+        ],
+        [
+          590,
+          914
+        ],
+        [
+          615,
+          903
+        ],
+        [
+          643,
+          882
+        ],
+        [
+          634,
+          855
+        ],
+        [
+          624,
+          830
+        ],
+        [
+          610,
+          811
+        ],
+        [
+          580,
+          813
+        ]
+      ],
+      "before_width_px": 6,
+      "after_width_px": 6,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 26.25947719107817
+    },
+    {
+      "route_id": "ROUTE_039",
+      "before_centerline_px": [
+        [
+          552,
+          827
+        ],
+        [
+          562,
+          844
+        ],
+        [
+          567,
+          862
+        ]
+      ],
+      "after_centerline_px": [
+        [
+          552,
+          827
+        ],
+        [
+          571,
+          837
+        ],
+        [
+          583,
+          856
+        ],
+        [
+          580,
+          870
+        ]
+      ],
+      "before_width_px": 5,
+      "after_width_px": 5,
+      "reason": "Retrace visible source-image corridor; preserve courtyard/building boundaries and use explicit junctions. ",
+      "method": "Manual visual review; approximate source correction, NOT automatic detour",
+      "review_date": "2026-10-05",
+      "manual_hausdorff_distance_px": 17.022149736795622
     }
   ],
-  "limitations": "Manual approximate corrections are distinct from bounded automatic repair. Remaining conflicting routes stay flagged."
+  "limitations": "Manual approximate corrections are distinct from bounded automatic repair. Remaining conflicting routes stay flagged.",
+  "geometry_review_v04": {
+    "source_sha256": "97265ef6ff44476424a653d6d0f96520b98c70b0fb4f37f52a6485af6b999788",
+    "date": "2026-10-05",
+    "removed_buildings": [
+      {
+        "feature": {
+          "id": "BLDG_049",
+          "map_label": "39",
+          "name": "Student dormitory 39",
+          "polygon_px": [
+            [
+              659.438,
+              830.295
+            ],
+            [
+              702.236,
+              816.39
+            ],
+            [
+              706.562,
+              829.705
+            ],
+            [
+              663.764,
+              843.61
+            ]
+          ],
+          "height_class": "default",
+          "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+          "confidence": "approximate"
+        },
+        "reason": "Entrance plaza is not a second dormitory wing"
+      },
+      {
+        "feature": {
+          "id": "BLDG_064",
+          "map_label": "res_2_3",
+          "name": "Northeast residential wing",
+          "polygon_px": [
+            [
+              611.622,
+              494.113
+            ],
+            [
+              662.979,
+              477.426
+            ],
+            [
+              666.378,
+              487.887
+            ],
+            [
+              615.021,
+              504.574
+            ]
+          ],
+          "height_class": "default",
+          "provenance": "Visual footprint tracing of campus_1; label names cross-checked with campus_2",
+          "confidence": "approximate"
+        },
+        "reason": "Open plaza with two small structures is not a continuous dormitory"
+      }
+    ],
+    "added_buildings": [
+      {
+        "id": "BLDG_075",
+        "map_label": "guard",
+        "name": "Unidentified northeast plaza structure",
+        "polygon_px": [
+          [
+            620,
+            500
+          ],
+          [
+            628,
+            497
+          ],
+          [
+            631,
+            505
+          ],
+          [
+            623,
+            508
+          ]
+        ],
+        "height_class": "low",
+        "provenance": "Visible small structure on campus_1.jpg; function and height unknown, low-building approximation",
+        "confidence": "approximate"
+      },
+      {
+        "id": "BLDG_076",
+        "map_label": "guard",
+        "name": "Unidentified northeast plaza structure",
+        "polygon_px": [
+          [
+            624,
+            510
+          ],
+          [
+            638,
+            506
+          ],
+          [
+            641,
+            514
+          ],
+          [
+            627,
+            518
+          ]
+        ],
+        "height_class": "low",
+        "provenance": "Visible small structure on campus_1.jpg; function and height unknown, low-building approximation",
+        "confidence": "approximate"
+      },
+      {
+        "id": "BLDG_077",
+        "map_label": "23",
+        "name": "Engineering training centre side wing",
+        "polygon_px": [
+          [
+            328.011,
+            764.787
+          ],
+          [
+            338.473,
+            761.388
+          ],
+          [
+            350.358,
+            797.965
+          ],
+          [
+            339.896,
+            801.365
+          ]
+        ],
+        "height_class": "default",
+        "provenance": "Approximate visible courtyard side-wing retrace from campus_1.jpg",
+        "confidence": "approximate"
+      },
+      {
+        "id": "BLDG_078",
+        "map_label": "23",
+        "name": "Engineering training centre side wing",
+        "polygon_px": [
+          [
+            381.582,
+            745.204
+          ],
+          [
+            391.093,
+            742.114
+          ],
+          [
+            404.42,
+            783.133
+          ],
+          [
+            394.91,
+            786.223
+          ]
+        ],
+        "height_class": "default",
+        "provenance": "Approximate visible courtyard side-wing retrace from campus_1.jpg",
+        "confidence": "approximate"
+      }
+    ],
+    "water_changes": [
+      {
+        "id": "WATER_004",
+        "before_polygon_px": [
+          [
+            501,
+            526
+          ],
+          [
+            522,
+            518
+          ],
+          [
+            633,
+            778
+          ],
+          [
+            613,
+            785
+          ]
+        ],
+        "after_polygon_px": [
+          [
+            510,
+            518
+          ],
+          [
+            528,
+            512
+          ],
+          [
+            555,
+            590
+          ],
+          [
+            578,
+            640
+          ],
+          [
+            630,
+            775
+          ],
+          [
+            609,
+            783
+          ],
+          [
+            556,
+            640
+          ],
+          [
+            536,
+            590
+          ]
+        ],
+        "reason": "Retrace visible blue canal edge: old trapezoid invaded the east-bank road; colors sampled at y=530/590/640/775 and visually reviewed. Approximate stylized-map boundary."
+      }
+    ],
+    "new_routes": [
+      {
+        "id": "ROUTE_040",
+        "name": "Northeast west bank connection",
+        "centerline_px": [
+          [
+            555,
+            498
+          ],
+          [
+            539.775,
+            513.837
+          ],
+          [
+            557.365,
+            571.209
+          ],
+          [
+            569.156,
+            601.025
+          ]
+        ],
+        "width_px": 6,
+        "confidence": "approximate source-image retrace",
+        "road_type": "unknown",
+        "driveable": null,
+        "bidirectional": null,
+        "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified",
+        "trace_provenance": "2026-10-05 visual review; access permissions remain unverified"
+      },
+      {
+        "id": "ROUTE_041",
+        "name": "South residential cross lane",
+        "centerline_px": [
+          [
+            397.035,
+            731.277
+          ],
+          [
+            519.721,
+            691.414
+          ]
+        ],
+        "width_px": 6,
+        "confidence": "approximate source-image retrace",
+        "road_type": "unknown",
+        "driveable": null,
+        "bidirectional": null,
+        "semantic_provenance": "Bridge crossing visible on map; vehicle access and travel direction elsewhere unverified",
+        "trace_provenance": "2026-10-05 visual review; access permissions remain unverified"
+      }
+    ],
+    "assumptions": [
+      "All revised footprints, widths and centerlines remain approximate plan-map interpretations, not surveys.",
+      "New small plaza structures use a low-building height profile; their function is unidentified.",
+      "Vehicle access and travel direction remain unknown unless already explicitly recorded."
+    ],
+    "normalization_note": "Side-wing north ends overlap the same-label existing traces by about 0.015 px (about 2 modeled cm) to eliminate digitization seams. Previous UV coordinates had been rounded to 0.1 px; exact polygon inspection found 0.034 px / 0.004 px gaps. This is recorded source footprint normalization, not road rerouting."
+  }
 }
