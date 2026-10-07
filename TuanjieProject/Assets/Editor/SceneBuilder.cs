@@ -58,6 +58,47 @@ public static class SceneBuilder {
   EditorSceneManager.OpenScene(ScenePath,OpenSceneMode.Single);
   ExportBuildingCatalog();
  }
+ [MenuItem("Campus/Set Main Camera Overview")]
+ public static void SetMainCameraOverview(){
+  var scene=EditorSceneManager.GetActiveScene();
+  if(scene.path!=ScenePath)scene=EditorSceneManager.OpenScene(ScenePath,OpenSceneMode.Single);
+  Camera camera=Camera.main;
+  if(camera==null)throw new Exception("Main Camera missing");
+  var follow=camera.GetComponent<FollowCarCamera>();
+  var ground=GameObject.Find("Ground");
+  if(follow==null||ground==null||ground.GetComponent<Renderer>()==null)
+   throw new Exception("camera controller or Ground renderer missing");
+  follow.ConfigureOverview(ground.GetComponent<Renderer>().bounds);
+  EditorSceneManager.MarkSceneDirty(scene);
+  EditorSceneManager.SaveScene(scene);
+  Debug.Log("[builder] overview camera size="+camera.orthographicSize+" position="+camera.transform.position);
+ }
+ public static void RenderOverviewPreview(){
+  EditorSceneManager.OpenScene(ScenePath,OpenSceneMode.Single);
+  Camera camera=Camera.main;
+  if(camera==null)throw new Exception("Main Camera missing");
+  var target=new RenderTexture(1280,720,24);
+  var oldTarget=camera.targetTexture;
+  var oldActive=RenderTexture.active;
+  try{
+   camera.targetTexture=target;
+   camera.Render();
+   RenderTexture.active=target;
+   var image=new Texture2D(1280,720,TextureFormat.RGB24,false);
+   image.ReadPixels(new Rect(0,0,1280,720),0,0);
+   image.Apply();
+   string path=Path.GetFullPath(Path.Combine(Application.dataPath,"../../build/camera-overview-preview.png"));
+   Directory.CreateDirectory(Path.GetDirectoryName(path));
+   File.WriteAllBytes(path,image.EncodeToPNG());
+   UnityEngine.Object.DestroyImmediate(image);
+   Debug.Log("[builder] overview preview="+path);
+  }finally{
+   camera.targetTexture=oldTarget;
+   RenderTexture.active=oldActive;
+   target.Release();
+   UnityEngine.Object.DestroyImmediate(target);
+  }
+ }
  public static void OpenForReview(){
   var scene=EditorSceneManager.OpenScene(ScenePath,OpenSceneMode.Single);
   foreach(GameObject root in scene.GetRootGameObjects()){
@@ -139,7 +180,9 @@ public static class SceneBuilder {
   var camera=new GameObject("Main Camera");camera.tag="MainCamera";
   var cam=camera.AddComponent<Camera>();cam.fieldOfView=55;cam.farClipPlane=2500;cam.nearClipPlane=0.05f;
   var follow=camera.AddComponent<FollowCarCamera>();follow.target=car;
-  camera.transform.position=car.position+follow.offset;camera.transform.LookAt(car.position);
+  var ground=FindDeep(campus.transform,"Ground");
+  if(ground==null||ground.GetComponent<Renderer>()==null)throw new Exception("Ground renderer missing");
+  follow.ConfigureOverview(ground.GetComponent<Renderer>().bounds);
   var light=new GameObject("Sun").AddComponent<Light>();light.type=LightType.Directional;light.intensity=1.1f;light.transform.rotation=Quaternion.Euler(48,-30,0);
   RenderSettings.ambientLight=new Color(0.65f,0.7f,0.75f);
   var probe=new GameObject("Runtime Probe").AddComponent<RuntimeProbe>();probe.car=controller;
@@ -151,7 +194,9 @@ public static class SceneBuilder {
   Debug.Log("[builder] scene="+ScenePath+" roads="+roads+" buildings="+buildings+" car="+car.position+" graph="+(controller!=null));
  }
  public static void BuildPlayer(){
-  BuildScene();
+  AssetDatabase.Refresh();
+  if(File.Exists(ScenePath))EditorSceneManager.OpenScene(ScenePath,OpenSceneMode.Single);
+  else BuildScene();
   string output=Path.GetFullPath(Path.Combine(Application.dataPath,"../../build/tuanjie-player/DeliveryDemo.x86_64"));
   Directory.CreateDirectory(Path.GetDirectoryName(output));
   var report=BuildPipeline.BuildPlayer(new[]{"Assets/Scenes/CampusDelivery.unity"},output,BuildTarget.StandaloneLinux64,BuildOptions.None);

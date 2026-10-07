@@ -10,6 +10,8 @@
 
 使用本机团结 2022.3.62t7 打开本目录，然后打开 `Assets/Scenes/CampusDelivery.unity`。先启动仓库根目录的 C++ 服务端，再按 Play。团结小车在 `DeliveryRobot_ROOT` 上挂有 `CampusCarController`；左上角的 HUD 显示连接、订单和地图坐标。服务端未启动时，小车每 3 秒重连。
 
+Main Camera 默认使用覆盖整个校园的正交鸟瞰视角；全景中的橙色 `CAR` 标记指出小车位置。在 Game 视图按 **F** 切换近距离跟车、按 **O** 返回全景，全景下用鼠标滚轮缩放。场景保存的主相机也已设为鸟瞰；脚本会根据 Ground 网格范围重新计算适配的视野。
+
 校园 FBX 自带一辆已定位的小车，因此场景直接控制这辆车。`Assets/Models/delivery_robot.fbx` 是同一资产的独立导入副本，不应在当前场景再次放置，否则会出现双车。地图和车辆的原始 Blender/FBX 文件仍在 `tools/campus_builder/output/`。项目内的 FBX 为快照；重生成源资产后，需要同步替换 `Assets/Models/` 中的副本并运行场景生成器。
 
 ## 后台构建与联调
