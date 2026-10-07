@@ -9,10 +9,10 @@ Root: DeliveryRobot_ROOT, at footprint center on the wheel contact plane. Local 
 WheelPivot_FL/FR/RL/RR retain individual local +X spin axes, radius and independent tire/hub children.
 BaseLink, ForwardAxis, LidarMount and CameraMount are reference empties; sensors and dynamics are not implemented.
 Source metric/hierarchy check: True; placed FBX: True; standalone FBX: True; standalone blend: True.
-Measured local dimensions XYZ after FBX: [0.800000011920929, 1.2000000476837158, 1.100000025551024] m.
+Measured local dimensions XYZ after FBX: [0.800000011920929, 1.2000000476837158, 1.1000000261470717] m.
 Wheel contacts after placed FBX: [0.04500088095664978, 0.04500088095664978, 0.044999122619628906, 0.044999122619628906] m; expected road top: 0.045 m.
-Standalone FBX round trip: {"pass_": true, "errors": [], "max_bbox_delta_m": 1.1920928955078125e-07, "max_vertex_delta_m": 1.2731557319511921e-07, "dimension_ratios": [1.0, 1.0, 1.000000121918602], "direction_check": "Named object world-space bounds and bidirectional vertices match; Z remains height"}
-Closeup source/reimport appearance: {"mean_absolute_rgb_error": [0.002970138888888889, 0.003757638888888889, 0.0034638888888888887], "pass_": true}
+Standalone FBX round trip: {"pass_": true, "errors": [], "max_bbox_delta_m": 1.7881393432617188e-07, "max_vertex_delta_m": 2.1490760104825313e-07, "dimension_ratios": [1.0, 1.0, 1.0000001625581363], "direction_check": "Named object world-space bounds and bidirectional vertices match; Z remains height"}
+Closeup source/reimport appearance: {"mean_absolute_rgb_error": [0.00922986111111111, 0.007749305555555555, 0.006346527777777778], "pass_": true}
 Full clean-build idempotency: True; runs: 2.
 
 ## Integration limits

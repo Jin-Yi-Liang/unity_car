@@ -14,7 +14,7 @@
       "path": "input/evidence/buildings/official_admin_13.html",
       "fact": "Official notice lists comprehensive building room 1302; supports at least 13 floors, not total height.",
       "retrieved_date": "2026-10-04",
-      "sha256": "e447f8330f6f90e3cbac5f1dd4ad885e41ffe2c0d540bdfdcd096ec70b14e14e"
+      "sha256": "dfd96b501ca9ea2eb0c909e8f0c0a12ba0fc8833394293257c613e2d3178d793"
     },
     {
       "id": "LIBRARY_OFFICIAL",
@@ -22,7 +22,7 @@
       "path": "input/evidence/buildings/official_library_floors.html",
       "fact": "Library at building 18 includes room 411; at least four floors, not a measured height.",
       "retrieved_date": "2026-10-04",
-      "sha256": "818ee1e4a5a7bbf7d8dec84c98083269efe7feac7fa8fb0d326303fd91102e6c"
+      "sha256": "efc4f3d0bdd37bea6ab2c0b4057cc74328d7cffc5b42d9f39dfc2ae42be1177e"
     },
     {
       "id": "CAMPUS_TOUR",
@@ -46,7 +46,7 @@
       "path": "input/evidence/buildings/official_new_buildings.html",
       "fact": "Official 2023 report describes new 13/10/9-floor buildings; old map does not identify their footprints reliably. NOT applied to old map buildings.",
       "retrieved_date": "2026-10-04",
-      "sha256": "d470a4c58a10a1898eafa5d433d7aa2e1fc58e1db9a0079d67055341718c9737"
+      "sha256": "6ab999f3593926b9d77fc9d57f5f2c15ac2207a1ef456f28912dbb16e0a9e38c"
     },
     {
       "id": "SMALL_HIGHRISE",
@@ -54,7 +54,7 @@
       "path": "input/evidence/buildings/official_small_highrise.html",
       "fact": "Official source identifies building 11 as small highrise; exact floor count not stated.",
       "retrieved_date": "2026-10-04",
-      "sha256": "7de9bd6f6c88701202984bebd7ae08829708aee0254100ab6229c1ad5596d025"
+      "sha256": "3894c52670696f7c4ce4bfa687ced4e4e54f54d356dfe17080181456ae0838dd"
     },
     {
       "id": "MAP",

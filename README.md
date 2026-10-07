@@ -1,5 +1,7 @@
 # Unity 校园外卖小车仿真系统
 
+> 下方架构图描述项目目标；本分支当前可运行的范围见文末「团结前端与本机联调」。已实现本机 TCP 派单、仿真道路图寻路、车辆移动及订单状态回传；DWA/APF、C++ 动态库和服务端全局 A* 尚未实现。
+
 ## 系统架构
 
 本系统基于**"云-边-端协同"（Cloud-Edge-End）**理念与**边缘计算**思想，采用工业级 **Fleet Management System (FMS)** 标准架构。
@@ -102,14 +104,15 @@
 |------|------|------|
 | 登录 | `LOGIN,CLIENT` 或 `LOGIN,UNITY` | 首包认证 |
 | 订单 | `ORDER,pickup_x,pickup_y,deliver_x,deliver_y,food,priority` | 学生下单 |
-| 汇报 | `REPORT,ARRIVED,car_id` 或 `REPORT,OBSTACLE,car_id` | Unity 到达/遇障 |
+| 汇报 | `REPORT,PICKUP\|ARRIVED\|REJECTED,car_id,order_id` | Unity 取餐、送达或拒绝离路任务 |
+| 位置 | `POSITION,car_id,x,y` | Unity 定期上报地图坐标 |
 
 #### 下行（Server → Unity）
 
 | 消息 | 格式 | 说明 |
 |------|------|------|
-| 任务 | `TASK,pickup_x,pickup_y,deliver_x,deliver_y,car_id` | 下发完整配送任务 |
-| 航点 | `NAV,x1,y1,x2,y2,x3,y3,...,car_id` | 宏观路径点序列（点分制） |
+| 任务 | `TASK,pickup_x,pickup_y,deliver_x,deliver_y,car_id,order_id` | 下发完整配送任务 |
+| 状态 | `STATUS,order_id,ASSIGNED\|PICKUP\|DELIVERED\|REJECTED` | 推送给下单客户端 |
 
 ---
 
@@ -153,3 +156,9 @@
 ├── CMakeLists.txt
 └── README.md
 ```
+
+## 团结前端与本机联调
+
+`TuanjieProject/` 是用本机团结 2022.3.62t7 创建的可打开项目；主场景是 `Assets/Scenes/CampusDelivery.unity`。场景导入 `tools/campus_builder/output/campus.fbx`，使用其中已放置的 `DeliveryRobot_ROOT` 作为小车，挂载 `CampusCarController`、刚体与碰撞体；独立 `delivery_robot.fbx` 也保存在 `Assets/Models/`，供替换与检查。建筑和道路添加了静态碰撞体，摄像机跟随小车，左上角显示 TCP 状态、订单阶段及地图坐标。导航数据来自建模分支的 `simulation_navigation_graph.json`，仅供演示仿真，不能代表现实校园通行许可。
+
+项目启动与协议、复现命令见 [TuanjieProject/README.md](TuanjieProject/README.md)。当前服务端绑定 `127.0.0.1:10000`，前端和后端须在同一台机器上运行。后端派单并回传状态；团结小车按仿真道路图寻路、执行移动并回报取餐及送达。当前运动使用按路点匀速移动和前向 Raycast 停车，没有实现 README 架构设想中的 C++ DWA/APF 动态规划库。

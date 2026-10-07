@@ -1,33 +1,36 @@
-# 编译产物                                                                    
-build/                                                                      
-*.o                                                                           
-*.a                                                               
-*.so                  
-*.dylib                                       
-                                                                                
-# IDE / 编辑器                                                    
-.vscode/              
-.idea/                                        
-*.swp                                                                         
+# 编译产物
+build/
+*.o
+*.a
+*.so
+*.dylib
+
+# IDE / 编辑器
+.vscode/
+.idea/
+*.swp
 *.swo
-*~                                                                            
-                                                                    
-# C++ 标准产物        
-*.out                                         
+*~
+
+# C++ 标准产物
+*.out
 
 # Unity
-unity_code/                              
+unity_code/
 Library/
 Logs/
 ProjectSettings/
-Temp/                                                                         
-obj/                                                              
-*.unitypackage.meta   
+!TuanjieProject/ProjectSettings/
+TuanjieProject/UserSettings/
+Temp/
+obj/
+*.unitypackage.meta
 
 # non-use folder
 draft/
 test/
 
 # 其他
-*.log                                                                         
-.DS_Store 
+*.log
+.DS_Store
+mono_crash.mem.*.blob

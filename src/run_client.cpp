@@ -1,77 +1,18 @@
-#include"../include/allhead.h"
-
-/*--------------------changeable-----------------*/
-#define CLI_IP "192.168.1.4"
-//#define CLI_PORT 10001  considering multi client they can not use same port
-//so the port is pass by argument 1
-
-int main(int argc,char*argv[]){
-    //get port info
-    if(argc!=2){
-        printf("need argument to verify client's PORT\n");
-        return -1;
-    }
-    uint16_t cli_port=argv[1]-"0";
-
-    //create client socket
-    int cli_sfd=socket(AF_INET,SOCK_STREAM,0);
-    if(cli_sfd==-1){
-        perror("create client socket error");
-        return -1;
-    }
-    printf("[INFO]create client socket %d\n",cli_sfd);
-
-    //create sockaddr_in
-    sockaddr_in cli_ad;
-    cli_ad.sin_family=AF_INET;
-    cli_ad.sin_addr.s_addr=inet_addr(CLI_IP);
-    cli_ad.sin_port=htons(cli_port);
-
-    //bind with IP and port
-    if(bind(cli_sfd,(sockaddr*)&cli_ad,sizeof(cli_ad))==-1){
-        perror("bind ip and port to client socket error");
-        return -1;
-    }
-    printf("[INFO]bind ip and port to client socket %d\n",cli_sfd);
-
-    //create sever sockaddr_in
-    sockaddr_in sev_ad;
-    sev_ad.sin_family=AF_INET;
-    sev_ad.sin_addr.s_addr=inet_addr(EPOLL_IP);
-    sev_ad.sin_port=htons(EPOLL_PORT);
-
-    //connect to the sever
-    if(connect(cli_sfd,(sockaddr*)&sev_ad,sizeof(sev_ad))==-1){
-        perror("connect to sever error");
-        return -1;
-    }
-    printf("[INFO]client %d connect to sever epoll\n",cli_sfd);
-
-    //send client verify
-    char verify_words[]="LOGIN,CLIENT";
-    if(send(cli_sfd,verify_words,sizeof(verify_words),0)==-1){
-        perror("send verify words to sever error");
-    }
-    printf("[INFO]send verify words %s to sever\n",verify_words);
-
-    while(1){
-        char buf[256];
-        memset(buf,0,sizeof(buf));
-        printf("enter point x y:");
-        fgets(buf,sizeof(buf),stdin);
-        buf[strlen(buf)-1]='\0';
-        if(strcmp(buf,"quit")==0){
-            printf("[INFO]user finish input\n");
-            break;
-        }
-        if(send(cli_sfd,buf,strlen(buf),0)==-1){
-            perror("send error");
-            continue;
-        }
-        printf("[INFO]send message %s to sever\n",buf);
-    }
-
-    close(cli_sfd);
-
-    return 0;
+#include "../include/allhead.h"
+#include <arpa/inet.h>
+#include <cstdio>
+#include <sys/socket.h>
+#include <unistd.h>
+int main(int argc,char** argv){
+ if(argc!=7){std::fprintf(stderr,"usage: client_run pickup_x pickup_y deliver_x deliver_y food priority\n");return 2;}
+ int fd=socket(AF_INET,SOCK_STREAM,0);sockaddr_in address{};address.sin_family=AF_INET;address.sin_port=htons(EPOLL_PORT);inet_pton(AF_INET,EPOLL_IP,&address.sin_addr);
+ if(connect(fd,reinterpret_cast<sockaddr*>(&address),sizeof(address))<0){perror("connect");return 1;}
+ std::string request="LOGIN,CLIENT\nORDER,"+std::string(argv[1])+","+argv[2]+","+argv[3]+","+argv[4]+","+argv[5]+","+argv[6]+"\n";
+ send(fd,request.data(),request.size(),0);char buffer[1024];std::string pending;
+ while(true){ssize_t count=recv(fd,buffer,sizeof(buffer),0);if(count<=0)break;pending.append(buffer,static_cast<size_t>(count));size_t end;
+  while((end=pending.find('\n'))!=std::string::npos){std::string line=pending.substr(0,end);pending.erase(0,end+1);std::puts(line.c_str());std::fflush(stdout);
+   if(line.find(",DELIVERED")!=std::string::npos){close(fd);return 0;}if(line.find(",REJECTED")!=std::string::npos||line.rfind("ERROR,",0)==0){close(fd);return 1;}
+  }
+ }
+ close(fd);return 1;
 }

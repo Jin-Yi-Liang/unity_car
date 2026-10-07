@@ -3,8 +3,8 @@
 RESULT: PARTIAL
 
 Blender: 5.2.2 LTS
-Input: `/home/michael/workspace/unity/tools/campus_builder/input/campus_1.jpg`
-Reference: `/home/michael/workspace/unity/tools/campus_builder/input/campus_2.jpg`
+Input: `/home/michael/.codex/worktrees/0878/unity_car/tools/campus_builder/input/campus_1.jpg`
+Reference: `/home/michael/.codex/worktrees/0878/unity_car/tools/campus_builder/input/campus_2.jpg`
 Input size: [900, 1037] px
 Method: Visual polygon/centreline digitization + Shapely union/difference + constrained triangulation
 
@@ -15,8 +15,8 @@ Origin pixel: [482.5, 525.0]. XY reads the calibration matrix; Z parameters are 
 Campus Ground bbox (m): [-459.90899658203125, -551.8909912109375, -0.30000001192092896] to [459.90899658203125, 551.8909912109375, 44.20000076293945]
 Campus dimensions (m): [919.8179931640625, 1103.781982421875, 44.50000077486038]
 Buildings: 69; road surface Mesh components: 7; annotated road routes: 40
-Other object counts: {"ACCESS": 4, "BRIDGE": 4, "DOCK": 4, "ENTRANCE": 4, "GRASS": 34, "Ground": 1, "LANDMARK": 4, "PLAZA": 7, "ROBOT": 34, "WATER": 9}
-Meshes: 181; vertices: 9943; faces: 13666
+Other object counts: {"ACCESS": 4, "BRIDGE": 4, "DOCK": 4, "ENTRANCE": 4, "GRASS": 34, "Ground": 1, "LANDMARK": 4, "PLAZA": 7, "ROBOT": 45, "WATER": 9}
+Meshes: 192; vertices: 10327; faces: 13988
 Road widths (provisional metres): [6.34357635867989, 12.68715271735978]
 
 ## Automated acceptance
@@ -27,13 +27,13 @@ Road widths (provisional metres): [6.34357635867989, 12.68715271735978]
 | Planar road/building overlap | 0.0 m² |
 | Unbridged road/water overlap | 0.0 m² |
 | FBX export | PASS: -Z forward / Y up; formal meshes and robot root/joint/reference empties; unit handling recorded in JSON |
-| Fresh FBX import | PASS: 181 Mesh objects; same object names/material slots |
-| Bbox deviation | 3.0517578125e-05 m |
-| Bidirectional vertex deviation | 6.104458589106798e-05 m |
-| Dimension ratios XYZ | [1.0, 1.0, 1.0000001989053842] |
+| Fresh FBX import | PASS: 192 Mesh objects; same object names/material slots |
+| Bbox deviation | 8.991445793071762e-05 m |
+| Bidirectional vertex deviation | 8.991445793071762e-05 m |
+| Dimension ratios XYZ | [1.0, 1.0, 1.0000006489539301] |
 | Direction | PASS: world-space geometry matches, Z remains height; no axis swap or inversion |
 | Render camera framing | PASS: all eight bbox corners lie inside every automatic camera frame |
-| Reimport render RGB mean error | [0.0005020833333333333, 0.0005854166666666667, 0.00043125] |
+| Reimport render RGB mean error | [0.0006020833333333334, 0.0007118055555555556, 0.00054375] |
 | Original images preserved | True (SHA256 verified) |
 | Clean repeated build | PASS: 2 full run(s) |
 
@@ -43,23 +43,23 @@ Road widths (provisional metres): [6.34357635867989, 12.68715271735978]
 |---|---|---|---|---|---|
 | top.png | [1200, 1200] | [176.5, 191.16, 184.44] | [1496.8, 647.75, 1175.21] | 0.632 | PASS |
 | perspective_01.png | [1200, 1200] | [179.22, 189.65, 191.65] | [712.45, 356.95, 618.99] | 0.287 | PASS |
-| perspective_02.png | [1200, 1200] | [179.48, 189.48, 192.21] | [632.01, 327.51, 569.46] | 0.253 | PASS |
+| perspective_02.png | [1200, 1200] | [179.48, 189.48, 192.21] | [632.0, 327.5, 569.46] | 0.253 | PASS |
 | reimported_fbx.png | [1200, 1200] | [179.22, 189.65, 191.65] | [712.45, 356.94, 618.99] | 0.287 | PASS |
 | building_administration.png | [1200, 1200] | [161.28, 170.88, 178.33] | [1651.24, 1383.26, 1271.91] | 0.366 | PASS |
 | building_teaching.png | [1200, 1200] | [174.08, 182.2, 189.89] | [644.93, 567.56, 588.74] | 0.143 | PASS |
 | building_gym.png | [1200, 1200] | [174.17, 182.25, 189.59] | [491.3, 456.73, 552.96] | 0.150 | PASS |
 | building_library.png | [1200, 1200] | [176.02, 184.02, 191.7] | [481.29, 426.2, 447.48] | 0.129 | PASS |
 | building_exhibition.png | [1200, 1200] | [162.17, 170.12, 177.7] | [1922.89, 1926.77, 1996.02] | 0.277 | PASS |
-| roads_south.png | [1200, 1200] | [164.31, 183.93, 176.3] | [1607.49, 690.97, 1310.4] | 0.640 | PASS |
+| roads_south.png | [1200, 1200] | [164.31, 183.93, 176.3] | [1607.48, 690.96, 1310.4] | 0.640 | PASS |
 | roads_northeast.png | [1200, 1200] | [182.85, 195.53, 185.39] | [2252.5, 1146.63, 1592.94] | 0.972 | PASS |
-| delivery_robot_closeup.png | [1200, 1200] | [109.86, 121.01, 128.63] | [441.94, 393.31, 506.87] | 0.128 | PASS |
-| delivery_robot_on_campus.png | [1200, 1200] | [136.16, 152.6, 141.53] | [943.26, 1036.01, 1014.06] | 0.728 | PASS |
-| delivery_robot_reimported.png | [1200, 1200] | [109.86, 121.01, 128.63] | [441.94, 393.31, 506.88] | 0.128 | PASS |
-| delivery_robot_asset.png | [1200, 1200] | [158.5, 174.93, 186.14] | [2250.97, 1359.29, 1357.86] | 0.229 | PASS |
+| delivery_robot_closeup.png | [1200, 1200] | [110.41, 120.76, 127.94] | [481.55, 389.22, 510.21] | 0.127 | PASS |
+| delivery_robot_on_campus.png | [1200, 1200] | [136.17, 152.6, 141.52] | [943.2, 1036.11, 1014.11] | 0.728 | PASS |
+| delivery_robot_reimported.png | [1200, 1200] | [110.41, 120.76, 127.94] | [480.88, 388.64, 509.77] | 0.127 | PASS |
+| delivery_robot_asset.png | [1200, 1200] | [159.97, 174.35, 184.37] | [2230.48, 1390.81, 1518.8] | 0.245 | PASS |
 | delivery_site_LIBRARY.png | [1200, 1200] | [135.9, 150.77, 147.76] | [2185.48, 1849.77, 1236.3] | 0.708 | PASS |
 | delivery_site_TEACHING_3.png | [1200, 1200] | [138.34, 164.25, 138.66] | [718.8, 863.14, 665.73] | 0.838 | PASS |
-| delivery_site_CANTEEN_20.png | [1200, 1200] | [115.29, 130.39, 123.9] | [1420.92, 1212.46, 1588.58] | 0.789 | PASS |
-| delivery_site_DORM_11.png | [1200, 1200] | [114.76, 130.82, 109.39] | [1013.07, 1323.4, 564.77] | 0.672 | PASS |
+| delivery_site_CANTEEN_20.png | [1200, 1200] | [115.29, 130.39, 123.9] | [1420.92, 1212.46, 1588.57] | 0.789 | PASS |
+| delivery_site_DORM_11.png | [1200, 1200] | [114.76, 130.82, 109.39] | [1013.07, 1323.39, 564.77] | 0.672 | PASS |
 
 ## Map facts versus modeling assumptions
 
@@ -216,9 +216,9 @@ Unknown vehicle permissions/directions remain null. Invalid trace edges are mark
 
 ## Complexity and reproducibility
 
-{"v01_vertices": 57158, "v02_vertices": 9943, "v01_faces": 85585, "v02_faces": 13666, "vertex_ratio": 0.1739564015535883, "face_ratio": 0.15967751358298768}
-{"git_commit": "cfde90a94849384b8f5a609c24777710aca18144", "python": "3.13.12", "shapely": "2.1.2", "pillow": "12.1.1", "blender": "5.2.2 LTS"}
-Regression tests: {'pass_': True, 'log': '/home/michael/workspace/unity/tools/campus_builder/output/logs/test_v02.log', 'command': 'python3 -m unittest discover -s tools/campus_builder/tests -v'}; tests cover outliers/conflicting evidence, evidence gate, XY/Z independence, bounded repair, shared junctions and Dijkstra on known valid routes.
+{"v01_vertices": 57158, "v02_vertices": 10327, "v01_faces": 85585, "v02_faces": 13988, "vertex_ratio": 0.18067462122537528, "face_ratio": 0.16343985511479817}
+{"git_commit": "095c3260eb2b5cfb90783ffd9d37795d34f1050e", "python": "3.14.4", "shapely": "2.2.0", "pillow": "12.3.0", "blender": "5.2.2 LTS"}
+Regression tests: {'pass_': True, 'log': '/home/michael/.codex/worktrees/0878/unity_car/tools/campus_builder/output/logs/test_v02.log', 'command': 'python3 -m unittest discover -s tools/campus_builder/tests -v'}; tests cover outliers/conflicting evidence, evidence gate, XY/Z independence, bounded repair, shared junctions and Dijkstra on known valid routes.
 JSON data hashes and source Mesh summaries are identical across two independent clean builds.
 
 ## Additional evidence needed
@@ -239,7 +239,7 @@ Additional close-up renders: building_administration.png, building_teaching.png,
 Source-image manual road edits are recorded separately in config/source_geometry_changes.json; they are not reported as automatic shifts.
 Bridge decks use the explicit bridge masks, including the water gap drawn beneath a bridge symbol.
 Zero-area polygon self-touches after bridge cuts are repaired only when area stays within a strict tolerance.
-V0.2 to current mesh counts: {"before_vertices": 11896, "after_vertices": 9943, "before_faces": 17664, "after_faces": 13666}
+V0.2 to current mesh counts: {"before_vertices": 11896, "after_vertices": 10327, "before_faces": 17664, "after_faces": 13988}
 
 ## Delivery robot
 
@@ -252,10 +252,10 @@ Root: DeliveryRobot_ROOT, at footprint center on the wheel contact plane. Local 
 WheelPivot_FL/FR/RL/RR retain individual local +X spin axes, radius and independent tire/hub children.
 BaseLink, ForwardAxis, LidarMount and CameraMount are reference empties; sensors and dynamics are not implemented.
 Source metric/hierarchy check: True; placed FBX: True; standalone FBX: True; standalone blend: True.
-Measured local dimensions XYZ after FBX: [0.800000011920929, 1.2000000476837158, 1.100000025551024] m.
+Measured local dimensions XYZ after FBX: [0.800000011920929, 1.2000000476837158, 1.1000000261470717] m.
 Wheel contacts after placed FBX: [0.04500088095664978, 0.04500088095664978, 0.044999122619628906, 0.044999122619628906] m; expected road top: 0.045 m.
-Standalone FBX round trip: {"pass_": true, "errors": [], "max_bbox_delta_m": 1.1920928955078125e-07, "max_vertex_delta_m": 1.2731557319511921e-07, "dimension_ratios": [1.0, 1.0, 1.000000121918602], "direction_check": "Named object world-space bounds and bidirectional vertices match; Z remains height"}
-Closeup source/reimport appearance: {"mean_absolute_rgb_error": [0.002970138888888889, 0.003757638888888889, 0.0034638888888888887], "pass_": true}
+Standalone FBX round trip: {"pass_": true, "errors": [], "max_bbox_delta_m": 1.7881393432617188e-07, "max_vertex_delta_m": 2.1490760104825313e-07, "dimension_ratios": [1.0, 1.0, 1.0000001625581363], "direction_check": "Named object world-space bounds and bidirectional vertices match; Z remains height"}
+Closeup source/reimport appearance: {"mean_absolute_rgb_error": [0.00922986111111111, 0.007749305555555555, 0.006346527777777778], "pass_": true}
 Full clean-build idempotency: True; runs: 2.
 
 ## Integration limits
@@ -277,7 +277,7 @@ The branch canal boundary was retraced from the visible blue-water edge instead 
 Unknown-direction driveable edges: 2; explicitly directed routable edges: 0. Dijkstra uses directed arcs, not undirected components.
 NAVIGATION PASS covers geometric/topological data validation. Unknown vehicle access or direction still requires confirmation before vehicle routing; zero campus Dijkstra pairs is not a driving connectivity proof.
 New previews: building_exhibition.png, roads_south.png, roads_northeast.png, source_retrace_overlay.png.
-Full V0.3/current mesh comparison: {"object_count": 181, "total_vertices": 9943, "total_faces": 13666, "category_counts": {"ACCESS": 4, "BLDG": 69, "BRIDGE": 4, "DOCK": 4, "ENTRANCE": 4, "GRASS": 34, "Ground": 1, "LANDMARK": 4, "PLAZA": 7, "ROAD": 7, "ROBOT": 34, "WATER": 9}}
+Full V0.3/current mesh comparison: {"object_count": 192, "total_vertices": 10327, "total_faces": 13988, "category_counts": {"ACCESS": 4, "BLDG": 69, "BRIDGE": 4, "DOCK": 4, "ENTRANCE": 4, "GRASS": 34, "Ground": 1, "LANDMARK": 4, "PLAZA": 7, "ROAD": 7, "ROBOT": 45, "WATER": 9}}
 Manual-review assumptions:
 - All revised footprints, widths and centerlines remain approximate plan-map interpretations, not surveys.
 - New small plaza structures use a low-building height profile; their function is unidentified.
@@ -308,4 +308,4 @@ Source and fresh FBX marker/bay validation: True; graph and connector data hashe
 XY remains conditional on unverified scale anchors. Bay size, pedestrian width, facade standoff and robot dimensions are independent modeled metres.
 New views: delivery_site_LIBRARY.png, delivery_site_TEACHING_3.png, delivery_site_CANTEEN_20.png, delivery_site_DORM_11.png and delivery_sites_overlay.png.
 Full per-site vectors, evidence hashes and assumptions: data/delivery_sites.json. Waypoint-ready polyline geometry: data/simulation_navigation_graph.json.
-Before/current mesh counts: {"before_vertices": 9641, "after_vertices": 9943, "before_faces": 13317, "after_faces": 13666}
+Before/current mesh counts: {"before_vertices": 9641, "after_vertices": 10327, "before_faces": 13317, "after_faces": 13988}

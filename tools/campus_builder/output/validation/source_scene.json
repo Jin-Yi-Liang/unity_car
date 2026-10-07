@@ -1,6 +1,6 @@
 {
   "errors": [],
-  "object_count": 181,
+  "object_count": 192,
   "category_counts": {
     "ACCESS": 4,
     "BLDG": 69,
@@ -12,11 +12,11 @@
     "LANDMARK": 4,
     "PLAZA": 7,
     "ROAD": 7,
-    "ROBOT": 34,
+    "ROBOT": 45,
     "WATER": 9
   },
-  "total_vertices": 9943,
-  "total_faces": 13666,
+  "total_vertices": 10327,
+  "total_faces": 13988,
   "bbox_min": [
     -459.90899658203125,
     -551.8909912109375,
@@ -320,7 +320,7 @@
       "nonmanifold_edges": 0,
       "degenerate_faces": 0,
       "invalid_normals": 0,
-      "signed_volume_m3": 11446.16681872934,
+      "signed_volume_m3": 11446.166804701583,
       "material_count": 2
     },
     "BLDG_012": {
@@ -2353,7 +2353,7 @@
       "nonmanifold_edges": 0,
       "degenerate_faces": 0,
       "invalid_normals": 0,
-      "signed_volume_m3": 296.1171436849316,
+      "signed_volume_m3": 296.1171436849317,
       "material_count": 1
     },
     "LANDMARK_003": {
@@ -2543,7 +2543,7 @@
       "nonmanifold_edges": 0,
       "degenerate_faces": 0,
       "invalid_normals": 0,
-      "signed_volume_m3": 1906.7648223896958,
+      "signed_volume_m3": 1906.7648223896967,
       "material_count": 1
     },
     "ROAD_002": {
@@ -2715,6 +2715,25 @@
       "degenerate_faces": 0,
       "invalid_normals": 0,
       "signed_volume_m3": 0.4495589553259025,
+      "material_count": 1
+    },
+    "ROBOT_CargoSeal": {
+      "vertices": 32,
+      "faces": 30,
+      "bbox_min": [
+        -273.2640075683594,
+        44.7901611328125,
+        0.953000009059906
+      ],
+      "bbox_max": [
+        -272.3450012207031,
+        45.40875244140625,
+        0.9710000157356262
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 0.009883518976699897,
       "material_count": 1
     },
     "ROBOT_Chassis": {
@@ -2926,6 +2945,25 @@
       "signed_volume_m3": 0.00028861841450131536,
       "material_count": 1
     },
+    "ROBOT_InsulatedLidBand": {
+      "vertices": 32,
+      "faces": 30,
+      "bbox_min": [
+        -273.2550354003906,
+        45.04420852661133,
+        1.0110000371932983
+      ],
+      "bbox_max": [
+        -272.3539733886719,
+        45.15470504760742,
+        1.024999976158142
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 0.0012110000339623816,
+      "material_count": 1
+    },
     "ROBOT_Lid": {
       "vertices": 32,
       "faces": 30,
@@ -3078,6 +3116,215 @@
       "signed_volume_m3": 6.849999736249448e-05,
       "material_count": 1
     },
+    "ROBOT_MealBadge_Left": {
+      "vertices": 48,
+      "faces": 26,
+      "bbox_min": [
+        -273.08892822265625,
+        44.72071838378906,
+        0.5900000333786011
+      ],
+      "bbox_max": [
+        -272.828857421875,
+        44.731773376464844,
+        0.8500000238418579
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 0.00041990801327329233,
+      "material_count": 1
+    },
+    "ROBOT_MealBadge_Right": {
+      "vertices": 48,
+      "faces": 26,
+      "bbox_min": [
+        -273.0801086425781,
+        45.47066879272461,
+        0.5900000333786011
+      ],
+      "bbox_max": [
+        -272.8200378417969,
+        45.48172378540039,
+        0.8500000238418579
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 0.00041990801327329233,
+      "material_count": 1
+    },
+    "ROBOT_MealBowl_Left": {
+      "vertices": 32,
+      "faces": 30,
+      "bbox_min": [
+        -273.01904296875,
+        44.71156692504883,
+        0.6790000200271606
+      ],
+      "bbox_max": [
+        -272.89898681640625,
+        44.72092819213867,
+        0.7369999885559082
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 5.283199926546205e-05,
+      "material_count": 1
+    },
+    "ROBOT_MealBowl_Right": {
+      "vertices": 32,
+      "faces": 30,
+      "bbox_min": [
+        -273.0099792480469,
+        45.48151397705078,
+        0.6790000200271606
+      ],
+      "bbox_max": [
+        -272.8899230957031,
+        45.490875244140625,
+        0.7369999885559082
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 5.283199926546205e-05,
+      "material_count": 1
+    },
+    "ROBOT_MealHandle_Left": {
+      "vertices": 32,
+      "faces": 30,
+      "bbox_min": [
+        -272.9765319824219,
+        44.712066650390625,
+        0.7485000491142273
+      ],
+      "bbox_max": [
+        -272.9414978027344,
+        44.720428466796875,
+        0.7635000348091125
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 3.4000001226551815e-06,
+      "material_count": 1
+    },
+    "ROBOT_MealHandle_Right": {
+      "vertices": 32,
+      "faces": 30,
+      "bbox_min": [
+        -272.96746826171875,
+        45.48201370239258,
+        0.7485000491142273
+      ],
+      "bbox_max": [
+        -272.93243408203125,
+        45.49037551879883,
+        0.7635000348091125
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 3.4000001226551815e-06,
+      "material_count": 1
+    },
+    "ROBOT_MealPlate_Left": {
+      "vertices": 32,
+      "faces": 30,
+      "bbox_min": [
+        -273.0440368652344,
+        44.711273193359375,
+        0.6650000214576721
+      ],
+      "bbox_max": [
+        -272.8739929199219,
+        44.721221923828125,
+        0.6769999861717224
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 1.340800081157683e-05,
+      "material_count": 1
+    },
+    "ROBOT_MealPlate_Right": {
+      "vertices": 32,
+      "faces": 30,
+      "bbox_min": [
+        -273.03497314453125,
+        45.48122024536133,
+        0.6650000214576721
+      ],
+      "bbox_max": [
+        -272.86492919921875,
+        45.49116897583008,
+        0.6769999861717224
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 1.340800081157683e-05,
+      "material_count": 1
+    },
+    "ROBOT_MealSteam_Left": {
+      "vertices": 32,
+      "faces": 30,
+      "bbox_min": [
+        -272.966552734375,
+        44.71218490600586,
+        0.7825000286102295
+      ],
+      "bbox_max": [
+        -272.95147705078125,
+        44.72031021118164,
+        0.809499979019165
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 2.5680000623092037e-06,
+      "material_count": 1
+    },
+    "ROBOT_MealSteam_Right": {
+      "vertices": 32,
+      "faces": 30,
+      "bbox_min": [
+        -272.9574890136719,
+        45.48213195800781,
+        0.7825000286102295
+      ],
+      "bbox_max": [
+        -272.9424133300781,
+        45.490257263183594,
+        0.809499979019165
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 2.5680000623092037e-06,
+      "material_count": 1
+    },
+    "ROBOT_RearMealPanel": {
+      "vertices": 32,
+      "faces": 30,
+      "bbox_min": [
+        -273.34808349609375,
+        44.895729064941406,
+        0.6899999976158142
+      ],
+      "bbox_max": [
+        -273.33123779296875,
+        45.315773010253906,
+        0.7800000309944153
+      ],
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "invalid_normals": 0,
+      "signed_volume_m3": 0.0004352400088715167,
+      "material_count": 1
+    },
     "ROBOT_Stripe_Left": {
       "vertices": 32,
       "faces": 30,
@@ -3196,114 +3443,76 @@
       "vertices": 32,
       "faces": 30,
       "bbox_min": [
-        -272.6488342285156,
-        44.72844696044922,
+        -272.5888366699219,
+        44.72797775268555,
         0.9050000309944153
       ],
       "bbox_max": [
-        -272.5486755371094,
-        44.745574951171875,
+        -272.5086975097656,
+        44.744869232177734,
         0.9230000376701355
       ],
       "nonmanifold_edges": 0,
       "degenerate_faces": 0,
       "invalid_normals": 0,
-      "signed_volume_m3": 2.6783999688893404e-05,
+      "signed_volume_m3": 2.1343998913735053e-05,
       "material_count": 1
     },
     "ROBOT_Vent_Left_1": {
       "vertices": 32,
       "faces": 30,
       "bbox_min": [
-        -272.85882568359375,
-        44.730918884277344,
+        -272.71881103515625,
+        44.72950744628906,
         0.9050000309944153
       ],
       "bbox_max": [
-        -272.7586669921875,
-        44.748046875,
+        -272.638671875,
+        44.74639892578125,
         0.9230000376701355
       ],
       "nonmanifold_edges": 0,
       "degenerate_faces": 0,
       "invalid_normals": 0,
-      "signed_volume_m3": 2.6783999688893404e-05,
-      "material_count": 1
-    },
-    "ROBOT_Vent_Left_2": {
-      "vertices": 32,
-      "faces": 30,
-      "bbox_min": [
-        -273.0688171386719,
-        44.7333869934082,
-        0.9050000309944153
-      ],
-      "bbox_max": [
-        -272.9686584472656,
-        44.75051498413086,
-        0.9230000376701355
-      ],
-      "nonmanifold_edges": 0,
-      "degenerate_faces": 0,
-      "invalid_normals": 0,
-      "signed_volume_m3": 2.6783999688893404e-05,
+      "signed_volume_m3": 2.1343998913735053e-05,
       "material_count": 1
     },
     "ROBOT_Vent_Right_0": {
       "vertices": 32,
       "faces": 30,
       "bbox_min": [
-        -272.6403503417969,
-        45.44839859008789,
+        -272.5803527832031,
+        45.44792938232422,
         0.9050000309944153
       ],
       "bbox_max": [
-        -272.5401916503906,
-        45.46552658081055,
+        -272.5002136230469,
+        45.464820861816406,
         0.9230000376701355
       ],
       "nonmanifold_edges": 0,
       "degenerate_faces": 0,
       "invalid_normals": 0,
-      "signed_volume_m3": 2.6783999688893404e-05,
+      "signed_volume_m3": 2.1343998913735053e-05,
       "material_count": 1
     },
     "ROBOT_Vent_Right_1": {
       "vertices": 32,
       "faces": 30,
       "bbox_min": [
-        -272.850341796875,
-        45.45086669921875,
+        -272.7103576660156,
+        45.44945526123047,
         0.9050000309944153
       ],
       "bbox_max": [
-        -272.75018310546875,
-        45.467994689941406,
+        -272.6302185058594,
+        45.466346740722656,
         0.9230000376701355
       ],
       "nonmanifold_edges": 0,
       "degenerate_faces": 0,
       "invalid_normals": 0,
-      "signed_volume_m3": 2.6783999688893404e-05,
-      "material_count": 1
-    },
-    "ROBOT_Vent_Right_2": {
-      "vertices": 32,
-      "faces": 30,
-      "bbox_min": [
-        -273.0603332519531,
-        45.453338623046875,
-        0.9050000309944153
-      ],
-      "bbox_max": [
-        -272.9601745605469,
-        45.47046661376953,
-        0.9230000376701355
-      ],
-      "nonmanifold_edges": 0,
-      "degenerate_faces": 0,
-      "invalid_normals": 0,
-      "signed_volume_m3": 2.6783999688893404e-05,
+      "signed_volume_m3": 2.1343998913735053e-05,
       "material_count": 1
     },
     "WATER_001": {

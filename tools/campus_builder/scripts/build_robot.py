@@ -40,18 +40,32 @@ def build(data, material_factory):
     cube('Chassis',(w*.85,l*.86,.17),(0,0,c['chassis_clearance_m']+.085),'chassis',bevel=.025)
     cube('CargoBody',(w*.875,l*.8833333333,h*.5727272727),(0,0,h*.5772727273),'shell',bevel=.045)
     cube('Lid',(w*.88,l*.89,.045),(0,0,.946*h/1.1),'accent',bevel=.012)
+    # The sealed, insulated cargo lid and warm colour cue make the vehicle read
+    # as a meal carrier, while every visual detail stays inside the 0.8 m width.
+    cube('InsulatedLidBand',(.10,l*.75,.014),(0,0,.973),'meal_orange',bevel=.004)
+    cube('CargoSeal',(w*.76,l*.76,.018),(0,0,.917),'chassis',bevel=.004)
     for sign,side in [(-1,'Left'),(1,'Right')]:
         cube('Door_'+side,(.012,l*.73,h*.44),(sign*w*.444,0,h*.58),'shell',bevel=.003)
         cube('Stripe_'+side,(.018,l*.78,.065),(sign*w*.452,0,h*.43),'accent',bevel=.003)
         cube('Handle_'+side,(.025,.11,.035),(sign*w*.46,-l*.22,h*.7),'chassis',bevel=.006)
-        for j,y in enumerate([-.21,0,.21]):
-            cube(f'Vent_{side}_{j}',(.016,.10,.018),(sign*w*.45,y,h*.79),'chassis',bevel=.002)
+        for j,y in enumerate([-.26,-.13]):
+            cube(f'Vent_{side}_{j}',(.016,.08,.018),(sign*w*.45,y,h*.79),'chassis',bevel=.002)
+        # A raised cloche pictogram is visible from either side without relying
+        # on a font or external texture in the FBX importer.
+        badge_x=sign*.375
+        cylinder('MealBadge_'+side,.13,.008,(badge_x,.15,.675),'meal_orange',root,'X')
+        icon_x=sign*.385
+        cube('MealPlate_'+side,(.008,.17,.012),(icon_x,.15,.626),'meal_cream',bevel=.002)
+        cube('MealBowl_'+side,(.008,.12,.058),(icon_x,.15,.663),'meal_cream',bevel=.006)
+        cube('MealHandle_'+side,(.008,.035,.015),(icon_x,.15,.711),'meal_cream',bevel=.002)
+        cube('MealSteam_'+side,(.008,.015,.027),(icon_x,.15,.751),'meal_cream',bevel=.002)
     for sign,end in [(-1,'Front'),(1,'Rear')]:
         cube('Bumper_'+end,(w*.925,.08,.13),(0,sign*(l/2-.04),.31),'chassis',bevel=.018)
         for signx,side in [(-1,'Left'),(1,'Right')]:
             cube('Light_'+end+'_'+side,(.12,.02,.035),(signx*w*.30,sign*l*.451,.42),'headlight' if sign<0 else 'taillight',bevel=.006)
     cube('FrontDisplay',(.35,.016,.14),(0,-l*.449,.78),'glass',bevel=.008)
     cube('DisplayStatus',(.19,.019,.018),(0,-l*.455,.78),'headlight',bevel=.002)
+    cube('RearMealPanel',(.42,.012,.09),(0,l*.446,.69),'meal_orange',bevel=.008)
     cylinder('LidarBase',.105,.03,(0,0,h-.135),'chassis')
     cylinder('Lidar',.085,.102,(0,0,h-.069),'glass')
     cylinder('LidarCap',.09,.018,(0,0,h-.009),'accent')

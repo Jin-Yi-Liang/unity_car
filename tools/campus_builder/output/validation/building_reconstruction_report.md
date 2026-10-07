@@ -78,12 +78,12 @@ Buildings: 69; photo-referenced: 13; floor-based: 69; non-typology floor evidenc
 
 ## Sources
 
-- [ADMIN_OFFICIAL](https://lsmf.sspu.edu.cn/imce2021/2021/0518/c2465a59480/page.htm): Official notice lists comprehensive building room 1302; supports at least 13 floors, not total height.; retrieved 2026-10-04; SHA256 e447f8330f6f90e3cbac5f1dd4ad885e41ffe2c0d540bdfdcd096ec70b14e14e
-- [LIBRARY_OFFICIAL](https://library.sspu.edu.cn/2010/0909/c2558a97955/page.htm): Library at building 18 includes room 411; at least four floors, not a measured height.; retrieved 2026-10-04; SHA256 818ee1e4a5a7bbf7d8dec84c98083269efe7feac7fa8fb0d326303fd91102e6c
+- [ADMIN_OFFICIAL](https://lsmf.sspu.edu.cn/imce2021/2021/0518/c2465a59480/page.htm): Official notice lists comprehensive building room 1302; supports at least 13 floors, not total height.; retrieved 2026-10-04; SHA256 dfd96b501ca9ea2eb0c909e8f0c0a12ba0fc8833394293257c613e2d3178d793
+- [LIBRARY_OFFICIAL](https://library.sspu.edu.cn/2010/0909/c2558a97955/page.htm): Library at building 18 includes room 411; at least four floors, not a measured height.; retrieved 2026-10-04; SHA256 efc4f3d0bdd37bea6ab2c0b4057cc74328d7cffc5b42d9f39dfc2ae42be1177e
 - [CAMPUS_TOUR](https://www.sohu.com/a/337150809_715092): Campus youth publication identifies buildings 1,2,3-8,9,19. Old publication; current facade conditions not certified.; retrieved 2026-10-04; SHA256 4bb79f27df118d36bcf455690ee96811390775c09332ab3723cc71eca552386e
 - [CAMPUS_VIEWS](https://www.sohu.com/a/337895059_99938677): Campus youth arts publication provides gym photograph; photographs are references only.; retrieved 2026-10-04; SHA256 4ab022744d2a66e7c4278d92dc086e7bfa33cf0b174648fdc49fec62143c86d8
-- [NEW_BUILDINGS](https://www.sspu.edu.cn/2023/0330/c3024a86746/page.htm): Official 2023 report describes new 13/10/9-floor buildings; old map does not identify their footprints reliably. NOT applied to old map buildings.; retrieved 2026-10-04; SHA256 d470a4c58a10a1898eafa5d433d7aa2e1fc58e1db9a0079d67055341718c9737
-- [SMALL_HIGHRISE](https://xqjsb.sspu.edu.cn/2024/0819/c406a155926/page.htm): Official source identifies building 11 as small highrise; exact floor count not stated.; retrieved 2026-10-04; SHA256 7de9bd6f6c88701202984bebd7ae08829708aee0254100ab6229c1ad5596d025
+- [NEW_BUILDINGS](https://www.sspu.edu.cn/2023/0330/c3024a86746/page.htm): Official 2023 report describes new 13/10/9-floor buildings; old map does not identify their footprints reliably. NOT applied to old map buildings.; retrieved 2026-10-04; SHA256 6ab999f3593926b9d77fc9d57f5f2c15ac2207a1ef456f28912dbb16e0a9e38c
+- [SMALL_HIGHRISE](https://xqjsb.sspu.edu.cn/2024/0819/c406a155926/page.htm): Official source identifies building 11 as small highrise; exact floor count not stated.; retrieved 2026-10-04; SHA256 3894c52670696f7c4ce4bfa687ced4e4e54f54d356dfe17080181456ae0838dd
 - [MAP](https://www.sspu.edu.cn/2972/list.htm): Planning map footprints and labels; no elevation or floor data.; retrieved 2026-10-04; SHA256 a484c4653c8d662417c25024cc9da3c58c68c4a76d376c975a7ac993ca863c5d
 
 ## Limits

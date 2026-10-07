@@ -1,0 +1,1588 @@
+fileFormatVersion: 2
+guid: XX8f4Hv/Ai5h7O236arCTR54E8tBuvmc82+6i3+0/gYqEZtcV5crOM4=
+ModelImporter:
+  serializedVersion: 22361
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    aCLCompressionLevel: 3
+    aCLCurvePrecision: 0.01
+    aCLFastSampleMode: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+    tuanjieGIEnable: 0
+    tuanjieGIGenSDFFactor: 1
+    tuanjieGIGenSDFBias: 0.25
+    tuanjieGIDoubleSidedMode: 0
+    tuanjieGIGenFacetNums: 12
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    totalVerticesCount: 29209
+    totalTrianglesCount: 19450
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  virtualGeometry:
+    virtualGeometry: 0
+    hasBoneWeight: 0
+    useTransparent: 0
+    setVGForeachMesh: 0
+    isFirstUse: 1
+    virtualGeometrySettings:
+      generateGeometryBuffer: 0
+      surfaceCompensation: 0
+      allMeshUse: 1
+      ignoreSimpleMesh: 0
+      transformScaleState: 0
+      isPossibleOverflow: 0
+    virtualGeometryPlatformSettings: []
+    selectedVGMeshes:
+    - index: 0
+      meshName: ACCESS_CANTEEN_20
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 1
+      meshName: ACCESS_DORM_11
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 2
+      meshName: ACCESS_LIBRARY
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 3
+      meshName: ACCESS_TEACHING_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 4
+      meshName: BLDG_001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 5
+      meshName: BLDG_002
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 6
+      meshName: BLDG_003
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 7
+      meshName: BLDG_004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 8
+      meshName: BLDG_005
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 9
+      meshName: BLDG_006
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 10
+      meshName: BLDG_007
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 11
+      meshName: BLDG_008
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 12
+      meshName: BLDG_009
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 13
+      meshName: BLDG_010
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 14
+      meshName: BLDG_011
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 15
+      meshName: BLDG_012
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 16
+      meshName: BLDG_013
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 17
+      meshName: BLDG_014
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 18
+      meshName: BLDG_015
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 19
+      meshName: BLDG_016
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 20
+      meshName: BLDG_017
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 21
+      meshName: BLDG_018
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 22
+      meshName: BLDG_019
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 23
+      meshName: BLDG_020
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 24
+      meshName: BLDG_021
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 25
+      meshName: BLDG_022
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 26
+      meshName: BLDG_023
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 27
+      meshName: BLDG_024
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 28
+      meshName: BLDG_025
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 29
+      meshName: BLDG_026
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 30
+      meshName: BLDG_027
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 31
+      meshName: BLDG_028
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 32
+      meshName: BLDG_029
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 33
+      meshName: BLDG_030
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 34
+      meshName: BLDG_031
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 35
+      meshName: BLDG_032
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 36
+      meshName: BLDG_033
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 37
+      meshName: BLDG_034
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 38
+      meshName: BLDG_035
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 39
+      meshName: BLDG_036
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 40
+      meshName: BLDG_037
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 41
+      meshName: BLDG_038
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 42
+      meshName: BLDG_039
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 43
+      meshName: BLDG_040
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 44
+      meshName: BLDG_041
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 45
+      meshName: BLDG_042
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 46
+      meshName: BLDG_043
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 47
+      meshName: BLDG_044
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 48
+      meshName: BLDG_045
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 49
+      meshName: BLDG_046
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 50
+      meshName: BLDG_047
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 51
+      meshName: BLDG_048
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 52
+      meshName: BLDG_049
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 53
+      meshName: BLDG_050
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 54
+      meshName: BLDG_051
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 55
+      meshName: BLDG_052
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 56
+      meshName: BLDG_053
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 57
+      meshName: BLDG_054
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 58
+      meshName: BLDG_055
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 59
+      meshName: BLDG_056
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 60
+      meshName: BLDG_057
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 61
+      meshName: BLDG_058
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 62
+      meshName: BLDG_059
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 63
+      meshName: BLDG_060
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 64
+      meshName: BLDG_061
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 65
+      meshName: BLDG_062
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 66
+      meshName: BLDG_063
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 67
+      meshName: BLDG_064
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 68
+      meshName: BLDG_065
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 69
+      meshName: BLDG_066
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 70
+      meshName: BLDG_067
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 71
+      meshName: BLDG_068
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 72
+      meshName: BLDG_069
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 73
+      meshName: BRIDGE_001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 74
+      meshName: BRIDGE_002
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 75
+      meshName: BRIDGE_003
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 76
+      meshName: BRIDGE_004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 77
+      meshName: DOCK_CANTEEN_20
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 78
+      meshName: DOCK_DORM_11
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 79
+      meshName: DOCK_LIBRARY
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 80
+      meshName: DOCK_TEACHING_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 81
+      meshName: ROBOT_Bumper_Front
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 82
+      meshName: ROBOT_Bumper_Rear
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 83
+      meshName: ROBOT_CargoBody
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 84
+      meshName: ROBOT_Chassis
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 85
+      meshName: ROBOT_DisplayStatus
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 86
+      meshName: ROBOT_Door_Left
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 87
+      meshName: ROBOT_Door_Right
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 88
+      meshName: ROBOT_FrontDisplay
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 89
+      meshName: ROBOT_Handle_Left
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 90
+      meshName: ROBOT_Handle_Right
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 91
+      meshName: ROBOT_Lid
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 92
+      meshName: ROBOT_Lidar
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 93
+      meshName: ROBOT_LidarBase
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 94
+      meshName: ROBOT_LidarCap
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 95
+      meshName: ROBOT_Light_Front_Left
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 96
+      meshName: ROBOT_Light_Front_Right
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 97
+      meshName: ROBOT_Light_Rear_Left
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 98
+      meshName: ROBOT_Light_Rear_Right
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 99
+      meshName: ROBOT_Stripe_Left
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 100
+      meshName: ROBOT_Stripe_Right
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 101
+      meshName: ROBOT_Vent_Left_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 102
+      meshName: ROBOT_Vent_Left_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 103
+      meshName: ROBOT_Vent_Left_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 104
+      meshName: ROBOT_Vent_Right_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 105
+      meshName: ROBOT_Vent_Right_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 106
+      meshName: ROBOT_Vent_Right_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 107
+      meshName: ROBOT_Hub_FL
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 108
+      meshName: ROBOT_Tire_FL
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 109
+      meshName: ROBOT_Hub_FR
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 110
+      meshName: ROBOT_Tire_FR
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 111
+      meshName: ROBOT_Hub_RL
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 112
+      meshName: ROBOT_Tire_RL
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 113
+      meshName: ROBOT_Hub_RR
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 114
+      meshName: ROBOT_Tire_RR
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 115
+      meshName: ENTRANCE_CANTEEN_20
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 116
+      meshName: ENTRANCE_DORM_11
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 117
+      meshName: ENTRANCE_LIBRARY
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 118
+      meshName: ENTRANCE_TEACHING_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 119
+      meshName: GRASS_001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 120
+      meshName: GRASS_002
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 121
+      meshName: GRASS_003
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 122
+      meshName: GRASS_004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 123
+      meshName: GRASS_005
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 124
+      meshName: GRASS_006
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 125
+      meshName: GRASS_007
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 126
+      meshName: GRASS_008
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 127
+      meshName: GRASS_009
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 128
+      meshName: GRASS_010
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 129
+      meshName: GRASS_011
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 130
+      meshName: GRASS_012
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 131
+      meshName: GRASS_013
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 132
+      meshName: GRASS_014
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 133
+      meshName: GRASS_015
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 134
+      meshName: GRASS_016
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 135
+      meshName: GRASS_017
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 136
+      meshName: GRASS_018
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 137
+      meshName: GRASS_019
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 138
+      meshName: GRASS_020
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 139
+      meshName: GRASS_021
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 140
+      meshName: GRASS_022
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 141
+      meshName: GRASS_023
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 142
+      meshName: GRASS_024
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 143
+      meshName: GRASS_025
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 144
+      meshName: GRASS_026
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 145
+      meshName: GRASS_027
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 146
+      meshName: GRASS_028
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 147
+      meshName: GRASS_029
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 148
+      meshName: GRASS_030
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 149
+      meshName: GRASS_032
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 150
+      meshName: GRASS_033
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 151
+      meshName: GRASS_034
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 152
+      meshName: GRASS_035
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 153
+      meshName: Ground
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 154
+      meshName: LANDMARK_001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 155
+      meshName: LANDMARK_002
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 156
+      meshName: LANDMARK_003
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 157
+      meshName: LANDMARK_004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 158
+      meshName: PLAZA_001_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 159
+      meshName: PLAZA_002_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 160
+      meshName: PLAZA_003_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 161
+      meshName: PLAZA_004_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 162
+      meshName: PLAZA_004_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 163
+      meshName: PLAZA_005_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 164
+      meshName: PLAZA_006_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 165
+      meshName: ROAD_001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 166
+      meshName: ROAD_002
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 167
+      meshName: ROAD_003
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 168
+      meshName: ROAD_004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 169
+      meshName: ROAD_005
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 170
+      meshName: ROAD_006
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 171
+      meshName: ROAD_007
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 172
+      meshName: WATER_001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 173
+      meshName: WATER_002
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 174
+      meshName: WATER_003
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 175
+      meshName: WATER_004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 176
+      meshName: WATER_005
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 177
+      meshName: WATER_006
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 178
+      meshName: WATER_007
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 179
+      meshName: WATER_008
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 180
+      meshName: WATER_009
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    supportVGMeshes:
+    - index: 0
+      meshName: ACCESS_CANTEEN_20
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 1
+      meshName: ACCESS_DORM_11
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 2
+      meshName: ACCESS_LIBRARY
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 3
+      meshName: ACCESS_TEACHING_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 4
+      meshName: BLDG_001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 5
+      meshName: BLDG_002
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 6
+      meshName: BLDG_003
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 7
+      meshName: BLDG_004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 8
+      meshName: BLDG_005
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 9
+      meshName: BLDG_006
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 10
+      meshName: BLDG_007
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 11
+      meshName: BLDG_008
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 12
+      meshName: BLDG_009
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 13
+      meshName: BLDG_010
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 14
+      meshName: BLDG_011
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 15
+      meshName: BLDG_012
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 16
+      meshName: BLDG_013
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 17
+      meshName: BLDG_014
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 18
+      meshName: BLDG_015
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 19
+      meshName: BLDG_016
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 20
+      meshName: BLDG_017
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 21
+      meshName: BLDG_018
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 22
+      meshName: BLDG_019
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 23
+      meshName: BLDG_020
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 24
+      meshName: BLDG_021
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 25
+      meshName: BLDG_022
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 26
+      meshName: BLDG_023
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 27
+      meshName: BLDG_024
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 28
+      meshName: BLDG_025
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 29
+      meshName: BLDG_026
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 30
+      meshName: BLDG_027
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 31
+      meshName: BLDG_028
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 32
+      meshName: BLDG_029
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 33
+      meshName: BLDG_030
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 34
+      meshName: BLDG_031
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 35
+      meshName: BLDG_032
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 36
+      meshName: BLDG_033
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 37
+      meshName: BLDG_034
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 38
+      meshName: BLDG_035
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 39
+      meshName: BLDG_036
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 40
+      meshName: BLDG_037
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 41
+      meshName: BLDG_038
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 42
+      meshName: BLDG_039
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 43
+      meshName: BLDG_040
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 44
+      meshName: BLDG_041
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 45
+      meshName: BLDG_042
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 46
+      meshName: BLDG_043
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 47
+      meshName: BLDG_044
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 48
+      meshName: BLDG_045
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 49
+      meshName: BLDG_046
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 50
+      meshName: BLDG_047
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 51
+      meshName: BLDG_048
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 52
+      meshName: BLDG_049
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 53
+      meshName: BLDG_050
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 54
+      meshName: BLDG_051
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 55
+      meshName: BLDG_052
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 56
+      meshName: BLDG_053
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 57
+      meshName: BLDG_054
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 58
+      meshName: BLDG_055
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 59
+      meshName: BLDG_056
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 60
+      meshName: BLDG_057
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 61
+      meshName: BLDG_058
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 62
+      meshName: BLDG_059
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 63
+      meshName: BLDG_060
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 64
+      meshName: BLDG_061
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 65
+      meshName: BLDG_062
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 66
+      meshName: BLDG_063
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 67
+      meshName: BLDG_064
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 68
+      meshName: BLDG_065
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 69
+      meshName: BLDG_066
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 70
+      meshName: BLDG_067
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 71
+      meshName: BLDG_068
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 72
+      meshName: BLDG_069
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 73
+      meshName: BRIDGE_001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 74
+      meshName: BRIDGE_002
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 75
+      meshName: BRIDGE_003
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 76
+      meshName: BRIDGE_004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 77
+      meshName: DOCK_CANTEEN_20
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 78
+      meshName: DOCK_DORM_11
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 79
+      meshName: DOCK_LIBRARY
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 80
+      meshName: DOCK_TEACHING_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 81
+      meshName: ROBOT_Bumper_Front
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 82
+      meshName: ROBOT_Bumper_Rear
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 83
+      meshName: ROBOT_CargoBody
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 84
+      meshName: ROBOT_Chassis
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 85
+      meshName: ROBOT_DisplayStatus
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 86
+      meshName: ROBOT_Door_Left
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 87
+      meshName: ROBOT_Door_Right
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 88
+      meshName: ROBOT_FrontDisplay
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 89
+      meshName: ROBOT_Handle_Left
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 90
+      meshName: ROBOT_Handle_Right
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 91
+      meshName: ROBOT_Lid
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 92
+      meshName: ROBOT_Lidar
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 93
+      meshName: ROBOT_LidarBase
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 94
+      meshName: ROBOT_LidarCap
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 95
+      meshName: ROBOT_Light_Front_Left
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 96
+      meshName: ROBOT_Light_Front_Right
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 97
+      meshName: ROBOT_Light_Rear_Left
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 98
+      meshName: ROBOT_Light_Rear_Right
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 99
+      meshName: ROBOT_Stripe_Left
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 100
+      meshName: ROBOT_Stripe_Right
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 101
+      meshName: ROBOT_Vent_Left_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 102
+      meshName: ROBOT_Vent_Left_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 103
+      meshName: ROBOT_Vent_Left_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 104
+      meshName: ROBOT_Vent_Right_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 105
+      meshName: ROBOT_Vent_Right_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 106
+      meshName: ROBOT_Vent_Right_2
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 107
+      meshName: ROBOT_Hub_FL
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 108
+      meshName: ROBOT_Tire_FL
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 109
+      meshName: ROBOT_Hub_FR
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 110
+      meshName: ROBOT_Tire_FR
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 111
+      meshName: ROBOT_Hub_RL
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 112
+      meshName: ROBOT_Tire_RL
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 113
+      meshName: ROBOT_Hub_RR
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 114
+      meshName: ROBOT_Tire_RR
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 115
+      meshName: ENTRANCE_CANTEEN_20
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 116
+      meshName: ENTRANCE_DORM_11
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 117
+      meshName: ENTRANCE_LIBRARY
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 118
+      meshName: ENTRANCE_TEACHING_3
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 119
+      meshName: GRASS_001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 120
+      meshName: GRASS_002
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 121
+      meshName: GRASS_003
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 122
+      meshName: GRASS_004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 123
+      meshName: GRASS_005
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 124
+      meshName: GRASS_006
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 125
+      meshName: GRASS_007
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 126
+      meshName: GRASS_008
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 127
+      meshName: GRASS_009
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 128
+      meshName: GRASS_010
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 129
+      meshName: GRASS_011
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 130
+      meshName: GRASS_012
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 131
+      meshName: GRASS_013
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 132
+      meshName: GRASS_014
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 133
+      meshName: GRASS_015
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 134
+      meshName: GRASS_016
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 135
+      meshName: GRASS_017
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 136
+      meshName: GRASS_018
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 137
+      meshName: GRASS_019
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 138
+      meshName: GRASS_020
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 139
+      meshName: GRASS_021
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 140
+      meshName: GRASS_022
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 141
+      meshName: GRASS_023
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 142
+      meshName: GRASS_024
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 143
+      meshName: GRASS_025
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 144
+      meshName: GRASS_026
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 145
+      meshName: GRASS_027
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 146
+      meshName: GRASS_028
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 147
+      meshName: GRASS_029
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 148
+      meshName: GRASS_030
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 149
+      meshName: GRASS_032
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 150
+      meshName: GRASS_033
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 151
+      meshName: GRASS_034
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 152
+      meshName: GRASS_035
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 153
+      meshName: Ground
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 154
+      meshName: LANDMARK_001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 155
+      meshName: LANDMARK_002
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 156
+      meshName: LANDMARK_003
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 157
+      meshName: LANDMARK_004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 158
+      meshName: PLAZA_001_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 159
+      meshName: PLAZA_002_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 160
+      meshName: PLAZA_003_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 161
+      meshName: PLAZA_004_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 162
+      meshName: PLAZA_004_1
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 163
+      meshName: PLAZA_005_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 164
+      meshName: PLAZA_006_0
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 165
+      meshName: ROAD_001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 166
+      meshName: ROAD_002
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 167
+      meshName: ROAD_003
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 168
+      meshName: ROAD_004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 169
+      meshName: ROAD_005
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 170
+      meshName: ROAD_006
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 171
+      meshName: ROAD_007
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 172
+      meshName: WATER_001
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 173
+      meshName: WATER_002
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 174
+      meshName: WATER_003
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 175
+      meshName: WATER_004
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 176
+      meshName: WATER_005
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 177
+      meshName: WATER_006
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 178
+      meshName: WATER_007
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 179
+      meshName: WATER_008
+      lodLevel: 0
+      meshGeometryBuffer: 0
+    - index: 180
+      meshName: WATER_009
+      lodLevel: 0
+      meshGeometryBuffer: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  overrideDefaultPose: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    namedPoseList:
+    - name: Default
+      skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    defaultPoseIndex: -1
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

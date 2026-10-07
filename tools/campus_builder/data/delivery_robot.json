@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "asset_version": "1.0",
+  "asset_version": "1.1",
   "config": {
     "schema_version": 1,
-    "asset_version": "1.0",
-    "name": "Campus delivery robot",
+    "asset_version": "1.1",
+    "name": "Campus meal delivery robot",
     "dimension_provenance": "Original compact delivery-robot design, not a measured commercial vehicle. Independent modeled metres; never multiplied by campus XY scale.",
     "length_m": 1.2,
     "width_m": 0.8,
@@ -65,6 +65,16 @@
         0.8,
         0.035,
         0.025
+      ],
+      "meal_orange": [
+        0.96,
+        0.29,
+        0.065
+      ],
+      "meal_cream": [
+        0.98,
+        0.94,
+        0.78
       ]
     }
   },

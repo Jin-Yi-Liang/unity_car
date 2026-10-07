@@ -23,4 +23,4 @@ Source and fresh FBX marker/bay validation: True; graph and connector data hashe
 XY remains conditional on unverified scale anchors. Bay size, pedestrian width, facade standoff and robot dimensions are independent modeled metres.
 New views: delivery_site_LIBRARY.png, delivery_site_TEACHING_3.png, delivery_site_CANTEEN_20.png, delivery_site_DORM_11.png and delivery_sites_overlay.png.
 Full per-site vectors, evidence hashes and assumptions: data/delivery_sites.json. Waypoint-ready polyline geometry: data/simulation_navigation_graph.json.
-Before/current mesh counts: {"before_vertices": 9641, "after_vertices": 9943, "before_faces": 13317, "after_faces": 13666}
+Before/current mesh counts: {"before_vertices": 9641, "after_vertices": 10327, "before_faces": 13317, "after_faces": 13988}
