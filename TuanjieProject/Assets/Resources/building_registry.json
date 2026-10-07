@@ -1,0 +1,1047 @@
+{
+  "schemaVersion": 1,
+  "buildings": [
+    {
+      "stableId": "B0001",
+      "meshId": "BLDG_001",
+      "displayName": "Administration",
+      "mapLabel": "1",
+      "sourceTraceIds": [
+        "BLDG_001"
+      ],
+      "centerX": -185.867,
+      "centerY": 385.055,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0002",
+      "meshId": "BLDG_002",
+      "displayName": "Innovation exhibition hall",
+      "mapLabel": "2",
+      "sourceTraceIds": [
+        "BLDG_002"
+      ],
+      "centerX": -141.4615,
+      "centerY": 304.492,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0003",
+      "meshId": "BLDG_003",
+      "displayName": "Teaching building 3",
+      "mapLabel": "3",
+      "sourceTraceIds": [
+        "BLDG_003"
+      ],
+      "centerX": -130.0435,
+      "centerY": 242.3245,
+      "navigationStatus": "simulation_dock",
+      "dockNodeId": "SIMNODE_0038",
+      "dockX": -172.629118,
+      "dockY": 230.773272
+    },
+    {
+      "stableId": "B0004",
+      "meshId": "BLDG_004",
+      "displayName": "Teaching building 4",
+      "mapLabel": "4",
+      "sourceTraceIds": [
+        "BLDG_004"
+      ],
+      "centerX": -122.431,
+      "centerY": 195.3825,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0005",
+      "meshId": "BLDG_005",
+      "displayName": "Teaching building 5",
+      "mapLabel": "5",
+      "sourceTraceIds": [
+        "BLDG_005"
+      ],
+      "centerX": -107.2065,
+      "centerY": 152.2455,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0006",
+      "meshId": "BLDG_006",
+      "displayName": "Teaching building 6",
+      "mapLabel": "6",
+      "sourceTraceIds": [
+        "BLDG_006"
+      ],
+      "centerX": -105.9375,
+      "centerY": 275.3115,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0007",
+      "meshId": "BLDG_007",
+      "displayName": "Teaching building 7",
+      "mapLabel": "7",
+      "sourceTraceIds": [
+        "BLDG_007"
+      ],
+      "centerX": -85.638,
+      "centerY": 229.6375,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0008",
+      "meshId": "BLDG_008",
+      "displayName": "Teaching building 8",
+      "mapLabel": "8",
+      "sourceTraceIds": [
+        "BLDG_008"
+      ],
+      "centerX": -69.145,
+      "centerY": 185.2325,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0009",
+      "meshId": "BLDG_009",
+      "displayName": "West dining hall (Xi Shi Yuan)",
+      "mapLabel": "9",
+      "sourceTraceIds": [
+        "BLDG_009"
+      ],
+      "centerX": -61.5325,
+      "centerY": 52.6515,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0010",
+      "meshId": "BLDG_010",
+      "displayName": "Gymnasium",
+      "mapLabel": "10",
+      "sourceTraceIds": [
+        "BLDG_010"
+      ],
+      "centerX": -104.669,
+      "centerY": -88.1755,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0011",
+      "meshId": "BLDG_011",
+      "displayName": "Gymnasium",
+      "mapLabel": "10",
+      "sourceTraceIds": [
+        "BLDG_011"
+      ],
+      "centerX": -163.6645,
+      "centerY": -113.55,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0012",
+      "meshId": "BLDG_012",
+      "displayName": "Student dormitory 11",
+      "mapLabel": "11",
+      "sourceTraceIds": [
+        "BLDG_012"
+      ],
+      "centerX": -366.0245,
+      "centerY": -252.4745,
+      "navigationStatus": "simulation_dock",
+      "dockNodeId": "SIMNODE_0040",
+      "dockX": -373.393626,
+      "dockY": -225.841857
+    },
+    {
+      "stableId": "B0013",
+      "meshId": "BLDG_013",
+      "displayName": "Clinic",
+      "mapLabel": "12",
+      "sourceTraceIds": [
+        "BLDG_013"
+      ],
+      "centerX": -380.6145,
+      "centerY": 18.3965,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0014",
+      "meshId": "BLDG_014",
+      "displayName": "Logistics service",
+      "mapLabel": "13",
+      "sourceTraceIds": [
+        "BLDG_014"
+      ],
+      "centerX": -254.3775,
+      "centerY": -167.4705,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0015",
+      "meshId": "BLDG_015",
+      "displayName": "Teaching north block",
+      "mapLabel": "14",
+      "sourceTraceIds": [
+        "BLDG_015"
+      ],
+      "centerX": -279.7515,
+      "centerY": 17.762,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0016",
+      "meshId": "BLDG_016",
+      "displayName": "Economics management",
+      "mapLabel": "15",
+      "sourceTraceIds": [
+        "BLDG_016"
+      ],
+      "centerX": -203.629,
+      "centerY": 73.5855,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0017",
+      "meshId": "BLDG_017",
+      "displayName": "Engineering north block",
+      "mapLabel": "16",
+      "sourceTraceIds": [
+        "BLDG_017"
+      ],
+      "centerX": -305.7605,
+      "centerY": 73.5855,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0018",
+      "meshId": "BLDG_018",
+      "displayName": "Engineering innovation centre",
+      "mapLabel": "17",
+      "sourceTraceIds": [
+        "BLDG_018"
+      ],
+      "centerX": -322.254,
+      "centerY": 120.528,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0019",
+      "meshId": "BLDG_019",
+      "displayName": "Library west block",
+      "mapLabel": "18",
+      "sourceTraceIds": [
+        "BLDG_019"
+      ],
+      "centerX": -389.4955,
+      "centerY": 272.1395,
+      "navigationStatus": "simulation_dock",
+      "dockNodeId": "SIMNODE_0037",
+      "dockX": -412.935536,
+      "dockY": 274.042499
+    },
+    {
+      "stableId": "B0020",
+      "meshId": "BLDG_020",
+      "displayName": "Library west block",
+      "mapLabel": "18",
+      "sourceTraceIds": [
+        "BLDG_020"
+      ],
+      "centerX": -322.641,
+      "centerY": 271.5745,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0021",
+      "meshId": "BLDG_021",
+      "displayName": "Academic exchange centre",
+      "mapLabel": "19",
+      "sourceTraceIds": [
+        "BLDG_021",
+        "BLDG_022"
+      ],
+      "centerX": -353.9715,
+      "centerY": 383.152,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0022",
+      "meshId": "BLDG_022",
+      "displayName": "Canteen 20",
+      "mapLabel": "20",
+      "sourceTraceIds": [
+        "BLDG_023"
+      ],
+      "centerX": 0.634,
+      "centerY": -25.3745,
+      "navigationStatus": "simulation_dock",
+      "dockNodeId": "SIMNODE_0039",
+      "dockX": 25.502601,
+      "dockY": -17.458309
+    },
+    {
+      "stableId": "B0023",
+      "meshId": "BLDG_023",
+      "displayName": "Student dormitory 21",
+      "mapLabel": "21",
+      "sourceTraceIds": [
+        "BLDG_024"
+      ],
+      "centerX": 8.2465,
+      "centerY": -73.5855,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0024",
+      "meshId": "BLDG_024",
+      "displayName": "Resources environment school",
+      "mapLabel": "22",
+      "sourceTraceIds": [
+        "BLDG_025"
+      ],
+      "centerX": -83.1005,
+      "centerY": -234.7125,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0025",
+      "meshId": "BLDG_025",
+      "displayName": "Resources environment school",
+      "mapLabel": "22",
+      "sourceTraceIds": [
+        "BLDG_026"
+      ],
+      "centerX": -57.727,
+      "centerY": -267.699,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0026",
+      "meshId": "BLDG_026",
+      "displayName": "Resources environment school",
+      "mapLabel": "22",
+      "sourceTraceIds": [
+        "BLDG_027"
+      ],
+      "centerX": -23.471,
+      "centerY": -286.7295,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0027",
+      "meshId": "BLDG_027",
+      "displayName": "Engineering training centre",
+      "mapLabel": "23",
+      "sourceTraceIds": [
+        "BLDG_028",
+        "BLDG_029",
+        "BLDG_030",
+        "BLDG_077",
+        "BLDG_078"
+      ],
+      "centerX": -148.396,
+      "centerY": -306.0635,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0028",
+      "meshId": "BLDG_028",
+      "displayName": "Applied arts north",
+      "mapLabel": "24",
+      "sourceTraceIds": [
+        "BLDG_031",
+        "BLDG_032"
+      ],
+      "centerX": -141.0665,
+      "centerY": -348.1185,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0029",
+      "meshId": "BLDG_029",
+      "displayName": "Applied arts south",
+      "mapLabel": "25",
+      "sourceTraceIds": [
+        "BLDG_033",
+        "BLDG_034"
+      ],
+      "centerX": -181.1865,
+      "centerY": -415.648,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0030",
+      "meshId": "BLDG_030",
+      "displayName": "Energy materials school",
+      "mapLabel": "26",
+      "sourceTraceIds": [
+        "BLDG_035"
+      ],
+      "centerX": -278.483,
+      "centerY": -317.1785,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0031",
+      "meshId": "BLDG_031",
+      "displayName": "Energy materials school",
+      "mapLabel": "26",
+      "sourceTraceIds": [
+        "BLDG_037"
+      ],
+      "centerX": -234.0775,
+      "centerY": -342.553,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0032",
+      "meshId": "BLDG_032",
+      "displayName": "Energy materials school",
+      "mapLabel": "26",
+      "sourceTraceIds": [
+        "BLDG_036"
+      ],
+      "centerX": -275.9455,
+      "centerY": -361.5835,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0033",
+      "meshId": "BLDG_033",
+      "displayName": "Materials transfer engineering",
+      "mapLabel": "27",
+      "sourceTraceIds": [
+        "BLDG_038"
+      ],
+      "centerX": -363.487,
+      "centerY": -345.0905,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0034",
+      "meshId": "BLDG_034",
+      "displayName": "Computer information school",
+      "mapLabel": "28",
+      "sourceTraceIds": [
+        "BLDG_039"
+      ],
+      "centerX": -374.9055,
+      "centerY": -399.6455,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0035",
+      "meshId": "BLDG_035",
+      "displayName": "Computer information school",
+      "mapLabel": "28",
+      "sourceTraceIds": [
+        "BLDG_040"
+      ],
+      "centerX": -358.4125,
+      "centerY": -422.482,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0036",
+      "meshId": "BLDG_036",
+      "displayName": "Intelligent manufacturing school",
+      "mapLabel": "29",
+      "sourceTraceIds": [
+        "BLDG_041"
+      ],
+      "centerX": -358.4125,
+      "centerY": -444.05,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0037",
+      "meshId": "BLDG_037",
+      "displayName": "Student activity centre",
+      "mapLabel": "30",
+      "sourceTraceIds": [
+        "BLDG_042"
+      ],
+      "centerX": 81.832,
+      "centerY": -210.607,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0038",
+      "meshId": "BLDG_038",
+      "displayName": "Student dormitory 31",
+      "mapLabel": "31",
+      "sourceTraceIds": [
+        "BLDG_043"
+      ],
+      "centerX": 90.713,
+      "centerY": -266.43,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0039",
+      "meshId": "BLDG_039",
+      "displayName": "Student dormitory 32",
+      "mapLabel": "32",
+      "sourceTraceIds": [
+        "BLDG_044"
+      ],
+      "centerX": 108.475,
+      "centerY": -315.91,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0040",
+      "meshId": "BLDG_040",
+      "displayName": "Student dormitory 37",
+      "mapLabel": "37",
+      "sourceTraceIds": [
+        "BLDG_045"
+      ],
+      "centerX": 74.2195,
+      "centerY": -416.1385,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0041",
+      "meshId": "BLDG_041",
+      "displayName": "South garden building",
+      "mapLabel": "38",
+      "sourceTraceIds": [
+        "BLDG_047"
+      ],
+      "centerX": 135.1185,
+      "centerY": -458.006,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0042",
+      "meshId": "BLDG_042",
+      "displayName": "South garden building",
+      "mapLabel": "38",
+      "sourceTraceIds": [
+        "BLDG_046"
+      ],
+      "centerX": 60.264,
+      "centerY": -475.768,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0043",
+      "meshId": "BLDG_043",
+      "displayName": "Student dormitory 39",
+      "mapLabel": "39",
+      "sourceTraceIds": [
+        "BLDG_048"
+      ],
+      "centerX": 244.2275,
+      "centerY": -348.897,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0044",
+      "meshId": "BLDG_044",
+      "displayName": "Student dormitory 40",
+      "mapLabel": "40",
+      "sourceTraceIds": [
+        "BLDG_050"
+      ],
+      "centerX": 327.9625,
+      "centerY": -332.403,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0045",
+      "meshId": "BLDG_045",
+      "displayName": "Faculty dormitory 41",
+      "mapLabel": "41",
+      "sourceTraceIds": [
+        "BLDG_051"
+      ],
+      "centerX": 412.967,
+      "centerY": -318.4475,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0046",
+      "meshId": "BLDG_046",
+      "displayName": "Faculty dormitory 42",
+      "mapLabel": "42",
+      "sourceTraceIds": [
+        "BLDG_052"
+      ],
+      "centerX": 414.2355,
+      "centerY": -364.1215,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0047",
+      "meshId": "BLDG_047",
+      "displayName": "Visible residential wing",
+      "mapLabel": "unnumbered",
+      "sourceTraceIds": [
+        "BLDG_053"
+      ],
+      "centerX": 5.709,
+      "centerY": -202.9945,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0048",
+      "meshId": "BLDG_048",
+      "displayName": "Visible residential wing",
+      "mapLabel": "unnumbered",
+      "sourceTraceIds": [
+        "BLDG_054"
+      ],
+      "centerX": 9.5155,
+      "centerY": -244.862,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0049",
+      "meshId": "BLDG_049",
+      "displayName": "Visible residential wing",
+      "mapLabel": "unnumbered",
+      "sourceTraceIds": [
+        "BLDG_057"
+      ],
+      "centerX": 27.2775,
+      "centerY": -303.2225,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0050",
+      "meshId": "BLDG_050",
+      "displayName": "Visible residential wing",
+      "mapLabel": "unnumbered",
+      "sourceTraceIds": [
+        "BLDG_055"
+      ],
+      "centerX": -28.546,
+      "centerY": -323.5225,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0051",
+      "meshId": "BLDG_051",
+      "displayName": "Visible residential wing",
+      "mapLabel": "unnumbered",
+      "sourceTraceIds": [
+        "BLDG_058"
+      ],
+      "centerX": 34.8895,
+      "centerY": -336.2095,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0052",
+      "meshId": "BLDG_052",
+      "displayName": "Visible residential wing",
+      "mapLabel": "unnumbered",
+      "sourceTraceIds": [
+        "BLDG_056"
+      ],
+      "centerX": -41.2335,
+      "centerY": -352.703,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0053",
+      "meshId": "BLDG_053",
+      "displayName": "Northeast residential wing",
+      "mapLabel": "res_1_1",
+      "sourceTraceIds": [
+        "BLDG_059"
+      ],
+      "centerX": 126.237,
+      "centerY": 8.881,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0054",
+      "meshId": "BLDG_054",
+      "displayName": "Northeast residential wing",
+      "mapLabel": "res_1_2",
+      "sourceTraceIds": [
+        "BLDG_060"
+      ],
+      "centerX": 136.387,
+      "centerY": -29.1805,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0055",
+      "meshId": "BLDG_055",
+      "displayName": "Northeast residential wing",
+      "mapLabel": "res_1_3",
+      "sourceTraceIds": [
+        "BLDG_061"
+      ],
+      "centerX": 147.805,
+      "centerY": -68.5105,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0056",
+      "meshId": "BLDG_056",
+      "displayName": "Northeast residential wing",
+      "mapLabel": "res_2_1",
+      "sourceTraceIds": [
+        "BLDG_062"
+      ],
+      "centerX": 174.448,
+      "centerY": 120.5275,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0057",
+      "meshId": "BLDG_057",
+      "displayName": "Northeast residential wing",
+      "mapLabel": "res_2_2",
+      "sourceTraceIds": [
+        "BLDG_063"
+      ],
+      "centerX": 187.1355,
+      "centerY": 82.4665,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0058",
+      "meshId": "BLDG_058",
+      "displayName": "Northeast residential wing",
+      "mapLabel": "res_2_4",
+      "sourceTraceIds": [
+        "BLDG_065"
+      ],
+      "centerX": 209.972,
+      "centerY": 3.8065,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0059",
+      "meshId": "BLDG_059",
+      "displayName": "Northeast residential wing",
+      "mapLabel": "res_2_5",
+      "sourceTraceIds": [
+        "BLDG_066"
+      ],
+      "centerX": 221.391,
+      "centerY": -35.524,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0060",
+      "meshId": "BLDG_060",
+      "displayName": "Northeast residential wing",
+      "mapLabel": "res_3_1",
+      "sourceTraceIds": [
+        "BLDG_067"
+      ],
+      "centerX": 250.571,
+      "centerY": 147.171,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0061",
+      "meshId": "BLDG_061",
+      "displayName": "Northeast residential wing",
+      "mapLabel": "res_3_2",
+      "sourceTraceIds": [
+        "BLDG_068"
+      ],
+      "centerX": 263.2585,
+      "centerY": 109.1095,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0062",
+      "meshId": "BLDG_062",
+      "displayName": "Northeast residential wing",
+      "mapLabel": "res_3_3",
+      "sourceTraceIds": [
+        "BLDG_069"
+      ],
+      "centerX": 277.214,
+      "centerY": 71.0485,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0063",
+      "meshId": "BLDG_063",
+      "displayName": "Northeast residential wing",
+      "mapLabel": "res_3_4",
+      "sourceTraceIds": [
+        "BLDG_070"
+      ],
+      "centerX": 288.633,
+      "centerY": 31.7175,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0064",
+      "meshId": "BLDG_064",
+      "displayName": "Northeast residential wing",
+      "mapLabel": "res_3_5",
+      "sourceTraceIds": [
+        "BLDG_071"
+      ],
+      "centerX": 301.32,
+      "centerY": -5.0745,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0065",
+      "meshId": "BLDG_065",
+      "displayName": "Northeast dining hall",
+      "mapLabel": "dining",
+      "sourceTraceIds": [
+        "BLDG_072"
+      ],
+      "centerX": 103.4005,
+      "centerY": 78.6605,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0066",
+      "meshId": "BLDG_066",
+      "displayName": "North guardhouse",
+      "mapLabel": "guard",
+      "sourceTraceIds": [
+        "BLDG_073"
+      ],
+      "centerX": -404.086,
+      "centerY": 450.394,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0067",
+      "meshId": "BLDG_067",
+      "displayName": "North guardhouse",
+      "mapLabel": "guard",
+      "sourceTraceIds": [
+        "BLDG_075"
+      ],
+      "centerX": 181.426,
+      "centerY": 28.546,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0068",
+      "meshId": "BLDG_068",
+      "displayName": "North guardhouse",
+      "mapLabel": "guard",
+      "sourceTraceIds": [
+        "BLDG_076"
+      ],
+      "centerX": 190.307,
+      "centerY": 16.4935,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    },
+    {
+      "stableId": "B0069",
+      "meshId": "BLDG_069",
+      "displayName": "Northeast service building",
+      "mapLabel": "service",
+      "sourceTraceIds": [
+        "BLDG_074"
+      ],
+      "centerX": -183.329,
+      "centerY": 502.411,
+      "navigationStatus": "unassigned",
+      "dockNodeId": "",
+      "dockX": 0,
+      "dockY": 0
+    }
+  ]
+}

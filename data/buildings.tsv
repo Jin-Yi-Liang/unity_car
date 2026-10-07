@@ -1,0 +1,70 @@
+stable_id	mesh_id	display_name	map_label	center_x	center_y	navigation_status	dock_node_id	dock_x	dock_y
+B0001	BLDG_001	Administration	1	-185.867004	385.054993	unassigned	-	0.000000	0.000000
+B0002	BLDG_002	Innovation exhibition hall	2	-141.461502	304.492004	unassigned	-	0.000000	0.000000
+B0003	BLDG_003	Teaching building 3	3	-130.043503	242.324493	simulation_dock	SIMNODE_0038	-172.629120	230.773270
+B0004	BLDG_004	Teaching building 4	4	-122.431000	195.382507	unassigned	-	0.000000	0.000000
+B0005	BLDG_005	Teaching building 5	5	-107.206497	152.245499	unassigned	-	0.000000	0.000000
+B0006	BLDG_006	Teaching building 6	6	-105.937500	275.311493	unassigned	-	0.000000	0.000000
+B0007	BLDG_007	Teaching building 7	7	-85.638000	229.637497	unassigned	-	0.000000	0.000000
+B0008	BLDG_008	Teaching building 8	8	-69.144997	185.232498	unassigned	-	0.000000	0.000000
+B0009	BLDG_009	West dining hall (Xi Shi Yuan)	9	-61.532501	52.651501	unassigned	-	0.000000	0.000000
+B0010	BLDG_010	Gymnasium	10	-104.668999	-88.175499	unassigned	-	0.000000	0.000000
+B0011	BLDG_011	Gymnasium	10	-163.664505	-113.550003	unassigned	-	0.000000	0.000000
+B0012	BLDG_012	Student dormitory 11	11	-366.024506	-252.474503	simulation_dock	SIMNODE_0040	-373.393616	-225.841858
+B0013	BLDG_013	Clinic	12	-380.614502	18.396500	unassigned	-	0.000000	0.000000
+B0014	BLDG_014	Logistics service	13	-254.377502	-167.470505	unassigned	-	0.000000	0.000000
+B0015	BLDG_015	Teaching north block	14	-279.751495	17.761999	unassigned	-	0.000000	0.000000
+B0016	BLDG_016	Economics management	15	-203.628998	73.585503	unassigned	-	0.000000	0.000000
+B0017	BLDG_017	Engineering north block	16	-305.760498	73.585503	unassigned	-	0.000000	0.000000
+B0018	BLDG_018	Engineering innovation centre	17	-322.253998	120.528000	unassigned	-	0.000000	0.000000
+B0019	BLDG_019	Library west block	18	-389.495514	272.139496	simulation_dock	SIMNODE_0037	-412.935547	274.042511
+B0020	BLDG_020	Library west block	18	-322.640991	271.574493	unassigned	-	0.000000	0.000000
+B0021	BLDG_021	Academic exchange centre	19	-353.971497	383.152008	unassigned	-	0.000000	0.000000
+B0022	BLDG_022	Canteen 20	20	0.634000	-25.374500	simulation_dock	SIMNODE_0039	25.502602	-17.458309
+B0023	BLDG_023	Student dormitory 21	21	8.246500	-73.585503	unassigned	-	0.000000	0.000000
+B0024	BLDG_024	Resources environment school	22	-83.100502	-234.712494	unassigned	-	0.000000	0.000000
+B0025	BLDG_025	Resources environment school	22	-57.727001	-267.699005	unassigned	-	0.000000	0.000000
+B0026	BLDG_026	Resources environment school	22	-23.471001	-286.729492	unassigned	-	0.000000	0.000000
+B0027	BLDG_027	Engineering training centre	23	-148.395996	-306.063507	unassigned	-	0.000000	0.000000
+B0028	BLDG_028	Applied arts north	24	-141.066498	-348.118500	unassigned	-	0.000000	0.000000
+B0029	BLDG_029	Applied arts south	25	-181.186493	-415.648010	unassigned	-	0.000000	0.000000
+B0030	BLDG_030	Energy materials school	26	-278.483002	-317.178497	unassigned	-	0.000000	0.000000
+B0031	BLDG_031	Energy materials school	26	-234.077499	-342.553009	unassigned	-	0.000000	0.000000
+B0032	BLDG_032	Energy materials school	26	-275.945496	-361.583496	unassigned	-	0.000000	0.000000
+B0033	BLDG_033	Materials transfer engineering	27	-363.487000	-345.090515	unassigned	-	0.000000	0.000000
+B0034	BLDG_034	Computer information school	28	-374.905487	-399.645508	unassigned	-	0.000000	0.000000
+B0035	BLDG_035	Computer information school	28	-358.412506	-422.481995	unassigned	-	0.000000	0.000000
+B0036	BLDG_036	Intelligent manufacturing school	29	-358.412506	-444.049988	unassigned	-	0.000000	0.000000
+B0037	BLDG_037	Student activity centre	30	81.832001	-210.606995	unassigned	-	0.000000	0.000000
+B0038	BLDG_038	Student dormitory 31	31	90.712997	-266.429993	unassigned	-	0.000000	0.000000
+B0039	BLDG_039	Student dormitory 32	32	108.474998	-315.910004	unassigned	-	0.000000	0.000000
+B0040	BLDG_040	Student dormitory 37	37	74.219498	-416.138489	unassigned	-	0.000000	0.000000
+B0041	BLDG_041	South garden building	38	135.118500	-458.006012	unassigned	-	0.000000	0.000000
+B0042	BLDG_042	South garden building	38	60.264000	-475.768005	unassigned	-	0.000000	0.000000
+B0043	BLDG_043	Student dormitory 39	39	244.227493	-348.897003	unassigned	-	0.000000	0.000000
+B0044	BLDG_044	Student dormitory 40	40	327.962494	-332.403015	unassigned	-	0.000000	0.000000
+B0045	BLDG_045	Faculty dormitory 41	41	412.967010	-318.447510	unassigned	-	0.000000	0.000000
+B0046	BLDG_046	Faculty dormitory 42	42	414.235504	-364.121490	unassigned	-	0.000000	0.000000
+B0047	BLDG_047	Visible residential wing	unnumbered	5.709000	-202.994507	unassigned	-	0.000000	0.000000
+B0048	BLDG_048	Visible residential wing	unnumbered	9.515500	-244.862000	unassigned	-	0.000000	0.000000
+B0049	BLDG_049	Visible residential wing	unnumbered	27.277500	-303.222504	unassigned	-	0.000000	0.000000
+B0050	BLDG_050	Visible residential wing	unnumbered	-28.546000	-323.522491	unassigned	-	0.000000	0.000000
+B0051	BLDG_051	Visible residential wing	unnumbered	34.889500	-336.209503	unassigned	-	0.000000	0.000000
+B0052	BLDG_052	Visible residential wing	unnumbered	-41.233501	-352.703003	unassigned	-	0.000000	0.000000
+B0053	BLDG_053	Northeast residential wing	res_1_1	126.237000	8.881000	unassigned	-	0.000000	0.000000
+B0054	BLDG_054	Northeast residential wing	res_1_2	136.386993	-29.180500	unassigned	-	0.000000	0.000000
+B0055	BLDG_055	Northeast residential wing	res_1_3	147.804993	-68.510498	unassigned	-	0.000000	0.000000
+B0056	BLDG_056	Northeast residential wing	res_2_1	174.447998	120.527496	unassigned	-	0.000000	0.000000
+B0057	BLDG_057	Northeast residential wing	res_2_2	187.135498	82.466499	unassigned	-	0.000000	0.000000
+B0058	BLDG_058	Northeast residential wing	res_2_4	209.972000	3.806500	unassigned	-	0.000000	0.000000
+B0059	BLDG_059	Northeast residential wing	res_2_5	221.391006	-35.523998	unassigned	-	0.000000	0.000000
+B0060	BLDG_060	Northeast residential wing	res_3_1	250.570999	147.171005	unassigned	-	0.000000	0.000000
+B0061	BLDG_061	Northeast residential wing	res_3_2	263.258514	109.109497	unassigned	-	0.000000	0.000000
+B0062	BLDG_062	Northeast residential wing	res_3_3	277.213989	71.048500	unassigned	-	0.000000	0.000000
+B0063	BLDG_063	Northeast residential wing	res_3_4	288.632996	31.717501	unassigned	-	0.000000	0.000000
+B0064	BLDG_064	Northeast residential wing	res_3_5	301.320007	-5.074500	unassigned	-	0.000000	0.000000
+B0065	BLDG_065	Northeast dining hall	dining	103.400497	78.660500	unassigned	-	0.000000	0.000000
+B0066	BLDG_066	North guardhouse	guard	-404.085999	450.394012	unassigned	-	0.000000	0.000000
+B0067	BLDG_067	North guardhouse	guard	181.425995	28.546000	unassigned	-	0.000000	0.000000
+B0068	BLDG_068	North guardhouse	guard	190.307007	16.493500	unassigned	-	0.000000	0.000000
+B0069	BLDG_069	Northeast service building	service	-183.328995	502.411011	unassigned	-	0.000000	0.000000

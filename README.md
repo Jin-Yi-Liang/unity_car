@@ -162,3 +162,7 @@
 `TuanjieProject/` 是用本机团结 2022.3.62t7 创建的可打开项目；主场景是 `Assets/Scenes/CampusDelivery.unity`。场景导入 `tools/campus_builder/output/campus.fbx`，使用其中已放置的 `DeliveryRobot_ROOT` 作为小车，挂载 `CampusCarController`、刚体与碰撞体；独立 `delivery_robot.fbx` 也保存在 `Assets/Models/`，供替换与检查。建筑和道路添加了静态碰撞体，摄像机跟随小车，左上角显示 TCP 状态、订单阶段及地图坐标。导航数据来自建模分支的 `simulation_navigation_graph.json`，仅供演示仿真，不能代表现实校园通行许可。
 
 项目启动与协议、复现命令见 [TuanjieProject/README.md](TuanjieProject/README.md)。当前服务端绑定 `127.0.0.1:10000`，前端和后端须在同一台机器上运行。后端派单并回传状态；团结小车按仿真道路图寻路、执行移动并回报取餐及送达。当前运动使用按路点匀速移动和前向 Raycast 停车，没有实现 README 架构设想中的 C++ DWA/APF 动态规划库。
+
+## 建筑稳定编号
+
+团结场景中的 69 栋建筑使用独立稳定编号 `B0001`～`B0069`，显示名称可在 Inspector 中修改。后端目录由场景导出并通过脚本校验导入；目前仅四栋楼有仿真停靠节点，其他楼不得将视觉中心当成可行驶目标。流程见 [tools/buildings/README.md](tools/buildings/README.md)。

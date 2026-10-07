@@ -1,23 +1,75 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public static class SceneBuilder {
+ const string ScenePath="Assets/Scenes/CampusDelivery.unity";
+ const string RegistryPath="Assets/Resources/building_registry.json";
+ static BuildingCatalogData LoadRegistry(){
+  var asset=AssetDatabase.LoadAssetAtPath<TextAsset>(RegistryPath);
+  if(asset==null)throw new Exception("building registry missing: "+RegistryPath);
+  var catalog=JsonUtility.FromJson<BuildingCatalogData>(asset.text);
+  if(catalog==null||catalog.buildings==null||catalog.buildings.Length==0)
+   throw new Exception("building registry is empty or invalid");
+  return catalog;
+ }
+ static Dictionary<string,string> ExistingNames(){
+  var names=new Dictionary<string,string>();
+  if(!File.Exists(ScenePath))return names;
+  Scene old=SceneManager.GetSceneByPath(ScenePath);
+  bool temporary=!old.IsValid()||!old.isLoaded;
+  if(temporary)old=EditorSceneManager.OpenScene(ScenePath,OpenSceneMode.Additive);
+  foreach(GameObject root in old.GetRootGameObjects())
+   foreach(BuildingIdentity building in root.GetComponentsInChildren<BuildingIdentity>(true))
+    if(!string.IsNullOrEmpty(building.StableId))names[building.StableId]=building.DisplayName;
+  if(temporary)EditorSceneManager.CloseScene(old,true);
+  return names;
+ }
+ [MenuItem("Campus/Export Building Catalog for Backend")]
+ public static void ExportBuildingCatalog(){
+  var source=LoadRegistry();
+  var scene=EditorSceneManager.GetActiveScene();
+  var found=new Dictionary<string,BuildingRecord>();
+  foreach(GameObject root in scene.GetRootGameObjects())
+   foreach(BuildingIdentity identity in root.GetComponentsInChildren<BuildingIdentity>(true)){
+    BuildingRecord record=identity.Record;
+    if(string.IsNullOrWhiteSpace(record.displayName)||found.ContainsKey(record.stableId))
+     throw new Exception("invalid/duplicate building ID: "+record.stableId);
+    found.Add(record.stableId,record);
+   }
+  if(found.Count!=source.buildings.Length)throw new Exception("scene building count differs from registry");
+  var output=new BuildingCatalogData{schemaVersion=1,buildings=new BuildingRecord[source.buildings.Length]};
+  for(int i=0;i<source.buildings.Length;i++){
+   var expected=source.buildings[i];
+   if(!found.TryGetValue(expected.stableId,out BuildingRecord record)||record.meshId!=expected.meshId)
+    throw new Exception("building identity mismatch: "+expected.stableId);
+   output.buildings[i]=record;
+  }
+  string path=Path.GetFullPath(Path.Combine(Application.dataPath,"../../data/buildings-unity.json"));
+  Directory.CreateDirectory(Path.GetDirectoryName(path));
+  File.WriteAllText(path,JsonUtility.ToJson(output,true)+"\n");
+  Debug.Log("[builder] exported "+output.buildings.Length+" buildings to "+path);
+ }
+ public static void ExportSavedSceneCatalog(){
+  EditorSceneManager.OpenScene(ScenePath,OpenSceneMode.Single);
+  ExportBuildingCatalog();
+ }
  public static void OpenForReview(){
-  string path="Assets/Scenes/CampusDelivery.unity";
-  var scene=EditorSceneManager.OpenScene(path,OpenSceneMode.Single);
+  var scene=EditorSceneManager.OpenScene(ScenePath,OpenSceneMode.Single);
   foreach(GameObject root in scene.GetRootGameObjects()){
-   Transform car=FindDeep(root.transform,"DeliveryRobot_ROOT");
-   if(car==null)continue;
-   Selection.activeTransform=car;
+   BuildingIdentity building=root.GetComponentInChildren<BuildingIdentity>(true);
+   if(building==null)continue;
+   Selection.activeGameObject=building.gameObject;
    EditorApplication.delayCall+=()=>{
     if(SceneView.lastActiveSceneView!=null)SceneView.lastActiveSceneView.FrameSelected();
    };
    break;
   }
-  Debug.Log("[builder] opened for review: "+path);
+  Debug.Log("[builder] opened for review: "+ScenePath);
  }
  static Transform FindDeep(Transform root,string name){foreach(Transform t in root.GetComponentsInChildren<Transform>(true))if(t.name==name)return t;return null;}
  static Bounds LocalMeshBounds(Transform root){
@@ -45,6 +97,13 @@ public static class SceneBuilder {
  }
  public static void BuildScene(){
   AssetDatabase.Refresh();
+  var previousNames=ExistingNames();
+  var registry=LoadRegistry();
+  var buildingByMesh=new Dictionary<string,BuildingRecord>();
+  foreach(BuildingRecord record in registry.buildings){
+   if(buildingByMesh.ContainsKey(record.meshId))throw new Exception("duplicate mesh ID: "+record.meshId);
+   buildingByMesh.Add(record.meshId,record);
+  }
   var scene=EditorSceneManager.NewScene(NewSceneSetup.EmptyScene,NewSceneMode.Single);
   var prefab=AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Models/campus.fbx");
   if(prefab==null)throw new Exception("campus.fbx import failed");
@@ -58,8 +117,15 @@ public static class SceneBuilder {
   foreach(Transform t in campus.GetComponentsInChildren<Transform>(true)){
    var filter=t.GetComponent<MeshFilter>();if(filter==null||filter.sharedMesh==null)continue;
    if(t.name.StartsWith("ROAD_")||t.name.StartsWith("BRIDGE_")){t.gameObject.AddComponent<MeshCollider>();roads++;}
-   else if(t.name.StartsWith("BLDG_")){t.gameObject.layer=8;t.gameObject.AddComponent<MeshCollider>();buildings++;}
+   else if(t.name.StartsWith("BLDG_")){
+    if(!buildingByMesh.TryGetValue(t.name,out BuildingRecord record))throw new Exception("unregistered building mesh: "+t.name);
+    t.gameObject.layer=8;t.gameObject.AddComponent<MeshCollider>();
+    previousNames.TryGetValue(record.stableId,out string editedName);
+    t.gameObject.AddComponent<BuildingIdentity>().SetRecord(record,editedName);
+    buildings++;
+   }
   }
+  if(buildings!=registry.buildings.Length)throw new Exception("building count differs from registry");
   Transform car=FindDeep(campus.transform,"DeliveryRobot_ROOT");
   if(car==null)throw new Exception("DeliveryRobot_ROOT missing in campus.fbx");
   if(FindDeep(car,"ROBOT_MealBadge_Left")==null||FindDeep(car,"ROBOT_MealBadge_Right")==null)
@@ -79,10 +145,10 @@ public static class SceneBuilder {
   var probe=new GameObject("Runtime Probe").AddComponent<RuntimeProbe>();probe.car=controller;
   var hud=new GameObject("Status HUD").AddComponent<DemoHud>();hud.car=controller;
   Directory.CreateDirectory("Assets/Scenes");
-  string path="Assets/Scenes/CampusDelivery.unity";
-  EditorSceneManager.SaveScene(scene,path);
-  EditorBuildSettings.scenes=new[]{new EditorBuildSettingsScene(path,true)};
-  Debug.Log("[builder] scene="+path+" roads="+roads+" buildings="+buildings+" car="+car.position+" graph="+(controller!=null));
+  EditorSceneManager.SaveScene(scene,ScenePath);
+  EditorBuildSettings.scenes=new[]{new EditorBuildSettingsScene(ScenePath,true)};
+  ExportBuildingCatalog();
+  Debug.Log("[builder] scene="+ScenePath+" roads="+roads+" buildings="+buildings+" car="+car.position+" graph="+(controller!=null));
  }
  public static void BuildPlayer(){
   BuildScene();
