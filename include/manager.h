@@ -3,7 +3,12 @@
 #include <string>
 #include <unordered_map>
 #include "building_catalog.h"
-struct Order { int id=0, client_fd=-1, car_id=0, priority=0; double px=0, py=0, dx=0, dy=0; std::string food; };
+struct Order {
+ int id=0, client_fd=-1, car_id=0, priority=0;
+ double px=0, py=0, dx=0, dy=0;
+ std::string food, pickup_building_id, delivery_building_id, pickup_node_id, delivery_node_id;
+ bool byBuilding() const { return !pickup_building_id.empty(); }
+};
 struct Peer { enum class Role { Unknown, Client, Unity } role=Role::Unknown; std::string input; int car_id=0, active_order=0; };
 class Manager {
 public:
@@ -16,6 +21,7 @@ public:
 private:
  Manager()=default;
  void handleLine(int fd, const std::string& line);
+ void queueOrder(int fd, Order order);
  void dispatch();
  bool sendLine(int fd, const std::string& line);
  std::unordered_map<int,Peer> peers_;

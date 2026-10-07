@@ -1,6 +1,6 @@
 # 建筑编号与后端目录
 
-这个阶段只建立数据标注和导入链路。导航调度仍使用原有坐标任务；只有四处已有仿真停靠点，其他建筑尚不能作为车辆终点。
+69 栋建筑的编号与名称已从团结场景导入 C++ 后端。建筑间订单会按稳定编号解析为仿真停靠节点，下发给团结车辆；原有坐标订单继续可用。只有四处已有仿真停靠点，其他建筑尚不能作为车辆终点。
 
 ## 编号规则
 
@@ -40,4 +40,16 @@ python3 tools/buildings/import_catalog.py
 ./build/epoll_sever_run data/buildings.tsv
 ```
 
-`B0003` 示例有仿真停靠节点 `SIMNODE_0038`；`B0069` 为 `unassigned`。服务端启动时加载目录并报告建筑数量；加载失败会直接报错，避免用错误的编号表运行。`catalog_lookup_run` 与服务端共用 `BuildingCatalog` C++ 解析类。后续按建筑派单应先按 Stable ID 查目录，并只在 `hasSimulationDock()` 为真时使用停靠节点；未分配节点的建筑需要另行确认入口和导航目标。
+`B0003` 示例有仿真停靠节点 `SIMNODE_0038`；`B0069` 为 `unassigned`。服务端启动时加载目录并报告建筑数量；加载失败会直接报错，避免用错误的编号表运行。`catalog_lookup_run` 与服务端共用 `BuildingCatalog` C++ 解析类。
+
+## 从建筑到建筑的订单
+
+运行服务端和团结场景或无窗口播放器后，在仓库根目录下单：
+
+```bash
+./build/building_client_run B0019 B0003 lunch 0
+```
+
+协议为 `ORDER_BUILDINGS,取餐稳定编号,送达稳定编号,餐品,优先级`。服务端只按 Stable ID 查目录，确认两栋楼都有仿真停靠点，向车发送 `TASK_BUILDINGS`，其中包含两栋楼的稳定编号、停靠节点和地图坐标。团结端核对节点与坐标一致后寻路，到点分别发送 `REPORT_BUILDING,PICKUP/ARRIVED` 和相应建筑编号；后端核对后把 `STATUS,订单号,PICKUP/DELIVERED,建筑编号` 回传下单客户端。显示名称不参与消息解析或导航。
+
+实测 `B0019 → B0003` 返回 `ORDER_ACCEPTED,1`、`STATUS,1,ASSIGNED`、`STATUS,1,PICKUP,B0019`、`STATUS,1,DELIVERED,B0003`；车从初始位置经 `SIMNODE_0037` 到 `SIMNODE_0038`，并记录沿途位置。另用协议探针发送错误的取餐建筑编号，服务端返回 `ERROR,BUILDING_ID_MISMATCH`，正确回报仍可完成订单。不存在的 `B9999` 返回 `ERROR,UNKNOWN_BUILDING,B9999`；已导入但无停靠点的 `B0001` 返回 `ERROR,UNASSIGNED_BUILDING,B0001`。这些错误在接单前返回，不会派车。其余 65 栋楼需要另行确认入口与仿真停靠节点，不能把视觉中心当作可行驶目标。

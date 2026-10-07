@@ -104,7 +104,9 @@
 |------|------|------|
 | 登录 | `LOGIN,CLIENT` 或 `LOGIN,UNITY` | 首包认证 |
 | 订单 | `ORDER,pickup_x,pickup_y,deliver_x,deliver_y,food,priority` | 学生下单 |
+| 建筑订单 | `ORDER_BUILDINGS,pickup_id,deliver_id,food,priority` | 按稳定建筑编号下单；无停靠点会拒绝 |
 | 汇报 | `REPORT,PICKUP\|ARRIVED\|REJECTED,car_id,order_id` | Unity 取餐、送达或拒绝离路任务 |
+| 建筑汇报 | `REPORT_BUILDING,PICKUP\|ARRIVED\|REJECTED,car_id,order_id,building_id` | 回报当前建筑编号并由服务端核对 |
 | 位置 | `POSITION,car_id,x,y` | Unity 定期上报地图坐标 |
 
 #### 下行（Server → Unity）
@@ -112,6 +114,7 @@
 | 消息 | 格式 | 说明 |
 |------|------|------|
 | 任务 | `TASK,pickup_x,pickup_y,deliver_x,deliver_y,car_id,order_id` | 下发完整配送任务 |
+| 建筑任务 | `TASK_BUILDINGS,pickup_x,pickup_y,deliver_x,deliver_y,car_id,order_id,pickup_id,deliver_id,pickup_node,deliver_node` | 同时下发稳定编号与仿真停靠节点 |
 | 状态 | `STATUS,order_id,ASSIGNED\|PICKUP\|DELIVERED\|REJECTED` | 推送给下单客户端 |
 
 ---
@@ -166,3 +169,5 @@
 ## 建筑稳定编号
 
 团结场景中的 69 栋建筑使用独立稳定编号 `B0001`～`B0069`，显示名称可在 Inspector 中修改。后端目录由场景导出并通过脚本校验导入；目前仅四栋楼有仿真停靠节点，其他楼不得将视觉中心当成可行驶目标。流程见 [tools/buildings/README.md](tools/buildings/README.md)。
+
+建筑间订单使用 `ORDER_BUILDINGS,pickup_id,deliver_id,food,priority`。服务端只对有仿真停靠节点的建筑派单，向团结端传送编号、坐标和节点，并核对小车回报。`B0019 → B0003` 的完整运行示例及无停靠点的拒绝行为记录在建筑目录说明中。

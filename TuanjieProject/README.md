@@ -62,8 +62,12 @@ python3 tools/export_tuanjie_navigation.py
 
 每条 TCP 消息以 `\n` 结尾，字段用逗号分隔；一次 `recv` 可以包含半条或多条消息。首包 `LOGIN,UNITY` / `LOGIN,CLIENT`；服务端向车发送 `TASK,pickup_x,pickup_y,deliver_x,deliver_y,car_id,order_id`；车发送 `REPORT,PICKUP|ARRIVED|REJECTED,car_id,order_id`。车用 `POSITION,car_id,x,y` 定期汇报。取餐与送达状态会转发给下单客户端。
 
+建筑间订单使用 `ORDER_BUILDINGS,pickup_id,deliver_id,food,priority`。服务端解析后发送 `TASK_BUILDINGS`，携带两栋楼的稳定编号、仿真停靠节点及坐标；小车回传 `REPORT_BUILDING` 时再次携带当前建筑编号，服务端核对后向客户端发送带编号的 `STATUS`。
+
 场景道路图的 XY 米制坐标映射为团结的 `(-X, 0.045, -Y)`，这是对实际 FBX 导入位置的探针结果。小车沿图中双向仿真边用 Dijkstra 寻路并按路点匀速移动，前方建筑 Raycast 命中时暂停。它尚不是动力学或真实道路通行验证。
 
 ## 建筑编号与改名
 
 当前场景的 69 栋建筑已各自挂有 `BuildingIdentity`，层级名称显示 `Bxxxx · 名称`。选中建筑后只修改 Inspector 中的 **Display name**；稳定编号不会跟随名称变化。保存场景后，从菜单 **Campus → Export Building Catalog for Backend** 导出，再运行 `python3 tools/buildings/import_catalog.py` 更新后端 TSV。完整字段含义、四处已有仿真停靠节点及后端查询命令见 `tools/buildings/README.md`。
+
+当前目录的名称已作为最终初始数据导入后端。四处有仿真停靠节点的建筑可用 `./build/building_client_run B0019 B0003 lunch 0` 发起建筑间订单；团结车辆会按节点寻路并回报取餐与送达编号。其余建筑虽已编号和导入，但没有可执行的停靠目标，服务端会明确拒绝这类订单。

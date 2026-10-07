@@ -20,6 +20,8 @@ public sealed class CampusCarController : MonoBehaviour {
  Quaternion baseRotation;
  int waypoint,carId,orderId;
  string pickupNode,deliveryNode;
+ string pickupBuildingId,deliveryBuildingId;
+ bool byBuilding;
  enum Stage { Idle, Pickup, Delivery }
  Stage stage=Stage.Idle;
  float retryAt,positionAt;
@@ -65,27 +67,61 @@ public sealed class CampusCarController : MonoBehaviour {
   Debug.Log("[car] received "+line);
   string[] f=line.Split(',');
   if(f.Length==3&&f[0]=="WELCOME"&&f[1]=="UNITY"){carId=int.Parse(f[2],C);return;}
-  if(f.Length!=7||f[0]!="TASK")return;
+  bool buildingTask=f.Length==11&&f[0]=="TASK_BUILDINGS";
+  if(!buildingTask&&(f.Length!=7||f[0]!="TASK"))return;
   float px,py,dx,dy;int assigned,id;
   if(!float.TryParse(f[1],NumberStyles.Float,C,out px)||!float.TryParse(f[2],NumberStyles.Float,C,out py)||
    !float.TryParse(f[3],NumberStyles.Float,C,out dx)||!float.TryParse(f[4],NumberStyles.Float,C,out dy)||
    !int.TryParse(f[5],out assigned)||!int.TryParse(f[6],out id)||assigned!=carId||stage!=Stage.Idle)return;
-  float pd,dd;pickupNode=graph.Nearest(new Vector2(px,py),out pd);deliveryNode=graph.Nearest(new Vector2(dx,dy),out dd);
-  if(pd>6f||dd>6f){Debug.LogError("[car] TASK outside simulation road graph");Send("REPORT,REJECTED,"+carId+","+id);return;}
+  string sourceId=buildingTask?f[7]:null;
+  string targetId=buildingTask?f[8]:null;
+  float pd,dd;
+  if(buildingTask){
+   Vector2 source,target;
+   if(string.IsNullOrEmpty(sourceId)||string.IsNullOrEmpty(targetId)||
+      !graph.Nodes.TryGetValue(f[9],out source)||!graph.Nodes.TryGetValue(f[10],out target)||
+      Vector2.Distance(source,new Vector2(px,py))>.75f||
+      Vector2.Distance(target,new Vector2(dx,dy))>.75f){
+    RejectTask(id,sourceId,true,"building node/coordinate mismatch");return;
+   }
+   pickupNode=f[9];deliveryNode=f[10];
+  }else{
+   pickupNode=graph.Nearest(new Vector2(px,py),out pd);
+   deliveryNode=graph.Nearest(new Vector2(dx,dy),out dd);
+   if(pd>6f||dd>6f){RejectTask(id,null,false,"TASK outside simulation road graph");return;}
+  }
   float startDistance;string start=graph.Nearest(WorldToMap(transform.position),out startDistance);
-  if(startDistance>6f){Debug.LogError("[car] starting position outside graph");Send("REPORT,REJECTED,"+carId+","+id);return;}
+  if(startDistance>6f){RejectTask(id,sourceId,buildingTask,"starting position outside graph");return;}
   List<Vector2> planned;
   try{planned=graph.Route(start,pickupNode);graph.Route(pickupNode,deliveryNode);}
-  catch(Exception e){Debug.LogError("[car] route failed: "+e.Message);Send("REPORT,REJECTED,"+carId+","+id);return;}
-  orderId=id;stage=Stage.Pickup;SetRoute(planned);
-  Debug.Log("[car] order "+id+" route to pickup "+start+" -> "+pickupNode);
+  catch(Exception e){RejectTask(id,sourceId,buildingTask,"route failed: "+e.Message);return;}
+  orderId=id;byBuilding=buildingTask;pickupBuildingId=sourceId;deliveryBuildingId=targetId;
+  stage=Stage.Pickup;SetRoute(planned);
+  Debug.Log("[car] order "+id+" "+sourceId+" -> "+targetId+
+            " route "+start+" -> "+pickupNode+" -> "+deliveryNode);
+ }
+ void RejectTask(int id,string sourceId,bool buildingTask,string reason){
+  Debug.LogError("[car] "+reason);
+  Send(buildingTask?"REPORT_BUILDING,REJECTED,"+carId+","+id+","+sourceId:
+                    "REPORT,REJECTED,"+carId+","+id);
+ }
+ void ReportArrival(string phase,string buildingId){
+  Send(byBuilding?"REPORT_BUILDING,"+phase+","+carId+","+orderId+","+buildingId:
+                  "REPORT,"+phase+","+carId+","+orderId);
  }
  void SetRoute(List<Vector2> points){route.Clear();route.AddRange(points);waypoint=0;}
  void Drive(float dt){
   while(waypoint<route.Count&&Vector3.Distance(transform.position,MapToWorld(route[waypoint]))<0.18f)waypoint++;
   if(waypoint>=route.Count){
-   if(stage==Stage.Pickup){Send("REPORT,PICKUP,"+carId+","+orderId);Debug.Log("[car] PICKUP order="+orderId+" pos="+transform.position);stage=Stage.Delivery;SetRoute(graph.Route(pickupNode,deliveryNode));}
-   else {Send("REPORT,ARRIVED,"+carId+","+orderId);Debug.Log("[car] ARRIVED order="+orderId+" pos="+transform.position);stage=Stage.Idle;orderId=0;route.Clear();}
+   if(stage==Stage.Pickup){
+    ReportArrival("PICKUP",pickupBuildingId);
+    Debug.Log("[car] PICKUP order="+orderId+" building="+pickupBuildingId+" pos="+transform.position);
+    stage=Stage.Delivery;SetRoute(graph.Route(pickupNode,deliveryNode));
+   }else{
+    ReportArrival("ARRIVED",deliveryBuildingId);
+    Debug.Log("[car] ARRIVED order="+orderId+" building="+deliveryBuildingId+" pos="+transform.position);
+    stage=Stage.Idle;orderId=0;byBuilding=false;pickupBuildingId=null;deliveryBuildingId=null;route.Clear();
+   }
    return;
   }
   Vector3 target=MapToWorld(route[waypoint]);Vector3 direction=target-transform.position;direction.y=0;
@@ -103,7 +139,7 @@ public sealed class CampusCarController : MonoBehaviour {
  }
  void Disconnect(string why){
   Debug.LogWarning("[car] disconnected: "+why);if(client!=null)client.Close();client=null;connectTask=null;carId=0;retryAt=Time.time+3f;
-  if(stage!=Stage.Idle){stage=Stage.Idle;orderId=0;route.Clear();}
+  if(stage!=Stage.Idle){stage=Stage.Idle;orderId=0;byBuilding=false;pickupBuildingId=null;deliveryBuildingId=null;route.Clear();}
  }
  void OnDestroy(){if(client!=null)client.Close();}
 }
