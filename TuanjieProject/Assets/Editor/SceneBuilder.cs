@@ -58,6 +58,26 @@ public static class SceneBuilder {
   EditorSceneManager.OpenScene(ScenePath,OpenSceneMode.Single);
   ExportBuildingCatalog();
  }
+ static void EnsureCarDetailCamera(FollowCarCamera main){
+  if(main.target==null)throw new Exception("car camera target missing");
+  var detail=GameObject.Find("Car Detail Camera");
+  if(detail==null)detail=new GameObject("Car Detail Camera");
+  var camera=detail.GetComponent<Camera>();
+  if(camera==null)camera=detail.AddComponent<Camera>();
+  detail.tag="Untagged";
+  camera.clearFlags=CameraClearFlags.SolidColor;
+  camera.backgroundColor=new Color(.18f,.22f,.25f);
+  camera.rect=new Rect(.72f,.68f,.27f,.30f);
+  camera.depth=1;
+  camera.fieldOfView=50;
+  camera.nearClipPlane=.05f;
+  camera.farClipPlane=250;
+  var inset=detail.GetComponent<CarInsetCamera>();
+  if(inset==null)inset=detail.AddComponent<CarInsetCamera>();
+  inset.target=main.target;
+  inset.overview=main;
+  inset.PlaceNow();
+ }
  [MenuItem("Campus/Set Main Camera Overview")]
  public static void SetMainCameraOverview(){
   var scene=EditorSceneManager.GetActiveScene();
@@ -69,6 +89,7 @@ public static class SceneBuilder {
   if(follow==null||ground==null||ground.GetComponent<Renderer>()==null)
    throw new Exception("camera controller or Ground renderer missing");
   follow.ConfigureOverview(ground.GetComponent<Renderer>().bounds);
+  EnsureCarDetailCamera(follow);
   EditorSceneManager.MarkSceneDirty(scene);
   EditorSceneManager.SaveScene(scene);
   Debug.Log("[builder] overview camera size="+camera.orthographicSize+" position="+camera.transform.position);
@@ -183,6 +204,7 @@ public static class SceneBuilder {
   var ground=FindDeep(campus.transform,"Ground");
   if(ground==null||ground.GetComponent<Renderer>()==null)throw new Exception("Ground renderer missing");
   follow.ConfigureOverview(ground.GetComponent<Renderer>().bounds);
+  EnsureCarDetailCamera(follow);
   var light=new GameObject("Sun").AddComponent<Light>();light.type=LightType.Directional;light.intensity=1.1f;light.transform.rotation=Quaternion.Euler(48,-30,0);
   RenderSettings.ambientLight=new Color(0.65f,0.7f,0.75f);
   var probe=new GameObject("Runtime Probe").AddComponent<RuntimeProbe>();probe.car=controller;
