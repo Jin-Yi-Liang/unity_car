@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public sealed class DemoHud : MonoBehaviour {
@@ -5,6 +6,23 @@ public sealed class DemoHud : MonoBehaviour {
  GUIStyle statusStyle;
  GUIStyle labelStyle;
  FollowCarCamera view;
+ readonly Dictionary<string,string> buildingNames=new Dictionary<string,string>();
+
+ void Awake(){
+  foreach(BuildingIdentity building in FindObjectsOfType<BuildingIdentity>())
+   if(!string.IsNullOrEmpty(building.StableId))buildingNames[building.StableId]=building.DisplayName;
+ }
+
+ string DestinationText(){
+  if(car.OrderId==0)return "None";
+  if(car.IsBuildingOrder){
+   string id=car.DestinationBuildingId;
+   string name;
+   return buildingNames.TryGetValue(id,out name)?id+" - "+name:id;
+  }
+  Vector2 point=car.DestinationCoordinate;
+  return "("+point.x.ToString("F1")+", "+point.y.ToString("F1")+")";
+ }
 
  void OnGUI(){
   if(car==null)return;
@@ -15,9 +33,10 @@ public sealed class DemoHud : MonoBehaviour {
   if(labelStyle==null){labelStyle=new GUIStyle(GUI.skin.box);labelStyle.alignment=TextAnchor.MiddleCenter;labelStyle.normal.textColor=Color.white;labelStyle.fontStyle=FontStyle.Bold;}
   statusStyle.fontSize=Mathf.RoundToInt(18*scale);
   labelStyle.fontSize=Mathf.RoundToInt(16*scale);
-  GUI.Box(new Rect(16*scale,16*scale,620*scale,145*scale),
+  GUI.Box(new Rect(16*scale,16*scale,620*scale,173*scale),
    "Campus Delivery Demo\nServer: "+(car.Connected?"connected":"connecting")+"    Car ID: "+car.CarId+
    "\nState: "+car.State+"    Order: "+car.OrderId+
+   "\nDestination: "+DestinationText()+
    "\nMap position: "+(-car.transform.position.x).ToString("F1")+", "+(-car.transform.position.z).ToString("F1")+
    "\nView: "+(view!=null?view.ModeLabel:"Overview")+"    O: overview    F: follow    Wheel: zoom",statusStyle);
   if(main==null||view==null||view.ModeLabel!="Overview")return;

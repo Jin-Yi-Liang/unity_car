@@ -21,6 +21,7 @@ public sealed class CampusCarController : MonoBehaviour {
  int waypoint,carId,orderId;
  string pickupNode,deliveryNode;
  string pickupBuildingId,deliveryBuildingId;
+ Vector2 deliveryCoordinate;
  bool byBuilding;
  enum Stage { Idle, Pickup, Delivery }
  Stage stage=Stage.Idle;
@@ -29,6 +30,9 @@ public sealed class CampusCarController : MonoBehaviour {
  public string State {get{return stage.ToString();}}
  public int OrderId {get{return orderId;}}
  public int CarId {get{return carId;}}
+ public bool IsBuildingOrder {get{return orderId>0&&byBuilding;}}
+ public string DestinationBuildingId {get{return orderId>0?deliveryBuildingId:null;}}
+ public Vector2 DestinationCoordinate {get{return deliveryCoordinate;}}
  public bool Connected {get{return client!=null&&client.Connected;}}
  public void SetGraph(TextAsset asset){graphAsset=asset;}
  void Awake(){
@@ -96,6 +100,7 @@ public sealed class CampusCarController : MonoBehaviour {
   try{planned=graph.Route(start,pickupNode);graph.Route(pickupNode,deliveryNode);}
   catch(Exception e){RejectTask(id,sourceId,buildingTask,"route failed: "+e.Message);return;}
   orderId=id;byBuilding=buildingTask;pickupBuildingId=sourceId;deliveryBuildingId=targetId;
+  deliveryCoordinate=new Vector2(dx,dy);
   stage=Stage.Pickup;SetRoute(planned);
   Debug.Log("[car] order "+id+" "+sourceId+" -> "+targetId+
             " route "+start+" -> "+pickupNode+" -> "+deliveryNode);
@@ -120,7 +125,8 @@ public sealed class CampusCarController : MonoBehaviour {
    }else{
     ReportArrival("ARRIVED",deliveryBuildingId);
     Debug.Log("[car] ARRIVED order="+orderId+" building="+deliveryBuildingId+" pos="+transform.position);
-    stage=Stage.Idle;orderId=0;byBuilding=false;pickupBuildingId=null;deliveryBuildingId=null;route.Clear();
+    stage=Stage.Idle;orderId=0;byBuilding=false;pickupBuildingId=null;deliveryBuildingId=null;
+    deliveryCoordinate=default(Vector2);route.Clear();
    }
    return;
   }
@@ -139,7 +145,7 @@ public sealed class CampusCarController : MonoBehaviour {
  }
  void Disconnect(string why){
   Debug.LogWarning("[car] disconnected: "+why);if(client!=null)client.Close();client=null;connectTask=null;carId=0;retryAt=Time.time+3f;
-  if(stage!=Stage.Idle){stage=Stage.Idle;orderId=0;byBuilding=false;pickupBuildingId=null;deliveryBuildingId=null;route.Clear();}
+  if(stage!=Stage.Idle){stage=Stage.Idle;orderId=0;byBuilding=false;pickupBuildingId=null;deliveryBuildingId=null;deliveryCoordinate=default(Vector2);route.Clear();}
  }
  void OnDestroy(){if(client!=null)client.Close();}
 }
