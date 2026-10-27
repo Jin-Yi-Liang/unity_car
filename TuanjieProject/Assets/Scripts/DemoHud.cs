@@ -6,6 +6,7 @@ public sealed class DemoHud : MonoBehaviour {
  GUIStyle statusStyle;
  GUIStyle labelStyle;
  FollowCarCamera view;
+ FleetCoordinator fleet;
  readonly Dictionary<string,string> buildingNames=new Dictionary<string,string>();
 
  void Awake(){
@@ -25,6 +26,8 @@ public sealed class DemoHud : MonoBehaviour {
  }
 
  void OnGUI(){
+  if(fleet==null)fleet=FindObjectOfType<FleetCoordinator>();
+  if(fleet!=null)car=fleet.SelectedCar;
   if(car==null)return;
   Camera main=Camera.main;
   if(view==null&&main!=null)view=main.GetComponent<FollowCarCamera>();
@@ -34,25 +37,38 @@ public sealed class DemoHud : MonoBehaviour {
   statusStyle.fontSize=Mathf.RoundToInt(18*scale);
   labelStyle.fontSize=Mathf.RoundToInt(16*scale);
   GUI.Box(new Rect(16*scale,16*scale,620*scale,173*scale),
-   "Campus Delivery Demo\nServer: "+(car.Connected?"connected":"connecting")+"    Car ID: "+car.CarId+
+   "Campus Delivery Demo\nServer: "+(car.Connected?"connected":"connecting")+"    Car ID: "+car.CarId+"    Fleet: "+(fleet==null?1:fleet.Cars.Count)+
    "\nState: "+car.State+"    Order: "+car.OrderId+
    "\nDestination: "+DestinationText()+
    "\nMap position: "+(-car.transform.position.x).ToString("F1")+", "+(-car.transform.position.z).ToString("F1")+
-   "\nView: "+(view!=null?view.ModeLabel:"Overview")+"    O: overview    F: follow    Wheel: zoom",statusStyle);
-  if(main==null||view==null||view.ModeLabel!="Overview")return;
+   "\nView: "+(view!=null?view.ModeLabel:"Overview")+"    1-6: views    Tab: car    Wheel: zoom",statusStyle);
+  if(main==null||view==null)return;
+  if(view.ViewIndex!=0){
+   if(view.ViewIndex>=2){
+    Vector3 selected=main.WorldToScreenPoint(car.transform.position+Vector3.up);
+    float x=selected.x,y=Screen.height-selected.y,r=15*scale,b=2*scale;
+    Color saved=GUI.color;GUI.color=new Color(1f,.55f,.08f);
+    GUI.DrawTexture(new Rect(x-r,y-r,2*r,b),Texture2D.whiteTexture);
+    GUI.DrawTexture(new Rect(x-r,y+r-b,2*r,b),Texture2D.whiteTexture);
+    GUI.DrawTexture(new Rect(x-r,y-r,b,2*r),Texture2D.whiteTexture);
+    GUI.DrawTexture(new Rect(x+r-b,y-r,b,2*r),Texture2D.whiteTexture);
+    GUI.color=saved;GUI.Box(new Rect(x+r+5*scale,y-r,80*scale,28*scale),"CAR "+car.CarId,labelStyle);
+   }
+   return;
+  }
 
   // Keep the car locatable even when 1.2 metres occupy only a few pixels on the campus map.
-  Vector3 point=main.WorldToScreenPoint(car.transform.position+Vector3.up*1.5f);
-  if(point.z>0&&point.x>=0&&point.x<Screen.width&&point.y>=0&&point.y<Screen.height){
-   float y=Screen.height-point.y;
-   float size=30*scale;
-   Color old=GUI.color;
+  var markers=fleet==null?new List<CampusCarController>{car}:fleet.Cars;
+  foreach(var vehicle in markers){
+   Vector3 point=main.WorldToScreenPoint(vehicle.transform.position+Vector3.up*1.5f);
+   if(point.z<=0||point.x<0||point.x>=Screen.width||point.y<0||point.y>=Screen.height)continue;
+   float y=Screen.height-point.y;float size=22*scale;Color old=GUI.color;
    GUI.color=Color.black;
-   GUI.DrawTexture(new Rect(point.x-size*.5f-4*scale,y-size*.5f-4*scale,size+8*scale,size+8*scale),Texture2D.whiteTexture);
-   GUI.color=new Color(1f,.34f,.08f);
+   GUI.DrawTexture(new Rect(point.x-size*.5f-3*scale,y-size*.5f-3*scale,size+6*scale,size+6*scale),Texture2D.whiteTexture);
+   GUI.color=vehicle==car?new Color(1f,.34f,.08f):new Color(.08f,.8f,.72f);
    GUI.DrawTexture(new Rect(point.x-size*.5f,y-size*.5f,size,size),Texture2D.whiteTexture);
    GUI.color=old;
-   GUI.Box(new Rect(point.x+size*.5f+6*scale,y-size*.5f,64*scale,30*scale),"CAR",labelStyle);
+   GUI.Box(new Rect(point.x+size*.5f+5*scale,y-size*.5f,80*scale,28*scale),"CAR "+vehicle.CarId,labelStyle);
   }
 
   // The second camera renders the actual car model in the upper right.

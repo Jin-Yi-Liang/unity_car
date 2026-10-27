@@ -34,3 +34,4 @@ test/
 *.log
 .DS_Store
 mono_crash.mem.*.blob
+__pycache__/

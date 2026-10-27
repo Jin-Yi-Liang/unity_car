@@ -4,62 +4,35 @@ using UnityEngine;
 public sealed class FollowCarCamera : MonoBehaviour {
  public Transform target;
  public Vector3 followOffset=new Vector3(0,7,-10);
-
  Camera view;
- Vector3 overviewCenter;
- Vector3 overviewOffset;
- float fittedSize;
- float zoomSize;
- bool followMode;
- public string ModeLabel { get { return followMode?"Follow":"Overview"; } }
-
+ Vector3 overviewCenter,overviewOffset;
+ float fittedSize,zoomSize;
+ int viewIndex;
+ public string ModeLabel {get{return VehicleViewCamera.ViewNames[viewIndex];}}
+ public int ViewIndex {get{return viewIndex;}}
+ public void SelectView(int index){viewIndex=Mathf.Clamp(index,0,5);Debug.Log("[camera] selected "+(viewIndex+1)+" "+ModeLabel);}
  void Awake(){
-  view=GetComponent<Camera>();
-  Renderer ground=null;
-  if(target!=null){
-   foreach(Renderer item in target.root.GetComponentsInChildren<Renderer>(true))
-    if(item.name=="Ground"){ground=item;break;}
-  }
+  view=GetComponent<Camera>();Renderer ground=null;
+  if(target!=null)foreach(Renderer item in target.root.GetComponentsInChildren<Renderer>(true))if(item.name=="Ground"){ground=item;break;}
   ConfigureOverview(ground!=null?ground.bounds:new Bounds(Vector3.zero,new Vector3(920,44,1104)));
  }
-
- // The campus Ground supplies the map's actual extents in Tuanjie world metres.
- public void ConfigureOverview(Bounds groundBounds){
+ public void ConfigureOverview(Bounds bounds){
   if(view==null)view=GetComponent<Camera>();
-  overviewCenter=new Vector3(groundBounds.center.x,0,groundBounds.center.z);
-  float span=Mathf.Max(groundBounds.size.x,groundBounds.size.z);
-  overviewOffset=new Vector3(0,span*.8f,-span*.8f);
-  float projectedDepth=groundBounds.size.z*.7071068f+60f; // buildings and framing margin
-  float verticalHalf=projectedDepth*.5f;
-  float horizontalHalf=groundBounds.size.x/(2f*Mathf.Max(view.aspect,.1f));
-  fittedSize=Mathf.Max(verticalHalf,horizontalHalf)*1.12f;
-  zoomSize=fittedSize;
-  ApplyOverview();
+  overviewCenter=new Vector3(bounds.center.x,0,bounds.center.z);
+  float span=Mathf.Max(bounds.size.x,bounds.size.z);overviewOffset=new Vector3(0,span*.8f,-span*.8f);
+  fittedSize=Mathf.Max((bounds.size.z*.7071068f+60)*.5f,bounds.size.x/(2*Mathf.Max(view.aspect,.1f)))*1.12f;
+  zoomSize=fittedSize;ApplyOverview();
  }
-
  void Update(){
-  if(Input.GetKeyDown(KeyCode.F))followMode=true;
-  if(Input.GetKeyDown(KeyCode.O))followMode=false;
-  if(!followMode){
-   float scroll=Input.mouseScrollDelta.y;
-   if(Mathf.Abs(scroll)>.01f)
-    zoomSize=Mathf.Clamp(zoomSize*Mathf.Pow(.86f,scroll),fittedSize*.18f,fittedSize*1.5f);
-  }
+  if(Input.GetKeyDown(KeyCode.F))SelectView(1);
+  if(Input.GetKeyDown(KeyCode.O))SelectView(0);
+  for(int i=0;i<6;i++)if(Input.GetKeyDown((KeyCode)((int)KeyCode.Alpha1+i)))SelectView(i);
+  if(viewIndex==0&&Mathf.Abs(Input.mouseScrollDelta.y)>.01f)
+   zoomSize=Mathf.Clamp(zoomSize*Mathf.Pow(.86f,Input.mouseScrollDelta.y),fittedSize*.18f,fittedSize*1.5f);
  }
-
- void LateUpdate(){
-  if(followMode&&target!=null){
-   view.orthographic=false;
-   transform.position=target.position+followOffset;
-   transform.LookAt(target.position+Vector3.up);
-  }else ApplyOverview();
- }
-
+ void LateUpdate(){if(viewIndex==0)ApplyOverview();else VehicleViewCamera.Apply(view,target,viewIndex);}
  void ApplyOverview(){
-  view.orthographic=true;
-  view.orthographicSize=zoomSize;
-  view.farClipPlane=Mathf.Max(view.farClipPlane,3000f);
-  transform.position=overviewCenter+overviewOffset;
-  transform.LookAt(overviewCenter);
+  view.orthographic=true;view.orthographicSize=zoomSize;view.farClipPlane=3000;
+  transform.position=overviewCenter+overviewOffset;transform.LookAt(overviewCenter);
  }
 }

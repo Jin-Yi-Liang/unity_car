@@ -11,10 +11,10 @@
             ],
             "centerX": -185.86700439453126,
             "centerY": 385.05499267578127,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0001",
+            "dockX": -135.43350219726563,
+            "dockY": 401.17681884765627
         },
         {
             "stableId": "B0002",
@@ -26,10 +26,10 @@
             ],
             "centerX": -141.4615020751953,
             "centerY": 304.49200439453127,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0002",
+            "dockX": -100.20260620117188,
+            "dockY": 319.5414733886719
         },
         {
             "stableId": "B0003",
@@ -56,10 +56,10 @@
             ],
             "centerX": -122.43099975585938,
             "centerY": 195.38250732421876,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0004",
+            "dockX": -168.6553192138672,
+            "dockY": 186.00779724121095
         },
         {
             "stableId": "B0005",
@@ -71,10 +71,10 @@
             ],
             "centerX": -107.20649719238281,
             "centerY": 152.24549865722657,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0005",
+            "dockX": -89.33944702148438,
+            "dockY": 134.3426513671875
         },
         {
             "stableId": "B0006",
@@ -86,10 +86,10 @@
             ],
             "centerX": -105.9375,
             "centerY": 275.3114929199219,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0006",
+            "dockX": -87.20854949951172,
+            "dockY": 290.4757995605469
         },
         {
             "stableId": "B0007",
@@ -101,10 +101,10 @@
             ],
             "centerX": -85.63800048828125,
             "centerY": 229.6374969482422,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0007",
+            "dockX": -69.11285400390625,
+            "dockY": 245.82183837890626
         },
         {
             "stableId": "B0008",
@@ -116,10 +116,10 @@
             ],
             "centerX": -69.1449966430664,
             "centerY": 185.2324981689453,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0008",
+            "dockX": -52.37288284301758,
+            "dockY": 201.5101318359375
         },
         {
             "stableId": "B0009",
@@ -131,10 +131,10 @@
             ],
             "centerX": -61.532501220703128,
             "centerY": 52.6515007019043,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0009",
+            "dockX": -86.74443817138672,
+            "dockY": 92.89662170410156
         },
         {
             "stableId": "B0010",
@@ -146,10 +146,10 @@
             ],
             "centerX": -104.66899871826172,
             "centerY": -88.17549896240235,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0010",
+            "dockX": -93.0185317993164,
+            "dockY": -129.616455078125
         },
         {
             "stableId": "B0011",
@@ -161,10 +161,10 @@
             ],
             "centerX": -163.6645050048828,
             "centerY": -113.55000305175781,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0011",
+            "dockX": -147.4148406982422,
+            "dockY": -146.9471435546875
         },
         {
             "stableId": "B0012",
@@ -191,10 +191,10 @@
             ],
             "centerX": -380.614501953125,
             "centerY": 18.396499633789064,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0013",
+            "dockX": -414.23553466796877,
+            "dockY": 18.396499633789064
         },
         {
             "stableId": "B0014",
@@ -206,10 +206,10 @@
             ],
             "centerX": -254.37750244140626,
             "centerY": -167.4705047607422,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0014",
+            "dockX": -238.58316040039063,
+            "dockY": -182.73838806152345
         },
         {
             "stableId": "B0015",
@@ -221,10 +221,10 @@
             ],
             "centerX": -279.7514953613281,
             "centerY": 17.761999130249025,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0015",
+            "dockX": -273.2294006347656,
+            "dockY": 45.10445785522461
         },
         {
             "stableId": "B0016",
@@ -236,10 +236,10 @@
             ],
             "centerX": -203.62899780273438,
             "centerY": 73.58550262451172,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0016",
+            "dockX": -193.854736328125,
+            "dockY": 44.73165512084961
         },
         {
             "stableId": "B0017",
@@ -251,10 +251,10 @@
             ],
             "centerX": -305.760498046875,
             "centerY": 73.58550262451172,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0017",
+            "dockX": -377.4427795410156,
+            "dockY": 93.88493347167969
         },
         {
             "stableId": "B0018",
@@ -266,10 +266,10 @@
             ],
             "centerX": -322.2539978027344,
             "centerY": 120.52799987792969,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0018",
+            "dockX": -330.1528015136719,
+            "dockY": 150.91856384277345
         },
         {
             "stableId": "B0019",
@@ -296,10 +296,10 @@
             ],
             "centerX": -322.6409912109375,
             "centerY": 271.5744934082031,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0020",
+            "dockX": -309.1236572265625,
+            "dockY": 244.2337188720703
         },
         {
             "stableId": "B0021",
@@ -312,10 +312,10 @@
             ],
             "centerX": -353.97149658203127,
             "centerY": 383.1520080566406,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0021",
+            "dockX": -414.23553466796877,
+            "dockY": 392.4519958496094
         },
         {
             "stableId": "B0022",
@@ -342,10 +342,10 @@
             ],
             "centerX": 8.246500015258789,
             "centerY": -73.58550262451172,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0023",
+            "dockX": 40.9084587097168,
+            "dockY": -73.32991027832031
         },
         {
             "stableId": "B0024",
@@ -357,10 +357,10 @@
             ],
             "centerX": -83.10050201416016,
             "centerY": -234.71249389648438,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0024",
+            "dockX": -88.17122650146485,
+            "dockY": -219.1063690185547
         },
         {
             "stableId": "B0025",
@@ -372,10 +372,10 @@
             ],
             "centerX": -57.72700119018555,
             "centerY": -267.6990051269531,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0025",
+            "dockX": -64.32981872558594,
+            "dockY": -247.37754821777345
         },
         {
             "stableId": "B0026",
@@ -387,10 +387,10 @@
             ],
             "centerX": -23.47100067138672,
             "centerY": -286.7294921875,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0026",
+            "dockX": -38.9378776550293,
+            "dockY": -239.12722778320313
         },
         {
             "stableId": "B0027",
@@ -406,10 +406,10 @@
             ],
             "centerX": -148.39599609375,
             "centerY": -306.0635070800781,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0027",
+            "dockX": -98.25335693359375,
+            "dockY": -293.0308837890625
         },
         {
             "stableId": "B0028",
@@ -422,10 +422,10 @@
             ],
             "centerX": -141.06649780273438,
             "centerY": -348.1184997558594,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0028",
+            "dockX": -195.95407104492188,
+            "dockY": -365.9526672363281
         },
         {
             "stableId": "B0029",
@@ -438,10 +438,10 @@
             ],
             "centerX": -181.18649291992188,
             "centerY": -415.64801025390627,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0029",
+            "dockX": -185.30093383789063,
+            "dockY": -398.74072265625
         },
         {
             "stableId": "B0030",
@@ -453,10 +453,10 @@
             ],
             "centerX": -278.4830017089844,
             "centerY": -317.1784973144531,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0030",
+            "dockX": -272.2743225097656,
+            "dockY": -336.28717041015627
         },
         {
             "stableId": "B0031",
@@ -468,10 +468,10 @@
             ],
             "centerX": -234.07749938964845,
             "centerY": -342.5530090332031,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0031",
+            "dockX": -239.56629943847657,
+            "dockY": -325.6598815917969
         },
         {
             "stableId": "B0032",
@@ -483,10 +483,10 @@
             ],
             "centerX": -275.94549560546877,
             "centerY": -361.58349609375,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0032",
+            "dockX": -313.4729309082031,
+            "dockY": -373.7760314941406
         },
         {
             "stableId": "B0033",
@@ -498,10 +498,10 @@
             ],
             "centerX": -363.48699951171877,
             "centerY": -345.09051513671877,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0033",
+            "dockX": -326.67913818359377,
+            "dockY": -333.1305236816406
         },
         {
             "stableId": "B0034",
@@ -513,10 +513,10 @@
             ],
             "centerX": -374.9054870605469,
             "centerY": -399.6455078125,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0034",
+            "dockX": -420.5806884765625,
+            "dockY": -399.5876159667969
         },
         {
             "stableId": "B0035",
@@ -528,10 +528,10 @@
             ],
             "centerX": -358.4125061035156,
             "centerY": -422.48199462890627,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0035",
+            "dockX": -416.3024597167969,
+            "dockY": -430.10955810546877
         },
         {
             "stableId": "B0036",
@@ -543,10 +543,10 @@
             ],
             "centerX": -358.4125061035156,
             "centerY": -444.04998779296877,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0036",
+            "dockX": -402.571533203125,
+            "dockY": -472.84716796875
         },
         {
             "stableId": "B0037",
@@ -558,10 +558,10 @@
             ],
             "centerX": 81.83200073242188,
             "centerY": -210.60699462890626,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0037",
+            "dockX": 104.67079162597656,
+            "dockY": -203.1863250732422
         },
         {
             "stableId": "B0038",
@@ -573,10 +573,10 @@
             ],
             "centerX": 90.71299743652344,
             "centerY": -266.42999267578127,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0038",
+            "dockX": 67.62759399414063,
+            "dockY": -273.9309387207031
         },
         {
             "stableId": "B0039",
@@ -588,10 +588,10 @@
             ],
             "centerX": 108.4749984741211,
             "centerY": -315.9100036621094,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0039",
+            "dockX": 83.86532592773438,
+            "dockY": -323.90606689453127
         },
         {
             "stableId": "B0040",
@@ -603,10 +603,10 @@
             ],
             "centerX": 74.21949768066406,
             "centerY": -416.13848876953127,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0040",
+            "dockX": 99.07191467285156,
+            "dockY": -388.8868713378906
         },
         {
             "stableId": "B0041",
@@ -618,10 +618,10 @@
             ],
             "centerX": 135.11849975585938,
             "centerY": -458.0060119628906,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0041",
+            "dockX": 123.69973754882813,
+            "dockY": -437.7067565917969
         },
         {
             "stableId": "B0042",
@@ -633,10 +633,10 @@
             ],
             "centerX": 60.263999938964847,
             "centerY": -475.76800537109377,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0042",
+            "dockX": 43.41334533691406,
+            "dockY": -491.9701232910156
         },
         {
             "stableId": "B0043",
@@ -648,10 +648,10 @@
             ],
             "centerX": 244.2274932861328,
             "centerY": -348.8970031738281,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0043",
+            "dockX": 244.7407684326172,
+            "dockY": -382.7313537597656
         },
         {
             "stableId": "B0044",
@@ -663,10 +663,10 @@
             ],
             "centerX": 327.9624938964844,
             "centerY": -332.40301513671877,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0044",
+            "dockX": 326.0036926269531,
+            "dockY": -358.23858642578127
         },
         {
             "stableId": "B0045",
@@ -678,10 +678,10 @@
             ],
             "centerX": 412.9670104980469,
             "centerY": -318.447509765625,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0045",
+            "dockX": 406.574951171875,
+            "dockY": -341.1572265625
         },
         {
             "stableId": "B0046",
@@ -693,10 +693,10 @@
             ],
             "centerX": 414.2355041503906,
             "centerY": -364.1214904785156,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0046",
+            "dockX": 420.35546875,
+            "dockY": -339.343994140625
         },
         {
             "stableId": "B0047",
@@ -708,10 +708,10 @@
             ],
             "centerX": 5.709000110626221,
             "centerY": -202.9945068359375,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0047",
+            "dockX": 1.4794243574142457,
+            "dockY": -189.9771728515625
         },
         {
             "stableId": "B0048",
@@ -723,10 +723,10 @@
             ],
             "centerX": 9.51550006866455,
             "centerY": -244.86199951171876,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0048",
+            "dockX": 3.2032320499420168,
+            "dockY": -225.43478393554688
         },
         {
             "stableId": "B0049",
@@ -738,10 +738,10 @@
             ],
             "centerX": 27.27750015258789,
             "centerY": -303.2225036621094,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0049",
+            "dockX": 72.38309478759766,
+            "dockY": -288.5669860839844
         },
         {
             "stableId": "B0050",
@@ -753,10 +753,10 @@
             ],
             "centerX": -28.54599952697754,
             "centerY": -323.5224914550781,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0050",
+            "dockX": -82.63587951660156,
+            "dockY": -341.0971374511719
         },
         {
             "stableId": "B0051",
@@ -768,10 +768,10 @@
             ],
             "centerX": 34.88949966430664,
             "centerY": -336.2095031738281,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0051",
+            "dockX": 44.39430618286133,
+            "dockY": -365.4623718261719
         },
         {
             "stableId": "B0052",
@@ -783,10 +783,10 @@
             ],
             "centerX": -41.23350143432617,
             "centerY": -352.7030029296875,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0052",
+            "dockX": -75.271240234375,
+            "dockY": -363.76287841796877
         },
         {
             "stableId": "B0053",
@@ -798,10 +798,10 @@
             ],
             "centerX": 126.23699951171875,
             "centerY": 8.880999565124512,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0053",
+            "dockX": 76.90017700195313,
+            "dockY": 0.35128238797187807
         },
         {
             "stableId": "B0054",
@@ -813,10 +813,10 @@
             ],
             "centerX": 136.38699340820313,
             "centerY": -29.180500030517579,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0054",
+            "dockX": 141.08705139160157,
+            "dockY": -43.64588928222656
         },
         {
             "stableId": "B0055",
@@ -828,10 +828,10 @@
             ],
             "centerX": 147.80499267578126,
             "centerY": -68.510498046875,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0055",
+            "dockX": 152.40179443359376,
+            "dockY": -82.65811920166016
         },
         {
             "stableId": "B0056",
@@ -843,10 +843,10 @@
             ],
             "centerX": 174.447998046875,
             "centerY": 120.52749633789063,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0056",
+            "dockX": 160.8740692138672,
+            "dockY": 130.5493621826172
         },
         {
             "stableId": "B0057",
@@ -858,10 +858,10 @@
             ],
             "centerX": 187.135498046875,
             "centerY": 82.46649932861328,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0057",
+            "dockX": 225.21034240722657,
+            "dockY": 94.83783721923828
         },
         {
             "stableId": "B0058",
@@ -873,10 +873,10 @@
             ],
             "centerX": 209.9720001220703,
             "centerY": 3.80649995803833,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0058",
+            "dockX": 250.50852966308595,
+            "dockY": 16.977495193481447
         },
         {
             "stableId": "B0059",
@@ -888,10 +888,10 @@
             ],
             "centerX": 221.39100646972657,
             "centerY": -35.52399826049805,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0059",
+            "dockX": 216.1097412109375,
+            "dockY": -19.269779205322267
         },
         {
             "stableId": "B0060",
@@ -903,10 +903,10 @@
             ],
             "centerX": 250.5709991455078,
             "centerY": 147.17100524902345,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0060",
+            "dockX": 212.25167846679688,
+            "dockY": 134.72023010253907
         },
         {
             "stableId": "B0061",
@@ -918,10 +918,10 @@
             ],
             "centerX": 263.2585144042969,
             "centerY": 109.1094970703125,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0061",
+            "dockX": 223.6913299560547,
+            "dockY": 99.51280975341797
         },
         {
             "stableId": "B0062",
@@ -933,10 +933,10 @@
             ],
             "centerX": 277.2139892578125,
             "centerY": 71.04850006103516,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0062",
+            "dockX": 237.16769409179688,
+            "dockY": 58.03678894042969
         },
         {
             "stableId": "B0063",
@@ -948,10 +948,10 @@
             ],
             "centerX": 288.63299560546877,
             "centerY": 31.717500686645509,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0063",
+            "dockX": 248.85914611816407,
+            "dockY": 22.053842544555665
         },
         {
             "stableId": "B0064",
@@ -963,10 +963,10 @@
             ],
             "centerX": 301.32000732421877,
             "centerY": -5.07450008392334,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0064",
+            "dockX": 297.3550720214844,
+            "dockY": 7.128283977508545
         },
         {
             "stableId": "B0065",
@@ -978,10 +978,10 @@
             ],
             "centerX": 103.40049743652344,
             "centerY": 78.6604995727539,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0065",
+            "dockX": 84.86195373535156,
+            "dockY": 103.4061279296875
         },
         {
             "stableId": "B0066",
@@ -993,10 +993,10 @@
             ],
             "centerX": -404.08599853515627,
             "centerY": 450.3940124511719,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0066",
+            "dockX": -420.5791015625,
+            "dockY": 450.3940124511719
         },
         {
             "stableId": "B0067",
@@ -1008,10 +1008,10 @@
             ],
             "centerX": 181.42599487304688,
             "centerY": 28.54599952697754,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0067",
+            "dockX": 176.70025634765626,
+            "dockY": 61.320003509521487
         },
         {
             "stableId": "B0068",
@@ -1023,10 +1023,10 @@
             ],
             "centerX": 190.3070068359375,
             "centerY": 16.493499755859376,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0068",
+            "dockX": 180.9306640625,
+            "dockY": 62.77637481689453
         },
         {
             "stableId": "B0069",
@@ -1038,10 +1038,10 @@
             ],
             "centerX": -183.32899475097657,
             "centerY": 502.4110107421875,
-            "navigationStatus": "unassigned",
-            "dockNodeId": "",
-            "dockX": 0.0,
-            "dockY": 0.0
+            "navigationStatus": "simulation_dock",
+            "dockNodeId": "DOCK_B0069",
+            "dockX": -166.98960876464845,
+            "dockY": 483.0254821777344
         }
     ]
 }

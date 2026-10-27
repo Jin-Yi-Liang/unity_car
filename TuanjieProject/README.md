@@ -1,5 +1,7 @@
 # 团结校园配送演示
 
+本地新分支已加入默认三车车队和 Display 1～6。Web 下单、批量订单、视角切换与测试流程见 [Web 与多车多视角使用指南](../docs/Web与多车多视角使用指南.md)。单个前端实例会生成三辆车，不要重复启动多个实例。
+
 ## 送餐小车模型与尺寸
 
 本项目使用 Blender 5.2.2 的参数化生成器 `tools/campus_builder/scripts/build_robot.py` 生成送餐小车：封闭保温货箱、侧门餐食标识、橙色车顶识别带、前后灯、四个独立轮轴和顶部雷达外壳。造型尺寸仍为 **长 1.20 米、宽 0.80 米、高 1.10 米**，与校园道路使用同一个米制坐标，不对车体应用地图 XY 比例倍数。Blender 验证文件为 `tools/campus_builder/output/validation/delivery_robot_report.md`，独立模型可打开 `tools/campus_builder/output/delivery_robot.blend`；校园内的车已经包含在 `campus.blend` 中。
@@ -70,6 +72,6 @@ python3 tools/export_tuanjie_navigation.py
 
 ## 建筑编号与改名
 
-当前场景的 69 栋建筑已各自挂有 `BuildingIdentity`，层级名称显示 `Bxxxx · 名称`。选中建筑后只修改 Inspector 中的 **Display name**；稳定编号不会跟随名称变化。保存场景后，从菜单 **Campus → Export Building Catalog for Backend** 导出，再运行 `python3 tools/buildings/import_catalog.py` 更新后端 TSV。完整字段含义、四处已有仿真停靠节点及后端查询命令见 `tools/buildings/README.md`。
+当前场景的 69 栋建筑已各自挂有 `BuildingIdentity`，层级名称显示 `Bxxxx · 名称`。选中建筑后只修改 Inspector 中的 **Display name**；稳定编号不会跟随名称变化。保存场景后，从菜单 **Campus → Export Building Catalog for Backend** 导出，再运行 `python3 tools/buildings/import_catalog.py` 更新后端 TSV。完整字段含义、69 处仿真停靠节点及后端查询命令见 `tools/buildings/README.md`。
 
-当前目录的名称已作为最终初始数据导入后端。四处有仿真停靠节点的建筑可用 `./build/building_client_run B0019 B0003 lunch 0` 发起建筑间订单；团结车辆会按节点寻路并回报取餐与送达编号。其余建筑虽已编号和导入，但没有可执行的停靠目标，服务端会明确拒绝这类订单。
+当前目录的名称已作为最终初始数据导入后端。全部 69 栋建筑已有独立仿真停靠节点，可用 `./build/building_client_run B0019 B0003 lunch 0` 发起建筑间订单；团结车辆会按节点寻路并回报取餐与送达编号。任意两个不同建筑都可以作为取餐和送达地点，也可在 Web 中选择；同起终点和不存在的编号仍被拒绝。
